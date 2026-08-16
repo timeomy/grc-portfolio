@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2: The Frameworks That Matter · GRC Foundations · Zabez</title>
+  <meta name="description" content="NIST CSF, ISO 27001, SOC 2, CIS 18: what each framework is, why they overlap 85%, and which one to learn first. Free GRC lesson.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; margin: 34px 0 12px; }
+    .article-body p, .article-body li { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong, .article-body li strong { color: var(--text); font-weight: 600; }
+    .article-body ul { margin-left: 20px; }
+    .article-body table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 10px 0 20px; }
+    .article-body th { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+    .article-body td { padding: 10px; border-bottom: 1px solid var(--line-soft); color: var(--text-dim); vertical-align: top; }
+    .article-body td:first-child { color: var(--text); font-weight: 500; white-space: nowrap; }
+    .lesson-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); }
+    .lesson-nav a { font-family: var(--mono); font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../../news/index.html"><i data-lucide="book-open" class="ico"></i>GRC News</a>
+        <a href="../index.html">Courses</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← GRC Foundations</a></p>
+        <span class="article-date">Lesson 2 of 5</span>
+        <h1>The frameworks that matter</h1>
+        <p class="subtitle">A framework is just a previously vetted way to run a security program. Here is the map.</p>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>First, drop the fear of the word</h2>
+        <p>
+          A framework sounds intimidating until you realize what it is: a comprehensive,
+          previously vetted way to implement a security program. People have done this before,
+          learned the lessons, and written them down so nobody has to reinvent the wheel.
+        </p>
+        <p>
+          The key fact that makes GRC easier than it looks: <strong>the frameworks overlap
+          roughly 85%</strong>. Backups, logging, access control, awareness training, incident
+          response. They all appear in every serious framework, because they are the fundamentals.
+          If a framework is missing the basics, it is not a framework worth using.
+        </p>
+
+        <h2>The four you will actually meet</h2>
+        <table>
+          <thead>
+            <tr><th>Framework</th><th>What it is</th><th>Where you see it</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>NIST CSF</td><td>Free US government framework organized around functions: Govern, Identify, Protect, Detect, Respond, Recover</td><td>Everywhere. It is the common language of US security programs and the best starting point.</td></tr>
+            <tr><td>ISO 27001</td><td>International standard for an information security management system (ISMS), certification based</td><td>Europe and enterprise vendors; certification is a market signal.</td></tr>
+            <tr><td>SOC 2</td><td>Audit report for service providers based on trust services criteria</td><td>SaaS and cloud companies; buyers request it before signing.</td></tr>
+            <tr><td>CIS 18</td><td>Prioritized list of 18 control groups (formerly 20)</td><td>Young or small programs; the controls are ordered by importance.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>NIST CSF, the one to learn first</h2>
+        <p>
+          NIST CSF is free, voluntary, and written for practitioners. It is structured the way
+          an information security program actually works, which is why it teaches you the
+          discipline even while you are learning the framework.
+        </p>
+        <ul>
+          <li><strong>Govern</strong> (added in CSF 2.0): how the org sets and oversees its security strategy</li>
+          <li><strong>Identify</strong>: know what you have, what matters, what the priorities are</li>
+          <li><strong>Protect</strong>: the controls that stop bad stuff, access control, training, backups</li>
+          <li><strong>Detect</strong>: see it when protections fail, monitoring, logging</li>
+          <li><strong>Respond</strong>: act, contain, communicate</li>
+          <li><strong>Recover</strong>: get back to running, learn, improve</li>
+        </ul>
+        <p>
+          The first three sit before an incident. The last three handle what happens after. GRC
+          work lives mostly in the first three: deciding what matters, putting controls in place,
+          and proving they exist.
+        </p>
+
+        <h2>How to use a framework in real work</h2>
+        <p>
+          You do not implement a framework in one pass. You baseline yourself against it first.
+          Go control by control and answer honestly: is this in place, partially in place, or
+          not at all? Score yourself, then build a roadmap from worst gaps to best.
+        </p>
+        <p>
+          That baseline is the same exercise auditors run, the same gap assessment consultants
+          sell, and the same maturity scoring you see in security questionnaires. Learn it once
+          and you can apply it to any framework, because the method does not change, only the
+          control list.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Next:</strong> Lesson 3 walks through a real day in the life of a GRC analyst, so you can feel what the work is like before you invest in it.</p>
+
+        <div class="lesson-nav">
+          <a href="lesson-1.html">← Lesson 1</a>
+          <a href="lesson-3.html">Lesson 3: A day in the life →</a>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span class="legal">Original educational content. Frameworks referenced are public standards (NIST, ISO, CIS).</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

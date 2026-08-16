@@ -1,0 +1,81 @@
+/* ---------- email gate modal ---------- */
+
+.gate-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.78);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+
+.gate-modal.open { display: flex; }
+
+.gate-box {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 34px 30px 30px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.gate-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-faint);
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+.gate-close:hover { color: var(--text); }
+
+.gate-box h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+.gate-box h3 .gate-filename { color: var(--gold-soft); }
+
+.gate-sub {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 18px;
+  line-height: 1.55;
+}
+
+.gate-form { display: flex; flex-direction: column; gap: 12px; }
+
+.gate-form input[type="email"] {
+  background: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  padding: 13px 14px;
+  outline: none;
+  width: 100%;
+}
+.gate-form input[type="email"]:focus { border-color: var(--gold); }
+
+.gate-form .gate-submit { justify-content: center; width: 100%; }
+
+.gate-download { display: inline-block; }
+
+.gate-success-msg { color: var(--green) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gate-modal { backdrop-filter: none; }
+}

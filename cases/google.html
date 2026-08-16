@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google, GRC Case Study</title>
+  <meta name="description" content="GRC analysis of Google: GCP compliance posture, Secure AI Framework, ISO 27001, SOC 2, FedRAMP, GDPR enforcement history, NIST CSF 2.0 maturity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/refs.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../news/index.html"><i data-lucide="book-open" class="ico"></i>GRC News</a>
+        <a href="../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All case studies</a></p>
+        <h1>Google</h1>
+        <p class="subtitle">
+          A security-engineering culture that governs AI before regulators finish drafting the
+          rules, while a consumer-privacy enforcement record keeps the compliance score honest.
+        </p>
+        <div class="score-strip">
+          <span class="score-badge"><span class="big" data-count="4.1" data-dec="1">4.1</span><span class="lbl">/ 5 maturity</span></span>
+          <span class="tag">Cloud</span>
+          <span class="tag">AI</span>
+          <span class="tag">Privacy</span>
+          <span class="tag">ISO 27001</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main">
+
+        <h2>Overview</h2>
+        <p>
+          Google runs two different GRC stories under one roof. On the cloud side, Google Cloud
+          Platform built a disciplined, certification-rich program that in some dimensions,
+          notably <strong>AI security governance</strong>, leads the industry. On the consumer
+          side, Google's ad-tech data practices have produced a long tail of GDPR enforcement
+          actions across Europe, which keeps the company honest about the difference between
+          engineering capability and regulatory compliance.
+        </p>
+        <p>
+          The analytical lesson of Google is that <strong>security maturity and privacy compliance
+          are not the same score</strong>. A company can be world-class at protecting systems and
+          persistently out of step on how it processes personal data at scale.
+        </p>
+
+        <h2>Compliance posture at a glance</h2>
+        <table class="fw-table">
+          <thead>
+            <tr><th>Framework</th><th>Status</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ISO 27001 / 27017 / 27018</td><td>Certified</td><td>GCP and core services; PII-processing extension for cloud data.</td></tr>
+            <tr><td>SOC 1 / 2 / 3</td><td>Audited</td><td>Type II across GCP services; SOC 3 public.</td></tr>
+            <tr><td>FedRAMP</td><td>High, JAB</td><td>GCP at High impact with an Agency ATO for major services.</td></tr>
+            <tr><td>PCI DSS</td><td>Level 1</td><td>GCP as validated service provider.</td></tr>
+            <tr><td>ISO 27701</td><td>Certified</td><td>Privacy information management for GCP, rare in the industry.</td></tr>
+            <tr><td>GDPR</td><td>Enforced</td><td>CNIL (France) cookie and ad-personalization fines, €100M (Dec 2020), €150M (Dec 2021), €325M (2025, ads-in-email/cookies); Irish DPC actions on ad personalization.</td></tr>
+            <tr><td>AI governance</td><td>Framework-led</td><td>Secure AI Framework (SAIF) and frontier-safety commitments, first-mover on AI risk governance.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>NIST CSF 2.0 maturity assessment</h2>
+        <div class="maturity">
+          <div class="m-bar"><div class="m-top"><span class="lbl">Govern</span><span class="val">4.0 / 5</span></div><div class="m-track"><div class="m-fill" data-w="80"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Identify</span><span class="val">4.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="90"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Protect</span><span class="val">4.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="90"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Detect</span><span class="val">4.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="90"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Respond</span><span class="val">3.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="70"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Recover</span><span class="val">3.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="70"></div></div></div>
+        </div>
+        <p>
+          Overall: <strong>4.1 / 5</strong>. Engineering-side functions are elite; governance and
+          response are dragged down by the consumer-privacy enforcement record and a historically
+          slow, legal-led posture toward regulatory findings.
+        </p>
+
+        <h2>Key findings</h2>
+
+        <div class="finding">
+          <h4>1. First-mover on AI security governance</h4>
+          <p>
+            Google published its Secure AI Framework (SAIF) in 2023, before most regulators had
+            drafts, and operationalized it across GCP and Gemini. When the EU AI Act arrived,
+            Google had a control framework already mapped to the obligations. That sequencing is
+            textbook governance engineering.
+          </p>
+        </div>
+
+        <div class="finding">
+          <h4>2. ISO 27701 as a differentiator</h4>
+          <p>
+            GCP is one of the few major clouds certified to ISO 27701 (privacy information
+            management). For EU buyers and DPOs, that certification is more persuasive than
+            marketing about GDPR compliance, it is an audited management system, not a claim.
+          </p>
+        </div>
+
+        <div class="finding">
+          <h4>3. Engineering-led risk culture</h4>
+          <p>
+            Google's Project Zero, bug-bounty scale, and internal red-team culture create an
+            Identify/Protect/Detect spine that few organizations can match. Risk is treated as an
+            engineering problem, which is why the defensive functions score near the top of the
+            market.
+          </p>
+        </div>
+
+        <h2>Watch items</h2>
+
+        <div class="finding watch">
+          <h4>Consumer-privacy enforcement tail</h4>
+          <p>
+            Fines from CNIL (France), the Irish DPC, and other EU authorities on ad personalization
+            and cookies span years, not incidents. The pattern, regulators finding consent and
+            transparency failures in the ad stack, is structural, not episodic. Watch how the
+            EU's GDPR enforcement wave and the DSA's transparency duties land on the same data.
+          </p>
+        </div>
+
+        <div class="finding watch">
+          <h4>Antitrust as a governance stressor</h4>
+          <p>
+            The 2024 US ruling that Google maintains a search monopoly (with remedies pending)
+            and EU Digital Markets Act obligations force structural governance changes, data
+            sharing, choice screens, and business-model adjustments, that a GRC program must
+            absorb while running the rest of the company.
+          </p>
+        </div>
+
+        <div class="finding watch">
+          <h4>AI liability surface</h4>
+          <p>
+            Gemini and the AI-assisted ad stack create a new class of exposure, copyright,
+            disinformation, and systemic-risk duties under the EU AI Act. Google's SAIF is strong
+            on security; the <em>compliance</em> machinery for AI liability is still being built,
+            industry-wide.
+          </p>
+        </div>
+
+        <h2>Bottom line</h2>
+        <p>
+          Google is the clearest case in the market that <strong>security excellence and privacy
+          compliance diverge</strong>. For a GRC analyst, it is the perfect study in separating
+          engineering maturity from regulatory performance, and the leading example of AI risk
+          governance built ahead of the law.
+        </p>
+
+        <h2>Sources &amp; verification</h2>
+        <p style="font-size:14px;color:var(--text-faint);">Every factual claim above was verified against the following public sources (accessed August 2026). Figures updated to the latest fiscal year reported.</p>
+        <div class="refs">
+          <div class="ref-item"><span>Alphabet FY2024 revenue ($350.0B), SEC EDGAR, Form 10-K</span><a class="ref-link" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001652044&type=10-K&dateb=&owner=include&count=10" target="_blank" rel="noopener">sec.gov ↗</a></div>
+          <div class="ref-item"><span>GCP ISO 27001/27017/27018, ISO 27701, SOC, PCI DSS, FedRAMP, Google Cloud compliance</span><a class="ref-link" href="https://cloud.google.com/security/compliance" target="_blank" rel="noopener">cloud.google.com ↗</a></div>
+          <div class="ref-item"><span>GCP ISO 27701 (privacy information management)</span><a class="ref-link" href="https://cloud.google.com/security/compliance/iso-27701" target="_blank" rel="noopener">cloud.google.com ↗</a></div>
+          <div class="ref-item"><span>Google Secure AI Framework (SAIF) launch, Google blog (June 2023)</span><a class="ref-link" href="https://blog.google/innovation-and-ai/technology/safety-security/introducing-googles-secure-ai-framework/" target="_blank" rel="noopener">blog.google ↗</a></div>
+          <div class="ref-item"><span>US v. Google LLC, search monopoly ruling (Aug 2024), DC District Court</span><a class="ref-link" href="https://en.wikipedia.org/wiki/United_States_v._Google_LLC_(2023)" target="_blank" rel="noopener">wikipedia.org ↗</a></div>
+          <div class="ref-item"><span>CNIL: Google fined €325M (2025, ads-in-email &amp; cookies), CNIL (French)</span><a class="ref-link" href="https://www.cnil.fr/fr/publicites-inserees-entre-les-courriels-et-cookies-la-cnil-sanctionne-google-dune-amende-de-325" target="_blank" rel="noopener">cnil.fr ↗</a></div>
+                    <div class="ref-item"><span>CNIL: two cookie fines incl. Google €150M + Facebook €60M (2021-22), CNIL (French)</span><a class="ref-link" href="https://www.cnil.fr/fr/regulation-des-cookies-la-cnil-poursuit-le-plan-daction-initie-en-2019-et-prononce-deux-amendes" target="_blank" rel="noopener">cnil.fr ↗</a></div>
+        </div>
+        <p class="ref-note"><strong>Verification note:</strong> Revenue verified against SEC XBRL data. GDPR fine amounts cross-checked against CNIL press pages and Reuters reporting; the €325M figure comes from CNIL's own press page. The 2024 monopoly ruling is documented in the DC District Court record (United States v. Google LLC, No. 1:20-cv-03010). SAIF launch documented in Google's own blog. No internal Google documents were used.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">Next case study</span><br>
+            <a class="nc-name" href="jpmorgan.html">JPMorgan Chase →</a>
+          </span>
+        </div>
+
+      </div>
+
+      <aside class="case-rail">
+        <div class="rail-box">
+          <h4>Facts</h4>
+          <ul>
+            <li><b>Sector:</b> Cloud / advertising / AI</li>
+            <li><b>Revenue:</b> $350.0B (Alphabet, FY2024, SEC 10-K)</li>
+            <li><b>Key certifications:</b> ISO 27001/27701, SOC 2, FedRAMP High, PCI DSS</li>
+            <li><b>Core GRC exposure:</b> GDPR, EU AI Act, DMA/DSA, antitrust remedies</li>
+            <li><b>Analyst view:</b> AI governance leader; privacy enforcement laggard</li>
+          </ul>
+        </div>
+        <div class="rail-box">
+          <h4>Scope note</h4>
+          <p class="scope-note">
+            Independent public-posture analysis. Sources: Google Cloud compliance documentation,
+            certification registries, EU DPA enforcement decisions, annual report &amp; 10-K, and
+            public disclosures. Not an audit performed for Google.
+          </p>
+        </div>
+      </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span class="legal">
+          Independent analysis based solely on publicly available information. Scores are
+          analytical judgments of documented posture, not audits performed for the company named.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

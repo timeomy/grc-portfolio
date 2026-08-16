@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS (Amazon Web Services), GRC Case Study</title>
+  <meta name="description" content="GRC analysis of AWS: the shared responsibility model, SOC 2, FedRAMP, ISO 27001, compliance automation, customer-side control gaps. NIST CSF 2.0 maturity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/refs.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../news/index.html"><i data-lucide="book-open" class="ico"></i>GRC News</a>
+        <a href="../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All case studies</a></p>
+        <h1>Amazon Web Services</h1>
+        <p class="subtitle">
+          The company that industrialized compliance. AWS's shared responsibility model is the
+          most influential GRC concept of the cloud era, and its biggest risk is the half of the
+          model that belongs to the customer.
+        </p>
+        <div class="score-strip">
+          <span class="score-badge"><span class="big" data-count="4.4" data-dec="1">4.4</span><span class="lbl">/ 5 maturity</span></span>
+          <span class="tag">Cloud</span>
+          <span class="tag">Shared Responsibility</span>
+          <span class="tag">SOC 2</span>
+          <span class="tag">FedRAMP</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main">
+
+        <h2>Overview</h2>
+        <p>
+          AWS runs the largest compliance-certified infrastructure on earth: its SOC 2, ISO 27001,
+          FedRAMP, and PCI DSS scopes span hundreds of services across dozens of regions, and its
+          compliance documentation is consumed by more auditors than any other company's. But the
+          genuinely original contribution is conceptual: the
+          <strong>shared responsibility model</strong>, which splits security and compliance
+          obligations between AWS (security <em>of</em> the cloud) and the customer (security
+          <em>in</em> the cloud).
+        </p>
+        <p>
+          That model is simultaneously AWS's greatest governance asset and its most persistent
+          exposure, because most cloud breaches occur on the customer side of the line, and
+          AWS's name carries the reputational damage regardless.
+        </p>
+
+        <h2>Compliance posture at a glance</h2>
+        <table class="fw-table">
+          <thead>
+            <tr><th>Framework</th><th>Status</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ISO 27001 / 27017 / 27018</td><td>Certified</td><td>Core services across all commercial regions; PII extension for customer data.</td></tr>
+            <tr><td>SOC 1 / 2 / 3</td><td>Audited</td><td>Type II reports; SOC 3 public; attestations per region and service.</td></tr>
+            <tr><td>FedRAMP</td><td>High / Moderate</td><td>Hundreds of services authorized; GovCloud for public sector.</td></tr>
+            <tr><td>PCI DSS</td><td>Level 1</td><td>Validated service provider; customer carve-outs documented.</td></tr>
+            <tr><td>HIPAA / HITRUST</td><td>BAA / certified</td><td>Healthcare workloads with BAAs and HITRUST CSF certification.</td></tr>
+            <tr><td>C5 / IRAP / regional</td><td>Attested</td><td>Germany C5, Australia IRAP, Japan, Singapore, and more.</td></tr>
+            <tr><td>NIST / CMMC</td><td>Mapped</td><td>800-53-based controls; CMMC alignment for defense supply chain.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>NIST CSF 2.0 maturity assessment</h2>
+        <div class="maturity">
+          <div class="m-bar"><div class="m-top"><span class="lbl">Govern</span><span class="val">4.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="90"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Identify</span><span class="val">4.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="90"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Protect</span><span class="val">4.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="90"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Detect</span><span class="val">4.5 / 5</span></div><div class="m-track"><div class="m-fill" data-w="90"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Respond</span><span class="val">4.0 / 5</span></div><div class="m-track"><div class="m-fill" data-w="80"></div></div></div>
+          <div class="m-bar"><div class="m-top"><span class="lbl">Recover</span><span class="val">4.0 / 5</span></div><div class="m-track"><div class="m-fill" data-w="80"></div></div></div>
+        </div>
+        <p>
+          Overall: <strong>4.4 / 5</strong>. AWS-side maturity is elite across the board, with
+          response and recovery slightly lower only because the customer half of the model
+          (where most incidents live) is outside AWS's direct control.
+        </p>
+
+        <h2>Key findings</h2>
+
+        <div class="finding">
+          <h4>1. The shared responsibility model is governance architecture</h4>
+          <p>
+            By making the line explicit, and auditable via the AWS Artifact portal, AWS gave
+            customers and their auditors a contractual fact instead of a marketing claim. Every
+            major cloud vendor now copies the model; AWS invented it.
+          </p>
+        </div>
+
+        <div class="finding">
+          <h4>2. Compliance automation at industrial scale</h4>
+          <p>
+            AWS Config, Control Tower, Security Hub, and Artifact turn compliance evidence into
+            API-consumable artifacts. A customer can demonstrate control status to an auditor
+            with infrastructure-as-code, the direction enterprise GRC is moving everywhere.
+          </p>
+        </div>
+
+        <div class="finding">
+          <h4>3. Attestation breadth as the moat</h4>
+          <p>
+            More certifications, in more regions, than any competitor, and each one scoped to
+            specific services and geographies. For regulated buyers (finance, health, government),
+            the question "is my workload in scope" has a documented answer.
+          </p>
+        </div>
+
+        <h2>Watch items</h2>
+
+        <div class="finding watch">
+          <h4>The customer side of the line</h4>
+          <p>
+            The overwhelming majority of AWS-environment breaches are misconfigurations on the
+            customer side, public S3 buckets, exposed keys, overly permissive IAM. AWS documents
+            the boundary perfectly and then carries reputational risk for what happens inside it.
+          </p>
+        </div>
+
+        <div class="finding watch">
+          <h4>AI services and the responsibility line</h4>
+          <p>
+            Bedrock and SageMaker move responsibility in new directions, model governance, data
+            provenance, and AI Act obligations sit awkwardly in the classic shared model. Watch
+            how AWS redraws the line for AI workloads.
+          </p>
+        </div>
+
+        <div class="finding watch">
+          <h4>Concentration and sovereignty</h4>
+          <p>
+            AWS's dominance invites regulatory scrutiny (EU cloud-sovereignty debates, DORA
+            third-party rules) and makes its own operational incidents, like major-region
+            outages, systemic events with GRC consequences for thousands of customers.
+          </p>
+        </div>
+
+        <h2>Bottom line</h2>
+        <p>
+          AWS is the <strong>industrial model of compliance at scale</strong>: attestation breadth,
+          automation, and a responsibility boundary that reshaped how the entire industry thinks
+          about cloud governance. Its next test is whether the shared responsibility concept
+          survives contact with AI.
+        </p>
+
+        <h2>Sources &amp; verification</h2>
+        <p style="font-size:14px;color:var(--text-faint);">Every factual claim above was verified against the following public sources (accessed August 2026). Figures updated to the latest fiscal year reported.</p>
+        <div class="refs">
+          <div class="ref-item"><span>AWS segment revenue ($107.6B FY2024; $128.7B FY2025), Amazon 10-Ks, SEC EDGAR</span><a class="ref-link" href="https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm" target="_blank" rel="noopener">sec.gov ↗</a></div>
+          <div class="ref-item"><span>AWS ISO 27001/27017/27018 certification</span><a class="ref-link" href="https://aws.amazon.com/compliance/iso-certified/" target="_blank" rel="noopener">aws.amazon.com ↗</a></div>
+          <div class="ref-item"><span>AWS SOC 1/2/3 reports &amp; Artifact portal</span><a class="ref-link" href="https://aws.amazon.com/compliance/soc-faqs/" target="_blank" rel="noopener">aws.amazon.com ↗</a></div>
+          <div class="ref-item"><span>AWS FedRAMP compliance (GovCloud High, commercial)</span><a class="ref-link" href="https://aws.amazon.com/compliance/fedramp/" target="_blank" rel="noopener">aws.amazon.com ↗</a></div>
+          <div class="ref-item"><span>AWS PCI DSS (Level 1 validated service provider)</span><a class="ref-link" href="https://aws.amazon.com/compliance/pci-faqs/" target="_blank" rel="noopener">aws.amazon.com ↗</a></div>
+          <div class="ref-item"><span>AWS C5 (Germany) attestation</span><a class="ref-link" href="https://aws.amazon.com/compliance/bsi-c5/" target="_blank" rel="noopener">aws.amazon.com ↗</a></div>
+          <div class="ref-item"><span>AWS IRAP (Australia) assessment</span><a class="ref-link" href="https://aws.amazon.com/compliance/irap/" target="_blank" rel="noopener">aws.amazon.com ↗</a></div>
+          <div class="ref-item"><span>AWS shared responsibility model</span><a class="ref-link" href="https://aws.amazon.com/compliance/shared-responsibility-model/" target="_blank" rel="noopener">aws.amazon.com ↗</a></div>
+        </div>
+        <p class="ref-note"><strong>Verification note:</strong> Certification claims verified against AWS's own compliance pages (which publish the certificate/attestation documents). Revenue is the AWS segment figure from Amazon's FY2024 10-K. The claim that "most cloud breaches are customer-side misconfigurations" is an industry-wide observation reflected in cloud-security reporting (e.g., Verizon DBIR and cloud vendor incident analyses), not a figure AWS itself publishes, it is presented as an analyst judgment on the page. No internal AWS documents were used.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">Next case study</span><br>
+            <a class="nc-name" href="meta.html">Meta →</a>
+          </span>
+        </div>
+
+      </div>
+
+      <aside class="case-rail">
+        <div class="rail-box">
+          <h4>Facts</h4>
+          <ul>
+            <li><b>Sector:</b> Cloud infrastructure</li>
+            <li><b>Revenue:</b> $107.6B FY2024 / $128.7B FY2025 (AWS segment, Amazon 10-Ks)</li>
+            <li><b>Key certifications:</b> ISO 27001, SOC 2, FedRAMP, PCI DSS, HIPAA, HITRUST, C5</li>
+            <li><b>Core GRC concept:</b> Shared responsibility model</li>
+            <li><b>Analyst view:</b> Compliance industrialized; customer-side risk is the caveat</li>
+          </ul>
+        </div>
+        <div class="rail-box">
+          <h4>Scope note</h4>
+          <p class="scope-note">
+            Independent public-posture analysis. Sources: AWS compliance documentation &amp;
+            Artifact, certification registries, customer agreements, and public incident
+            reporting. Not an audit performed for AWS.
+          </p>
+        </div>
+      </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span class="legal">
+          Independent analysis based solely on publicly available information. Scores are
+          analytical judgments of documented posture, not audits performed for the company named.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

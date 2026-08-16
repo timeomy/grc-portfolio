@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Sanctions Iranian $6bn Crypto Exchange Shelbit · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="OFAC sanctioned the Iranian crypto platform Shelbit for processing $6 billion in illicit transactions. The designation exposes how sanctions enforcement is adapting to on-chain finance and what compliance teams must monitor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">August 16, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>US Sanctions Iranian $6bn Crypto Exchange Shelbit</h1>
+        <p class="subtitle">OFAC designated a crypto platform that moved $6 billion for Iranian actors. The action shows sanctions enforcement is no longer limited to traditional banking: it follows value onto the blockchain, and compliance programs must follow too.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.infosecurity-magazine.com/news/us-sanctions-iranian-6bn-crypto/" target="_blank" rel="noopener">Infosecurity Magazine</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          The US Treasury's Office of Foreign Assets Control sanctioned Shelbit, an Iranian cryptocurrency exchange, for facilitating approximately $6 billion in transactions tied to Iran's Islamic Revolutionary Guard Corps and other sanctioned entities. The designation freezes any US jurisdiction assets, prohibits US persons from transacting with the platform, and puts the broader crypto ecosystem on notice that on-chain activity is fair game for enforcement.
+        </p>
+        <p>
+          Shelbit operated as a virtual asset service provider, offering exchange and transfer services. According to OFAC, it knowingly processed funds for designated Iranian actors, using the perceived pseudonymity of crypto to obscure the origin and destination of value. The $6 billion figure represents aggregate transaction volume over the platform's operational life.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          Sanctions compliance has historically been a banking problem: screen counterparties against the SDN list, monitor SWIFT messages, file SARs when something looks off. Crypto changed the topology. Value moves peer-to-peer, across borders, without a correspondent bank in the middle. OFAC's response has been to treat virtual asset service providers as financial institutions: subject to the same screening, reporting, and recordkeeping obligations.
+        </p>
+        <p>
+          <strong>First, the designation extends liability beyond the platform itself.</strong> Any entity that transacted with Shelbit after the designation, or that should have known Shelbit was high-risk before the designation, faces secondary sanctions risk. This includes exchanges that shared liquidity, DeFi protocols that pooled funds with Shelbit addresses, custodians that held Shelbit-connected assets, and payment processors that routed fiat on-ramps for Shelbit users.
+        </p>
+        <p>
+          <strong>Second, blockchain analytics is now a compliance control, not a nice-to-have.</strong> You cannot screen a wallet address against the SDN list the way you screen a name. You need on-chain tracing: cluster analysis, hop-by-hop flow tracking, mixer interaction detection, cross-chain bridge monitoring. The Shelbit designation will add thousands of addresses to the OFAC sanctions list. If your compliance stack does not ingest those addresses and scan your transaction history against them automatically, you have a gap.
+        </p>
+        <p>
+          <strong>Third, the $6 billion figure is a signal to auditors and examiners.</strong> When a single platform moves that volume for a sanctioned jurisdiction, regulators will ask every VASP and crypto-adjacent business: how would you have caught this? What controls would have flagged Shelbit before OFAC did? The answer cannot be "we don't do crypto." If your organization touches digital assets, even indirectly through partners, investments, or customer payments, you need a documented sanctions compliance program that covers on-chain risk.
+        </p>
+
+        <h2>What GRC teams should take from this</h2>
+        <p>
+          Update your sanctions screening program to include blockchain address clusters. OFAC publishes designated addresses alongside entity names. Ingest that feed into your transaction monitoring. If you use a blockchain analytics vendor (Chainalysis, TRM, Elliptic, CipherTrace), verify they have added the Shelbit clusters and that your alerts are firing.
+        </p>
+        <p>
+          Review your third-party risk register for crypto exposure. Any vendor, partner, or investee that operates a VASP, provides liquidity, runs a validator, or builds on DeFi protocols needs a sanctions compliance attestation. Ask for their screening methodology, their address clustering coverage, and their process for handling a new OFAC designation within 24 hours.
+        </p>
+        <p>
+          Document your decision logic. When OFAC designates a new entity, you have a window to screen your historical transactions, identify any exposure, and decide whether to self-disclose. That decision, disclose, remediate, or accept risk, must be documented with the reasoning, the evidence reviewed, and the approver's name. Examiners will ask for that file.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.infosecurity-magazine.com/news/us-sanctions-iranian-6bn-crypto/" target="_blank" rel="noopener">Infosecurity Magazine's reporting</a> and related public information. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

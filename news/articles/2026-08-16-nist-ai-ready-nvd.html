@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIST Seeks Public Input on AI-Ready NVD Modernization · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="NIST is modernizing the National Vulnerability Database for the AI era. The public comment period signals a shift in how vulnerability data will be structured, scored, and consumed by GRC teams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">August 16, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>NIST Seeks Public Input on AI-Ready NVD Modernization</h1>
+        <p class="subtitle">The National Vulnerability Database is being rebuilt for an era where AI systems generate, discover, and exploit vulnerabilities at machine speed. The comment period is the signal to start preparing your vulnerability management program for what comes next.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.infosecurity-magazine.com/news/nist-seeks-public-input-ai-nvd/" target="_blank" rel="noopener">Infosecurity Magazine</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          NIST has opened a public comment period on its plan to modernize the National Vulnerability Database. The goal is to make the NVD "AI-ready": the data structure, enrichment, and access patterns will support automated ingestion by AI-driven security tools, not just human analysts reading CVE entries one at a time.
+        </p>
+        <p>
+          The current NVD was designed for a different era: manual triage, periodic scans, and vulnerability management programs that measured latency in days or weeks. That model breaks when AI agents can enumerate attack surfaces, correlate vulnerabilities across supply chains, and generate exploit code in minutes.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          Vulnerability management sits at the intersection of compliance, risk, and operations. Every framework from PCI DSS to NIST 800-53 to ISO 27001 expects organizations to identify, assess, and remediate vulnerabilities in a timely manner. The data source for that work has been the NVD for two decades. When the authoritative source changes its schema, its enrichment model, and its API contract, every downstream process has to adapt.
+        </p>
+        <p>
+          <strong>First, the compliance baseline is moving.</strong> Auditors already ask for evidence that vulnerability scans cover the current CVE set. When the NVD adds AI-specific vulnerability types: model poisoning, prompt injection, training data extraction, agent hijacking, the definition of "current CVE set" expands. Organizations that scan only traditional infrastructure will show gaps the moment the new taxonomy lands.
+        </p>
+        <p>
+          <strong>Second, scoring and prioritization logic will change.</strong> CVSS was not built for AI supply chain risks. NIST's modernization almost certainly includes new scoring dimensions or enrichment fields that reflect exploitability in AI workflows. GRC teams that hardcode CVSS thresholds in policy ("patch all criticals in 72 hours") will find those thresholds either meaningless or misleading when applied to AI-native vulnerabilities.
+        </p>
+        <p>
+          <strong>Third, the comment period is the only leverage most organizations get.</strong> NIST takes public input seriously. The fields that get added, the API rate limits, the backward compatibility guarantees: these are shaped by who shows up with concrete requirements. If your vulnerability management tooling assumes a certain NVD schema, now is the time to document that dependency in the federal register.
+        </p>
+
+        <h2>What GRC teams should take from this</h2>
+        <p>
+          Map your current vulnerability management workflow to the NVD fields it depends on. CVE ID, description, CVSS vector, CWE, CPE match strings, reference URLs: list every field your scanner, your ticketing automation, your compliance reports, and your board dashboards consume. Then read the NIST proposal and flag every field that changes, moves, or disappears.
+        </p>
+        <p>
+          Submit a comment if you have a hard dependency. Even a short submission: "Our GRC automation parses field X in format Y; breaking change would require Z engineering weeks" carries more weight than silence. The comment period closes on the date NIST publishes in the Federal Register notice.
+        </p>
+        <p>
+          Start a shadow intake for AI-specific vulnerability types. Whether or not the NVD has them today, your AI/ML platforms, LLM integrations, and agent workflows already have attack surface. Build a register now: model version, training data provenance, prompt templates, tool use permissions, memory access controls. When the NVD taxonomy catches up, you will already have the inventory.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.infosecurity-magazine.com/news/nist-seeks-public-input-ai-nvd/" target="_blank" rel="noopener">Infosecurity Magazine's reporting</a> and related public information. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

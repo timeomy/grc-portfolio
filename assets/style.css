@@ -80,8 +80,11 @@ a:hover { color: var(--pink); }
 section.sec-green { background: var(--green); color: #F4FBF8; }
 section.sec-green .sec-num { color: var(--pink); }
 section.sec-green h1, section.sec-green h2 { color: #FFFFFF; }
-section.sec-green .lede, section.sec-green p { color: #C9E4D8; }
+section.sec-green .lede { color: #C9E4D8; }
 section.sec-green .sec-head p { color: #C9E4D8; }
+/* card content inside green sections keeps dark text (cards are white) */
+section.sec-green .cap-card h3 { color: var(--green-dark); }
+section.sec-green .cap-card p { color: var(--text-dim); }
 
 section.sec-pink { background: var(--pink); color: #5A0E29; }
 section.sec-pink .sec-num { color: #5A0E29; }

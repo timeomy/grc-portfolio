@@ -1,29 +1,47 @@
 {
-  "generated": "2026-08-17T08:30:30",
-  "count": 4,
+  "generated": "2026-08-18T07:34:08",
+  "count": 7,
   "items": [
+    {
+      "title": "Snowflake GitHub Actions Flaw Lets Crafted Issues Trigger Command Injection",
+      "link": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html",
+      "source": "The Hacker News",
+      "date": "2026-08-18"
+    },
+    {
+      "title": "ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act",
+      "link": "https://www.infosecurity-magazine.com/news/etsi-proposes-17-cybersecurity/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-08-18"
+    },
     {
       "title": "ICO Reprimands Criminal Records Office After 2023 Breach",
       "link": "https://www.infosecurity-magazine.com/news/ico-reprimands-acro-records-office/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-17"
+      "date": "2026-08-18"
     },
     {
       "title": "NIST Seeks Public Input on AI-Ready NVD Modernization",
       "link": "https://www.infosecurity-magazine.com/news/nist-seeks-public-input-ai-nvd/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-17"
+      "date": "2026-08-18"
     },
     {
       "title": "US Sanctions Iranian $6bn Crypto \u201cExchange\u201d Shelbit",
       "link": "https://www.infosecurity-magazine.com/news/us-sanctions-iranian-6bn-crypto/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-17"
+      "date": "2026-08-18"
     },
     {
-      "title": "NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing",
-      "link": "https://www.infosecurity-magazine.com/news/safe-initiative-agentic-threat/",
-      "source": "Infosecurity Magazine",
+      "title": "US FCC Weighs Chinese Transceiver Supply-Chain Crackdown",
+      "link": "https://www.databreachtoday.com/us-fcc-weighs-chinese-transceiver-supply-chain-crackdown-a-32584",
+      "source": "DataBreachToday",
+      "date": "2026-08-18"
+    },
+    {
+      "title": "Record-setting AML penalty against UBS was years in the making",
+      "link": "https://www.complianceweek.com/best-practices/fincen-record-setting-aml-penalty-against-ubs-was-years-in-the-making/",
+      "source": "Compliance Week",
       "date": "2026-08-17"
     }
   ]

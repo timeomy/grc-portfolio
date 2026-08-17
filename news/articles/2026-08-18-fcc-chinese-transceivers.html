@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC Weighs Chinese Transceiver Crackdown · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="The FCC may add Chinese-made optical transceivers to its Covered List, barring new models from US data centers. A third-party risk story for every AI operator.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">August 18, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>FCC Weighs Chinese Transceiver Crackdown</h1>
+        <p class="subtitle">A draft proposal could put Chinese-made optical transceivers on the FCC Covered List. The supply chain question reaches into AI data centers.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.databreachtoday.com/us-fcc-weighs-chinese-transceiver-supply-chain-crackdown-a-32584" target="_blank" rel="noopener">DataBreachToday</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          The U.S. Federal Communications Commission is reportedly drafting a proposal to add
+          Chinese-made optical transceivers to its <strong>Covered List</strong>, a designation that would
+          effectively bar new models of the modules from the U.S. market. Transceivers are the small
+          pluggable components that move data between servers inside AI data centers, and Chinese vendors
+          account for the majority of global contract manufacturing capacity, with three suppliers alone
+          representing nearly 46 percent of capacity.
+        </p>
+        <p>
+          The draft, reported by Reuters, has not been released. No named proceeding, comment deadline,
+          or final product scope has been published, and open questions remain about how the commission
+          would define a new model, what qualifies a manufacturer as Chinese, and whether importers would
+          get a transition period. The FCC said in October that its rules had not applied to a device's
+          component parts, but Chairman Brendan Carr warned that gap could serve as a loophole. A July 23
+          directive already prohibits authorization of logic-bearing hardware components produced by
+          Covered List entities, and pluggable optical modules carry microcontrollers, memory, and
+          vendor firmware that reports diagnostics to the host switch, placing them in that category.
+        </p>
+        <p>
+          The move fits a broader pattern. The FCC adopted rules in May 2025 barring test labs owned by
+          foreign adversary governments from its equipment authorization program, and has begun
+          proceedings to withdraw recognition from seven labs owned or controlled by the Chinese
+          government. Nearly three-quarters of FCC-recognized device testing previously happened in
+          China.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          For anyone running infrastructure, this is a <strong>third-party and supply chain risk story
+          with a compliance clock on it</strong>. The Covered List is not a procurement preference, it
+          is a legal boundary, and it has been expanding all year, from consumer routers to logic-bearing
+          components. If optical transceivers join it, hardware vendors selling into the U.S. will need
+          to demonstrate their supply chains do not depend on the listed suppliers, and that means
+          attestation, documentation, and re-certification work downstream.
+        </p>
+        <p>
+          The second layer is the certification squeeze. With most testing capacity located in China and
+          the FCC narrowing who may perform authorization testing, getting new hardware approved becomes
+          slower and more expensive. That is a constraint that lands on procurement timelines, not just
+          compliance paperwork.
+        </p>
+        <p>
+          Critics note that vulnerabilities in edge hardware are often a function of weak patching and
+          end-of-life equipment rather than manufacturer location. That is a fair point, and it is worth
+          holding in mind. <strong>Regulatory supply chain action and good operational hygiene are not
+          the same thing.</strong>
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch for the actual proposal, the definition of new model, and any transition period. In the
+          meantime, enterprises running AI infrastructure should map where their optical transceivers and
+          similar logic-bearing components come from, and check whether their vendors can trace theirs.
+          The companies that know their supply chain today will have a much easier conversation with
+          their hardware partners if the list expands tomorrow.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.databreachtoday.com/us-fcc-weighs-chinese-transceiver-supply-chain-crackdown-a-32584" target="_blank" rel="noopener">DataBreachToday reporting</a> and related public FCC actions. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

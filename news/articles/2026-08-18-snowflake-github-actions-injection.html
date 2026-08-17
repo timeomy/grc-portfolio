@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowflake GitHub Actions Flaw Shows Pipeline Risk · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Wiz found a GitHub Actions workflow injection in Snowflake's public repo that exposed internal Jira credentials. What it teaches GRC teams about CI/CD risk.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">August 18, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Snowflake GitHub Actions Flaw Shows Pipeline Risk</h1>
+        <p class="subtitle">A workflow injection in Snowflake's public repository exposed internal Jira credentials. The fix was fast, but the pattern is worth studying.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html" target="_blank" rel="noopener">The Hacker News</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          Researchers at Wiz disclosed a GitHub Actions workflow injection in Snowflake's public
+          <strong>snowflakedb/snowflake-connector-net</strong> repository. The vulnerable workflow,
+          <strong>jira_issue.yml</strong>, ran whenever anyone opened an issue on the repository, and it
+          exposed internal Jira credentials to the same job. Because the workflow inserted the
+          attacker-controlled issue title and body directly into a shell command, a crafted issue could
+          execute arbitrary commands in the runner.
+        </p>
+        <p>
+          Wiz's Red Agent system exploited the flaw during authorized testing, received an out-of-band
+          callback from the runner, and retrieved the Jira API token used by the workflow. The token
+          belonged to qa@snowflake.net and allowed read access to Jira projects covering engineering,
+          security compliance, and bug bounty tracking. The researchers reported the issue through
+          HackerOne on June 23, and Snowflake merged a fix the same day, replacing direct expression
+          expansion with environment variables passed to jq as arguments.
+        </p>
+        <p>
+          Snowflake said its investigation found no evidence of unauthorized access. The Jira token was
+          rotated on June 24, and Snowflake's review found no unrelated external use during the exposure
+          window. As of August 17, no CVE, CVSS score, or CISA Known Exploited Vulnerabilities catalog
+          entry had been published for the issue, and Snowflake's underlying audit logs have not been
+          made public.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          This looks like a developer story, but it is really a governance story. <strong>CI/CD pipelines
+          now hold the same kind of secrets that used to live only in production systems.</strong> A
+          workflow that triggers on public input, any public input, is an attack surface, and when that
+          workflow carries credentials with read access to security and bug bounty projects, the blast
+          radius is measurable.
+        </p>
+        <p>
+          The second angle is that this class of flaw was documented. GitHub warned about expanding
+          untrusted issue data inside run blocks back in July 2025 and recommended intermediate
+          environment variables. The unsafe pattern still shipped, which is a reminder that
+          <strong>documented guidance only helps if it becomes part of a review checklist</strong>.
+        </p>
+        <p>
+          The third angle is assurance. Snowflake states there was no unauthorized access, and that may
+          be exactly right, but without published audit logs the claim is hard for outsiders to verify.
+          For anyone doing vendor due diligence, that gap matters.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Treat your own pipelines as in-scope assets. Inventory which workflows consume untrusted input,
+          confirm secrets are scoped to least privilege, and make sure rotation and audit trails exist
+          before an incident, not after. If you review third-party tools and repos, ask whether their
+          automation follows the same discipline. The fix here was quick, which is the part Snowflake got
+          right. The lesson for everyone else is to never need the fix at all.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html" target="_blank" rel="noopener">The Hacker News reporting</a> and related public disclosures. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

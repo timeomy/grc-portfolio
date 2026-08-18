@@ -1,7 +1,31 @@
 {
-  "generated": "2026-08-18T08:30:36",
-  "count": 7,
+  "generated": "2026-08-19T07:35:15",
+  "count": 12,
   "items": [
+    {
+      "title": "UK Legal Regulator Raises AI Misuse Concerns",
+      "link": "https://www.infosecurity-magazine.com/news/uk-legal-regulator-raises-ai/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-08-19"
+    },
+    {
+      "title": "ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act",
+      "link": "https://www.infosecurity-magazine.com/news/etsi-proposes-17-cybersecurity/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-08-19"
+    },
+    {
+      "title": "ICO Reprimands Criminal Records Office After 2023 Breach",
+      "link": "https://www.infosecurity-magazine.com/news/ico-reprimands-acro-records-office/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-08-19"
+    },
+    {
+      "title": "NIST Seeks Public Input on AI-Ready NVD Modernization",
+      "link": "https://www.infosecurity-magazine.com/news/nist-seeks-public-input-ai-nvd/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-08-19"
+    },
     {
       "title": "Snowflake GitHub Actions Flaw Lets Crafted Issues Trigger Command Injection",
       "link": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html",
@@ -9,33 +33,39 @@
       "date": "2026-08-18"
     },
     {
-      "title": "ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act",
-      "link": "https://www.infosecurity-magazine.com/news/etsi-proposes-17-cybersecurity/",
-      "source": "Infosecurity Magazine",
+      "title": "California\u2019s AI labeling law takes effect, testing compliance with missing detection tools",
+      "link": "https://www.complianceweek.com/artificial-intelligence/californias-ai-labeling-law-takes-effect-testing-compliance-with-missing-detection-tools/",
+      "source": "Compliance Week",
       "date": "2026-08-18"
     },
     {
-      "title": "ICO Reprimands Criminal Records Office After 2023 Breach",
-      "link": "https://www.infosecurity-magazine.com/news/ico-reprimands-acro-records-office/",
-      "source": "Infosecurity Magazine",
+      "title": "Eight years later, federal authorities re-up charges against alleged Iranian hackers at Mabna Institute",
+      "link": "https://cyberscoop.com/mabna-institute-iranian-hackers-indictment/",
+      "source": "CyberScoop",
       "date": "2026-08-18"
     },
     {
-      "title": "NIST Seeks Public Input on AI-Ready NVD Modernization",
-      "link": "https://www.infosecurity-magazine.com/news/nist-seeks-public-input-ai-nvd/",
-      "source": "Infosecurity Magazine",
+      "title": "DOJ charges 17 people in Iran-backed hacking campaign against US",
+      "link": "https://www.cybersecuritydive.com/news/doj-charges-17-iran-hacking-campaign-us-university/828212/",
+      "source": "Cybersecurity Dive",
       "date": "2026-08-18"
     },
     {
-      "title": "US Sanctions Iranian $6bn Crypto \u201cExchange\u201d Shelbit",
-      "link": "https://www.infosecurity-magazine.com/news/us-sanctions-iranian-6bn-crypto/",
-      "source": "Infosecurity Magazine",
+      "title": "GitLab issues emergency patch for critical code-injection flaw",
+      "link": "https://www.cybersecuritydive.com/news/gitlab-emergency-patch-critical-code-injection/828151/",
+      "source": "Cybersecurity Dive",
       "date": "2026-08-18"
     },
     {
-      "title": "US FCC Weighs Chinese Transceiver Supply-Chain Crackdown",
-      "link": "https://www.databreachtoday.com/us-fcc-weighs-chinese-transceiver-supply-chain-crackdown-a-32584",
-      "source": "DataBreachToday",
+      "title": "SEC Charges Former Executives With Fraud in Connection With $1.9 Billion Collapse of Subprime Auto Lender Tricolor",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-77-sec-charges-former-executives-fraud-connection-19-billion-collapse-subprime-auto-lender-tricolor",
+      "source": "SEC Press Releases",
+      "date": "2026-08-18"
+    },
+    {
+      "title": "SEC Proposes New Regulation Crypto Assets",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets",
+      "source": "SEC Press Releases",
       "date": "2026-08-18"
     },
     {

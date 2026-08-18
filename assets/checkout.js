@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  var CHECKOUT_ENDPOINT = "https://YOUR-WORKER.workers.dev/api/checkout";
+  var CHECKOUT_ENDPOINT = "https://zabez-checkout.kokjabezz.workers.dev/api/checkout";
 
   var modal = null;
 

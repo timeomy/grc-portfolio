@@ -61,7 +61,6 @@ export default {
           },
           body: form,
         });
-
         const bill = await billRes.json();
         if (!billRes.ok || !bill.url) {
           return json(

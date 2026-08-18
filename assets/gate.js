@@ -1,19 +1,15 @@
 /* Email gate for free-resource downloads.
-   Visitor enters email -> POSTed to the configured subscribe endpoint ->
-   on success the download link is revealed.
-   Endpoint: change GATE_ENDPOINT to your form/newsletter provider
-   (Formspree, Buttondown, Mailchimp, MailerLite, etc.). */
+   Visitor enters email -> POSTed to the zabez-checkout Cloudflare Worker
+   (/api/subscribe, stored in the LEADS KV namespace) ->
+   on success the download link is revealed. */
 
 (function () {
   "use strict";
 
   // ---- CONFIG ----
-  // Replace with your real endpoint. Two supported shapes:
-  //   Formspree:  https://formspree.io/f/YOURFORMID
-  //   Buttondown: https://buttondown.com/api/emails/embed-subscribe-form/YOURUSERNAME
-  var GATE_ENDPOINT = "https://formspree.io/f/YOURFORMID";
+  var GATE_ENDPOINT = "https://zabez-checkout.kokjabezz.workers.dev/api/subscribe";
   var GATE_EMAIL_FIELD = "email";       // field name the endpoint expects
-  var GATE_SUCCESS_MSG = "You're in. Check your inbox to confirm, then grab your file below.";
+  var GATE_SUCCESS_MSG = "You're in. Your download is ready below, and the daily GRC digest is on its way.";
 
   var modal = null;
   var currentFile = "";
@@ -88,6 +84,7 @@
 
       var body = new URLSearchParams();
       body.append(GATE_EMAIL_FIELD, email);
+      body.append("file", currentFile);
 
       fetch(GATE_ENDPOINT, {
         method: "POST",

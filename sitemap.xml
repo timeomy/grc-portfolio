@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://zabez.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://zabez.com/cases/microsoft.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zabez.com/cases/google.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zabez.com/cases/jpmorgan.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zabez.com/cases/aws.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zabez.com/cases/meta.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zabez.com/cases/pfizer.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zabez.com/news/index.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zabez.com/courses/index.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zabez.com/courses/mastery.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zabez.com/courses/free/lesson-1.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zabez.com/courses/free/lesson-2.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zabez.com/courses/free/lesson-3.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zabez.com/courses/free/lesson-4.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zabez.com/courses/free/lesson-5.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-18-etsi-proposes-17-cybersecurity-standards.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-18-fcc-chinese-transceivers.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-18-record-setting-aml-penalty-ubs.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-18-snowflake-github-actions-injection.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-18-us-sanctions-iranian-crypto-exchange-shelbit.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-17-nist-ai-nvd-modernization.html</loc><lastmod>2026-08-17</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-16-cra-standards.html</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-16-ico-reprimands-acro.html</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-16-pentagon-suspends-cmmc.html</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://zabez.com/news/articles/2026-08-16-safe-initiative.html</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+</urlset>

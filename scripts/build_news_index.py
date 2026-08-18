@@ -7,6 +7,7 @@ newest first, each linked with its original source for attribution.
 
 Usage: python3 build_news_index.py
 """
+import json
 import re
 import sys
 from datetime import datetime
@@ -23,6 +24,10 @@ TEMPLATE = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GRC News, Daily Case Studies · Zabez</title>
   <meta name="description" content="Original GRC case studies written daily: governance, risk, compliance, privacy, and regulatory enforcement, analyzed and rewritten in our own words with sources cited.">
+  <link rel="canonical" href="https://zabez.com/news/index.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -103,13 +108,74 @@ TEMPLATE = """<!DOCTYPE html>
 """
 
 
+SITE = "https://zabez.com"
+
+FAVICON_BLOCK = (
+    '  <link rel="icon" href="/favicon.ico" sizes="32x32">\n'
+    '  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">\n'
+    '  <link rel="apple-touch-icon" href="/apple-touch-icon.png">\n'
+)
+
+
+def repair_article_head(path: Path) -> None:
+    """Self-heal a generated article page: fix malformed meta descriptions
+    (the daily agent occasionally writes `.</title>` instead of `.">`),
+    and inject canonical, favicon links, and NewsArticle JSON-LD if missing."""
+    raw = path.read_text(encoding="utf-8", errors="ignore")
+    original = raw
+
+    # Broken meta: <meta name="description" content="...</title>  (unterminated)
+    raw = re.sub(
+        r'(<meta name="description" content="[^"<>]*)</title>\s*',
+        r'\1">\n',
+        raw,
+    )
+
+    url = f"{SITE}/news/articles/{path.name}"
+    if 'rel="canonical"' not in raw:
+        raw = raw.replace(
+            '<link rel="preconnect" href="https://fonts.googleapis.com">',
+            f'<link rel="canonical" href="{url}">\n'
+            + FAVICON_BLOCK
+            + '  <link rel="preconnect" href="https://fonts.googleapis.com">',
+            1,
+        )
+
+    if "application/ld+json" not in raw:
+        title_m = re.search(r"<title>([^<·]+)", raw)
+        desc_m = re.search(r'<meta name="description" content="([^"<>]*)"', raw)
+        headline = title_m.group(1).strip() if title_m else path.stem
+        description = desc_m.group(1).strip() if desc_m else ""
+        date = path.stem[:10]
+        ld = (
+            '  <script type="application/ld+json">\n'
+            "  " + json.dumps({
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": headline,
+                "description": description,
+                "datePublished": date,
+                "dateModified": date,
+                "url": url,
+                "author": {"@type": "Person", "name": "Kok Jabez", "url": f"{SITE}/"},
+                "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": f"{SITE}/"},
+                "image": f"{SITE}/assets/og-cover.png",
+            }, ensure_ascii=False) + "\n  </script>\n"
+        )
+        raw = raw.replace("</head>", ld + "</head>", 1)
+
+    if raw != original:
+        path.write_text(raw, encoding="utf-8")
+        print(f"repaired head: {path.name}")
+
+
 def parse_article(path: Path):
     """Extract date, title, original-source URL, and description from an article page."""
     raw = path.read_text(encoding="utf-8", errors="ignore")
     date = re.search(r'class="article-date">([^<]+)<', raw)
     title = re.search(r"<h1>([^<]+)</h1>", raw)
     src = re.search(r'class="article-source"[^>]*href="([^"]+)"', raw)
-    desc = re.search(r'<meta name="description" content="([^"]+)"', raw)
+    desc = re.search(r'<meta name="description" content="([^"<>]*)"', raw)
     return {
         "path": path,
         "date": date.group(1).strip() if date else path.stem[:10],
@@ -124,18 +190,24 @@ def main():
         print("No articles directory yet:", ARTICLES)
         return 1
 
+    for p in sorted(ARTICLES.glob("*.html")):
+        repair_article_head(p)
+
     articles = [parse_article(p) for p in sorted(ARTICLES.glob("*.html"))]
     articles.sort(key=lambda a: a["date"], reverse=True)
 
-    # Dedupe: keep only the newest article per normalized title (handles the
-    # daily cron occasionally re-covering the same story with a new date)
-    seen_titles = set()
+    # Dedupe: keep only the newest article per story (handles the daily cron
+    # occasionally re-covering the same story with a new date or a retitled
+    # variant, e.g. "Record-Setting AML Penalty Against UBS" vs the same title
+    # with a trailing clause — prefix overlap of one title over another counts
+    # as the same story)
+    seen_keys = []
     deduped = []
     for a in articles:
         key = re.sub(r"[^a-z0-9]+", " ", a["title"].lower()).strip()[:80]
-        if key in seen_titles:
+        if any(key.startswith(s) or s.startswith(key) for s in seen_keys):
             continue
-        seen_titles.add(key)
+        seen_keys.append(key)
         deduped.append(a)
     articles = deduped
 
@@ -159,6 +231,55 @@ def main():
     )
     INDEX.write_text(page, encoding="utf-8")
     print(f"Index rebuilt: {len(articles)} articles -> {INDEX}")
+
+    build_sitemap(articles)
+
+
+# Core pages included in the sitemap alongside the deduped news articles.
+# Orphaned duplicate article files are deliberately excluded.
+CORE_PAGES = [
+    ("", "weekly", "1.0"),
+    ("cases/microsoft.html", "monthly", "0.9"),
+    ("cases/google.html", "monthly", "0.9"),
+    ("cases/jpmorgan.html", "monthly", "0.9"),
+    ("cases/aws.html", "monthly", "0.9"),
+    ("cases/meta.html", "monthly", "0.9"),
+    ("cases/pfizer.html", "monthly", "0.9"),
+    ("news/index.html", "daily", "0.8"),
+    ("courses/index.html", "monthly", "0.8"),
+    ("courses/mastery.html", "monthly", "0.8"),
+    ("courses/free/lesson-1.html", "monthly", "0.6"),
+    ("courses/free/lesson-2.html", "monthly", "0.6"),
+    ("courses/free/lesson-3.html", "monthly", "0.6"),
+    ("courses/free/lesson-4.html", "monthly", "0.6"),
+    ("courses/free/lesson-5.html", "monthly", "0.6"),
+]
+
+
+def build_sitemap(articles):
+    """Regenerate sitemap.xml: core pages + the deduped news articles."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    entries = []
+    for rel, freq, prio in CORE_PAGES:
+        entries.append(
+            f"  <url><loc>{SITE}/{rel}</loc><changefreq>{freq}</changefreq>"
+            f"<priority>{prio}</priority></url>"
+        )
+    for a in articles:
+        lastmod = a["path"].stem[:10] if re.match(r"\d{4}-\d{2}-\d{2}", a["path"].stem) else today
+        entries.append(
+            f"  <url><loc>{SITE}/news/articles/{a['path'].name}</loc>"
+            f"<lastmod>{lastmod}</lastmod><changefreq>yearly</changefreq>"
+            f"<priority>0.5</priority></url>"
+        )
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(entries)
+        + "\n</urlset>\n"
+    )
+    (BASE / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    print(f"Sitemap rebuilt: {len(entries)} URLs -> {BASE / 'sitemap.xml'}")
 
 
 if __name__ == "__main__":

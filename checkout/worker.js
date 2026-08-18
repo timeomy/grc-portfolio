@@ -31,6 +31,62 @@ export default {
       });
     }
 
+    // Email gate: capture a lead, store it in KV, reveal the download.
+    // Accepts form-encoded or JSON. Requires the LEADS KV binding.
+    if (request.method === "POST" && url.pathname === "/api/subscribe") {
+      try {
+        const contentType = request.headers.get("Content-Type") || "";
+        let email = "";
+        let file = "";
+        if (contentType.includes("application/json")) {
+          const body = await request.json();
+          email = (body.email || "").trim().toLowerCase();
+          file = (body.file || "").trim();
+        } else {
+          const form = await request.formData();
+          email = String(form.get("email") || "").trim().toLowerCase();
+          file = String(form.get("file") || "").trim();
+        }
+
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254) {
+          return json({ error: "A valid email is required." }, 400);
+        }
+
+        const existing = await env.LEADS.get(email, { type: "json" });
+        const record = {
+          email,
+          files: existing ? [...new Set([...(existing.files || []), file].filter(Boolean))] : [file].filter(Boolean),
+          first_seen: existing ? existing.first_seen : new Date().toISOString(),
+          last_seen: new Date().toISOString(),
+          count: existing ? (existing.count || 1) + 1 : 1,
+        };
+        await env.LEADS.put(email, JSON.stringify(record));
+
+        return json({ ok: true });
+      } catch (err) {
+        return json({ error: "Subscribe failed. Please try again." }, 500);
+      }
+    }
+
+    // Lead export: GET /api/leads with Authorization: Bearer <LEADS_EXPORT_TOKEN>
+    if (request.method === "GET" && url.pathname === "/api/leads") {
+      const auth = request.headers.get("Authorization") || "";
+      if (!env.LEADS_EXPORT_TOKEN || auth !== "Bearer " + env.LEADS_EXPORT_TOKEN) {
+        return json({ error: "Unauthorized" }, 401);
+      }
+      const leads = [];
+      let cursor;
+      do {
+        const page = await env.LEADS.list({ cursor });
+        for (const key of page.keys) {
+          const value = await env.LEADS.get(key.name, { type: "json" });
+          if (value) leads.push(value);
+        }
+        cursor = page.list_complete ? undefined : page.cursor;
+      } while (cursor);
+      return json({ count: leads.length, leads });
+    }
+
     if (request.method === "POST" && url.pathname === "/api/checkout") {
       try {
         const body = await request.json();

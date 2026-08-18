@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /courses/thanks.html
+Disallow: /free/
+
+Sitemap: https://zabez.com/sitemap.xml

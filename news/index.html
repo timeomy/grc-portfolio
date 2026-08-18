@@ -11,56 +11,33 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
-  <style>
-    .news-list { margin-top: 8px; }
-    .news-item {
-      padding: 22px 4px;
-      border-bottom: 1px solid var(--line-soft);
-      display: grid;
-      grid-template-columns: 96px 1fr auto;
-      gap: 18px;
-      align-items: baseline;
-    }
-    .news-date { font-family: var(--mono); font-size: 12px; color: var(--gold); letter-spacing: 0.06em; }
-    .news-item h3 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; line-height: 1.3; }
-    .news-item h3 a { color: var(--text); }
-    .news-item h3 a:hover { color: var(--gold-soft); }
-    .news-src { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-faint); white-space: nowrap; }
-    .news-desc { font-size: 16px; color: var(--text-dim); margin-top: 6px; max-width: 70ch; }
-    .news-foot { margin-top: 26px; font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
-    @media (max-width: 640px) {
-      .news-item { grid-template-columns: 1fr; gap: 6px; }
-      .news-src { grid-column: 1; }
-    }
-  </style>
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="../index.html">ZABEZ<span class="dot">.</span>com</a>
       <nav class="nav">
-        <a href="../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
-        <a href="../index.html#news">GRC News</a>
-        <a href="../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
-        <a href="../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
-        <a href="../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+        <a href="../index.html#cases"><i data-lucide="search" class="ico"></i><span>Case Studies</span></a>
+        <a href="../index.html#free"><i data-lucide="file-text" class="ico"></i><span>Free Resources</span></a>
+        <a href="../index.html#about"><i data-lucide="user" class="ico"></i><span>About</span></a>
+        <a href="../index.html#contact"><i data-lucide="mail" class="ico"></i><span>Contact</span></a>
       </nav>
     </div>
   </header>
   <main>
-    <section class="case-hero" style="background: var(--green); color: #fff;">
+    <section class="case-hero">
       <div class="wrap">
-        <p class="crumb"><a href="../index.html">All case studies</a></p>
-        <h1 style="color: #fff;">GRC News, Daily Case Studies</h1>
+        <p class="crumb"><a href="../index.html">← ZABEZ.com</a></p>
+        <h1>GRC News, <em style="font-style:italic;color:var(--gold-dark);">daily</em> case studies</h1>
         <p class="subtitle">
           Original write-ups of the governance, risk, compliance, privacy, and regulatory
           enforcement stories that matter. Published daily, rewritten in our own words,
           with every claim traced back to its source.
         </p>
         <div class="score-strip">
-          <span class="tag">Updated 2026-08-18 11:37</span>
+          <span class="tag">Updated 2026-08-18 13:45</span>
           <span class="tag">10 articles</span>
         </div>
       </div>
@@ -68,26 +45,26 @@
     <section>
       <div class="wrap">
         <div class="news-list">
-          <article class="news-item"><span class="news-date">August 18, 2026</span><div><h3><a href="articles/2026-08-18-etsi-proposes-17-cybersecurity-standards.html">ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act</a></h3><p class="news-desc">ETSI published 17 draft cybersecurity standards to underpin the EU Cyber Resilience Act, giving manufacturers a concrete compliance roadmap for products with digital elements.</p></div></article>
-<article class="news-item"><span class="news-date">August 18, 2026</span><div><h3><a href="articles/2026-08-18-fcc-chinese-transceivers.html">FCC Weighs Chinese Transceiver Crackdown</a></h3><p class="news-desc">The FCC may add Chinese-made optical transceivers to its Covered List, barring new models from US data centers. A third-party risk story for every AI operator.</p></div></article>
-<article class="news-item"><span class="news-date">August 18, 2026</span><div><h3><a href="articles/2026-08-18-record-setting-aml-penalty-ubs.html">Record-Setting AML Penalty Against UBS Was Years in the Making</a></h3><p class="news-desc">FinCEN levied a historic AML penalty against UBS stemming from long-running compliance failures. The case shows how sustained regulatory pressure builds toward enforcement that reshapes an institution.</p></div></article>
-<article class="news-item"><span class="news-date">August 18, 2026</span><div><h3><a href="articles/2026-08-18-snowflake-github-actions-injection.html">Snowflake GitHub Actions Flaw Shows Pipeline Risk</a></h3><p class="news-desc">Wiz found a GitHub Actions workflow injection in Snowflake's public repo that exposed internal Jira credentials. What it teaches GRC teams about CI/CD risk.</p></div></article>
-<article class="news-item"><span class="news-date">August 18, 2026</span><div><h3><a href="articles/2026-08-18-us-sanctions-iranian-crypto-exchange-shelbit.html">US Sanctions Iranian $6bn Crypto Exchange Shelbit</a></h3><p class="news-desc">OFAC designated Shelbit, an Iranian crypto exchange processing $6 billion in volume, for facilitating sanctions evasion. The action signals expanding enforcement into digital asset intermediaries.</p></div></article>
-<article class="news-item"><span class="news-date">August 17, 2026</span><div><h3><a href="articles/2026-08-17-nist-ai-nvd-modernization.html">NIST Seeks Public Input on AI-Ready NVD Modernization</a></h3><p class="news-desc">NIST is asking for public comment on modernizing the National Vulnerability Database to support AI-driven vulnerability management. What this means for compliance programs that rely on CVE data.</p></div></article>
-<article class="news-item"><span class="news-date">August 16, 2026</span><div><h3><a href="articles/2026-08-16-cra-standards.html">17 Draft Cyber Resilience Act Standards Open for Comment</a></h3><p class="news-desc">ETSI published 17 draft standards supporting the EU Cyber Resilience Act, now open for public comment. What the CRA standards pipeline means for anyone building or buying connected products.</p></div></article>
-<article class="news-item"><span class="news-date">August 16, 2026</span><div><h3><a href="articles/2026-08-16-ico-reprimands-acro.html">ICO Reprimands Criminal Records Office After 2023 Breach</a></h3><p class="news-desc">The UK ICO issued a reprimand over a 2023 breach at the ACRO Criminal Records Office. What this says about data protection oversight of public bodies, and what GRC teams should take from it.</p></div></article>
-<article class="news-item"><span class="news-date">August 16, 2026</span><div><h3><a href="articles/2026-08-16-pentagon-suspends-cmmc.html">Pentagon Suspends CMMC Phase II for Defense Contractors</a></h3><p class="news-desc">The US Department of Defense suspended Phase II of the Cybersecurity Maturity Model Certification. What the pause means for contractors, assessors, and anyone running a compliance roadmap.</p></div></article>
-<article class="news-item"><span class="news-date">August 16, 2026</span><div><h3><a href="articles/2026-08-16-safe-initiative.html">NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing</a></h3><p class="news-desc">Over 120 tech organizations back the Shared AI Findings Exchange, a framework for confidentially sharing AI security incidents and translating them into defensive guidance.</p></div></article>
+          <article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-18-etsi-proposes-17-cybersecurity-standards.html"><img src="../assets/img/news-standards.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 18, 2026</span><h3><a href="articles/2026-08-18-etsi-proposes-17-cybersecurity-standards.html">ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act</a></h3><p class="news-desc">ETSI published 17 draft cybersecurity standards to underpin the EU Cyber Resilience Act, giving manufacturers a concrete compliance roadmap for products with digital elements.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-18-fcc-chinese-transceivers.html"><img src="../assets/img/news-supplychain.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 18, 2026</span><h3><a href="articles/2026-08-18-fcc-chinese-transceivers.html">FCC Weighs Chinese Transceiver Crackdown</a></h3><p class="news-desc">The FCC may add Chinese-made optical transceivers to its Covered List, barring new models from US data centers. A third-party risk story for every AI operator.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-18-record-setting-aml-penalty-ubs.html"><img src="../assets/img/news-aml.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 18, 2026</span><h3><a href="articles/2026-08-18-record-setting-aml-penalty-ubs.html">Record-Setting AML Penalty Against UBS Was Years in the Making</a></h3><p class="news-desc">FinCEN levied a historic AML penalty against UBS stemming from long-running compliance failures. The case shows how sustained regulatory pressure builds toward enforcement that reshapes an institution.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-18-snowflake-github-actions-injection.html"><img src="../assets/img/news-breach.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 18, 2026</span><h3><a href="articles/2026-08-18-snowflake-github-actions-injection.html">Snowflake GitHub Actions Flaw Shows Pipeline Risk</a></h3><p class="news-desc">Wiz found a GitHub Actions workflow injection in Snowflake's public repo that exposed internal Jira credentials. What it teaches GRC teams about CI/CD risk.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-18-us-sanctions-iranian-crypto-exchange-shelbit.html"><img src="../assets/img/news-sanctions.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 18, 2026</span><h3><a href="articles/2026-08-18-us-sanctions-iranian-crypto-exchange-shelbit.html">US Sanctions Iranian $6bn Crypto Exchange Shelbit</a></h3><p class="news-desc">OFAC designated Shelbit, an Iranian crypto exchange processing $6 billion in volume, for facilitating sanctions evasion. The action signals expanding enforcement into digital asset intermediaries.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-17-nist-ai-nvd-modernization.html"><img src="../assets/img/news-ai.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 17, 2026</span><h3><a href="articles/2026-08-17-nist-ai-nvd-modernization.html">NIST Seeks Public Input on AI-Ready NVD Modernization</a></h3><p class="news-desc">NIST is asking for public comment on modernizing the National Vulnerability Database to support AI-driven vulnerability management. What this means for compliance programs that rely on CVE data.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-16-cra-standards.html"><img src="../assets/img/news-standards.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 16, 2026</span><h3><a href="articles/2026-08-16-cra-standards.html">17 Draft Cyber Resilience Act Standards Open for Comment</a></h3><p class="news-desc">ETSI published 17 draft standards supporting the EU Cyber Resilience Act, now open for public comment. What the CRA standards pipeline means for anyone building or buying connected products.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-16-ico-reprimands-acro.html"><img src="../assets/img/news-privacy.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 16, 2026</span><h3><a href="articles/2026-08-16-ico-reprimands-acro.html">ICO Reprimands Criminal Records Office After 2023 Breach</a></h3><p class="news-desc">The UK ICO issued a reprimand over a 2023 breach at the ACRO Criminal Records Office. What this says about data protection oversight of public bodies, and what GRC teams should take from it.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-16-pentagon-suspends-cmmc.html"><img src="../assets/img/news-standards.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 16, 2026</span><h3><a href="articles/2026-08-16-pentagon-suspends-cmmc.html">Pentagon Suspends CMMC Phase II for Defense Contractors</a></h3><p class="news-desc">The US Department of Defense suspended Phase II of the Cybersecurity Maturity Model Certification. What the pause means for contractors, assessors, and anyone running a compliance roadmap.</p></div></article>
+<article class="news-item reveal"><a class="news-thumb" href="articles/2026-08-16-safe-initiative.html"><img src="../assets/img/news-ai.jpg" alt="" loading="lazy"></a><div><span class="news-date">August 16, 2026</span><h3><a href="articles/2026-08-16-safe-initiative.html">NVIDIA Group Proposes SAFE Initiative for Agentic Threat Intel Sharing</a></h3><p class="news-desc">Over 120 tech organizations back the Shared AI Findings Exchange, a framework for confidentially sharing AI security incidents and translating them into defensive guidance.</p></div></article>
 
         </div>
-        <p class="news-foot">Every article links to its original reporting for attribution. Original analysis by Zabez; not affiliated with the sources.</p>
+        <p class="news-foot">Every article links to its original reporting for attribution. Original analysis by Zabez; not affiliated with the sources. Illustrations original to ZABEZ.com.</p>
       </div>
     </section>
   </main>
   <footer>
     <div class="wrap">
       <div class="foot-inner">
-        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
         <span class="legal">Original analysis based on publicly available reporting, with sources cited in each article.</span>
       </div>
     </div>

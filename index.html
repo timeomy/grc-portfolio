@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/gate.css">
   <script type="application/ld+json">
@@ -30,83 +30,60 @@
     <div class="topbar-inner">
       <a class="brand" href="index.html">ZABEZ<span class="dot">.</span>com</a>
       <nav class="nav">
-        <a href="#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
-        <a href="news/index.html"><i data-lucide="book-open" class="ico"></i>GRC News</a>
-        <a href="courses/index.html"><i data-lucide="layers" class="ico"></i>Courses</a>
-        <a href="#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
-        <a href="#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+        <a href="#cases"><i data-lucide="search" class="ico"></i><span>Case Studies</span></a>
+        <a href="news/index.html"><i data-lucide="book-open" class="ico"></i><span>GRC News</span></a>
+        <a href="courses/index.html"><i data-lucide="layers" class="ico"></i><span>Courses</span></a>
+        <a href="#free"><i data-lucide="file-text" class="ico"></i><span>Free Resources</span></a>
+        <a href="#contact"><i data-lucide="mail" class="ico"></i><span>Contact</span></a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <!-- HERO -->
+    <!-- MASTHEAD -->
     <section class="hero">
-      <div class="wrap hero-inner">
+      <div class="hero-inner">
         <p class="eyebrow reveal in">Governance · Risk · Compliance</p>
         <h1 class="reveal in">GRC analyses of the <em>world's largest</em> enterprises.</h1>
         <p class="lede reveal in reveal-d1">
           I read how the world's biggest companies handle governance, risk, and compliance,
           then write it up plainly: which frameworks they run on, what they certify, where
-          regulators have pushed back, and what their programs actually reveal. Cloud
-          certifications, financial controls, privacy enforcement, pharma quality systems.
-          All of it grounded in public sources, with citations on every page.
+          regulators have pushed back, and what their programs actually reveal. All of it
+          grounded in public sources, with citations on every page.
         </p>
         <div class="cta-row reveal in reveal-d2">
-          <a class="btn btn-primary btn-shimmer" href="#cases">Read the case studies</a>
-          <a class="btn btn-ghost" href="#about">About the analyst</a>
+          <a class="btn btn-primary btn-shimmer magnetic" href="#cases">Read the case studies</a>
+          <a class="btn btn-ghost magnetic" href="#start">Where should I start?</a>
         </div>
         <div class="hero-meta reveal in reveal-d3">
-          <span style="display: inline-flex; align-items: center; gap: 8px;"><span class="pulse-ring" style="width: 9px; height: 9px; border-radius: 50%; background: var(--gold); display: inline-block;"></span> Analyses updated weekly</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;"><span class="pulse-ring" style="width:9px;height:9px;border-radius:50%;background:var(--gold);display:inline-block;"></span> Updated daily</span>
           <span>Frameworks: <b>NIST CSF 2.0 · ISO 27001 · SOC 2 · FedRAMP</b></span>
           <span>Domains: <b>Cloud · Finance · Pharma · Privacy</b></span>
         </div>
-
-        <!-- floating decorative badges (idle animation) -->
-        <div style="position: absolute; right: 0; top: 120px; pointer-events: none; display: none;" class="hero-badges">
-          <div class="float-y" style="position:absolute; right: 40px; top: 0; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(6px);">
-            <i data-lucide="shield-check" style="width: 20px; height: 20px; color: var(--gold);"></i>
-            <span style="font-family: var(--mono); font-size: 12px; color: #fff; letter-spacing: 0.06em;">NIST CSF 2.0 scored</span>
-          </div>
-          <div class="float-y float-y-d1" style="position:absolute; right: 190px; top: 110px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(6px);">
-            <i data-lucide="badge-check" style="width: 20px; height: 20px; color: var(--gold);"></i>
-            <span style="font-family: var(--mono); font-size: 12px; color: #fff; letter-spacing: 0.06em;">Sources cited</span>
-          </div>
-          <div class="float-y float-y-d2" style="position:absolute; right: 60px; top: 220px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 10px; backdrop-filter: blur(6px);">
-            <i data-lucide="scroll-text" style="width: 20px; height: 20px; color: var(--gold);"></i>
-            <span style="font-family: var(--mono); font-size: 12px; color: #fff; letter-spacing: 0.06em;">6 case studies</span>
-          </div>
-        </div>
       </div>
+      <div class="hero-art reveal in reveal-d2">
+        <img src="assets/img/hero.jpg" alt="Editorial illustration: a magnifying lens revealing the machinery inside corporate towers" data-parallax="0.1" fetchpriority="high">
+      </div>
+      <p class="hero-credit">Illustrations original to ZABEZ.com</p>
     </section>
 
+    <!-- STATS BAND -->
+    <div class="stats-band">
+      <div class="wrap">
+        <div class="stat reveal"><span class="big"><span data-count="6">0</span></span><span class="lbl">Enterprise case studies</span></div>
+        <div class="stat reveal reveal-d1"><span class="big"><span data-count="9">0</span></span><span class="lbl">Frameworks mapped</span></div>
+        <div class="stat reveal reveal-d2"><span class="big"><span data-count="40">0</span>+</span><span class="lbl">Program lessons</span></div>
+        <div class="stat reveal reveal-d3"><span class="big"><span data-count="3">0</span></span><span class="lbl">Free tools, no catch</span></div>
+      </div>
+    </div>
+
     <!-- FRAMEWORK TICKER -->
-    <section class="ticker-section" style="padding: 20px 0; border-bottom: 1px solid var(--line-soft); overflow: hidden; background: var(--white);">
-      <div class="wrap" style="overflow: hidden;">
-        <div class="ticker" style="overflow: hidden; white-space: nowrap;">
-          <div class="ticker-track" style="gap: 48px; padding-right: 48px;">
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="shield-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>NIST CSF 2.0</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="lock" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>ISO 27001</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="badge-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>SOC 2</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="flag" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>FedRAMP</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="scale" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>GDPR</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="target" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>PCI DSS</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="book-open" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>CIS 18</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="shield-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>HIPAA</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="shield-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>SOX</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="book-open" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>GxP</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="shield-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>NIST CSF 2.0</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="lock" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>ISO 27001</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="badge-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>SOC 2</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="flag" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>FedRAMP</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="scale" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>GDPR</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="target" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>PCI DSS</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="book-open" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>CIS 18</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="shield-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>HIPAA</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="shield-check" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>SOX</span>
-            <span style="font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); display: inline-flex; align-items: center; gap: 10px;"><i data-lucide="book-open" class="ico"   style="width: 15px; height: 15px; color: var(--accent);"></i>GxP</span>
-          </div>
+    <section class="ticker-section">
+      <div class="ticker">
+        <div class="ticker-track">
+          <span class="sec-num" style="padding:0 30px;">NIST CSF 2.0</span><span class="sec-num" style="padding:0 30px;">ISO 27001</span><span class="sec-num" style="padding:0 30px;">SOC 2</span><span class="sec-num" style="padding:0 30px;">FedRAMP</span><span class="sec-num" style="padding:0 30px;">GDPR</span><span class="sec-num" style="padding:0 30px;">PCI DSS</span><span class="sec-num" style="padding:0 30px;">HIPAA</span><span class="sec-num" style="padding:0 30px;">SOX</span><span class="sec-num" style="padding:0 30px;">GxP</span>
+          <span class="sec-num" style="padding:0 30px;">NIST CSF 2.0</span><span class="sec-num" style="padding:0 30px;">ISO 27001</span><span class="sec-num" style="padding:0 30px;">SOC 2</span><span class="sec-num" style="padding:0 30px;">FedRAMP</span><span class="sec-num" style="padding:0 30px;">GDPR</span><span class="sec-num" style="padding:0 30px;">PCI DSS</span><span class="sec-num" style="padding:0 30px;">HIPAA</span><span class="sec-num" style="padding:0 30px;">SOX</span><span class="sec-num" style="padding:0 30px;">GxP</span>
         </div>
       </div>
     </section>
@@ -114,79 +91,161 @@
     <!-- CASE STUDIES -->
     <section id="cases">
       <div class="wrap">
-        <div class="sec-head">
+        <div class="sec-head reveal">
           <span class="sec-num">01. Case Studies</span>
           <h2>Enterprise GRC postures, examined</h2>
           <p>
             Each case study takes one company and looks at how it actually runs its governance,
             risk, and compliance program, measured against the frameworks its industry operates
-            on. Every claim is checked against public sources: certification registries, SEC
-            filings, regulator decisions, trust centers, breach disclosures. Citations are on
-            each page so you can follow the trail yourself.
+            on. Every claim is checked against public sources, with citations on each page so
+            you can follow the trail yourself.
           </p>
         </div>
 
-        <div class="case-list">
+        <div class="feature-grid">
 
-          <a class="case-row reveal" href="cases/microsoft.html">
-            <span class="case-num">01</span>
-            <span class="case-name"><i data-lucide="building-2" class="ico"></i>Microsoft</span>
-            <span class="case-tags"><span class="tag">Cloud</span><span class="tag">AI</span><span class="tag">FedRAMP</span></span>
-            <span class="case-score"><b>4.3</b> / 5</span>
+          <a class="feature-card lead reveal" href="cases/jpmorgan.html">
+            <div class="card-img"><img src="assets/img/case-jpmorgan.jpg" alt="Editorial illustration: a bank vault door among marble columns" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-kicker"><span>Lead case · Finance</span><span class="card-score">4.5<small>/ 5</small></span></span>
+              <h3>JPMorgan Chase</h3>
+              <p>The strongest program on our scoreboard. Fortress-grade financial controls under
+                 SOX, Basel, and CCAR, and what every other compliance team can steal from it.</p>
+              <span class="card-tags"><span class="tag">SOX</span><span class="tag">Basel</span><span class="tag">CCAR</span></span>
+            </div>
           </a>
 
-          <a class="case-row reveal reveal-d1" href="cases/google.html">
-            <span class="case-num">02</span>
-            <span class="case-name"><i data-lucide="search" class="ico"></i>Google</span>
-            <span class="case-tags"><span class="tag">Cloud</span><span class="tag">AI</span><span class="tag">Privacy</span></span>
-            <span class="case-score"><b>4.1</b> / 5</span>
+          <a class="feature-card reveal" href="cases/aws.html">
+            <div class="card-img"><img src="assets/img/case-aws.jpg" alt="Editorial illustration: server hall with a golden audit checklist" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-kicker"><span>Cloud</span><span class="card-score">4.4<small>/ 5</small></span></span>
+              <h3>Amazon Web Services</h3>
+              <p>The shared-responsibility model, audited: what AWS proves, and what it quietly leaves to you.</p>
+              <span class="card-tags"><span class="tag">SOC 2</span><span class="tag">Shared Responsibility</span></span>
+            </div>
           </a>
 
-          <a class="case-row reveal" href="cases/jpmorgan.html">
-            <span class="case-num">03</span>
-            <span class="case-name"><i data-lucide="scale" class="ico"></i>JPMorgan Chase</span>
-            <span class="case-tags"><span class="tag">Finance</span><span class="tag">SOX</span><span class="tag">Basel</span></span>
-            <span class="case-score"><b>4.5</b> / 5</span>
+          <a class="feature-card reveal reveal-d1" href="cases/microsoft.html">
+            <div class="card-img"><img src="assets/img/case-microsoft.jpg" alt="Editorial illustration: a geometric cloud wrapped in a certification ribbon" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-kicker"><span>Cloud · AI</span><span class="card-score">4.3<small>/ 5</small></span></span>
+              <h3>Microsoft</h3>
+              <p>The most certified enterprise cloud, now carrying the governance weight of frontier AI.</p>
+              <span class="card-tags"><span class="tag">FedRAMP</span><span class="tag">ISO 27001</span></span>
+            </div>
           </a>
 
-          <a class="case-row reveal reveal-d1" href="cases/aws.html">
-            <span class="case-num">04</span>
-            <span class="case-name"><i data-lucide="layers" class="ico"></i>Amazon Web Services</span>
-            <span class="case-tags"><span class="tag">Cloud</span><span class="tag">Shared Responsibility</span><span class="tag">SOC 2</span></span>
-            <span class="case-score"><b>4.4</b> / 5</span>
+          <a class="feature-card reveal reveal-d2" href="cases/google.html">
+            <div class="card-img"><img src="assets/img/case-google.jpg" alt="Editorial illustration: data streams split through a glass prism" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-kicker"><span>Cloud · Privacy</span><span class="card-score">4.1<small>/ 5</small></span></span>
+              <h3>Google</h3>
+              <p>Privacy engineering at planet scale, shadowed by consent battles and antitrust pressure.</p>
+              <span class="card-tags"><span class="tag">Privacy</span><span class="tag">AI</span></span>
+            </div>
           </a>
 
-          <a class="case-row reveal" href="cases/meta.html">
-            <span class="case-num">05</span>
-            <span class="case-name"><i data-lucide="globe" class="ico"></i>Meta</span>
-            <span class="case-tags"><span class="tag">Privacy</span><span class="tag">GDPR</span><span class="tag">Enforcement</span></span>
-            <span class="case-score"><b>3.6</b> / 5</span>
+          <a class="feature-card reveal" href="cases/pfizer.html">
+            <div class="card-img"><img src="assets/img/case-pfizer.jpg" alt="Editorial illustration: laboratory vials under an inspection lamp" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-kicker"><span>Pharma</span><span class="card-score">4.0<small>/ 5</small></span></span>
+              <h3>Pfizer</h3>
+              <p>GxP quality systems where a control failure is measured in patients, not dollars.</p>
+              <span class="card-tags"><span class="tag">GxP</span><span class="tag">21 CFR Part 11</span></span>
+            </div>
           </a>
 
-          <a class="case-row reveal reveal-d1" href="cases/pfizer.html">
-            <span class="case-num">06</span>
-            <span class="case-name"><i data-lucide="shield-check" class="ico"></i>Pfizer</span>
-            <span class="case-tags"><span class="tag">Pharma</span><span class="tag">GxP</span><span class="tag">21 CFR Part 11</span></span>
-            <span class="case-score"><b>4.0</b> / 5</span>
+          <a class="feature-card reveal reveal-d1" href="cases/meta.html">
+            <div class="card-img"><img src="assets/img/case-meta.jpg" alt="Editorial illustration: a social web examined under a magnifying glass" loading="lazy"></div>
+            <div class="card-body">
+              <span class="card-kicker"><span>Privacy · Enforcement</span><span class="card-score">3.6<small>/ 5</small></span></span>
+              <h3>Meta</h3>
+              <p>A program rebuilt under enforcement: record GDPR fines, consent orders, and the price of moving fast.</p>
+              <span class="card-tags"><span class="tag">GDPR</span><span class="tag">Enforcement</span></span>
+            </div>
           </a>
 
         </div>
       </div>
     </section>
 
-    <!-- GRC NEWS -->
-    <section id="news" class="sec-green">
+    <!-- SCOREBOARD -->
+    <section class="alt" id="scoreboard">
       <div class="wrap">
-        <div class="sec-head">
-          <span class="sec-num reveal">02. GRC News</span>
-          <h2>Daily GRC news digest</h2>
+        <div class="sec-head reveal">
+          <span class="sec-num">02. The Scoreboard</span>
+          <h2>All six, side by side</h2>
+          <p>NIST CSF 2.0 maturity, scored 1–5 from documented public posture. Same method,
+             same evidence standard, every company. Assessed August 2026.</p>
+        </div>
+        <div class="board">
+          <div class="board-row reveal"><span class="name">JPMorgan Chase<small>Finance</small></span><div class="m-track"><div class="m-fill" data-w="90"></div></div><span class="score"><span data-count="4.5" data-dec="1">0</span><small> / 5</small></span></div>
+          <div class="board-row reveal"><span class="name">Amazon Web Services<small>Cloud</small></span><div class="m-track"><div class="m-fill" data-w="88"></div></div><span class="score"><span data-count="4.4" data-dec="1">0</span><small> / 5</small></span></div>
+          <div class="board-row reveal"><span class="name">Microsoft<small>Cloud · AI</small></span><div class="m-track"><div class="m-fill" data-w="86"></div></div><span class="score"><span data-count="4.3" data-dec="1">0</span><small> / 5</small></span></div>
+          <div class="board-row reveal"><span class="name">Google<small>Cloud · Privacy</small></span><div class="m-track"><div class="m-fill" data-w="82"></div></div><span class="score"><span data-count="4.1" data-dec="1">0</span><small> / 5</small></span></div>
+          <div class="board-row reveal"><span class="name">Pfizer<small>Pharma</small></span><div class="m-track"><div class="m-fill" data-w="80"></div></div><span class="score"><span data-count="4.0" data-dec="1">0</span><small> / 5</small></span></div>
+          <div class="board-row reveal"><span class="name">Meta<small>Privacy</small></span><div class="m-track"><div class="m-fill green" data-w="72"></div></div><span class="score"><span data-count="3.6" data-dec="1">0</span><small> / 5</small></span></div>
+        </div>
+        <p style="margin-top:18px;font-family:var(--mono);font-size:12px;color:var(--text-faint);">
+          Scores are analytical judgments of documented posture, not audits. Method below.
+        </p>
+      </div>
+    </section>
+
+    <!-- GRC NEWS -->
+    <section id="news">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-num">03. GRC News</span>
+          <h2>Today's compliance stories, rewritten as case studies</h2>
           <p>
-            A fresh batch of governance, risk, compliance, and regulatory news every morning.
-            I pick the stories that matter, rewrite them as short case studies, and link back
-            to the original reporting so you can dig deeper.
+            Every morning I pick the governance, risk, and regulatory stories that matter,
+            rewrite them as short case studies with the lesson spelled out, and cite the
+            original reporting so you can dig deeper.
           </p>
-          <div style="margin-top:20px;">
-            <a class="btn btn-ghost" href="news/index.html">Open today's digest →</a>
+        </div>
+        <div class="news-grid">
+          <!-- NEWS:LATEST:START -->
+          <a class="news-card reveal" href="news/articles/2026-08-18-etsi-proposes-17-cybersecurity-standards.html"><div class="card-img"><img src="assets/img/news-standards.jpg" alt="" loading="lazy"></div><div class="card-body"><span class="card-kicker"><span>August 18, 2026</span></span><h3>ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act</h3><p>ETSI published 17 draft cybersecurity standards to underpin the EU Cyber Resilience Act, giving manufacturers a concrete compliance roadmap for produc…</p></div></a>
+          <a class="news-card reveal reveal-d1" href="news/articles/2026-08-18-fcc-chinese-transceivers.html"><div class="card-img"><img src="assets/img/news-supplychain.jpg" alt="" loading="lazy"></div><div class="card-body"><span class="card-kicker"><span>August 18, 2026</span></span><h3>FCC Weighs Chinese Transceiver Crackdown</h3><p>The FCC may add Chinese-made optical transceivers to its Covered List, barring new models from US data centers. A third-party risk story for every AI …</p></div></a>
+          <a class="news-card reveal reveal-d2" href="news/articles/2026-08-18-record-setting-aml-penalty-ubs.html"><div class="card-img"><img src="assets/img/news-aml.jpg" alt="" loading="lazy"></div><div class="card-body"><span class="card-kicker"><span>August 18, 2026</span></span><h3>Record-Setting AML Penalty Against UBS Was Years in the Making</h3><p>FinCEN levied a historic AML penalty against UBS stemming from long-running compliance failures. The case shows how sustained regulatory pressure buil…</p></div></a>
+          <!-- NEWS:LATEST:END -->
+        </div>
+        <div style="margin-top:34px;">
+          <a class="btn btn-primary magnetic" href="news/index.html">Open the full digest →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- START HERE -->
+    <section class="sec-green" id="start">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-num">04. Start Here</span>
+          <h2>Three ways to use this site</h2>
+          <p>Tell me who you are, and I'll tell you where the value is.</p>
+        </div>
+        <div class="paths">
+          <div class="path reveal">
+            <span class="kicker">Breaking into GRC</span>
+            <h3>Career changers &amp; students</h3>
+            <p>Start with the free five-lesson course, grab the resume template, then follow
+               the daily news to build the vocabulary interviewers expect.</p>
+            <a class="go" href="courses/index.html">Start the free course →</a>
+          </div>
+          <div class="path reveal reveal-d1">
+            <span class="kicker">Hiring or evaluating</span>
+            <h3>Managers &amp; recruiters</h3>
+            <p>The case studies show you how I think: method, evidence standards, and judgment.
+               The scoreboard is the fastest read.</p>
+            <a class="go" href="#cases">Read a case study →</a>
+          </div>
+          <div class="path reveal reveal-d2">
+            <span class="kicker">Working in GRC</span>
+            <h3>Practitioners</h3>
+            <p>The starter policy pack saves you a blank-page afternoon, and the daily digest
+               keeps regulator moves on your radar in two minutes a day.</p>
+            <a class="go" href="#free">Get the free tools →</a>
           </div>
         </div>
       </div>
@@ -195,78 +254,75 @@
     <!-- FREE RESOURCES -->
     <section id="free">
       <div class="wrap">
-        <div class="sec-head">
-          <span class="sec-num reveal">04. Free Resources</span>
+        <div class="sec-head reveal">
+          <span class="sec-num">05. Free Resources</span>
           <h2>Practical GRC tools, free</h2>
           <p>
             The tools I wish someone had handed me when I started: a resume template that
             actually gets read, policy documents you can adapt in an afternoon, and a
             plain-language guide to what GRC really is. Enter your email, grab what you need,
-            and you’ll also get the daily news digest. Unsubscribe anytime.
+            and you'll also get the daily news digest. Unsubscribe anytime.
           </p>
         </div>
 
         <div class="caps-grid">
           <div class="cap-card reveal">
-            <div class="cap-ico"><i data-lucide="file-text" ></i></div>
+            <div class="cap-ico"><i data-lucide="file-text"></i></div>
             <h3>Resume Template</h3>
-            <p>One-page, ATS-friendly GRC resume template with the rules that actually get past filters, plus the exact phrasing patterns that work.</p>
-            <p style="margin-top:12px;"><a href="free/grc-resume-template.docx" class="btn btn-primary" style="padding:9px 16px;font-size:12.5px;" data-gate="free/grc-resume-template.docx" data-name="GRC Resume Template">Download →</a></p>
+            <p>One-page, ATS-friendly GRC resume template (.docx) with the rules that get past filters, plus the exact phrasing patterns that work.</p>
+            <p style="margin-top:14px;"><a href="free/grc-resume-template.docx" class="btn btn-primary" style="padding:10px 18px;font-size:12.5px;" data-gate="free/grc-resume-template.docx" data-name="GRC Resume Template">Download →</a></p>
           </div>
           <div class="cap-card reveal reveal-d1">
-            <div class="cap-ico"><i data-lucide="clipboard-list" ></i></div>
+            <div class="cap-ico"><i data-lucide="clipboard-list"></i></div>
             <h3>Starter Policy Pack</h3>
             <p>Three ready-to-adapt documents every GRC program needs first: Information Security Policy, Acceptable Use Policy, and a working Risk Register.</p>
-            <p style="margin-top:12px;"><a href="free/starter-policy-pack.docx" class="btn btn-primary" style="padding:9px 16px;font-size:12.5px;" data-gate="free/starter-policy-pack.docx" data-name="Starter Policy Pack">Download →</a></p>
+            <p style="margin-top:14px;"><a href="free/starter-policy-pack.docx" class="btn btn-primary" style="padding:10px 18px;font-size:12.5px;" data-gate="free/starter-policy-pack.docx" data-name="Starter Policy Pack">Download →</a></p>
           </div>
           <div class="cap-card reveal reveal-d2">
-            <div class="cap-ico"><i data-lucide="book-open" ></i></div>
+            <div class="cap-ico"><i data-lucide="book-open"></i></div>
             <h3>What Is GRC?</h3>
-            <p>A plain-language introduction to governance, risk, and compliance, the frameworks, the daily work, and how to break in free. Perfect for career-changers.</p>
-            <p style="margin-top:12px;"><a href="free/what-is-grc.html" class="btn btn-primary" style="padding:9px 16px;font-size:12.5px;" data-gate="free/what-is-grc.html" data-name="What Is GRC?">Read →</a></p>
+            <p>A plain-language introduction to governance, risk, and compliance: the frameworks, the daily work, and how to break in. Perfect for career-changers.</p>
+            <p style="margin-top:14px;"><a href="free/what-is-grc.html" class="btn btn-primary" style="padding:10px 18px;font-size:12.5px;" data-gate="free/what-is-grc.html" data-name="What Is GRC?">Read →</a></p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- COURSES -->
-    <section id="courses" class="alt">
+    <section class="alt" id="courses">
       <div class="wrap">
-        <div class="sec-head">
-          <span class="sec-num reveal">03. Courses</span>
-          <h2>Learn GRC, the practical way</h2>
-          <p>
-            Two paths: start free with a five lesson mini-course that shows you what GRC
-            actually is, or go all the way with the full analyst program that ends with a
-            real skillset and a resume that proves it.
-          </p>
-        </div>
-
-        <div class="caps-grid" style="grid-template-columns: 1fr 1fr;">
-
-          <div class="cap-card reveal">
-            <div class="cap-ico"><i data-lucide="sparkles"></i></div>
-            <h3>GRC Foundations · Free</h3>
-            <p>Five short lessons, about an hour total. What GRC is, the frameworks that matter, a real day in the life, risk explained, and how people actually break in.</p>
-            <p style="margin-top:14px;"><a class="btn btn-primary" style="padding:11px 22px;font-size:13.5px;" href="courses/index.html">Start the free course →</a></p>
+        <div class="split">
+          <div class="split-img reveal"><img src="assets/img/courses.jpg" alt="Editorial illustration: climbing a staircase of books toward a golden flag" loading="lazy"></div>
+          <div>
+            <div class="sec-head reveal" style="margin-bottom:26px;">
+              <span class="sec-num">06. Courses</span>
+              <h2>Learn GRC, the practical way</h2>
+              <p>
+                Two paths: start free with a five-lesson mini-course that shows you what GRC
+                actually is, or go all the way with the full analyst program that ends with a
+                real skillset and a resume that proves it.
+              </p>
+            </div>
+            <div class="cap-card reveal" style="margin-bottom:16px;">
+              <h3 style="display:flex;justify-content:space-between;align-items:baseline;">GRC Foundations <span class="tag">Free</span></h3>
+              <p>Five short lessons, about an hour total. What GRC is, the frameworks that matter, a real day in the life, and how people actually break in.</p>
+              <p style="margin-top:14px;"><a class="btn btn-ghost" style="padding:10px 20px;font-size:12.5px;" href="courses/index.html">Start the free course →</a></p>
+            </div>
+            <div class="cap-card reveal reveal-d1">
+              <h3 style="display:flex;justify-content:space-between;align-items:baseline;">GRC Analyst Program <span class="tag">RM 499</span></h3>
+              <p>Eight modules, 40+ lessons, four hands-on labs (audit, risk, policy, awareness), a job-hunting module, and resume bullets unlocked along the way. Lifetime access.</p>
+              <p style="margin-top:14px;"><a class="btn btn-primary" style="padding:10px 20px;font-size:12.5px;" href="courses/mastery.html">See the full program →</a></p>
+            </div>
           </div>
-
-          <div class="cap-card reveal reveal-d1">
-            <div class="cap-ico"><i data-lucide="graduation-cap"></i></div>
-            <h3>GRC Analyst Program · RM 499</h3>
-            <p>Eight modules, 40+ lessons, four hands-on labs (audit, risk, policy, awareness), a job hunting module, and resume bullets unlocked along the way. Lifetime access.</p>
-            <p style="margin-top:14px;"><a class="btn btn-primary" style="padding:11px 22px;font-size:13.5px;" href="courses/mastery.html">See the full program →</a></p>
-          </div>
-
         </div>
       </div>
     </section>
 
     <!-- CAPABILITIES -->
-    <section id="capabilities" class="sec-green">
+    <section id="capabilities">
       <div class="wrap">
-        <div class="sec-head">
-          <span class="sec-num reveal">05. Capabilities</span>
+        <div class="sec-head reveal">
+          <span class="sec-num">07. Capabilities</span>
           <h2>What I assess, and how</h2>
           <p>
             Years of security and GRC work across SaaS, cloud, and regulated environments,
@@ -274,25 +330,24 @@
             enterprises.
           </p>
         </div>
-
         <div class="caps-grid">
           <div class="cap-card reveal">
-            <div class="cap-ico"><i data-lucide="scale" ></i></div>
+            <div class="cap-ico"><i data-lucide="scale"></i></div>
             <h3>Governance</h3>
             <p>Board and management oversight structures, policy hierarchies, risk appetite statements, and accountability frameworks, mapped against COSO and NIST CSF 2.0 Govern.</p>
           </div>
-          <div class="cap-card reveal reveal-x reveal-d1">
-            <div class="cap-ico"><i data-lucide="target" ></i></div>
+          <div class="cap-card reveal reveal-d1">
+            <div class="cap-ico"><i data-lucide="target"></i></div>
             <h3>Risk Management</h3>
             <p>Enterprise and third-party risk programs, risk registers, control testing, and how risk tolerance flows from the board to the control room.</p>
           </div>
           <div class="cap-card reveal reveal-d2">
-            <div class="cap-ico"><i data-lucide="badge-check" ></i></div>
+            <div class="cap-ico"><i data-lucide="badge-check"></i></div>
             <h3>Compliance</h3>
             <p>Certification posture (ISO 27001, SOC 2, FedRAMP, PCI DSS), regulatory exposure (GDPR, SOX, GLBA, HIPAA, GxP), and evidence of sustained audit readiness.</p>
           </div>
           <div class="cap-card reveal reveal-d3">
-            <div class="cap-ico"><i data-lucide="shield-check" ></i></div>
+            <div class="cap-ico"><i data-lucide="shield-check"></i></div>
             <h3>Security Posture</h3>
             <p>Control design across the NIST CSF 2.0 core, identify, protect, detect, respond, recover, evaluated from public reporting, trust centers, and breach history.</p>
           </div>
@@ -301,34 +356,33 @@
     </section>
 
     <!-- METHOD -->
-    <section id="method">
+    <section class="alt" id="method">
       <div class="wrap">
-        <div class="sec-head">
-          <span class="sec-num reveal">06. Method</span>
+        <div class="sec-head reveal">
+          <span class="sec-num">08. Method</span>
           <h2>How the analyses are built</h2>
           <p>Every case study follows the same disciplined process, so you can compare
             companies on a level playing field.</p>
         </div>
-
         <div class="method">
           <div class="method-step reveal">
-            <span class="step-no">Step 01</span>
+            <span class="method-num">01</span>
             <h3>Framework mapping</h3>
             <p>Identify the frameworks the sector actually operates under, FedRAMP for cloud, Basel/CCAR for banking, GxP for pharma, and map the company's documented posture to them.</p>
           </div>
           <div class="method-step reveal reveal-d1">
-            <span class="step-no">Step 02</span>
+            <span class="method-num">02</span>
             <h3>Evidence collection</h3>
             <p>Public-posture evidence only: trust centers, certification registries, annual reports, 10-K risk factors, regulatory actions, breach disclosures, and auditor opinions.</p>
           </div>
           <div class="method-step reveal reveal-d2">
-            <span class="step-no">Step 03</span>
+            <span class="method-num">03</span>
             <h3>Control assessment</h3>
-            <p>Score each NIST CSF 2.0 function on a 1-5 maturity scale, using the strength and breadth of documented controls, not reputation.</p>
+            <p>Score each NIST CSF 2.0 function on a 1–5 maturity scale, using the strength and breadth of documented controls, not reputation.</p>
           </div>
           <div class="method-step reveal reveal-d3">
-            <span class="step-no">Step 04</span>
-            <h3>Findings & watch items</h3>
+            <span class="method-num">04</span>
+            <h3>Findings &amp; watch items</h3>
             <p>Distill what the company does exceptionally, where the pressure points are, and what a GRC practitioner should watch next.</p>
           </div>
         </div>
@@ -336,21 +390,21 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="alt">
+    <section id="about">
       <div class="wrap">
         <div class="about-grid">
           <div class="about-body">
-            <div class="sec-head" style="margin-bottom: 24px;">
-              <span class="sec-num">07. About</span>
-              <h2>About</h2>
+            <div class="sec-head reveal" style="margin-bottom:26px;">
+              <span class="sec-num">09. About</span>
+              <h2>The analyst behind the lens</h2>
             </div>
-            <p>
+            <p class="reveal">
               I'm <strong>Kok Jabez</strong>, a GRC and cybersecurity analyst who has spent years both
               building production systems and securing them. My day to day lives at the
               intersection of governance, risk, and compliance: the structures that let an
               organization take on risk on purpose instead of by accident.
             </p>
-            <p>
+            <p class="reveal">
               I've worked inside the controls themselves, running security and compliance
               programs against the frameworks the industry actually audits on, NIST CSF,
               ISO 27001, SOC 2, GDPR, and more. I know what these look like from the inside,
@@ -358,44 +412,47 @@
               CASP+), <strong>CompTIA CySA+</strong>, and <strong>CEH</strong>, with CISM in
               progress.
             </p>
-            <p>
+            <p class="reveal">
               This portfolio applies the same lens to the biggest companies in the world:
               what they publish, what they certify, where regulators have pushed back, and
               what their programs say about how they really operate.
             </p>
-            <p>
+            <p class="reveal">
               <strong>Location:</strong> Southeast Asia (UTC+8), available for remote GRC,
               security, and compliance work worldwide.
             </p>
           </div>
 
-          <aside class="creds">
-            <h4>Profile</h4>
-            <ul>
-              <li><span class="k">Role</span><span class="v">GRC &amp; Cybersecurity Analyst</span></li>
-              <li><span class="k">Focus</span><span class="v">Enterprise GRC, cloud security, privacy</span></li>
-              <li><span class="k">Certs</span><span class="v">CompTIA SecurityX (CASP+) · CompTIA CySA+ · CEH · CISM (in progress)</span></li>
-              <li><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/kokjabez" target="_blank" rel="noopener">linkedin.com/in/kokjabez</a></span></li>
-              <li><span class="k">Frameworks</span><span class="v">NIST CSF 2.0, ISO 27001, SOC 2, FedRAMP, PCI DSS, GDPR, HIPAA, GxP</span></li>
-              <li><span class="k">Markets</span><span class="v">US · EU · APAC (remote)</span></li>
-            </ul>
+          <aside>
+            <div class="about-photo reveal"><img src="assets/img/about.jpg" alt="Editorial illustration: an analyst at a desk of annotated reports overlooking a city" loading="lazy"></div>
+            <div class="creds reveal reveal-d1">
+              <h4>Profile</h4>
+              <ul>
+                <li><span class="k">Role</span><span class="v">GRC &amp; Cybersecurity Analyst</span></li>
+                <li><span class="k">Focus</span><span class="v">Enterprise GRC, cloud security, privacy</span></li>
+                <li><span class="k">Certs</span><span class="v">CompTIA SecurityX (CASP+) · CompTIA CySA+ · CEH · CISM (in progress)</span></li>
+                <li><span class="k">Frameworks</span><span class="v">NIST CSF 2.0, ISO 27001, SOC 2, FedRAMP, PCI DSS, GDPR, HIPAA, GxP</span></li>
+                <li><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/kokjabez" target="_blank" rel="noopener">linkedin.com/in/kokjabez</a></span></li>
+                <li><span class="k">Markets</span><span class="v">US · EU · APAC (remote)</span></li>
+              </ul>
+            </div>
           </aside>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="sec-gold">
+    <section class="sec-gold" id="contact">
       <div class="wrap">
         <div class="contact-strip">
-          <span class="sec-num">08. Contact</span>
-          <h2>Let's talk GRC</h2>
-          <p>
+          <span class="sec-num reveal">10. Contact</span>
+          <h2 class="reveal">Let's talk GRC</h2>
+          <p class="reveal reveal-d1">
             Open to GRC consulting, security assessments, compliance projects, and full-time
             remote roles. I read everything that lands here and I reply to all of it.
           </p>
-          <a class="email-line" href="mailto:hi@zabez.com">hi@zabez.com</a>
-          <p style="margin-top:14px;font-size:15px;">
+          <a class="email-line reveal reveal-d2" href="mailto:hi@zabez.com">hi@zabez.com</a>
+          <p class="reveal reveal-d3" style="margin-top:16px;font-size:15px;">
             Or connect on <a href="https://www.linkedin.com/in/kokjabez" target="_blank" rel="noopener" style="font-weight:600;text-decoration:underline;">LinkedIn</a>.
           </p>
         </div>
@@ -412,14 +469,14 @@
           All case studies are independent analyses based solely on publicly available information:
           certification registries, trust centers, annual reports, regulatory actions, and breach
           disclosures. Scores are analytical judgments of documented posture, not audits performed
-          for the companies named.
+          for the companies named. Illustrations are original to ZABEZ.com.
         </span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/gate.js"></script>
   <script src="assets/lucide.min.js"></script>
   <script src="assets/anim.js"></script>
+  <script src="assets/gate.js"></script>
 </body>
 </html>

@@ -30,49 +30,26 @@ TEMPLATE = """<!DOCTYPE html>
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
-  <style>
-    .news-list {{ margin-top: 8px; }}
-    .news-item {{
-      padding: 22px 4px;
-      border-bottom: 1px solid var(--line-soft);
-      display: grid;
-      grid-template-columns: 96px 1fr auto;
-      gap: 18px;
-      align-items: baseline;
-    }}
-    .news-date {{ font-family: var(--mono); font-size: 12px; color: var(--gold); letter-spacing: 0.06em; }}
-    .news-item h3 {{ font-family: var(--serif); font-weight: 500; font-size: 1.35rem; line-height: 1.3; }}
-    .news-item h3 a {{ color: var(--text); }}
-    .news-item h3 a:hover {{ color: var(--gold-soft); }}
-    .news-src {{ font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-faint); white-space: nowrap; }}
-    .news-desc {{ font-size: 16px; color: var(--text-dim); margin-top: 6px; max-width: 70ch; }}
-    .news-foot {{ margin-top: 26px; font-family: var(--mono); font-size: 12px; color: var(--text-faint); }}
-    @media (max-width: 640px) {{
-      .news-item {{ grid-template-columns: 1fr; gap: 6px; }}
-      .news-src {{ grid-column: 1; }}
-    }}
-  </style>
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="../index.html">ZABEZ<span class="dot">.</span>com</a>
       <nav class="nav">
-        <a href="../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
-        <a href="../index.html#news">GRC News</a>
-        <a href="../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
-        <a href="../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
-        <a href="../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+        <a href="../index.html#cases"><i data-lucide="search" class="ico"></i><span>Case Studies</span></a>
+        <a href="../index.html#free"><i data-lucide="file-text" class="ico"></i><span>Free Resources</span></a>
+        <a href="../index.html#about"><i data-lucide="user" class="ico"></i><span>About</span></a>
+        <a href="../index.html#contact"><i data-lucide="mail" class="ico"></i><span>Contact</span></a>
       </nav>
     </div>
   </header>
   <main>
-    <section class="case-hero" style="background: var(--green); color: #fff;">
+    <section class="case-hero">
       <div class="wrap">
-        <p class="crumb"><a href="../index.html">All case studies</a></p>
-        <h1 style="color: #fff;">GRC News, Daily Case Studies</h1>
+        <p class="crumb"><a href="../index.html">← ZABEZ.com</a></p>
+        <h1>GRC News, <em style="font-style:italic;color:var(--gold-dark);">daily</em> case studies</h1>
         <p class="subtitle">
           Original write-ups of the governance, risk, compliance, privacy, and regulatory
           enforcement stories that matter. Published daily, rewritten in our own words,
@@ -89,14 +66,14 @@ TEMPLATE = """<!DOCTYPE html>
         <div class="news-list">
           {items}
         </div>
-        <p class="news-foot">Every article links to its original reporting for attribution. Original analysis by Zabez; not affiliated with the sources.</p>
+        <p class="news-foot">Every article links to its original reporting for attribution. Original analysis by Zabez; not affiliated with the sources. Illustrations original to ZABEZ.com.</p>
       </div>
     </section>
   </main>
   <footer>
     <div class="wrap">
       <div class="foot-inner">
-        <span>© 2026 Zabez · GRC Portfolio</span>
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
         <span class="legal">Original analysis based on publicly available reporting, with sources cited in each article.</span>
       </div>
     </div>
@@ -115,6 +92,36 @@ FAVICON_BLOCK = (
     '  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">\n'
     '  <link rel="apple-touch-icon" href="/apple-touch-icon.png">\n'
 )
+
+
+
+# Topic → illustration mapping for news articles. First match wins; keys are
+# regex fragments tested against "title desc filename" lowercased.
+TOPIC_IMAGES = [
+    ("news-privacy",     r"privacy|gdpr|\bico\b|data protection|consent|surveillance"),
+    ("news-aml",         r"\baml\b|money.?launder|fincen|bank secrecy"),
+    ("news-sanctions",   r"sanction|ofac|embargo|export control"),
+    ("news-breach",      r"breach|injection|vulnerab|exploit|hack|\bflaw\b|exposed|\bcve\b|ransom"),
+    ("news-supplychain", r"supply.?chain|third.?party|covered list|vendor risk|transceiver"),
+    ("news-ai",          r"\bai\b|artificial intelligence"),
+    ("news-cloud",       r"\bcloud\b|fedramp|\bsaas\b|azure|\baws\b"),
+    ("news-standards",   r"standard|\biso\b|etsi|\bcra\b|framework|certification"),
+    ("news-health",      r"health|hipaa|pharma|\bfda\b|medical|\bgxp\b"),
+    ("news-government",  r"pentagon|defen[cs]e|cmmc|military|federal|\bfcc\b|govern"),
+    ("news-crypto",      r"crypto|bitcoin|digital asset|exchange"),
+]
+TOPIC_FALLBACK = "news-regulatory"
+
+
+def topic_image(title, desc, filename):
+    """Pick the branded illustration that fits a news story."""
+    if re.search(r"\bai\b|artificial intelligence", title.lower()):
+        return "news-ai"
+    hay = f"{title} {desc} {filename}".lower()
+    for image, pattern in TOPIC_IMAGES:
+        if re.search(pattern, hay):
+            return image
+    return TOPIC_FALLBACK
 
 
 def repair_article_head(path: Path) -> None:
@@ -164,6 +171,22 @@ def repair_article_head(path: Path) -> None:
         )
         raw = raw.replace("</head>", ld + "</head>", 1)
 
+    # Topic illustration: og:image for link sharing + in-page hero art
+    title_m = re.search(r"<title>([^<\u00b7]+)", raw)
+    desc_m = re.search(r'<meta name="description" content="([^"<>]*)"', raw)
+    img = topic_image(title_m.group(1) if title_m else "", desc_m.group(1) if desc_m else "", path.name)
+    img_url = f"{SITE}/assets/img/{img}.jpg"
+    if 'property="og:image"' not in raw:
+        raw = raw.replace(
+            "</head>",
+            f'  <meta property="og:title" content="{(title_m.group(1).strip() if title_m else path.stem)}">\n'
+            f'  <meta property="og:image" content="{img_url}">\n'
+            f'  <meta name="twitter:card" content="summary_large_image">\n</head>', 1)
+    if "article-hero-img" not in raw and '<section class="case-body">' in raw:
+        raw = raw.replace(
+            '<section class="case-body">',
+            f'<div class="wrap"><div class="article-hero-img"><img src="../../assets/img/{img}.jpg" alt="" loading="lazy"></div></div>\n\n    <section class="case-body">', 1)
+
     if raw != original:
         path.write_text(raw, encoding="utf-8")
         print(f"repaired head: {path.name}")
@@ -182,6 +205,11 @@ def parse_article(path: Path):
         "title": title.group(1).strip() if title else path.stem,
         "src": src.group(1) if src else "",
         "desc": desc.group(1) if desc else "",
+        "img": topic_image(
+            title.group(1) if title else "",
+            desc.group(1) if desc else "",
+            path.name,
+        ),
     }
 
 
@@ -202,12 +230,17 @@ def main():
     # with a trailing clause — prefix overlap of one title over another counts
     # as the same story)
     seen_keys = []
+    seen_srcs = set()
     deduped = []
     for a in articles:
         key = re.sub(r"[^a-z0-9]+", " ", a["title"].lower()).strip()[:80]
         if any(key.startswith(s) or s.startswith(key) for s in seen_keys):
             continue
+        if a["src"] and a["src"] in seen_srcs:
+            continue
         seen_keys.append(key)
+        if a["src"]:
+            seen_srcs.add(a["src"])
         deduped.append(a)
     articles = deduped
 
@@ -217,9 +250,10 @@ def main():
         desc = f'<p class="news-desc">{a["desc"]}</p>' if a["desc"] else ""
         rel = a["path"].name
         items.append(
-            f'<article class="news-item">'
-            f'<span class="news-date">{a["date"]}</span>'
-            f'<div><h3><a href="articles/{rel}">{a["title"]}</a></h3>{desc}</div>'
+            f'<article class="news-item reveal">'
+            f'<a class="news-thumb" href="articles/{rel}"><img src="../assets/img/{a["img"]}.jpg" alt="" loading="lazy"></a>'
+            f'<div><span class="news-date">{a["date"]}</span>'
+            f'<h3><a href="articles/{rel}">{a["title"]}</a></h3>{desc}</div>'
             f'{src_tag}'
             f'</article>\n'
         )
@@ -233,6 +267,7 @@ def main():
     print(f"Index rebuilt: {len(articles)} articles -> {INDEX}")
 
     build_sitemap(articles)
+    inject_homepage_latest(articles)
 
 
 # Core pages included in the sitemap alongside the deduped news articles.
@@ -282,5 +317,32 @@ def build_sitemap(articles):
     print(f"Sitemap rebuilt: {len(entries)} URLs -> {BASE / 'sitemap.xml'}")
 
 
+def inject_homepage_latest(articles):
+    """Refresh the three newest stories on the homepage between the
+    NEWS:LATEST markers, as image cards."""
+    home = BASE / "index.html"
+    if not home.exists():
+        return
+    raw = home.read_text(encoding="utf-8")
+    start, end = "<!-- NEWS:LATEST:START -->", "<!-- NEWS:LATEST:END -->"
+    if start not in raw or end not in raw:
+        return
+    cards = []
+    for i, a in enumerate(articles[:3]):
+        delay = f" reveal-d{i}" if i else ""
+        cards.append(
+            f'<a class="news-card reveal{delay}" href="news/articles/{a["path"].name}">'
+            f'<div class="card-img"><img src="assets/img/{a["img"]}.jpg" alt="" loading="lazy"></div>'
+            f'<div class="card-body"><span class="card-kicker"><span>{a["date"]}</span></span>'
+            f'<h3>{a["title"]}</h3>'
+            f'<p>{a["desc"][:150]}{"…" if len(a["desc"]) > 150 else ""}</p></div></a>'
+        )
+    block = start + "\n          " + "\n          ".join(cards) + "\n          " + end
+    raw = raw[:raw.index(start)] + block + raw[raw.index(end) + len(end):]
+    home.write_text(raw, encoding="utf-8")
+    print(f"homepage: {min(3, len(articles))} latest stories injected")
+
+
 if __name__ == "__main__":
     sys.exit(main())
+

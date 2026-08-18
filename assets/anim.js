@@ -123,6 +123,38 @@
     sections.forEach(function (s) { io.observe(s.el); });
   }
 
+  /* ---------- scroll progress bar ---------- */
+  function initProgress() {
+    var bar = document.createElement("div");
+    bar.className = "progress-bar";
+    document.body.appendChild(bar);
+    function update() {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var p = h > 0 ? (window.scrollY / h) * 100 : 0;
+      bar.style.width = p + "%";
+    }
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+    update();
+  }
+
+  /* ---------- magnetic buttons ---------- */
+  function initMagnetic() {
+    var els = document.querySelectorAll(".magnetic");
+    if (els.length === 0 || !window.matchMedia("(hover: hover)").matches) return;
+    els.forEach(function (el) {
+      el.addEventListener("mousemove", function (e) {
+        var r = el.getBoundingClientRect();
+        var x = e.clientX - r.left - r.width / 2;
+        var y = e.clientY - r.top - r.height / 2;
+        el.style.transform = "translate(" + x * 0.15 + "px, " + y * 0.15 + "px)";
+      });
+      el.addEventListener("mouseleave", function () {
+        el.style.transform = "";
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initIcons();
     initReveal();
@@ -130,5 +162,7 @@
     initBars();
     initParallax();
     initNav();
+    initProgress();
+    initMagnetic();
   });
 })();

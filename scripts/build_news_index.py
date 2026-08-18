@@ -127,6 +127,18 @@ def main():
     articles = [parse_article(p) for p in sorted(ARTICLES.glob("*.html"))]
     articles.sort(key=lambda a: a["date"], reverse=True)
 
+    # Dedupe: keep only the newest article per normalized title (handles the
+    # daily cron occasionally re-covering the same story with a new date)
+    seen_titles = set()
+    deduped = []
+    for a in articles:
+        key = re.sub(r"[^a-z0-9]+", " ", a["title"].lower()).strip()[:80]
+        if key in seen_titles:
+            continue
+        seen_titles.add(key)
+        deduped.append(a)
+    articles = deduped
+
     items = []
     for a in articles:
         src_tag = f'<span class="news-src">Source: <a href="{a["src"]}" target="_blank" rel="noopener">original</a></span>' if a["src"] else ""

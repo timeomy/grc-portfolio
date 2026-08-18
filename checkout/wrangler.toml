@@ -4,3 +4,7 @@ compatibility_date = "2026-01-01"
 
 [observability]
 enabled = true
+
+[[kv_namespaces]]
+binding = "LEADS"
+id = "efd38a6f004543f0bbce862692e6b0cb"

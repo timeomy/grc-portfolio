@@ -14,7 +14,7 @@
  * Amount is in SEN (RM 1 = 100 sen). Price set below.
  */
 
-const PRICE_SEN = 2150 * 100; // RM 2,150 (~USD 499)
+const PRICE_SEN = 499 * 100; // RM 499
 const DESCRIPTION = "GRC Analyst Program — lifetime access";
 const CALLBACK_URL = "https://zabez.com/courses/thanks.html"; // server notification
 const REDIRECT_URL = "https://zabez.com/courses/thanks.html";  // buyer lands here after paying

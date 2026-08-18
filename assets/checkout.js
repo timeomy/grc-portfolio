@@ -23,7 +23,7 @@
       '<p class="checkout-kicker">GRC Analyst Program</p>' +
       '<h3 class="gate-title">Start your enrollment</h3>' +
       '<div class="checkout-price">' +
-      '<span class="checkout-price-amt">RM 2,150</span>' +
+      '<span class="checkout-price-amt">RM 499</span>' +
       '<span class="checkout-price-once">one-time, lifetime access</span>' +
       '</div>' +
       '<ul class="checkout-benefits">' +

@@ -17,16 +17,29 @@
     modal = document.createElement("div");
     modal.className = "gate-modal checkout-modal";
     modal.innerHTML =
-      '<div class="gate-box">' +
+      '<div class="gate-box checkout-box">' +
       '<button type="button" class="gate-close" aria-label="Close">&times;</button>' +
-      '<div class="gate-icon"><i data-lucide="lock"></i></div>' +
-      '<h3 class="gate-title">Enroll in the GRC Analyst Program</h3>' +
-      '<p class="gate-sub">RM 149 · lifetime access · 14-day refund. Enter your email to start checkout.</p>' +
+      '<div class="gate-icon"><i data-lucide="graduation-cap"></i></div>' +
+      '<p class="checkout-kicker">GRC Analyst Program</p>' +
+      '<h3 class="gate-title">Start your enrollment</h3>' +
+      '<div class="checkout-price">' +
+      '<span class="checkout-price-amt">RM 2,150</span>' +
+      '<span class="checkout-price-once">one-time, lifetime access</span>' +
+      '</div>' +
+      '<ul class="checkout-benefits">' +
+      '<li><i data-lucide="check"></i>8 modules, 40+ lessons, 4 hands-on labs</li>' +
+      '<li><i data-lucide="check"></i>Resume bullets + templates included</li>' +
+      '<li><i data-lucide="check"></i>14-day money-back guarantee</li>' +
+      '</ul>' +
       '<form class="gate-form">' +
       '<input type="email" name="email" placeholder="you@example.com" required autocomplete="email">' +
-      '<button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Proceed to payment →</button>' +
+      '<button type="submit" class="btn btn-primary checkout-submit">Proceed to secure payment →</button>' +
       '</form>' +
-      '<p class="gate-fine">Payments handled securely by Billplz. No account needed.</p>' +
+      '<div class="checkout-trust">' +
+      '<span><i data-lucide="lock"></i> Secure checkout via Billplz</span>' +
+      '<span><i data-lucide="shield-check"></i> Instant access after payment</span>' +
+      '</div>' +
+      '<p class="gate-fine">Questions? Email hi@zabez.com — we reply to everything.</p>' +
       '</div>';
     document.body.appendChild(modal);
 

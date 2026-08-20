@@ -1,78 +1,42 @@
 {
-  "generated": "2026-08-19T07:35:15",
-  "count": 12,
+  "generated": "2026-08-20T08:31:16",
+  "count": 6,
   "items": [
+    {
+      "title": "Grandoreiro Resurfaces in Mexico With New DLL Sideloading Campaign",
+      "link": "https://www.infosecurity-magazine.com/news/grandoreiro-mexico-dll-sideloading/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-08-20"
+    },
+    {
+      "title": "ICO Urges Police to Improve Data Governance in Facial Recognition Rollouts",
+      "link": "https://www.infosecurity-magazine.com/news/ico-police-data-governance-facial/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-08-20"
+    },
     {
       "title": "UK Legal Regulator Raises AI Misuse Concerns",
       "link": "https://www.infosecurity-magazine.com/news/uk-legal-regulator-raises-ai/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-19"
+      "date": "2026-08-20"
     },
     {
       "title": "ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act",
       "link": "https://www.infosecurity-magazine.com/news/etsi-proposes-17-cybersecurity/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-19"
+      "date": "2026-08-20"
     },
     {
-      "title": "ICO Reprimands Criminal Records Office After 2023 Breach",
-      "link": "https://www.infosecurity-magazine.com/news/ico-reprimands-acro-records-office/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-08-19"
+      "title": "US DOJ Charges 17 Iranians in Decade-Long Hacking Campaign",
+      "link": "https://www.databreachtoday.com/us-doj-charges-17-iranians-in-decade-long-hacking-campaign-a-32607",
+      "source": "DataBreachToday",
+      "date": "2026-08-20"
     },
     {
-      "title": "NIST Seeks Public Input on AI-Ready NVD Modernization",
-      "link": "https://www.infosecurity-magazine.com/news/nist-seeks-public-input-ai-nvd/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-08-19"
-    },
-    {
-      "title": "Snowflake GitHub Actions Flaw Lets Crafted Issues Trigger Command Injection",
-      "link": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html",
-      "source": "The Hacker News",
-      "date": "2026-08-18"
-    },
-    {
-      "title": "California\u2019s AI labeling law takes effect, testing compliance with missing detection tools",
-      "link": "https://www.complianceweek.com/artificial-intelligence/californias-ai-labeling-law-takes-effect-testing-compliance-with-missing-detection-tools/",
-      "source": "Compliance Week",
-      "date": "2026-08-18"
-    },
-    {
-      "title": "Eight years later, federal authorities re-up charges against alleged Iranian hackers at Mabna Institute",
-      "link": "https://cyberscoop.com/mabna-institute-iranian-hackers-indictment/",
-      "source": "CyberScoop",
-      "date": "2026-08-18"
-    },
-    {
-      "title": "DOJ charges 17 people in Iran-backed hacking campaign against US",
-      "link": "https://www.cybersecuritydive.com/news/doj-charges-17-iran-hacking-campaign-us-university/828212/",
+      "title": "AI-backed campaign targeting vulnerable Siemens S7 devices, CISA and FBI warn",
+      "link": "https://www.cybersecuritydive.com/news/ai-hackers-siemens-s7-devices-cisa-fbi/828321/",
       "source": "Cybersecurity Dive",
-      "date": "2026-08-18"
-    },
-    {
-      "title": "GitLab issues emergency patch for critical code-injection flaw",
-      "link": "https://www.cybersecuritydive.com/news/gitlab-emergency-patch-critical-code-injection/828151/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-08-18"
-    },
-    {
-      "title": "SEC Charges Former Executives With Fraud in Connection With $1.9 Billion Collapse of Subprime Auto Lender Tricolor",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-77-sec-charges-former-executives-fraud-connection-19-billion-collapse-subprime-auto-lender-tricolor",
-      "source": "SEC Press Releases",
-      "date": "2026-08-18"
-    },
-    {
-      "title": "SEC Proposes New Regulation Crypto Assets",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets",
-      "source": "SEC Press Releases",
-      "date": "2026-08-18"
-    },
-    {
-      "title": "Record-setting AML penalty against UBS was years in the making",
-      "link": "https://www.complianceweek.com/best-practices/fincen-record-setting-aml-penalty-against-ubs-was-years-in-the-making/",
-      "source": "Compliance Week",
-      "date": "2026-08-17"
+      "date": "2026-08-19"
     }
   ]
 }

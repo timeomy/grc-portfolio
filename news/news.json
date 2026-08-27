@@ -1,42 +1,132 @@
 {
-  "generated": "2026-08-20T08:31:16",
-  "count": 6,
+  "generated": "2026-08-28T07:31:35",
+  "count": 21,
   "items": [
     {
-      "title": "Grandoreiro Resurfaces in Mexico With New DLL Sideloading Campaign",
-      "link": "https://www.infosecurity-magazine.com/news/grandoreiro-mexico-dll-sideloading/",
+      "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
+      "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-20"
+      "date": "2026-08-28"
     },
     {
-      "title": "ICO Urges Police to Improve Data Governance in Facial Recognition Rollouts",
-      "link": "https://www.infosecurity-magazine.com/news/ico-police-data-governance-facial/",
+      "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
+      "link": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-20"
+      "date": "2026-08-28"
     },
     {
-      "title": "UK Legal Regulator Raises AI Misuse Concerns",
-      "link": "https://www.infosecurity-magazine.com/news/uk-legal-regulator-raises-ai/",
+      "title": "US Sanctions Mabna Institute Hackers for Iranian Cyber-Attacks",
+      "link": "https://www.infosecurity-magazine.com/news/us-sanctions-mabna-institute/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-20"
+      "date": "2026-08-28"
     },
     {
-      "title": "ETSI Proposes 17 Cybersecurity Standards to Support Cyber Resilience Act",
-      "link": "https://www.infosecurity-magazine.com/news/etsi-proposes-17-cybersecurity/",
+      "title": "NIST Warns of Unique Security Risks in Multi-Cloud Environments",
+      "link": "https://www.infosecurity-magazine.com/news/nist-risks-multi-cloud/",
       "source": "Infosecurity Magazine",
-      "date": "2026-08-20"
+      "date": "2026-08-28"
     },
     {
-      "title": "US DOJ Charges 17 Iranians in Decade-Long Hacking Campaign",
-      "link": "https://www.databreachtoday.com/us-doj-charges-17-iranians-in-decade-long-hacking-campaign-a-32607",
+      "title": "Two Australian Men Charged in TeamPCP Supply Chain Attacks",
+      "link": "https://www.databreachtoday.com/two-australian-men-charged-in-teampcp-supply-chain-attacks-a-32675",
       "source": "DataBreachToday",
-      "date": "2026-08-20"
+      "date": "2026-08-28"
     },
     {
-      "title": "AI-backed campaign targeting vulnerable Siemens S7 devices, CISA and FBI warn",
-      "link": "https://www.cybersecuritydive.com/news/ai-hackers-siemens-s7-devices-cisa-fbi/828321/",
+      "title": "Banks Face the Penalty but Scammers Exploit the Gaps",
+      "link": "https://www.databreachtoday.com/blogs/banks-face-penalty-but-scammers-exploit-gaps-p-4181",
+      "source": "DataBreachToday",
+      "date": "2026-08-28"
+    },
+    {
+      "title": "Alleged TeamPCP Hackers Charged in Australia Over Major Supply Chain Attacks",
+      "link": "https://thehackernews.com/2026/08/alleged-teampcp-hackers-charged-in.html",
+      "source": "The Hacker News",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "FBI takes down China-linked hacking network behind attacks on NASA, DOJ and U.S. Senate",
+      "link": "https://www.helpnetsecurity.com/2026/08/27/fbi-disrupts-china-linked-hacking-network/",
+      "source": "Help Net Security",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Abnormal AI expands email security from detection to data protection and phishing-simulation training",
+      "link": "https://www.helpnetsecurity.com/2026/08/27/abnormal-ai-email-security-platform-expansion/",
+      "source": "Help Net Security",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "AI will not fix a governance problem in your camera estate",
+      "link": "https://www.helpnetsecurity.com/2026/08/27/rob-janssens-hikvision-europe-surveillance-camera-security/",
+      "source": "Help Net Security",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "When personal liability becomes a compliance responsibility",
+      "link": "https://www.complianceweek.com/regulatory-policy/when-personal-liability-becomes-a-compliance-responsibility/",
+      "source": "Compliance Week",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Zillow and Redfin settle with FTC over alleged anticompetitive violations",
+      "link": "https://www.complianceweek.com/top-stories/zillow-and-redfin-settle-with-ftc-over-alleged-anticompetitive-violations/",
+      "source": "Compliance Week",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Two alleged TeamPCP members arrested and charged after months of software supply-chain chaos",
+      "link": "https://cyberscoop.com/teampcp-cybercrime-arrests-supply-chain-attacks/",
+      "source": "CyberScoop",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Nuisance-call blocker fined \u00a3190k for being a nuisance caller",
+      "link": "https://www.theregister.com/security/2026/08/27/nuisance-call-blocker-fined-190k-for-being-a-nuisance-caller/5292888",
+      "source": "The Register - Security",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "FBI seizes hacking tools it says China used to attack NASA, DOE, US Senate and other critical networks",
+      "link": "https://www.theregister.com/security/2026/08/27/fbi-seizes-hacking-tools-it-says-china-used-to-attack-nasa-doe-us-senate-and-other-critical-networks/5292742",
+      "source": "The Register - Security",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "FBI Disrupts China-Linked QTFY Infrastructure Used to Steal Data From U.S. Organizations",
+      "link": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html",
+      "source": "The Hacker News",
+      "date": "2026-08-26"
+    },
+    {
+      "title": "OpenAI Bans Russian ChatGPT Accounts Used to Run Influence Operation",
+      "link": "https://thehackernews.com/2026/08/openai-bans-russian-chatgpt-accounts.html",
+      "source": "The Hacker News",
+      "date": "2026-08-26"
+    },
+    {
+      "title": "INTERPOL Operation Jackal IV Arrests 58, Identifies 263 in Global Cyber Fraud Crackdown",
+      "link": "https://thehackernews.com/2026/08/interpol-operation-jackal-iv-arrests-58.html",
+      "source": "The Hacker News",
+      "date": "2026-08-26"
+    },
+    {
+      "title": "Beyond the AI Hype: What\u2019s Actually Working in Third-Party Risk Management",
+      "link": "https://www.complianceweek.com/scheduled-webcast/beyond-the-ai-hype-whats-actually-working-in-third-party-risk-management/",
+      "source": "Compliance Week",
+      "date": "2026-08-26"
+    },
+    {
+      "title": "Cyber threats nudge Trump to sign executive order on foreign equipment in U.S. energy infrastructure",
+      "link": "https://cyberscoop.com/energy-department-cybersecurity-executive-order-rules/",
+      "source": "CyberScoop",
+      "date": "2026-08-26"
+    },
+    {
+      "title": "Boston Scientific says cyberattack disrupted order processing, shipping",
+      "link": "https://www.cybersecuritydive.com/news/boston-scientific-cyberattack-disrupted-order-processing-shipping/828816/",
       "source": "Cybersecurity Dive",
-      "date": "2026-08-19"
+      "date": "2026-08-26"
     }
   ]
 }

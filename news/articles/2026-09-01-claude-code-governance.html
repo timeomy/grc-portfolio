@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governing AI Coding Agents: Visibility, Identity and Audit Trails · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Anthropic's new Compliance API for Claude Code shows why governing AI agents needs local visibility, identity mapping and audit trails.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-01-claude-code-governance.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Governing AI Coding Agents: Visibility, Identity and Audit Trails", "description": "Anthropic's new Compliance API for Claude Code shows why governing AI agents needs local visibility, identity mapping and audit trails.", "datePublished": "2026-09-01", "dateModified": "2026-09-01", "url": "https://zabez.com/news/articles/2026-09-01-claude-code-governance.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="Governing AI Coding Agents: Visibility, Identity and Audit Trails">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-ai.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 1, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Governing AI Coding Agents: Visibility, Identity and Audit Trails</h1>
+        <p class="subtitle">Anthropic's new Compliance API for Claude Code shows why governing AI agents needs local visibility, identity mapping and audit trails.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html" target="_blank" rel="noopener">The Hacker News</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-ai.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          A contributed analysis published by The Hacker News, written by security researcher
+          Dan Abramov, walks through what it takes to actually govern an AI coding agent like
+          Claude Code. The core problem is visibility. Claude Code does much of its work locally
+          on the developer's machine, so endpoint telemetry can see processes, files and
+          configuration that cloud-side logs never touch. But as the piece puts it, endpoint
+          detection gives you evidence, not a governance model. It cannot connect an agent's
+          activity to an owner, an intent, credentials or permissions.
+        </p>
+        <p>
+          The article notes that on August 11, 2026, Anthropic introduced new Compliance API
+          endpoints covering local Claude Code sessions. Previously the Compliance API mostly
+          covered claude.ai activity, meaning the web interface and Claude Desktop, with very
+          thin coverage of the coding agent. The new endpoints change that.
+        </p>
+        <p>
+          It also gets into the unglamorous detail of making that data usable: parsing local
+          session transcripts, spotting bash commands, and handling MCP servers that appear only
+          as UUIDs, which means mapping each UUID back to the service it represents, for example
+          a Slack message-sending tool. And the author is honest about the limits: managed
+          settings, transcripts and endpoint collection together are good but not enough.
+          Correlating what runs on endpoints with what the organization's internal repositories
+          actually manage is what makes agent activity look legitimate rather than suspicious.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          AI agents are controls, and controls need audit trails. A coding agent with
+          credentials and network access performs real actions: it runs commands, sends
+          messages, modifies repositories. If you cannot answer who initiated a given action,
+          what the agent was permitted to do, and what it actually did, you have not added
+          governance, you have added a new privileged user nobody can account for.
+        </p>
+        <p>
+          The visibility gap is the governance gap. EDR telemetry without identity mapping
+          cannot support access reviews, least-privilege decisions or incident response. That
+          is why the piece's point about correlating agent activity with organizational context
+          matters: a compliance API supplies the data layer, but the policy layer, approved
+          skills, permission boundaries, ownership, still has to be built by the organization.
+        </p>
+        <p>
+          For a GRC team this is also a third-party risk question. When developers adopt agentic
+          tools, the tool vendor becomes part of your control environment. Knowing what
+          telemetry the vendor exposes, and what it cannot see, should be part of the vendor
+          risk assessment before rollout, not an incident response problem after.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch whether more AI vendors ship compliance and audit surfaces for local agent
+          execution, and whether security teams build the correlation layer, UUID-to-tool maps,
+          approved skill inventories, repository baselines, that makes the telemetry actually
+          usable. The tooling is arriving faster than the operating models.
+        </p>
+        <p>
+          For organizations adopting AI coding agents, the practical sequence is: decide who
+          owns agent identity, define the approval process for new skills and plugins, and
+          specify what gets logged before you enable the tool at scale. The vendor can hand you
+          the transcripts. The governance still has to be yours.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html" target="_blank" rel="noopener">The Hacker News' reporting</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

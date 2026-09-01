@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2: Fixing Identity and Access Controls Before the 2026 Audit · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="As EU member states shift to NIS2 enforcement, access management and credential hygiene offer the fastest auditable compliance wins.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-02-nis2-iam-audit-readiness.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "NIS2: Fixing Identity and Access Controls Before the 2026 Audit", "description": "As EU member states shift to NIS2 enforcement, access management and credential hygiene offer the fastest auditable compliance wins.", "datePublished": "2026-09-02", "dateModified": "2026-09-02", "url": "https://zabez.com/news/articles/2026-09-02-nis2-iam-audit-readiness.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="NIS2: Fixing Identity and Access Controls Before the 2026 Audit">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-cloud.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 2, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>NIS2: Fixing Identity and Access Controls Before the 2026 Audit</h1>
+        <p class="subtitle">As EU member states shift to NIS2 enforcement, access management and credential hygiene offer the fastest auditable compliance wins.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.helpnetsecurity.com/2026/09/01/nis2-credential-compliance-before-audit/" target="_blank" rel="noopener">Help Net Security</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-cloud.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          October brings a new wave of legally binding NIS2 deadlines across the European Union,
+          as member states move from transposition into enforcement. In Austria the national
+          implementation law enters into force once adopted, and in Poland a mandatory
+          self-registration closes on a fixed date set by the national authority. The directive
+          places direct obligations on organizations covering supply chain risk management,
+          incident reporting and board-level accountability.
+        </p>
+        <p>
+          The penalty regime gives those obligations teeth. Essential entities face fines up to
+          <strong>10 million euros or 2 percent of global turnover</strong>, important entities up
+          to 7 million euros or 1.4 percent, and management bodies face personal liability,
+          including temporary bans from executive roles.
+        </p>
+        <p>
+          The 2026 Verizon Data Breach Investigations Report adds a data point on where the risk
+          concentrates. Vulnerability exploitation has overtaken stolen credentials as the top
+          initial access vector, at 31 percent of breaches. But credential abuse still appears in
+          39 percent of breaches measured across the full attack chain, and Verizon identifies it
+          as a legitimate mitigation target chokepoint. Credentials do not just open the front
+          door; they are how attackers move through the building once inside.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          The practical argument for starting with identity and access management is that it is
+          the fastest path to auditable evidence. The article compares two NIS2 Article 21
+          requirements: supply chain risk management runs 6 to 12 months of implementation work,
+          while access control enforcement can be done in 2 to 4 weeks. Enforcing a fine-grained
+          password policy, moving shared credentials into a managed vault and enabling
+          phishing-resistant MFA for privileged accounts is a small project with immediate,
+          examinable output.
+        </p>
+        <p>
+          The blind spot is non-human identity. Most IAM programs track human users, but auditors
+          increasingly focus on service accounts, API keys and database connections. Unmanaged
+          service accounts and API keys are a named pre-audit failure. If your access inventory
+          stops at people, the audit will not.
+        </p>
+        <p>
+          The personal liability provision changes the conversation for executives. When board
+          members can be banned from executive roles, compliance stops being an IT cost center and
+          becomes a governance obligation. That is the shift NIS2 is designed to force, and IAM is
+          the control where most organizations can demonstrate it fastest.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch the national enforcement deadlines through October, especially Austria and Poland,
+          and how the first wave of NIS2 audits actually tests access controls. Do not read the
+          DBIR shift toward vulnerability exploitation as permission to deprioritize credentials.
+          The data still says credential abuse runs through nearly 4 in 10 breaches, and access
+          control is the control you can fix before the auditor arrives.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.helpnetsecurity.com/2026/09/01/nis2-credential-compliance-before-audit/" target="_blank" rel="noopener">Help Net Security's reporting</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

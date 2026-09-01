@@ -1,41 +1,83 @@
 {
-  "generated": "2026-09-01T07:31:28",
-  "count": 11,
+  "generated": "2026-09-02T07:31:23",
+  "count": 17,
   "items": [
     {
       "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
       "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-01"
+      "date": "2026-09-02"
     },
     {
       "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
       "link": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-01"
+      "date": "2026-09-02"
     },
     {
       "title": "US Sanctions Mabna Institute Hackers for Iranian Cyber-Attacks",
       "link": "https://www.infosecurity-magazine.com/news/us-sanctions-mabna-institute/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-01"
+      "date": "2026-09-02"
     },
     {
       "title": "NIST Warns of Unique Security Risks in Multi-Cloud Environments",
       "link": "https://www.infosecurity-magazine.com/news/nist-risks-multi-cloud/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-01"
-    },
-    {
-      "title": "LogicGate Bets on AI Agents to Automate GRC Workflows",
-      "link": "https://www.databreachtoday.com/logicgate-bets-on-ai-agents-to-automate-grc-workflows-a-32707",
-      "source": "DataBreachToday",
-      "date": "2026-09-01"
+      "date": "2026-09-02"
     },
     {
       "title": "Banks Face the Penalty but Scammers Exploit the Gaps",
       "link": "https://www.databreachtoday.com/blogs/banks-face-penalty-but-scammers-exploit-gaps-p-4181",
       "source": "DataBreachToday",
+      "date": "2026-09-02"
+    },
+    {
+      "title": "LastPass enhancements improve visibility, governance, and control",
+      "link": "https://www.helpnetsecurity.com/2026/09/01/lastpass-security-product-enhancements-innovations/",
+      "source": "Help Net Security",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "NIS2 compliance: Fixing IAM and access control before the 2026 audit",
+      "link": "https://www.helpnetsecurity.com/2026/09/01/nis2-credential-compliance-before-audit/",
+      "source": "Help Net Security",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "New U.K. data law takes full effect: What compliance officers need to know",
+      "link": "https://www.complianceweek.com/data-privacy/new-u-k-data-law-takes-full-effect-what-compliance-officers-need-to-know/",
+      "source": "Compliance Week",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "Before the first crypto transaction, finance needs a seat at the compliance table",
+      "link": "https://www.complianceweek.com/best-practices/before-the-first-crypto-transaction-finance-needs-a-seat-at-the-compliance-table/",
+      "source": "Compliance Week",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "FBI raises alarm over deceptive phishing campaign targeting prominent people",
+      "link": "https://cyberscoop.com/fbi-alert-oauth-consent-phishing-campaign/",
+      "source": "CyberScoop",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "SEC Charges San Francisco Bay Area Private Fund Executives with Multimillion Dollar Ponzi-Like Scheme",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-82-sec-charges-san-francisco-bay-area-private-fund-executives-multimillion-dollar-ponzi-scheme",
+      "source": "SEC Press Releases",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "SEC Proposes to Modernize Rules for Registered Transfer Agents",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-81-sec-proposes-modernize-rules-registered-transfer-agents",
+      "source": "SEC Press Releases",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
+      "link": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+      "source": "Krebs on Security",
       "date": "2026-09-01"
     },
     {
@@ -48,12 +90,6 @@
       "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets, Not Victims",
       "link": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
       "source": "The Hacker News",
-      "date": "2026-08-31"
-    },
-    {
-      "title": "Halo-record: Open-source audit trails for AI agents",
-      "link": "https://www.helpnetsecurity.com/2026/08/31/halo-record-open-source-ai-agent-audit-trail/",
-      "source": "Help Net Security",
       "date": "2026-08-31"
     },
     {

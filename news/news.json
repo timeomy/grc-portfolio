@@ -1,48 +1,66 @@
 {
-  "generated": "2026-09-02T07:31:23",
-  "count": 17,
+  "generated": "2026-09-03T07:30:44",
+  "count": 16,
   "items": [
     {
       "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
       "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-02"
+      "date": "2026-09-03"
     },
     {
       "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
       "link": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-02"
+      "date": "2026-09-03"
     },
     {
       "title": "US Sanctions Mabna Institute Hackers for Iranian Cyber-Attacks",
       "link": "https://www.infosecurity-magazine.com/news/us-sanctions-mabna-institute/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-02"
+      "date": "2026-09-03"
     },
     {
       "title": "NIST Warns of Unique Security Risks in Multi-Cloud Environments",
       "link": "https://www.infosecurity-magazine.com/news/nist-risks-multi-cloud/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-02"
+      "date": "2026-09-03"
+    },
+    {
+      "title": "Irish Privacy Watchdog Details Psychiatric Data Breaches",
+      "link": "https://www.databreachtoday.com/irish-privacy-watchdog-details-psychiatric-data-breaches-a-32728",
+      "source": "DataBreachToday",
+      "date": "2026-09-03"
     },
     {
       "title": "Banks Face the Penalty but Scammers Exploit the Gaps",
       "link": "https://www.databreachtoday.com/blogs/banks-face-penalty-but-scammers-exploit-gaps-p-4181",
       "source": "DataBreachToday",
+      "date": "2026-09-03"
+    },
+    {
+      "title": "Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands",
+      "link": "https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html",
+      "source": "The Hacker News",
       "date": "2026-09-02"
     },
     {
-      "title": "LastPass enhancements improve visibility, governance, and control",
-      "link": "https://www.helpnetsecurity.com/2026/09/01/lastpass-security-product-enhancements-innovations/",
+      "title": "Attackers are going after prominent individuals through OAuth phishing, FBI warns",
+      "link": "https://www.helpnetsecurity.com/2026/09/02/oauth-consent-phishing-fbi-warning/",
       "source": "Help Net Security",
-      "date": "2026-09-01"
+      "date": "2026-09-02"
     },
     {
-      "title": "NIS2 compliance: Fixing IAM and access control before the 2026 audit",
-      "link": "https://www.helpnetsecurity.com/2026/09/01/nis2-credential-compliance-before-audit/",
-      "source": "Help Net Security",
-      "date": "2026-09-01"
+      "title": "Jail time for Maine child in 764 marks turning point in federal law enforcement",
+      "link": "https://cyberscoop.com/maine-teenager-first-underage-detained-764/",
+      "source": "CyberScoop",
+      "date": "2026-09-02"
+    },
+    {
+      "title": "AI agents carried out every step of this ransomware attack \u2013 then left the victim an 80-page security audit",
+      "link": "https://www.theregister.com/security/2026/09/02/ai-agents-carried-out-every-step-of-this-ransomware-attack-then-left-the-victim-an-80-page-security-audit/5294009",
+      "source": "The Register - Security",
+      "date": "2026-09-02"
     },
     {
       "title": "New U.K. data law takes full effect: What compliance officers need to know",
@@ -79,30 +97,6 @@
       "link": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
       "source": "Krebs on Security",
       "date": "2026-09-01"
-    },
-    {
-      "title": "Securing Claude Code: The New Compliance API, Local Visibility, and Identity Governance",
-      "link": "https://thehackernews.com/2026/08/securing-claude-code-new-compliance-api.html",
-      "source": "The Hacker News",
-      "date": "2026-08-31"
-    },
-    {
-      "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets, Not Victims",
-      "link": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
-      "source": "The Hacker News",
-      "date": "2026-08-31"
-    },
-    {
-      "title": "Gaps remain in firms\u2019 KYC checks, says U.K. financial services regulator",
-      "link": "https://www.complianceweek.com/financial-services/gaps-remain-in-firms-kyc-checks-says-u-k-financial-services-regulator/",
-      "source": "Compliance Week",
-      "date": "2026-08-31"
-    },
-    {
-      "title": "PaperCut issues emergency patches as threat actors target chained vulnerabilities",
-      "link": "https://www.cybersecuritydive.com/news/papercut-emergency-patches-threat-actors-chained-vulnerabilities/829184/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-08-31"
     }
   ]
 }

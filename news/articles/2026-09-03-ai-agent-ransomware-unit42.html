@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agents Executed Every Step of a Ransomware Attack, Unit 42 Says · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Unit 42 says ransomware attackers used AI agents to breach an enterprise network in under 10 hours and left an 80-page security audit.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-03-ai-agent-ransomware-unit42.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "AI Agents Executed Every Step of a Ransomware Attack, Unit 42 Says", "description": "Unit 42 says ransomware attackers used AI agents to breach an enterprise network in under 10 hours and left an 80-page security audit.", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "url": "https://zabez.com/news/articles/2026-09-03-ai-agent-ransomware-unit42.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="AI Agents Executed Every Step of a Ransomware Attack, Unit 42 Says">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-ai.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 3, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>AI Agents Executed Every Step of a Ransomware Attack, Unit 42 Says</h1>
+        <p class="subtitle">Unit 42 says ransomware attackers used AI agents to breach an enterprise network in under 10 hours and left an 80-page security audit.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.theregister.com/security/2026/09/02/ai-agents-carried-out-every-step-of-this-ransomware-attack-then-left-the-victim-an-80-page-security-audit/5294009" target="_blank" rel="noopener">The Register</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-ai.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          Unit 42, Palo Alto Networks' incident response arm, published a report on an intrusion it
+          says shows what AI-assisted attacks already look like. A human ransomware attacker used
+          frontier AI models and agentic attack frameworks to breach an enterprise network in less
+          than 10 hours, work Unit 42 estimates would normally take human operators around two
+          weeks. During negotiations the attacker said AI agents carried out each step of the
+          intrusion, and even left the company an 80-page security audit of its own network.
+        </p>
+        <p>
+          "What made the attack stand out was AI-assisted operational efficiency, without the need
+          for a novel zero-day or super elite tradecraft," the Unit 42 team wrote. "The attacker
+          left tactical execution to AI agents that monitored, evaluated, acted and re-planned in
+          real time, increasing speed throughout the attack chain."
+        </p>
+        <p>
+          The sequence Unit 42 reported reads like a checklist of controls that failed. Agents
+          performed reconnaissance and breached a public API endpoint to tunnel into the network.
+          An automated recon agent mapped internal microservices while subagents scraped code
+          repositories for hard-coded tokens and service passwords. Those credentials opened the
+          secret management system, where the agents stole master administrative credentials for
+          root access. Specialist pivot agents then validated access across the company's cloud,
+          identity, CI/CD, container and SaaS environments, hijacked CI/CD workflows to steal cloud
+          access keys, and turned the victim's own cloud AI services into post-compromise
+          infrastructure. Unit 42 has not disclosed which models or frameworks were used.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          The notable thing is that this attack did not need a zero-day or exotic tradecraft. It
+          ran on failures that GRC teams already own: hard-coded secrets sitting in code
+          repositories, a public API endpoint that became a tunnel into the network, CI/CD pipelines
+          that could mint cloud access keys, and no limits on what an internal service could spend
+          or reach. When credentials are everywhere and pipelines can mint more of them, a
+          machine-speed agent inherits the whole estate.
+        </p>
+        <p>
+          Unit 42's advice points to the fixes. Treat AI as core infrastructure: keep an inventory
+          of every model endpoint, API key, MCP gateway and AI tool integration, and apply rate
+          limits and least privilege to them. Response has to be automated too. Revoking
+          credentials, terminating OAuth sessions, freezing CI/CD pipelines and isolating cloud
+          accounts need to happen at once through playbooks, because humans cannot react at agent
+          speed.
+        </p>
+        <p>
+          There is a governance lesson in the audit, too. The attacker understood the victim's
+          attack surface well enough to document it, which means the victim did not. The claim that
+          a company has no AI risk because it does not build AI no longer holds. The risk cuts both
+          ways: attackers using AI against you, and your own AI services and spend turned against
+          you. Both belong in the risk register, with an owner and evidence.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch whether other incident response firms report similar cases, and whether insurers
+          and regulators start asking for AI asset inventories and secret management evidence in
+          due diligence. For GRC teams, two concrete checks follow from this report: can you revoke
+          every credential and freeze every pipeline at once, and do you know every public API
+          endpoint and every place a key is stored? If the answer is no, an agent could find what
+          you could not.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.theregister.com/security/2026/09/02/ai-agents-carried-out-every-step-of-this-ransomware-attack-then-left-the-victim-an-80-page-security-audit/5294009" target="_blank" rel="noopener">The Register's reporting</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

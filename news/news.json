@@ -1,41 +1,47 @@
 {
-  "generated": "2026-09-03T07:30:44",
-  "count": 16,
+  "generated": "2026-09-04T07:30:54",
+  "count": 11,
   "items": [
+    {
+      "title": "FBI Probes Possible Breach of 153 Million Driver\u2019s Licenses",
+      "link": "https://www.infosecurity-magazine.com/news/fbi-probes-breach-153-million/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-04"
+    },
     {
       "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
       "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-03"
+      "date": "2026-09-04"
     },
     {
       "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
       "link": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-03"
+      "date": "2026-09-04"
     },
     {
       "title": "US Sanctions Mabna Institute Hackers for Iranian Cyber-Attacks",
       "link": "https://www.infosecurity-magazine.com/news/us-sanctions-mabna-institute/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-03"
-    },
-    {
-      "title": "NIST Warns of Unique Security Risks in Multi-Cloud Environments",
-      "link": "https://www.infosecurity-magazine.com/news/nist-risks-multi-cloud/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-03"
-    },
-    {
-      "title": "Irish Privacy Watchdog Details Psychiatric Data Breaches",
-      "link": "https://www.databreachtoday.com/irish-privacy-watchdog-details-psychiatric-data-breaches-a-32728",
-      "source": "DataBreachToday",
-      "date": "2026-09-03"
+      "date": "2026-09-04"
     },
     {
       "title": "Banks Face the Penalty but Scammers Exploit the Gaps",
       "link": "https://www.databreachtoday.com/blogs/banks-face-penalty-but-scammers-exploit-gaps-p-4181",
       "source": "DataBreachToday",
+      "date": "2026-09-04"
+    },
+    {
+      "title": "Russian man indicted for spreading malware to 80,000 freelancers",
+      "link": "https://www.helpnetsecurity.com/2026/09/03/russian-national-indicted-freelance-platform-malware/",
+      "source": "Help Net Security",
+      "date": "2026-09-03"
+    },
+    {
+      "title": "SEC Proposes Rescission of Political Contribution Rule for Investment Advisers",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-85-sec-proposes-rescission-political-contribution-rule-investment-advisers",
+      "source": "SEC Press Releases",
       "date": "2026-09-03"
     },
     {
@@ -45,14 +51,14 @@
       "date": "2026-09-02"
     },
     {
-      "title": "Attackers are going after prominent individuals through OAuth phishing, FBI warns",
-      "link": "https://www.helpnetsecurity.com/2026/09/02/oauth-consent-phishing-fbi-warning/",
-      "source": "Help Net Security",
+      "title": "Jail time for Maine child in 764 marks turning point in federal law enforcement",
+      "link": "https://cyberscoop.com/maine-teenager-first-underage-detained-764/",
+      "source": "CyberScoop",
       "date": "2026-09-02"
     },
     {
-      "title": "Jail time for Maine child in 764 marks turning point in federal law enforcement",
-      "link": "https://cyberscoop.com/maine-teenager-first-underage-detained-764/",
+      "title": "FCC proposes public scorecard to rate telecoms on anti-robocall efforts",
+      "link": "https://cyberscoop.com/the-fcc-wants-consumers-to-rate-their-telecoms-anti-robocall-protections/",
       "source": "CyberScoop",
       "date": "2026-09-02"
     },
@@ -61,42 +67,6 @@
       "link": "https://www.theregister.com/security/2026/09/02/ai-agents-carried-out-every-step-of-this-ransomware-attack-then-left-the-victim-an-80-page-security-audit/5294009",
       "source": "The Register - Security",
       "date": "2026-09-02"
-    },
-    {
-      "title": "New U.K. data law takes full effect: What compliance officers need to know",
-      "link": "https://www.complianceweek.com/data-privacy/new-u-k-data-law-takes-full-effect-what-compliance-officers-need-to-know/",
-      "source": "Compliance Week",
-      "date": "2026-09-01"
-    },
-    {
-      "title": "Before the first crypto transaction, finance needs a seat at the compliance table",
-      "link": "https://www.complianceweek.com/best-practices/before-the-first-crypto-transaction-finance-needs-a-seat-at-the-compliance-table/",
-      "source": "Compliance Week",
-      "date": "2026-09-01"
-    },
-    {
-      "title": "FBI raises alarm over deceptive phishing campaign targeting prominent people",
-      "link": "https://cyberscoop.com/fbi-alert-oauth-consent-phishing-campaign/",
-      "source": "CyberScoop",
-      "date": "2026-09-01"
-    },
-    {
-      "title": "SEC Charges San Francisco Bay Area Private Fund Executives with Multimillion Dollar Ponzi-Like Scheme",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-82-sec-charges-san-francisco-bay-area-private-fund-executives-multimillion-dollar-ponzi-scheme",
-      "source": "SEC Press Releases",
-      "date": "2026-09-01"
-    },
-    {
-      "title": "SEC Proposes to Modernize Rules for Registered Transfer Agents",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-81-sec-proposes-modernize-rules-registered-transfer-agents",
-      "source": "SEC Press Releases",
-      "date": "2026-09-01"
-    },
-    {
-      "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
-      "link": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
-      "source": "Krebs on Security",
-      "date": "2026-09-01"
     }
   ]
 }

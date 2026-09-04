@@ -1,72 +1,60 @@
 {
-  "generated": "2026-09-04T07:30:54",
-  "count": 11,
+  "generated": "2026-09-05T07:30:23",
+  "count": 9,
   "items": [
     {
       "title": "FBI Probes Possible Breach of 153 Million Driver\u2019s Licenses",
       "link": "https://www.infosecurity-magazine.com/news/fbi-probes-breach-153-million/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-04"
+      "date": "2026-09-05"
     },
     {
       "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
       "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-04"
+      "date": "2026-09-05"
     },
     {
       "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
       "link": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-04"
+      "date": "2026-09-05"
     },
     {
       "title": "US Sanctions Mabna Institute Hackers for Iranian Cyber-Attacks",
       "link": "https://www.infosecurity-magazine.com/news/us-sanctions-mabna-institute/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-04"
+      "date": "2026-09-05"
     },
     {
       "title": "Banks Face the Penalty but Scammers Exploit the Gaps",
       "link": "https://www.databreachtoday.com/blogs/banks-face-penalty-but-scammers-exploit-gaps-p-4181",
       "source": "DataBreachToday",
+      "date": "2026-09-05"
+    },
+    {
+      "title": "Statement by U.S. financial regulators clarifies confidentiality of suspicious activity filings",
+      "link": "https://www.complianceweek.com/financial-services/statement-by-u-s-financial-regulators-clarifies-confidentiality-of-suspicious-activity-filings/",
+      "source": "Compliance Week",
       "date": "2026-09-04"
     },
     {
-      "title": "Russian man indicted for spreading malware to 80,000 freelancers",
-      "link": "https://www.helpnetsecurity.com/2026/09/03/russian-national-indicted-freelance-platform-malware/",
-      "source": "Help Net Security",
-      "date": "2026-09-03"
+      "title": "Compliance implications of the National Fraud Enforcement Division",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/compliance-implications-of-the-national-fraud-enforcement-division/",
+      "source": "Compliance Week",
+      "date": "2026-09-04"
+    },
+    {
+      "title": "European parliament members call for slowdown of Serbia\u2019s EU entry over spyware use",
+      "link": "https://cyberscoop.com/eu-parliament-serbia-accession-spyware-demands/",
+      "source": "CyberScoop",
+      "date": "2026-09-04"
     },
     {
       "title": "SEC Proposes Rescission of Political Contribution Rule for Investment Advisers",
       "link": "https://www.sec.gov/newsroom/press-releases/2026-85-sec-proposes-rescission-political-contribution-rule-investment-advisers",
       "source": "SEC Press Releases",
       "date": "2026-09-03"
-    },
-    {
-      "title": "Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands",
-      "link": "https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html",
-      "source": "The Hacker News",
-      "date": "2026-09-02"
-    },
-    {
-      "title": "Jail time for Maine child in 764 marks turning point in federal law enforcement",
-      "link": "https://cyberscoop.com/maine-teenager-first-underage-detained-764/",
-      "source": "CyberScoop",
-      "date": "2026-09-02"
-    },
-    {
-      "title": "FCC proposes public scorecard to rate telecoms on anti-robocall efforts",
-      "link": "https://cyberscoop.com/the-fcc-wants-consumers-to-rate-their-telecoms-anti-robocall-protections/",
-      "source": "CyberScoop",
-      "date": "2026-09-02"
-    },
-    {
-      "title": "AI agents carried out every step of this ransomware attack \u2013 then left the victim an 80-page security audit",
-      "link": "https://www.theregister.com/security/2026/09/02/ai-agents-carried-out-every-step-of-this-ransomware-attack-then-left-the-victim-an-80-page-security-audit/5294009",
-      "source": "The Register - Security",
-      "date": "2026-09-02"
     }
   ]
 }

@@ -1,60 +1,66 @@
 {
-  "generated": "2026-09-05T07:30:23",
-  "count": 9,
+  "generated": "2026-09-08T07:31:22",
+  "count": 10,
   "items": [
+    {
+      "title": "Multiple Class Action Lawsuits Filed Against IDScan",
+      "link": "https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-08"
+    },
     {
       "title": "FBI Probes Possible Breach of 153 Million Driver\u2019s Licenses",
       "link": "https://www.infosecurity-magazine.com/news/fbi-probes-breach-153-million/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-05"
+      "date": "2026-09-08"
     },
     {
       "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
       "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-05"
+      "date": "2026-09-08"
     },
     {
       "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
       "link": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-05"
+      "date": "2026-09-08"
     },
     {
-      "title": "US Sanctions Mabna Institute Hackers for Iranian Cyber-Attacks",
-      "link": "https://www.infosecurity-magazine.com/news/us-sanctions-mabna-institute/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-05"
+      "title": "MikroTik Issues Patches for Routers Amid Zero-Day Attacks",
+      "link": "https://www.databreachtoday.com/mikrotik-issues-patches-for-routers-amid-zero-day-attacks-a-32762",
+      "source": "DataBreachToday",
+      "date": "2026-09-08"
     },
     {
       "title": "Banks Face the Penalty but Scammers Exploit the Gaps",
       "link": "https://www.databreachtoday.com/blogs/banks-face-penalty-but-scammers-exploit-gaps-p-4181",
       "source": "DataBreachToday",
-      "date": "2026-09-05"
+      "date": "2026-09-08"
     },
     {
-      "title": "Statement by U.S. financial regulators clarifies confidentiality of suspicious activity filings",
-      "link": "https://www.complianceweek.com/financial-services/statement-by-u-s-financial-regulators-clarifies-confidentiality-of-suspicious-activity-filings/",
+      "title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
+      "link": "https://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html",
+      "source": "The Hacker News",
+      "date": "2026-09-07"
+    },
+    {
+      "title": "Moody\u2019s urges banks to integrate compliance, culture and AI governance to accelerate processes and drive growth",
+      "link": "https://www.complianceweek.com/artificial-intelligence/moodys-urges-banks-to-integrate-compliance-culture-and-ai-governance-to-accelerate-processes-and-drive-growth/",
       "source": "Compliance Week",
-      "date": "2026-09-04"
+      "date": "2026-09-07"
     },
     {
-      "title": "Compliance implications of the National Fraud Enforcement Division",
-      "link": "https://www.complianceweek.com/regulatory-enforcement/compliance-implications-of-the-national-fraud-enforcement-division/",
+      "title": "Take these three actions to improve trade compliance oversight",
+      "link": "https://www.complianceweek.com/best-practices/take-three-actions-to-improve-trade-compliance-oversight/",
       "source": "Compliance Week",
-      "date": "2026-09-04"
+      "date": "2026-09-07"
     },
     {
-      "title": "European parliament members call for slowdown of Serbia\u2019s EU entry over spyware use",
-      "link": "https://cyberscoop.com/eu-parliament-serbia-accession-spyware-demands/",
-      "source": "CyberScoop",
-      "date": "2026-09-04"
-    },
-    {
-      "title": "SEC Proposes Rescission of Political Contribution Rule for Investment Advisers",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-85-sec-proposes-rescission-political-contribution-rule-investment-advisers",
-      "source": "SEC Press Releases",
-      "date": "2026-09-03"
+      "title": "Welsh environment regulator's FoI blunder exposes diversity data of 2,000 staff",
+      "link": "https://www.theregister.com/security/2026/09/07/welsh-environment-regulators-foi-blunder-exposes-diversity-data-of-2000-staff/5294748",
+      "source": "The Register - Security",
+      "date": "2026-09-07"
     }
   ]
 }

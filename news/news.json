@@ -1,59 +1,59 @@
 {
-  "generated": "2026-09-08T07:31:22",
+  "generated": "2026-09-09T07:31:11",
   "count": 10,
   "items": [
+    {
+      "title": "Grindr Settles UK Data Privacy Claims for \u00a326m",
+      "link": "https://www.infosecurity-magazine.com/news/grindr-settles-uk-data-privacy/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-09"
+    },
     {
       "title": "Multiple Class Action Lawsuits Filed Against IDScan",
       "link": "https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-08"
+      "date": "2026-09-09"
     },
     {
       "title": "FBI Probes Possible Breach of 153 Million Driver\u2019s Licenses",
       "link": "https://www.infosecurity-magazine.com/news/fbi-probes-breach-153-million/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-08"
+      "date": "2026-09-09"
     },
     {
       "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
       "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials",
+      "link": "https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html",
+      "source": "The Hacker News",
       "date": "2026-09-08"
     },
     {
-      "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
-      "link": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
-      "source": "Infosecurity Magazine",
+      "title": "U.K. promises corporate reporting reforms will slash compliance costs and focus on reports\u2019 purpose",
+      "link": "https://www.complianceweek.com/accounting-auditing/u-k-promises-corporate-reporting-reforms-will-slash-compliance-costs-and-focus-on-reports-purpose/",
+      "source": "Compliance Week",
       "date": "2026-09-08"
     },
     {
-      "title": "MikroTik Issues Patches for Routers Amid Zero-Day Attacks",
-      "link": "https://www.databreachtoday.com/mikrotik-issues-patches-for-routers-amid-zero-day-attacks-a-32762",
-      "source": "DataBreachToday",
+      "title": "N-able issues patch for zero-day flaw",
+      "link": "https://www.cybersecuritydive.com/news/n-able-issues-patch-zero-day-flaw/829808/",
+      "source": "Cybersecurity Dive",
       "date": "2026-09-08"
     },
     {
-      "title": "Banks Face the Penalty but Scammers Exploit the Gaps",
-      "link": "https://www.databreachtoday.com/blogs/banks-face-penalty-but-scammers-exploit-gaps-p-4181",
-      "source": "DataBreachToday",
+      "title": "LG accused of 'egregious invasion of privacy' over TV data collection",
+      "link": "https://www.theregister.com/security/2026/09/08/lg-accused-of-egregious-invasion-of-privacy-over-tv-data-collection/5294956",
+      "source": "The Register - Security",
       "date": "2026-09-08"
     },
     {
       "title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
       "link": "https://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html",
       "source": "The Hacker News",
-      "date": "2026-09-07"
-    },
-    {
-      "title": "Moody\u2019s urges banks to integrate compliance, culture and AI governance to accelerate processes and drive growth",
-      "link": "https://www.complianceweek.com/artificial-intelligence/moodys-urges-banks-to-integrate-compliance-culture-and-ai-governance-to-accelerate-processes-and-drive-growth/",
-      "source": "Compliance Week",
-      "date": "2026-09-07"
-    },
-    {
-      "title": "Take these three actions to improve trade compliance oversight",
-      "link": "https://www.complianceweek.com/best-practices/take-three-actions-to-improve-trade-compliance-oversight/",
-      "source": "Compliance Week",
       "date": "2026-09-07"
     },
     {

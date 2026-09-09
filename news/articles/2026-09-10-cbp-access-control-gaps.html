@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchdog Finds Critical Access Control Gaps at CBP · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="A US watchdog found that every CBP network user could run privileged service accounts, exposing the border agency to serious attack risk.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+    .article-body blockquote { border-left: 2px solid var(--gold); padding: 2px 0 2px 18px; margin: 18px 0; color: var(--text-dim); font-style: italic; }
+  </style>
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-10-cbp-access-control-gaps.html">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Watchdog Finds Critical Access Control Gaps at CBP", "description": "A US watchdog found that every CBP network user could run privileged service accounts, exposing the border agency to serious attack risk.", "datePublished": "2026-09-10", "dateModified": "2026-09-10", "url": "https://zabez.com/news/articles/2026-09-10-cbp-access-control-gaps.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="Watchdog Finds Critical Access Control Gaps at CBP">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-government.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 10, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Watchdog Finds Critical Access Control Gaps at CBP</h1>
+        <p class="subtitle">A US watchdog found that every CBP network user could run privileged service accounts, exposing the border agency to serious attack risk.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.databreachtoday.com/watchdog-finds-critical-access-control-gaps-at-cbp-a-32783" target="_blank" rel="noopener">DataBreachToday</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-government.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+                <h2>What happened</h2>
+        <p>
+          The Department of Homeland Security's Office of Inspector General opened an audit of U.S. Customs and Border Protection in late 2024 to test how the agency applies information technology access controls. The audit ran through December 2025 and included technical assessments and penetration testing. The findings, reported this week by DataBreachToday, are blunt.
+        </p>
+        <p>
+          Every user on CBP's network, the entire workforce of more than 76,000 employees, could operate a service account with elevated privileges and make changes to credentials and security settings. The watchdog said it identified "multiple access control vulnerabilities, which could allow an attacker to compromise CBP's network, gain access to sensitive information and disrupt mission-critical operations." CBP could not always tell which of its accounts carried elevated privileges in the first place, and it did not reliably strip access when people left the agency or moved to different roles.
+        </p>
+        <p>
+          The inspector general's office mapped more than 100 attack paths through CBP's environment and has asked the agency to show that each one was analyzed and that unnecessary access was cut back. CBP attributed the lapses to human error and to an inability to track how account access changed over time. The agency runs more than 100 major IT applications across 4,500 facilities, some holding sensitive law enforcement data.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+          This is a textbook failure of two fundamentals: privileged access management and identity lifecycle. Service accounts run automated processes and are watched less closely than human accounts, which makes them a favorite target for an intruder who already has a foothold. One overprovisioned service account can be the difference between a contained incident and a network-wide disruption.
+        </p>
+        <p>
+          The deeper governance problem sits in CBP's own explanation. Human error and an inability to track how access changed over time are not excuses, they are the diagnosis: no automated identity governance, no regular certification of who holds what, no reliable offboarding process. <strong>An organization that cannot inventory its privileged accounts cannot monitor them</strong>, and an organization that cannot monitor them cannot defend them.
+        </p>
+        <p>
+          If a border agency with 76,000 staff and a security mission can drift this far from baseline access hygiene, any company can. The controls that matter here are not exotic: document every privileged account, enforce least privilege, tie access to role, revoke on departure, and review entitlements on a fixed cycle.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+          Watch how CBP responds to the more than 100 attack paths the watchdog mapped. The inspector general has asked for proof that each path was analyzed and that unnecessary access was removed, so the agency's corrective action plan will be a useful case study in how a large organization digs itself out of an access control hole.
+        </p>
+        <p>
+          For your own environment the question is shorter: <strong>when did you last attest every privileged and service account, and how fast do leavers lose access today?</strong> Those two answers will tell you whether this story is someone else's problem or a preview of your next audit finding.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.databreachtoday.com/watchdog-finds-critical-access-control-gaps-at-cbp-a-32783" target="_blank" rel="noopener">DataBreachToday</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

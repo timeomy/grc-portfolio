@@ -1,29 +1,89 @@
 {
-  "generated": "2026-09-09T07:31:11",
-  "count": 10,
+  "generated": "2026-09-10T07:31:38",
+  "count": 18,
   "items": [
     {
       "title": "Grindr Settles UK Data Privacy Claims for \u00a326m",
       "link": "https://www.infosecurity-magazine.com/news/grindr-settles-uk-data-privacy/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-09"
+      "date": "2026-09-10"
     },
     {
       "title": "Multiple Class Action Lawsuits Filed Against IDScan",
       "link": "https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-09"
+      "date": "2026-09-10"
     },
     {
       "title": "FBI Probes Possible Breach of 153 Million Driver\u2019s Licenses",
       "link": "https://www.infosecurity-magazine.com/news/fbi-probes-breach-153-million/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-09"
+      "date": "2026-09-10"
     },
     {
       "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
       "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
       "source": "Infosecurity Magazine",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "FBI Strategy Calls for More Takedowns, Better Info-Sharing",
+      "link": "https://www.databreachtoday.com/fbi-strategy-calls-for-more-takedowns-better-info-sharing-a-32786",
+      "source": "DataBreachToday",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "Watchdog Finds Critical Access Control Gaps at CBP",
+      "link": "https://www.databreachtoday.com/watchdog-finds-critical-access-control-gaps-at-cbp-a-32783",
+      "source": "DataBreachToday",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "Akeyless adds real-time enforcement for AI agents in production",
+      "link": "https://www.helpnetsecurity.com/2026/09/09/akeyless-agentic-runtime-authority-identity-control-layer/",
+      "source": "Help Net Security",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "Uber\u2019s driver-blocking algorithm draws nearly $1 billion Dutch privacy penalty",
+      "link": "https://www.complianceweek.com/data-privacy/ubers-driver-blocking-algorithm-draws-nearly-1-billion-dutch-privacy-penalty/",
+      "source": "Compliance Week",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "Two Payment processors face bans under FTC orders",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/two-payment-processors-face-bans-under-ftc-orders/",
+      "source": "Compliance Week",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "FTC rescinds policy requiring health apps to notify customers after a breach",
+      "link": "https://cyberscoop.com/ftc-rescinds-health-app-data-breach-policy/",
+      "source": "CyberScoop",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "Lawmakers call on Treasury to sanction hackers-for-hire",
+      "link": "https://cyberscoop.com/us-lawmakers-treasury-sanctions-india-hack-for-hire/",
+      "source": "CyberScoop",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "FBI cyber chief worries private sector not sharing enough cyber threat information",
+      "link": "https://cyberscoop.com/fbi-cyber-division-private-sector-threat-sharing/",
+      "source": "CyberScoop",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "FBI officials say AI is bolstering adversaries, emphasizing need to focus on cyber basics, patching",
+      "link": "https://cyberscoop.com/fbi-cyber-strategy-ai-threats-patching/",
+      "source": "CyberScoop",
+      "date": "2026-09-09"
+    },
+    {
+      "title": "New FBI cyber strategy promises increase in adversary disruptions",
+      "link": "https://www.cybersecuritydive.com/news/fbi-cybersecurity-strategy-disruptions-information-sharing/829913/",
+      "source": "Cybersecurity Dive",
       "date": "2026-09-09"
     },
     {
@@ -49,18 +109,6 @@
       "link": "https://www.theregister.com/security/2026/09/08/lg-accused-of-egregious-invasion-of-privacy-over-tv-data-collection/5294956",
       "source": "The Register - Security",
       "date": "2026-09-08"
-    },
-    {
-      "title": "N-able Issues Fourth N-central Hotfix in Five Weeks for Unauthenticated RCE Flaw",
-      "link": "https://thehackernews.com/2026/09/n-able-issues-fourth-n-central-hotfix.html",
-      "source": "The Hacker News",
-      "date": "2026-09-07"
-    },
-    {
-      "title": "Welsh environment regulator's FoI blunder exposes diversity data of 2,000 staff",
-      "link": "https://www.theregister.com/security/2026/09/07/welsh-environment-regulators-foi-blunder-exposes-diversity-data-of-2000-staff/5294748",
-      "source": "The Register - Security",
-      "date": "2026-09-07"
     }
   ]
 }

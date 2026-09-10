@@ -1,48 +1,48 @@
 {
-  "generated": "2026-09-10T07:31:38",
-  "count": 18,
+  "generated": "2026-09-11T07:30:43",
+  "count": 14,
   "items": [
+    {
+      "title": "FBI Publishes First-Ever Cyber Strategy, With Focus on Disrupting Threat Actors",
+      "link": "https://www.infosecurity-magazine.com/news/fbi-cyber-strategy-disrupting/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-11"
+    },
+    {
+      "title": "OFAC Sanctions Chinese Scam Platform Xinbi Guarantee",
+      "link": "https://www.infosecurity-magazine.com/news/ofac-sanctions-chinese-scam/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-11"
+    },
     {
       "title": "Grindr Settles UK Data Privacy Claims for \u00a326m",
       "link": "https://www.infosecurity-magazine.com/news/grindr-settles-uk-data-privacy/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-10"
+      "date": "2026-09-11"
     },
     {
       "title": "Multiple Class Action Lawsuits Filed Against IDScan",
       "link": "https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-10"
+      "date": "2026-09-11"
     },
     {
-      "title": "FBI Probes Possible Breach of 153 Million Driver\u2019s Licenses",
-      "link": "https://www.infosecurity-magazine.com/news/fbi-probes-breach-153-million/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-10"
-    },
-    {
-      "title": "Chinese Hacker Group QTFY Uses Custom-Built Platforms to Target US Infrastructure, FBI Warns",
-      "link": "https://www.infosecurity-magazine.com/news/chinese-qtfy-us-infrastructure-fbi/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-10"
-    },
-    {
-      "title": "FBI Strategy Calls for More Takedowns, Better Info-Sharing",
-      "link": "https://www.databreachtoday.com/fbi-strategy-calls-for-more-takedowns-better-info-sharing-a-32786",
-      "source": "DataBreachToday",
-      "date": "2026-09-10"
-    },
-    {
-      "title": "Watchdog Finds Critical Access Control Gaps at CBP",
-      "link": "https://www.databreachtoday.com/watchdog-finds-critical-access-control-gaps-at-cbp-a-32783",
-      "source": "DataBreachToday",
-      "date": "2026-09-10"
-    },
-    {
-      "title": "Akeyless adds real-time enforcement for AI agents in production",
-      "link": "https://www.helpnetsecurity.com/2026/09/09/akeyless-agentic-runtime-authority-identity-control-layer/",
+      "title": "Scytale expands vendor risk management with AI-powered TPRM tools",
+      "link": "https://www.helpnetsecurity.com/2026/09/10/scytale-ai-third-party-risk-management-capabilities/",
       "source": "Help Net Security",
-      "date": "2026-09-09"
+      "date": "2026-09-10"
+    },
+    {
+      "title": "Bridging the AI Governance Gap: Operationalizing Defensible Compliance Under Modern Regulatory Scrutiny",
+      "link": "https://www.complianceweek.com/webcast/bridging-the-ai-governance-gap-operationalizing-defensible-compliance-under-modern-regulatory-scrutiny/",
+      "source": "Compliance Week",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "SEC Charges Founder and His Two New Jersey-Based Companies in Alleged $16 Million Ponzi Scheme",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-86-sec-charges-founder-his-two-new-jersey-based-companies-alleged-16-million-ponzi-scheme",
+      "source": "SEC Press Releases",
+      "date": "2026-09-10"
     },
     {
       "title": "Uber\u2019s driver-blocking algorithm draws nearly $1 billion Dutch privacy penalty",
@@ -63,7 +63,7 @@
       "date": "2026-09-09"
     },
     {
-      "title": "Lawmakers call on Treasury to sanction hackers-for-hire",
+      "title": "Lawmakers call on Commerce to sanction hackers-for-hire",
       "link": "https://cyberscoop.com/us-lawmakers-treasury-sanctions-india-hack-for-hire/",
       "source": "CyberScoop",
       "date": "2026-09-09"
@@ -85,30 +85,6 @@
       "link": "https://www.cybersecuritydive.com/news/fbi-cybersecurity-strategy-disruptions-information-sharing/829913/",
       "source": "Cybersecurity Dive",
       "date": "2026-09-09"
-    },
-    {
-      "title": "FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials",
-      "link": "https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html",
-      "source": "The Hacker News",
-      "date": "2026-09-08"
-    },
-    {
-      "title": "U.K. promises corporate reporting reforms will slash compliance costs and focus on reports\u2019 purpose",
-      "link": "https://www.complianceweek.com/accounting-auditing/u-k-promises-corporate-reporting-reforms-will-slash-compliance-costs-and-focus-on-reports-purpose/",
-      "source": "Compliance Week",
-      "date": "2026-09-08"
-    },
-    {
-      "title": "N-able issues patch for zero-day flaw",
-      "link": "https://www.cybersecuritydive.com/news/n-able-issues-patch-zero-day-flaw/829808/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-09-08"
-    },
-    {
-      "title": "LG accused of 'egregious invasion of privacy' over TV data collection",
-      "link": "https://www.theregister.com/security/2026/09/08/lg-accused-of-egregious-invasion-of-privacy-over-tv-data-collection/5294956",
-      "source": "The Register - Security",
-      "date": "2026-09-08"
     }
   ]
 }

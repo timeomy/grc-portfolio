@@ -213,6 +213,22 @@ def parse_article(path: Path):
     }
 
 
+def article_sort_key(a):
+    """Sort articles newest first by real date, not by the display string."""
+    for fmt in ("%B %d, %Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(a["date"].strip(), fmt)
+        except ValueError:
+            continue
+    m = re.match(r"(\d{4}-\d{2}-\d{2})", a["path"].stem)
+    if m:
+        try:
+            return datetime.strptime(m.group(1), "%Y-%m-%d")
+        except ValueError:
+            pass
+    return datetime.min
+
+
 def main():
     if not ARTICLES.exists():
         print("No articles directory yet:", ARTICLES)
@@ -223,6 +239,10 @@ def main():
 
     articles = [parse_article(p) for p in sorted(ARTICLES.glob("*.html"))]
     articles.sort(key=lambda a: a["date"], reverse=True)
+    # Dates like "September 9, 2026" vs "September 11, 2026" do not sort
+    # correctly as plain strings ("9" > "1"), which used to bury the newest
+    # articles at the bottom of the index. Parse to real dates and re-sort.
+    articles.sort(key=article_sort_key, reverse=True)
 
     # Dedupe: keep only the newest article per story (handles the daily cron
     # occasionally re-covering the same story with a new date or a retitled

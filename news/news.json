@@ -1,66 +1,54 @@
 {
-  "generated": "2026-09-12T07:30:25",
-  "count": 10,
+  "generated": "2026-09-15T07:30:46",
+  "count": 8,
   "items": [
     {
       "title": "FBI Publishes First-Ever Cyber Strategy, With Focus on Disrupting Threat Actors",
       "link": "https://www.infosecurity-magazine.com/news/fbi-cyber-strategy-disrupting/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-12"
+      "date": "2026-09-15"
     },
     {
       "title": "OFAC Sanctions Chinese Scam Platform Xinbi Guarantee",
       "link": "https://www.infosecurity-magazine.com/news/ofac-sanctions-chinese-scam/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-12"
+      "date": "2026-09-15"
     },
     {
       "title": "Grindr Settles UK Data Privacy Claims for \u00a326m",
       "link": "https://www.infosecurity-magazine.com/news/grindr-settles-uk-data-privacy/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-12"
+      "date": "2026-09-15"
     },
     {
       "title": "Multiple Class Action Lawsuits Filed Against IDScan",
       "link": "https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-12"
+      "date": "2026-09-15"
     },
     {
-      "title": "Kiteworks expands runtime data governance with Bonfy.AI acquisition",
-      "link": "https://www.helpnetsecurity.com/2026/09/11/kiteworks-bonfy-ai-acquisition/",
-      "source": "Help Net Security",
-      "date": "2026-09-11"
+      "title": "No UK Regulators Can Stop Risky AI Models, Panel Warns",
+      "link": "https://www.databreachtoday.com/no-uk-regulators-stop-risky-ai-models-panel-warns-a-32816",
+      "source": "DataBreachToday",
+      "date": "2026-09-15"
     },
     {
-      "title": "New audit quality control standard amended to reduce compliance burden",
-      "link": "https://www.complianceweek.com/accounting-auditing/new-audit-quality-control-standard-amended-to-reduce-compliance-burden/",
+      "title": "When Access Reviews Aren\u2019t Enough: Closing the Gaps in Identity Governance",
+      "link": "https://www.databreachtoday.com/webinars/when-access-reviews-arent-enough-closing-gaps-in-identity-governance-w-7365",
+      "source": "DataBreachToday",
+      "date": "2026-09-15"
+    },
+    {
+      "title": "FCA\u2019s regulatory approach in the age of AI will work for now, but regular reviews are necessary, warn experts",
+      "link": "https://www.complianceweek.com/artificial-intelligence/fcas-regulatory-approach-in-the-age-of-ai-will-work-for-now-but-regular-reviews-are-necessary-warn-experts/",
       "source": "Compliance Week",
-      "date": "2026-09-11"
+      "date": "2026-09-14"
     },
     {
-      "title": "OFSI fines Citibank over Russian sanctions violations",
-      "link": "https://www.complianceweek.com/sanctions/ofsi-fines-citibank-over-russian-sanctions-violations/",
+      "title": "Alcohol distributor pays $12.5M and ups compliance game in DOJ non-prosecution",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/alcohol-distributor-pays-12-5m-and-ups-compliance-game-in-doj-non-prosecution/",
       "source": "Compliance Week",
-      "date": "2026-09-11"
-    },
-    {
-      "title": "EU's Cyber Resilience Act starts the 24-hour vulnerability clock",
-      "link": "https://www.theregister.com/security/2026/09/11/eus-cyber-resilience-act-starts-the-24-hour-vulnerability-clock/5295821",
-      "source": "The Register - Security",
-      "date": "2026-09-11"
-    },
-    {
-      "title": "Bridging the AI Governance Gap: Operationalizing Defensible Compliance Under Modern Regulatory Scrutiny",
-      "link": "https://www.complianceweek.com/webcast/bridging-the-ai-governance-gap-operationalizing-defensible-compliance-under-modern-regulatory-scrutiny/",
-      "source": "Compliance Week",
-      "date": "2026-09-10"
-    },
-    {
-      "title": "SEC Charges Founder and His Two New Jersey-Based Companies in Alleged $16 Million Ponzi Scheme",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-86-sec-charges-founder-his-two-new-jersey-based-companies-alleged-16-million-ponzi-scheme",
-      "source": "SEC Press Releases",
-      "date": "2026-09-10"
+      "date": "2026-09-14"
     }
   ]
 }

@@ -1,52 +1,22 @@
 {
-  "generated": "2026-09-15T07:30:46",
-  "count": 8,
+  "generated": "2026-09-16T07:36:52",
+  "count": 3,
   "items": [
-    {
-      "title": "FBI Publishes First-Ever Cyber Strategy, With Focus on Disrupting Threat Actors",
-      "link": "https://www.infosecurity-magazine.com/news/fbi-cyber-strategy-disrupting/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-15"
-    },
-    {
-      "title": "OFAC Sanctions Chinese Scam Platform Xinbi Guarantee",
-      "link": "https://www.infosecurity-magazine.com/news/ofac-sanctions-chinese-scam/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-15"
-    },
-    {
-      "title": "Grindr Settles UK Data Privacy Claims for \u00a326m",
-      "link": "https://www.infosecurity-magazine.com/news/grindr-settles-uk-data-privacy/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-15"
-    },
-    {
-      "title": "Multiple Class Action Lawsuits Filed Against IDScan",
-      "link": "https://www.infosecurity-magazine.com/news/multiple-class-action-lawsuits/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-15"
-    },
-    {
-      "title": "No UK Regulators Can Stop Risky AI Models, Panel Warns",
-      "link": "https://www.databreachtoday.com/no-uk-regulators-stop-risky-ai-models-panel-warns-a-32816",
-      "source": "DataBreachToday",
-      "date": "2026-09-15"
-    },
     {
       "title": "When Access Reviews Aren\u2019t Enough: Closing the Gaps in Identity Governance",
       "link": "https://www.databreachtoday.com/webinars/when-access-reviews-arent-enough-closing-gaps-in-identity-governance-w-7365",
       "source": "DataBreachToday",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "Why compliance, not technology, will decide the future of digital sovereign finance",
+      "link": "https://www.complianceweek.com/best-practices/why-compliance-not-technology-will-decide-the-future-of-digital-sovereign-finance/",
+      "source": "Compliance Week",
       "date": "2026-09-15"
     },
     {
       "title": "FCA\u2019s regulatory approach in the age of AI will work for now, but regular reviews are necessary, warn experts",
       "link": "https://www.complianceweek.com/artificial-intelligence/fcas-regulatory-approach-in-the-age-of-ai-will-work-for-now-but-regular-reviews-are-necessary-warn-experts/",
-      "source": "Compliance Week",
-      "date": "2026-09-14"
-    },
-    {
-      "title": "Alcohol distributor pays $12.5M and ups compliance game in DOJ non-prosecution",
-      "link": "https://www.complianceweek.com/regulatory-enforcement/alcohol-distributor-pays-12-5m-and-ups-compliance-game-in-doj-non-prosecution/",
       "source": "Compliance Week",
       "date": "2026-09-14"
     }

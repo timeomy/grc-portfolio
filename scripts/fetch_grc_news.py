@@ -119,19 +119,32 @@ def parse_feed(xml_text: str):
     for item in root.findall(".//item"):
         title = item.findtext("title") or ""
         link = item.findtext("link") or ""
-        date = item.findtext("pubDate") or item.findtext("dc:date") or ""
+        date = item.findtext("pubDate") or item.findtext("{http://purl.org/dc/elements/1.1/}date") or ""
         items.append((title.strip(), link.strip(), date.strip()))
     return items
 
 
 def parse_date(s: str):
+    s = (s or "").strip()
+    if not s:
+        return None
     for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M %z",
                 "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ",
                 "%Y-%m-%dT%H:%M:%S.%f%z", "%Y-%m-%d"):
         try:
-            return datetime.strptime(s.strip(), fmt)
+            return datetime.strptime(s, fmt)
         except ValueError:
             continue
+    # Feeds that write a timezone name instead of an offset ("... 12:15:00 GMT")
+    # are not accepted by %z, so strip the trailing zone token and retry.
+    s_named = re.sub(r"\s+[A-Za-z]{2,5}$", "", s)
+    for fmt in ("%a, %d %b %Y %H:%M:%S", "%a, %d %b %Y %H:%M",
+                "%d %b %Y %H:%M:%S", "%a, %d %b %Y"):
+        for candidate in (s_named, s):
+            try:
+                return datetime.strptime(candidate, fmt)
+            except ValueError:
+                continue
     return None
 
 

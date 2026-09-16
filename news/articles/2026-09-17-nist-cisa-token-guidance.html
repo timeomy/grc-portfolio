@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIST and CISA Finalize Guidance on Protecting Identity Tokens · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="NIST and CISA published final guidance for agencies and cloud providers on stopping token theft, forgery and misuse in single sign-on and API access.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-17-nist-cisa-token-guidance.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+    .article-body blockquote { border-left: 2px solid var(--gold); padding: 2px 0 2px 18px; margin: 18px 0; color: var(--text-dim); font-style: italic; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "NIST and CISA Finalize Guidance on Protecting Identity Tokens", "description": "NIST and CISA published final guidance for agencies and cloud providers on stopping token theft, forgery and misuse in single sign-on and API access.", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "url": "https://zabez.com/news/articles/2026-09-17-nist-cisa-token-guidance.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="NIST and CISA Finalize Guidance on Protecting Identity Tokens">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-cloud.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 17, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>NIST and CISA Finalize Guidance on Protecting Identity Tokens</h1>
+        <p class="subtitle">NIST and CISA published final guidance for agencies and cloud providers on stopping token theft, forgery and misuse in single sign-on and API access.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.infosecurity-magazine.com/news/cisa-nist-cloud-identity-token/" target="_blank" rel="noopener">Infosecurity Magazine</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-cloud.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          NIST and CISA released Interagency Report 8587, <em>Protecting Tokens and Assertions
+          from Forgery, Theft, and Misuse</em>, on September 15. The report gives federal
+          agencies and cloud service providers implementation guidance for the tokens that sit
+          behind single sign-on, federation and API access.
+        </p>
+        <p>
+          It answers tasking under Executive Order 14306 and builds on recent updates to NIST
+          Special Publication 800-53. The contents cover architectural considerations for
+          identity providers and authorization servers, key management, token verification and
+          token lifecycle controls, guidance for securing single sign-on and API access built
+          on signed and encrypted tokens, and principles for configurable, interoperable
+          controls. The recommendations apply across commercial and government-operated cloud
+          services, not only federal ones.
+        </p>
+        <p>
+          The final version changed shape from the December 2025 draft in ways worth noting.
+          Guidance on cryptographic key protection moved from prescriptive requirements to
+          outcome-based expectations focused on what an organisation can demonstrate. Advice
+          on key usage, protection and storage expanded, new references were added for token
+          revocation and for sharing security signals, and the publication now carries
+          considerations for AI and for migration to post-quantum cryptography.
+        </p>
+        <p>
+          "Identity is the new perimeter, and the tokens and assertions behind it are
+          attractive targets for sophisticated adversaries," said Chris Butera, CISA's acting
+          executive assistant director for cybersecurity. NIST pointed to the reason for the
+          urgency: forged tokens derived from a stolen commercial signing key have already been
+          used to reach federal email systems, with more than 60,000 emails taken from one
+          agency.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          Almost every organisation now runs on the technology this report describes, whether
+          or not it operates a cloud service. If access to your applications flows through
+          single sign-on tokens issued by a major provider, then token handling is one of your
+          control environments. The report is written for agencies, but the risks it addresses
+          do not check the size of the organisation they are attacking.
+        </p>
+        <p>
+          <strong>Outcome-based guidance is harder to satisfy than a checklist.</strong> When a
+          standard stops saying "encrypt this key with that algorithm" and starts describing
+          capabilities, the evidence burden moves to the control owner. Practically, that means
+          records that show a token lifecycle is actually managed: issuance tied to identity
+          proofing, short and enforced lifetimes, revocation that works and is tested, key
+          rotation with a paper trail, and detection for token replay.
+        </p>
+        <p>
+          The AI and post-quantum additions are the part to read twice. Both are references to
+          risks that will not fully arrive for years, which is exactly why they tend to be
+          deferred in budget cycles. Standards bodies rarely add them ahead of the market by
+          accident. Where a publication names a migration path, assurance questionnaires
+          usually follow within a year or two.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch whether assessors and auditors begin mapping token controls to IR 8587. A
+          publication gains force the moment it appears in an assessment template.
+        </p>
+        <p>
+          Watch how the referenced standards for token revocation and signal sharing develop.
+          Interoperability between vendors is the difference between revoking a stolen token in
+          minutes and chasing it across separate systems.
+        </p>
+        <p>
+          Watch for AI and post-quantum considerations to appear in later revisions of the
+          broader identity guidance. That is likely where organisations first see the timeline
+          for real work.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.infosecurity-magazine.com/news/cisa-nist-cloud-identity-token/" target="_blank" rel="noopener">Infosecurity Magazine's reporting</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

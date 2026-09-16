@@ -1,24 +1,60 @@
 {
-  "generated": "2026-09-16T07:36:52",
-  "count": 3,
+  "generated": "2026-09-17T07:30:37",
+  "count": 9,
   "items": [
     {
-      "title": "When Access Reviews Aren\u2019t Enough: Closing the Gaps in Identity Governance",
-      "link": "https://www.databreachtoday.com/webinars/when-access-reviews-arent-enough-closing-gaps-in-identity-governance-w-7365",
+      "title": "CVS, Criteo Settle Web Tracker Data Privacy Suit for $20.5M",
+      "link": "https://www.databreachtoday.com/cvs-criteo-settle-web-tracker-data-privacy-suit-for-205m-a-32845",
       "source": "DataBreachToday",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "CISA and NIST Issue Guidance to Protect Cloud Identity Tokens",
+      "link": "https://www.infosecurity-magazine.com/news/cisa-nist-cloud-identity-token/",
+      "source": "Infosecurity Magazine",
       "date": "2026-09-16"
     },
     {
-      "title": "Why compliance, not technology, will decide the future of digital sovereign finance",
-      "link": "https://www.complianceweek.com/best-practices/why-compliance-not-technology-will-decide-the-future-of-digital-sovereign-finance/",
+      "title": "Grindr agrees $35 million settlement for U.K. complaint over serious data breaches",
+      "link": "https://www.complianceweek.com/data-privacy/grindr-agrees-35-million-settlement-for-u-k-complaint-over-serious-data-breaches/",
       "source": "Compliance Week",
-      "date": "2026-09-15"
+      "date": "2026-09-16"
     },
     {
-      "title": "FCA\u2019s regulatory approach in the age of AI will work for now, but regular reviews are necessary, warn experts",
-      "link": "https://www.complianceweek.com/artificial-intelligence/fcas-regulatory-approach-in-the-age-of-ai-will-work-for-now-but-regular-reviews-are-necessary-warn-experts/",
+      "title": "More whistleblowers to receive 30 percent awards, CFTC says of rule changes",
+      "link": "https://www.complianceweek.com/whistleblowers/more-whistleblowers-to-receive-30-percent-awards-cftc-says-of-rule-changes/",
       "source": "Compliance Week",
-      "date": "2026-09-14"
+      "date": "2026-09-16"
+    },
+    {
+      "title": "Coast Guard, FBI board US-bound foreign ships in order to probe for cyberattacks",
+      "link": "https://cyberscoop.com/coast-guard-fbi-investigate-tanker-cyberattacks/",
+      "source": "CyberScoop",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "SEC Proposes Rescission of Shareholder Proposal Rule and Reforms to Proxy Solicitation Process",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-89-sec-proposes-rescission-shareholder-proposal-rule-reforms-proxy-solicitation-process",
+      "source": "SEC Press Releases",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+      "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+      "source": "Krebs on Security",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "Ministry of Justice apologizes after court staff accessed Southport victims' files",
+      "link": "https://www.theregister.com/security/2026/09/16/ministry-of-justice-apologizes-after-court-staff-accessed-southport-victims-files/5296808",
+      "source": "The Register - Security",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "From Risk Register to Risk Intelligence \u2014 Delivering What Boards Are Asking For Now",
+      "link": "https://www.complianceweek.com/risk-management/from-risk-register-to-risk-intelligence-delivering-what-boards-are-asking-for-now/",
+      "source": "Compliance Week",
+      "date": "2026-09-15"
     }
   ]
 }

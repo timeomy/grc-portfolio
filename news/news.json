@@ -1,11 +1,53 @@
 {
-  "generated": "2026-09-17T07:30:37",
-  "count": 9,
+  "generated": "2026-09-18T07:31:24",
+  "count": 14,
   "items": [
     {
-      "title": "CVS, Criteo Settle Web Tracker Data Privacy Suit for $20.5M",
-      "link": "https://www.databreachtoday.com/cvs-criteo-settle-web-tracker-data-privacy-suit-for-205m-a-32845",
+      "title": "Post-Quantum on Deadline: What EO 14412 Means for Risk and Compliance",
+      "link": "https://www.databreachtoday.com/webinars/post-quantum-on-deadline-what-eo-14412-means-for-risk-compliance-w-7376",
       "source": "DataBreachToday",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "FBI takes down one of the longest-running DDoS-for-hire services",
+      "link": "https://www.helpnetsecurity.com/2026/09/17/fbi-nightmarestresser-ddos-for-hire-service-seized/",
+      "source": "Help Net Security",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "Beyond the AI Hype: What\u2019s Actually Working in Third-Party Risk Management",
+      "link": "https://www.complianceweek.com/third-party-risk/beyond-the-ai-hype-whats-actually-working-in-third-party-risk-management/",
+      "source": "Compliance Week",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "Preparing for prediction markets regulations is a safe bet",
+      "link": "https://www.complianceweek.com/best-practices/preparing-for-prediction-markets-regulations-is-a-safe-bet/",
+      "source": "Compliance Week",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "U.K. AI risk management toolkit targets current and future compliance",
+      "link": "https://www.complianceweek.com/artificial-intelligence/u-k-ai-risk-management-toolkit-targets-current-and-future-compliance/",
+      "source": "Compliance Week",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "FBI, Coast Guard probe suspected cyberattacks on ships entering US waters",
+      "link": "https://www.cybersecuritydive.com/news/fbi-coast-guard-probe-cyberattacks-ships-us-waters/830668/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "SEC Issues \u201cInnovation Exemption\u201d to Facilitate the Trading of Tokenized NMS Stock and Request for Comment",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+      "source": "SEC Press Releases",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "Ofcom discovers issuing Online Safety Act fines is easier than collecting them",
+      "link": "https://www.theregister.com/security/2026/09/17/ofcom-discovers-issuing-online-safety-act-fines-is-easier-than-collecting-them/5297110",
+      "source": "The Register - Security",
       "date": "2026-09-17"
     },
     {
@@ -17,12 +59,6 @@
     {
       "title": "Grindr agrees $35 million settlement for U.K. complaint over serious data breaches",
       "link": "https://www.complianceweek.com/data-privacy/grindr-agrees-35-million-settlement-for-u-k-complaint-over-serious-data-breaches/",
-      "source": "Compliance Week",
-      "date": "2026-09-16"
-    },
-    {
-      "title": "More whistleblowers to receive 30 percent awards, CFTC says of rule changes",
-      "link": "https://www.complianceweek.com/whistleblowers/more-whistleblowers-to-receive-30-percent-awards-cftc-says-of-rule-changes/",
       "source": "Compliance Week",
       "date": "2026-09-16"
     },
@@ -49,12 +85,6 @@
       "link": "https://www.theregister.com/security/2026/09/16/ministry-of-justice-apologizes-after-court-staff-accessed-southport-victims-files/5296808",
       "source": "The Register - Security",
       "date": "2026-09-16"
-    },
-    {
-      "title": "From Risk Register to Risk Intelligence \u2014 Delivering What Boards Are Asking For Now",
-      "link": "https://www.complianceweek.com/risk-management/from-risk-register-to-risk-intelligence-delivering-what-boards-are-asking-for-now/",
-      "source": "Compliance Week",
-      "date": "2026-09-15"
     }
   ]
 }

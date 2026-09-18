@@ -1,18 +1,30 @@
 {
-  "generated": "2026-09-18T07:31:24",
-  "count": 14,
+  "generated": "2026-09-19T07:30:41",
+  "count": 9,
   "items": [
     {
       "title": "Post-Quantum on Deadline: What EO 14412 Means for Risk and Compliance",
       "link": "https://www.databreachtoday.com/webinars/post-quantum-on-deadline-what-eo-14412-means-for-risk-compliance-w-7376",
       "source": "DataBreachToday",
+      "date": "2026-09-19"
+    },
+    {
+      "title": "Arcjet brings security controls and audit trails to AI agents",
+      "link": "https://www.helpnetsecurity.com/2026/09/18/arcjet-agent-runtime-security/",
+      "source": "Help Net Security",
       "date": "2026-09-18"
     },
     {
-      "title": "FBI takes down one of the longest-running DDoS-for-hire services",
-      "link": "https://www.helpnetsecurity.com/2026/09/17/fbi-nightmarestresser-ddos-for-hire-service-seized/",
-      "source": "Help Net Security",
-      "date": "2026-09-17"
+      "title": "Learning from loss: Compliance lessons from the July Fourth flood",
+      "link": "https://www.complianceweek.com/compliance-week/learning-from-loss-compliance-lessons-from-the-july-fourth-flood/",
+      "source": "Compliance Week",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "FBI: Fake cop and government impersonation scams cost victims $1.6B",
+      "link": "https://www.theregister.com/cyber-crime/2026/09/18/fbi-fake-cop-and-government-impersonation-scams-cost-victims-16b/5297499",
+      "source": "The Register - Security",
+      "date": "2026-09-18"
     },
     {
       "title": "Beyond the AI Hype: What\u2019s Actually Working in Third-Party Risk Management",
@@ -23,12 +35,6 @@
     {
       "title": "Preparing for prediction markets regulations is a safe bet",
       "link": "https://www.complianceweek.com/best-practices/preparing-for-prediction-markets-regulations-is-a-safe-bet/",
-      "source": "Compliance Week",
-      "date": "2026-09-17"
-    },
-    {
-      "title": "U.K. AI risk management toolkit targets current and future compliance",
-      "link": "https://www.complianceweek.com/artificial-intelligence/u-k-ai-risk-management-toolkit-targets-current-and-future-compliance/",
       "source": "Compliance Week",
       "date": "2026-09-17"
     },
@@ -49,42 +55,6 @@
       "link": "https://www.theregister.com/security/2026/09/17/ofcom-discovers-issuing-online-safety-act-fines-is-easier-than-collecting-them/5297110",
       "source": "The Register - Security",
       "date": "2026-09-17"
-    },
-    {
-      "title": "CISA and NIST Issue Guidance to Protect Cloud Identity Tokens",
-      "link": "https://www.infosecurity-magazine.com/news/cisa-nist-cloud-identity-token/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-16"
-    },
-    {
-      "title": "Grindr agrees $35 million settlement for U.K. complaint over serious data breaches",
-      "link": "https://www.complianceweek.com/data-privacy/grindr-agrees-35-million-settlement-for-u-k-complaint-over-serious-data-breaches/",
-      "source": "Compliance Week",
-      "date": "2026-09-16"
-    },
-    {
-      "title": "Coast Guard, FBI board US-bound foreign ships in order to probe for cyberattacks",
-      "link": "https://cyberscoop.com/coast-guard-fbi-investigate-tanker-cyberattacks/",
-      "source": "CyberScoop",
-      "date": "2026-09-16"
-    },
-    {
-      "title": "SEC Proposes Rescission of Shareholder Proposal Rule and Reforms to Proxy Solicitation Process",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-89-sec-proposes-rescission-shareholder-proposal-rule-reforms-proxy-solicitation-process",
-      "source": "SEC Press Releases",
-      "date": "2026-09-16"
-    },
-    {
-      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
-      "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
-      "source": "Krebs on Security",
-      "date": "2026-09-16"
-    },
-    {
-      "title": "Ministry of Justice apologizes after court staff accessed Southport victims' files",
-      "link": "https://www.theregister.com/security/2026/09/16/ministry-of-justice-apologizes-after-court-staff-accessed-southport-victims-files/5296808",
-      "source": "The Register - Security",
-      "date": "2026-09-16"
     }
   ]
 }

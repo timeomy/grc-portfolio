@@ -1,11 +1,47 @@
 {
-  "generated": "2026-09-21T07:31:17",
-  "count": 1,
+  "generated": "2026-09-22T07:31:09",
+  "count": 7,
   "items": [
     {
-      "title": "Post-Quantum on Deadline: What EO 14412 Means for Risk and Compliance",
-      "link": "https://www.databreachtoday.com/webinars/post-quantum-on-deadline-what-eo-14412-means-for-risk-compliance-w-7376",
+      "title": "Ambry Genetics Pays $700K HIPAA Fine in Phishing Breach",
+      "link": "https://www.databreachtoday.com/ambry-genetics-pays-700k-hipaa-fine-in-phishing-breach-a-32883",
       "source": "DataBreachToday",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "Google Fined \u20ac403 Million Over GDPR Violations Tied to Location Data",
+      "link": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
+      "source": "The Hacker News",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "Google Hit with \u20ac403m GDPR Fine Over Location Data Practices",
+      "link": "https://www.infosecurity-magazine.com/news/google-hit-with-403m-gdpr-fine/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "Google hit with \u20ac403 million GDPR fine over location tracking",
+      "link": "https://www.helpnetsecurity.com/2026/09/21/ireland-google-users-location-data-processing-fine/",
+      "source": "Help Net Security",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "The State of Third-Party Risk & Integrity Survey",
+      "link": "https://www.complianceweek.com/diligent-compliance-ethics/the-state-of-third-party-risk-integrity-survey/",
+      "source": "Compliance Week",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "CFTC proposes reviving 2012 exemption for pool operators, advisors",
+      "link": "https://www.complianceweek.com/banking/cftc-proposes-reviving-2012-exemption-for-pool-operators-advisors/",
+      "source": "Compliance Week",
+      "date": "2026-09-21"
+    },
+    {
+      "title": "FCA warns firms to tighten non-financial misconduct compliance after Crispin Odey\u2019s lifetime ban upheld",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/fca-warns-firms-to-tighten-non-financial-misconduct-compliance-after-crispin-odeys-lifetime-ban-upheld/",
+      "source": "Compliance Week",
       "date": "2026-09-21"
     }
   ]

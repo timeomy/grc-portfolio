@@ -1,11 +1,71 @@
 {
-  "generated": "2026-09-22T07:31:09",
-  "count": 7,
+  "generated": "2026-09-23T07:30:36",
+  "count": 14,
   "items": [
     {
-      "title": "Ambry Genetics Pays $700K HIPAA Fine in Phishing Breach",
-      "link": "https://www.databreachtoday.com/ambry-genetics-pays-700k-hipaa-fine-in-phishing-breach-a-32883",
+      "title": "China's New AI Governance Goes Deep on AI Agent Security",
+      "link": "https://www.databreachtoday.com/chinas-new-ai-governance-goes-deep-on-ai-agent-security-a-32898",
       "source": "DataBreachToday",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "WordPress Issues Patch for Critical Flaw That Can Enable Code Execution on Some Servers",
+      "link": "https://thehackernews.com/2026/09/wordpress-issues-patch-for-critical.html",
+      "source": "The Hacker News",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "DORA Year Two: Can Your SOC Actually See the Attack?",
+      "link": "https://thehackernews.com/2026/09/dora-year-two-can-your-soc-actually-see.html",
+      "source": "The Hacker News",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "Passwork NIS2 efficiency guide: Save your team hours before the 2026 audit",
+      "link": "https://www.helpnetsecurity.com/2026/09/22/passwork-nis2-compliance-guide/",
+      "source": "Help Net Security",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "DOJ revisions to Justice Manual address False Claims Act enforcement",
+      "link": "https://www.complianceweek.com/regulatory-policy/doj-revisions-to-justice-manual-address-false-claims-act-enforcement/",
+      "source": "Compliance Week",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "Abbott to pay almost $385M in DOJ settlement over infant formula plant allegations",
+      "link": "https://www.complianceweek.com/top-stories/abbott-to-pay-almost-385m-in-doj-settlement-over-infant-formula-plant-allegations/",
+      "source": "Compliance Week",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "California presses ahead with executive order for AI safeguards, cites federal government \u201cabject failure\u201d",
+      "link": "https://www.complianceweek.com/artificial-intelligence/california-presses-ahead-with-executive-order-for-ai-safeguards-cites-federal-government-abject-failure/",
+      "source": "Compliance Week",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "After water attacks, Capitol Hill offers its own proposal for an AI-cyber test program",
+      "link": "https://cyberscoop.com/gottheimer-ai-cyber-defense-act-cisa-pilot/",
+      "source": "CyberScoop",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "Citing China, President Trump doubles down on hands-off approach to AI regulation",
+      "link": "https://cyberscoop.com/trump-hands-off-ai-regulation-china-race/",
+      "source": "CyberScoop",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "SEC Censures OTC Link LLC for Repeated Compliance Failures Related to Regulation SCI",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-91-sec-censures-otc-link-llc-repeated-compliance-failures-related-regulation-sci",
+      "source": "SEC Press Releases",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "ShinyHunters claims FBI hack: 'This is NOT financially motivated'",
+      "link": "https://www.theregister.com/security/2026/09/22/shinyhunters-claims-fbi-hack-this-is-not-financially-motivated/5298385",
+      "source": "The Register - Security",
       "date": "2026-09-22"
     },
     {
@@ -21,26 +81,8 @@
       "date": "2026-09-21"
     },
     {
-      "title": "Google hit with \u20ac403 million GDPR fine over location tracking",
-      "link": "https://www.helpnetsecurity.com/2026/09/21/ireland-google-users-location-data-processing-fine/",
-      "source": "Help Net Security",
-      "date": "2026-09-21"
-    },
-    {
       "title": "The State of Third-Party Risk & Integrity Survey",
       "link": "https://www.complianceweek.com/diligent-compliance-ethics/the-state-of-third-party-risk-integrity-survey/",
-      "source": "Compliance Week",
-      "date": "2026-09-21"
-    },
-    {
-      "title": "CFTC proposes reviving 2012 exemption for pool operators, advisors",
-      "link": "https://www.complianceweek.com/banking/cftc-proposes-reviving-2012-exemption-for-pool-operators-advisors/",
-      "source": "Compliance Week",
-      "date": "2026-09-21"
-    },
-    {
-      "title": "FCA warns firms to tighten non-financial misconduct compliance after Crispin Odey\u2019s lifetime ban upheld",
-      "link": "https://www.complianceweek.com/regulatory-enforcement/fca-warns-firms-to-tighten-non-financial-misconduct-compliance-after-crispin-odeys-lifetime-ban-upheld/",
       "source": "Compliance Week",
       "date": "2026-09-21"
     }

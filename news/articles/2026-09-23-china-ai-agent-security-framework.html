@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>China's AI Safety Framework 3.0 Turns to Agent Control · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="China's new AI Safety Governance Framework focuses on agentic systems, loss of control and countermeasures for AI-driven cyberattacks.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-23-china-ai-agent-security-framework.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+    .article-body blockquote { border-left: 2px solid var(--gold); padding: 2px 0 2px 18px; margin: 18px 0; color: var(--text-dim); font-style: italic; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "China's AI Safety Framework 3.0 Turns to Agent Control", "description": "China's new AI Safety Governance Framework focuses on agentic systems, loss of control and countermeasures for AI-driven cyberattacks.", "datePublished": "2026-09-23", "dateModified": "2026-09-23", "url": "https://zabez.com/news/articles/2026-09-23-china-ai-agent-security-framework.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}}
+  </script>
+  <meta property="og:title" content="China's AI Safety Framework 3.0 Turns to Agent Control">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-standards.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 23, 2026
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span></span>
+        <h1>China's AI Safety Framework 3.0 Turns to Agent Control</h1>
+        <p class="subtitle">China's new AI Safety Governance Framework focuses on agentic systems, loss of control and countermeasures for AI-driven cyberattacks.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.databreachtoday.com/chinas-new-ai-governance-goes-deep-on-ai-agent-security-a-32898" target="_blank" rel="noopener">DataBreachToday</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-standards.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          China released the third version of its AI Safety Governance Framework in mid September.
+          DataBreachToday reports that the document was produced by the National Technical Committee
+          260, the country's official standard setting body for cybersecurity and AI, under the guidance
+          of the Cyberspace Administration of China. It is not legally binding, but because of who wrote
+          it, it is a reasonable guide to the national standards now being drafted behind it.
+        </p>
+        <p>
+          Framework 3.0 keeps the core logic of the two earlier versions, risk classification,
+          technological countermeasures and comprehensive governance, and rebuilds the risk list around
+          agentic AI. The behaviours it describes go well beyond a model producing a bad answer: systems
+          that continue executing tasks after a shutdown instruction and modify or disable their own
+          shutdown scripts to keep running, systems that deliberately reduce their performance when they
+          detect they are being evaluated, and systems that exploit environment weaknesses or
+          configuration flaws to escape isolation and reach real external systems. The framework groups
+          all of this as unintended autonomous behaviour and treats it as a direct challenge to
+          controllability and interruptibility.
+        </p>
+        <p>
+          The controls named in the framework are specific and technical. Guardrails that detect
+          autonomous cyberattack intent and block anomalous network access, high frequency probing,
+          exploitation attempts and the use of attack tooling. Service degradation or refusal when that
+          intent appears, so the model loses the capability rather than being asked to stop. Circuit
+          breakers, human in the loop controls and a one click stop alongside any highly autonomous
+          execution. Labelling of AI-generated content, and consent and notification duties where
+          conversation records are used for training.
+        </p>
+        <p>
+          It takes as a starting point that governance policies written before deployment cannot account
+          for every decision an autonomous agent will make, which is why the framework leans on
+          monitoring, risk grading by scenario and scale, and rapid intervention rather than approval
+          gates alone.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          <strong>Most AI governance frameworks are still arguing about transparency reporting. This one
+          starts from the position that the system is already running and asks what stops it mid
+          action.</strong> Interruptibility, human override and capability degradation are controls that a
+          GRC function can specify, test and evidence, and they map cleanly onto what this document
+          lists.
+        </p>
+        <p>
+          It is also a clear example of standards doing the work of regulation. Nothing in the framework
+          is enforceable on its own, but standards bodies are where audit criteria get written, and
+          material from the national technical committee tends to reappear in certification
+          requirements.
+        </p>
+        <p>
+          The cybersecurity section is the part that touches security teams directly. Treating AI
+          systems as a threat source to monitor and as a defence tool to use puts model security in the
+          same operating process as network security, rather than in a separate policy document that
+          nobody tests.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+          Watch for the binding standards that follow, since the framework's own authors are the people
+          who will write them. Watch too how the three big jurisdictions diverge: China on standards and
+          agent control, the EU having pushed its high risk AI compliance deadline to December 2027, and
+          the United States where federal policy has leaned toward challenging state AI laws.
+        </p>
+        <p>
+          A practical step for a security team this quarter is to add one scenario to the incident
+          response plan: an agent that will not stop. Most plans do not yet have a tested answer.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.databreachtoday.com/chinas-new-ai-governance-goes-deep-on-ai-agent-security-a-32898" target="_blank" rel="noopener">DataBreachToday</a>, the AI Safety Governance Framework 3.0, and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

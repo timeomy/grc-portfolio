@@ -1,11 +1,53 @@
 {
-  "generated": "2026-09-23T07:30:36",
-  "count": 14,
+  "generated": "2026-09-24T07:31:16",
+  "count": 17,
   "items": [
     {
-      "title": "China's New AI Governance Goes Deep on AI Agent Security",
-      "link": "https://www.databreachtoday.com/chinas-new-ai-governance-goes-deep-on-ai-agent-security-a-32898",
-      "source": "DataBreachToday",
+      "title": "ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants",
+      "link": "https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html",
+      "source": "The Hacker News",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "ShinyHunters Claims FBI Hack Via PeopleSoft Zero Day",
+      "link": "https://www.infosecurity-magazine.com/news/shinyhunters-fbi-hack-peoplesoft/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "EU Auditors Warn Information-Sharing Gaps Are Hindering Cyber Incident Response",
+      "link": "https://www.infosecurity-magazine.com/news/eu-auditors-slam-blocs-cyberinfo/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "Barracuda brings AI security and governance within reach of smaller organizations",
+      "link": "https://www.helpnetsecurity.com/2026/09/23/barracuda-ai-data-security/",
+      "source": "Help Net Security",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "In the AI governance race, EY\u2019s Dilek \u00c7ilingir explains how compliance can keep AI in step",
+      "link": "https://www.complianceweek.com/artificial-intelligence/in-the-ai-governance-race-eys-dilek-cilingir-explains-how-compliance-can-keep-ai-in-step/",
+      "source": "Compliance Week",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "FBI probes cyberattack tied to third-party jobs portal",
+      "link": "https://www.cybersecuritydive.com/news/fbi-hack-shinyhunters-jobs-portal/831175/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "SEC Charges South Florida Resident and His Company for Alleged Investment Scheme Defrauding Law Enforcement",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-92-sec-charges-south-florida-resident-his-company-alleged-investment-scheme-defrauding-law-enforcement",
+      "source": "SEC Press Releases",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "British regulator takes a hard look at Pornhub's Apple-powered age checks",
+      "link": "https://www.theregister.com/security/2026/09/23/british-regulator-takes-a-hard-look-at-pornhubs-apple-powered-age-checks/5298558",
+      "source": "The Register - Security",
       "date": "2026-09-23"
     },
     {
@@ -21,12 +63,6 @@
       "date": "2026-09-22"
     },
     {
-      "title": "Passwork NIS2 efficiency guide: Save your team hours before the 2026 audit",
-      "link": "https://www.helpnetsecurity.com/2026/09/22/passwork-nis2-compliance-guide/",
-      "source": "Help Net Security",
-      "date": "2026-09-22"
-    },
-    {
       "title": "DOJ revisions to Justice Manual address False Claims Act enforcement",
       "link": "https://www.complianceweek.com/regulatory-policy/doj-revisions-to-justice-manual-address-false-claims-act-enforcement/",
       "source": "Compliance Week",
@@ -39,9 +75,9 @@
       "date": "2026-09-22"
     },
     {
-      "title": "California presses ahead with executive order for AI safeguards, cites federal government \u201cabject failure\u201d",
-      "link": "https://www.complianceweek.com/artificial-intelligence/california-presses-ahead-with-executive-order-for-ai-safeguards-cites-federal-government-abject-failure/",
-      "source": "Compliance Week",
+      "title": "ShinyHunters claims attack on FBI exposes almost all agents",
+      "link": "https://cyberscoop.com/shinyhunters-claims-fbi-attack/",
+      "source": "CyberScoop",
       "date": "2026-09-22"
     },
     {
@@ -67,24 +103,6 @@
       "link": "https://www.theregister.com/security/2026/09/22/shinyhunters-claims-fbi-hack-this-is-not-financially-motivated/5298385",
       "source": "The Register - Security",
       "date": "2026-09-22"
-    },
-    {
-      "title": "Google Fined \u20ac403 Million Over GDPR Violations Tied to Location Data",
-      "link": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
-      "source": "The Hacker News",
-      "date": "2026-09-21"
-    },
-    {
-      "title": "Google Hit with \u20ac403m GDPR Fine Over Location Data Practices",
-      "link": "https://www.infosecurity-magazine.com/news/google-hit-with-403m-gdpr-fine/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-21"
-    },
-    {
-      "title": "The State of Third-Party Risk & Integrity Survey",
-      "link": "https://www.complianceweek.com/diligent-compliance-ethics/the-state-of-third-party-risk-integrity-survey/",
-      "source": "Compliance Week",
-      "date": "2026-09-21"
     }
   ]
 }

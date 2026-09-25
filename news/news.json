@@ -1,7 +1,37 @@
 {
-  "generated": "2026-09-25T07:30:23",
-  "count": 14,
+  "generated": "2026-09-26T07:30:55",
+  "count": 10,
   "items": [
+    {
+      "title": "CISA And FBI Warn OT Operators About Third-Party Hacking",
+      "link": "https://www.databreachtoday.com/cisa-fbi-warn-ot-operators-about-third-party-hacking-a-32942",
+      "source": "DataBreachToday",
+      "date": "2026-09-26"
+    },
+    {
+      "title": "Abnormal AI brings governance, cloud security, and threat investigation into one suite",
+      "link": "https://www.helpnetsecurity.com/2026/09/25/abnormal-ai-governance/",
+      "source": "Help Net Security",
+      "date": "2026-09-25"
+    },
+    {
+      "title": "OTC Link pays $575,000 to SEC to settle alleged compliance failures",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/otc-link-pays-575000-to-sec-to-settle-alleged-compliance-failures/",
+      "source": "Compliance Week",
+      "date": "2026-09-25"
+    },
+    {
+      "title": "Future GDPR fines set to be more equal across EU",
+      "link": "https://www.complianceweek.com/data-privacy/future-gdpr-fines-set-to-be-more-equal-across-eu/",
+      "source": "Compliance Week",
+      "date": "2026-09-25"
+    },
+    {
+      "title": "ShinyHunters tells The Reg: We hacked the FBI to 'protect our business'",
+      "link": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250",
+      "source": "The Register - Security",
+      "date": "2026-09-25"
+    },
     {
       "title": "UK Government Shifts to Service-Led Cyber Governance After Stinging Audit",
       "link": "https://www.infosecurity-magazine.com/news/uk-government-service-led-cyber/",
@@ -12,18 +42,6 @@
       "title": "Over 75% of Organizations Experience Microsoft 365 Governance Issues",
       "link": "https://www.infosecurity-magazine.com/news/75-organizations-microsoft-365/",
       "source": "Infosecurity Magazine",
-      "date": "2026-09-24"
-    },
-    {
-      "title": "Gurucul connects AI activity to identity data for faster threat response",
-      "link": "https://www.helpnetsecurity.com/2026/09/24/gurucul-ai-risk-and-response/",
-      "source": "Help Net Security",
-      "date": "2026-09-24"
-    },
-    {
-      "title": "LatticeFlow AI offers managed risk assessments for enterprise AI systems",
-      "link": "https://www.helpnetsecurity.com/2026/09/24/latticeflow-ai-risk-center/",
-      "source": "Help Net Security",
       "date": "2026-09-24"
     },
     {
@@ -43,48 +61,6 @@
       "link": "https://cyberscoop.com/oxygen-forensics-ceo-arrested-russian-ownership-fraud/",
       "source": "CyberScoop",
       "date": "2026-09-24"
-    },
-    {
-      "title": "ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants",
-      "link": "https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html",
-      "source": "The Hacker News",
-      "date": "2026-09-23"
-    },
-    {
-      "title": "ShinyHunters Claims FBI Hack Via PeopleSoft Zero Day",
-      "link": "https://www.infosecurity-magazine.com/news/shinyhunters-fbi-hack-peoplesoft/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-23"
-    },
-    {
-      "title": "EU Auditors Warn Information-Sharing Gaps Are Hindering Cyber Incident Response",
-      "link": "https://www.infosecurity-magazine.com/news/eu-auditors-slam-blocs-cyberinfo/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-23"
-    },
-    {
-      "title": "In the AI governance race, EY\u2019s Dilek \u00c7ilingir explains how compliance can keep AI in step",
-      "link": "https://www.complianceweek.com/artificial-intelligence/in-the-ai-governance-race-eys-dilek-cilingir-explains-how-compliance-can-keep-ai-in-step/",
-      "source": "Compliance Week",
-      "date": "2026-09-23"
-    },
-    {
-      "title": "FBI probes cyberattack tied to third-party jobs portal",
-      "link": "https://www.cybersecuritydive.com/news/fbi-hack-shinyhunters-jobs-portal/831175/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-09-23"
-    },
-    {
-      "title": "SEC Charges South Florida Resident and His Company for Alleged Investment Scheme Defrauding Law Enforcement",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-92-sec-charges-south-florida-resident-his-company-alleged-investment-scheme-defrauding-law-enforcement",
-      "source": "SEC Press Releases",
-      "date": "2026-09-23"
-    },
-    {
-      "title": "British regulator takes a hard look at Pornhub's Apple-powered age checks",
-      "link": "https://www.theregister.com/security/2026/09/23/british-regulator-takes-a-hard-look-at-pornhubs-apple-powered-age-checks/5298558",
-      "source": "The Register - Security",
-      "date": "2026-09-23"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-26T07:30:55",
-  "count": 10,
+  "generated": "2026-09-27T07:30:32",
+  "count": 5,
   "items": [
     {
       "title": "CISA And FBI Warn OT Operators About Third-Party Hacking",
       "link": "https://www.databreachtoday.com/cisa-fbi-warn-ot-operators-about-third-party-hacking-a-32942",
       "source": "DataBreachToday",
-      "date": "2026-09-26"
+      "date": "2026-09-27"
     },
     {
       "title": "Abnormal AI brings governance, cloud security, and threat investigation into one suite",
@@ -31,36 +31,6 @@
       "link": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250",
       "source": "The Register - Security",
       "date": "2026-09-25"
-    },
-    {
-      "title": "UK Government Shifts to Service-Led Cyber Governance After Stinging Audit",
-      "link": "https://www.infosecurity-magazine.com/news/uk-government-service-led-cyber/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-24"
-    },
-    {
-      "title": "Over 75% of Organizations Experience Microsoft 365 Governance Issues",
-      "link": "https://www.infosecurity-magazine.com/news/75-organizations-microsoft-365/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-09-24"
-    },
-    {
-      "title": "SEC\u2019s Woodcock: Enforcement division aims to aggressively enforce fraud",
-      "link": "https://www.complianceweek.com/top-stories/secs-woodcock-enforcement-division-aims-to-aggressively-enforce-fraud/",
-      "source": "Compliance Week",
-      "date": "2026-09-24"
-    },
-    {
-      "title": "Deloitte survey exposes compliance gaps as a third of employees admit using shadow GenAI at work",
-      "link": "https://www.complianceweek.com/artificial-intelligence/deloitte-survey-exposes-compliance-gaps-as-a-third-of-employees-admit-using-shadow-genai-at-work/",
-      "source": "Compliance Week",
-      "date": "2026-09-24"
-    },
-    {
-      "title": "Phone-hacking company that won U.S. security agency contracts hid Russian ownership, DOJ alleges",
-      "link": "https://cyberscoop.com/oxygen-forensics-ceo-arrested-russian-ownership-fraud/",
-      "source": "CyberScoop",
-      "date": "2026-09-24"
     }
   ]
 }

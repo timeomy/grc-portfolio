@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalesBleed Flaws Let Attackers Turn Salesforce Agents Into a Data Pipe · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Three Agentforce flaws let a poisoned Web-to-Lead form make an AI agent leak CRM data and send phishing messages through Slack.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-28-salesbleed-agentforce-exfiltration.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "SalesBleed Flaws Let Attackers Turn Salesforce Agents Into a Data Pipe", "description": "Three Agentforce flaws let a poisoned Web-to-Lead form make an AI agent leak CRM data and send phishing messages through Slack.", "datePublished": "2026-09-28", "dateModified": "2026-09-28", "url": "https://zabez.com/news/articles/2026-09-28-salesbleed-agentforce-exfiltration.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="SalesBleed Flaws Let Attackers Turn Salesforce Agents Into a Data Pipe">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="SalesBleed Flaws Let Attackers Turn Salesforce Agents Into a Data Pipe">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-cloud.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 28, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>SalesBleed Flaws Let Attackers Turn Salesforce Agents Into a Data Pipe</h1>
+        <p class="subtitle">Three Agentforce flaws let a poisoned Web-to-Lead form make an AI agent leak CRM data and send phishing messages through Slack.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/" target="_blank" rel="noopener">SecurityWeek</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-cloud.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          Researchers at Zenity Labs found three vulnerabilities in Salesforce Agentforce that could
+          have allowed attackers to hijack trusted agents to exfiltrate sensitive CRM data and to
+          distribute phishing. The flaws were named SalesBleed.
+        </p>
+        <p>
+          The entry point was Web-to-Lead, Salesforce's official lead collection mechanism, which also
+          provides a direct path into the CRM. <strong>Malicious instructions injected into a
+          Web-to-Lead submission stayed dormant until an employee asked an Agentforce agent to interact
+          with it, at which point the agent processed the poisoned lead and executed the hidden
+          instructions.</strong>
+        </p>
+        <p>
+          Two of the flaws could be used in zero-click data exfiltration, and the third let attackers
+          weaponise an agent to send phishing. The first two stemmed from weaknesses in Trusted URLs,
+          the mechanism meant to stop Agentforce displaying URLs and images from untrusted sources.
+          Zenity found that it did not recognise top level domains and that character sequences could
+          tamper with URL parsing. A payload could reach leads and accounts table data and then use HTML
+          image tags to send CRM data to an attacker server. Notably, Agentforce reported the content
+          as blocked by organisational security policy even though the data had already been
+          transmitted.
+        </p>
+        <p>
+          The third flaw affected the Agentforce integration with Slack. Specially constructed links
+          could cause Slack to initiate requests carrying CRM data to attacker infrastructure as soon as
+          the links appeared in a channel. Because the agent did not identify who was sending a message,
+          an attacker could hijack it and post phishing into internal Slack channels using the agent's
+          own identity. Employees would see a message from a trusted internal system rather than an
+          unknown outside sender, and a compromised identity could open up email, code repositories and
+          other connected systems. Zenity reported the issues on 1 June and Salesforce confirmed
+          all three had been addressed by 19 August.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          <strong>Agent identity needs the scrutiny of a privileged account.</strong> The agent could
+          read CRM records and post internal messages under its own name. A non-human identity with that
+          reach is an access control subject, and it needs an owner, a scope and a review cycle.
+        </p>
+        <p>
+          <strong>One control carried the whole weight.</strong> Trusted URLs was the boundary between a
+          language model and the CRM, and it failed on basic URL parsing. When a single mechanism is the
+          only thing in the way, its test coverage becomes a statement about risk appetite.
+        </p>
+        <p>
+          <strong>The policy fired after the data left.</strong> Blocking was reported once exfiltration
+          had already happened. Controls that log after the fact satisfy an audit but not a risk
+          appetite, and this failure is easy to miss because the control appears to be working.
+        </p>
+        <p>
+          <strong>Untrusted input with a known address.</strong> Web-to-Lead is an open form that anyone
+          can write to. Anything that reads it ingests untrusted content by design, which makes prompt
+          injection an input validation problem with a clearly mapped surface area. Third-party risk
+          also carries dates here, and those belong in the register.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch for a vendor advisory and for whether other agent integrations share the same Trusted
+          URLs weakness. Watch whether agents gain controls that distinguish a human sender from another
+          agent. And watch how buyers write assurance requirements for agentic features, because this
+          class of failure will not appear in a standard vulnerability scan.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.securityweek.com/salesbleed-flaws-in-salesforce-agentforce-enabled-zero-click-data-exfiltration/" target="_blank" rel="noopener">SecurityWeek's reporting</a> and Zenity Labs' technical write up of the SalesBleed flaws. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

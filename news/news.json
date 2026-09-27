@@ -1,36 +1,12 @@
 {
-  "generated": "2026-09-27T07:30:32",
-  "count": 5,
+  "generated": "2026-09-28T07:30:58",
+  "count": 1,
   "items": [
     {
       "title": "CISA And FBI Warn OT Operators About Third-Party Hacking",
       "link": "https://www.databreachtoday.com/cisa-fbi-warn-ot-operators-about-third-party-hacking-a-32942",
       "source": "DataBreachToday",
-      "date": "2026-09-27"
-    },
-    {
-      "title": "Abnormal AI brings governance, cloud security, and threat investigation into one suite",
-      "link": "https://www.helpnetsecurity.com/2026/09/25/abnormal-ai-governance/",
-      "source": "Help Net Security",
-      "date": "2026-09-25"
-    },
-    {
-      "title": "OTC Link pays $575,000 to SEC to settle alleged compliance failures",
-      "link": "https://www.complianceweek.com/regulatory-enforcement/otc-link-pays-575000-to-sec-to-settle-alleged-compliance-failures/",
-      "source": "Compliance Week",
-      "date": "2026-09-25"
-    },
-    {
-      "title": "Future GDPR fines set to be more equal across EU",
-      "link": "https://www.complianceweek.com/data-privacy/future-gdpr-fines-set-to-be-more-equal-across-eu/",
-      "source": "Compliance Week",
-      "date": "2026-09-25"
-    },
-    {
-      "title": "ShinyHunters tells The Reg: We hacked the FBI to 'protect our business'",
-      "link": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250",
-      "source": "The Register - Security",
-      "date": "2026-09-25"
+      "date": "2026-09-28"
     }
   ]
 }

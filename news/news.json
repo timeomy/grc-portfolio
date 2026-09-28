@@ -1,11 +1,41 @@
 {
-  "generated": "2026-09-28T07:30:58",
-  "count": 1,
+  "generated": "2026-09-29T07:30:36",
+  "count": 6,
   "items": [
     {
-      "title": "CISA And FBI Warn OT Operators About Third-Party Hacking",
-      "link": "https://www.databreachtoday.com/cisa-fbi-warn-ot-operators-about-third-party-hacking-a-32942",
-      "source": "DataBreachToday",
+      "title": "IAM for AI agents: A Practical Enterprise Framework",
+      "link": "https://thehackernews.com/2026/09/iam-for-ai-agent.html",
+      "source": "The Hacker News",
+      "date": "2026-09-28"
+    },
+    {
+      "title": "MCP Is Creating Major Governance Gaps, Researchers Warn",
+      "link": "https://www.infosecurity-magazine.com/news/mcp-creating-major-governance-gaps/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-09-28"
+    },
+    {
+      "title": "FBI job portals remain offline after ShinyHunters claims breach via PeopleSoft zero-day",
+      "link": "https://www.helpnetsecurity.com/2026/09/28/fbi-job-portals-offline-shinyhunters-breach/",
+      "source": "Help Net Security",
+      "date": "2026-09-28"
+    },
+    {
+      "title": "FCC bans on foreign-made robotic devices, routers, and power inverters extend compliance risks",
+      "link": "https://www.complianceweek.com/technology/fcc-bans-on-foreign-made-robotic-devices-routers-and-power-inverters-extend-compliance-risks/",
+      "source": "Compliance Week",
+      "date": "2026-09-28"
+    },
+    {
+      "title": "ShinyHunters trades financial extortion for a reckless war of ego with the FBI",
+      "link": "https://cyberscoop.com/fbi-data-breach-shinyhunters-agent-safety-risk/",
+      "source": "CyberScoop",
+      "date": "2026-09-28"
+    },
+    {
+      "title": "SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest",
+      "source": "SEC Press Releases",
       "date": "2026-09-28"
     }
   ]

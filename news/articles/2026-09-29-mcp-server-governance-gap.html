@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCP Servers Are a Governance Gap in Enterprise AI Rollouts · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="New research finds nearly 16% of MCP server hostnames resolve outside the US, and one always-allow permission was enough to hand over sensitive files.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-29-mcp-server-governance-gap.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "MCP Servers Are a Governance Gap in Enterprise AI Rollouts", "description": "New research finds nearly 16% of MCP server hostnames resolve outside the US, and one always-allow permission was enough to hand over sensitive files.", "datePublished": "2026-09-29", "dateModified": "2026-09-29", "url": "https://zabez.com/news/articles/2026-09-29-mcp-server-governance-gap.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="MCP Servers Are a Governance Gap in Enterprise AI Rollouts">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-ai.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 29, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>MCP Servers Are a Governance Gap in Enterprise AI Rollouts</h1>
+        <p class="subtitle">New research finds nearly 16% of MCP server hostnames resolve outside the US, and one always-allow permission was enough to hand over sensitive files.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.infosecurity-magazine.com/news/mcp-creating-major-governance-gaps/" target="_blank" rel="noopener">Infosecurity Magazine</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-ai.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          Research from Ox Security says the Model Context Protocol, the standard that lets AI applications
+          reach external tools and data without bespoke integration code, has no governance layer to match
+          its adoption. The report, titled 15,465 MCP Servers, 0 Governance, was built from an analysis of
+          three public registries: mcp-official-registry, cline-marketplace and github-mcp-registry.
+        </p>
+        <p>
+          Nearly 16 per cent of the 5,095 unique hostnames examined resolved outside the United States,
+          including hosts in Russia and China. MCP has no protocol level concept of geographic region, so
+          an enterprise can enforce strict residency rules over its own cloud workloads while the agents it
+          runs connect freely to servers outside those same controls. More than 2 per cent of the hostnames
+          no longer resolve, and some are unregistered and available to buy, which means an attacker could
+          stand up a server at an address an organisation already trusts.
+        </p>
+        <p>
+          The team also tested how far a single permission decision can travel. In a Claude Code test
+          running Haiku 3.5, a malicious MCP server asked for access to a harmless file and was granted
+          always-allow. It then requested sensitive files, .env among them, and received them with no
+          further prompt. Anthropic's position, as relayed in the report, is that once always-allow is
+          granted this is the documented behaviour, and that model level detection of malicious content is
+          a best effort heuristic rather than a security boundary.
+        </p>
+        <p>
+          This is not the first warning. Backslash Security reported in June 2025 that hundreds of MCP
+          servers were exposed to anyone on the same local network through a flaw it named NeighborJack,
+          with around 70 carrying severe issues. In April 2026 Ox Security described a systemic flaw in
+          Anthropic's official MCP SDKs, claiming it could allow arbitrary command execution across as many
+          as 200,000 instances, a finding Anthropic dismissed as expected behaviour.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          <strong>Residency commitments stop at the agent.</strong> A data residency control that only
+          covers workloads you own describes half the flow. Once an agent is allowed to call a third party
+          server, personal data can leave the region without a transfer assessment, and nobody signed a
+          data processing agreement for that hop.
+        </p>
+        <p>
+          <strong>Third party risk registers do not list MCP servers.</strong> Most onboarding processes
+          capture vendors with a contract and an invoice. An MCP server pulled from a public marketplace by
+          a developer is a supplier relationship with none of that paperwork.
+        </p>
+        <p>
+          <strong>Permission decisions outlive the person who made them.</strong> Always-allow converts a
+          one time convenience into standing authority, which is the same failure mode we spend years
+          removing from human accounts.
+        </p>
+        <p>
+          <strong>Evidence has to separate agent activity from human activity.</strong> If tool calls are
+          not logged against the agent's own identity, an incident review cannot reconstruct what the agent
+          read and on whose authority.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch whether the registry operators add any verification step, and whether the protocol itself
+          gains scoping or region awareness. Until either happens, the practical controls sit with the
+          organisations deploying agents.
+        </p>
+        <p>
+          A useful exercise this month: ask for the list of MCP servers your developers have connected, who
+          approved each one, what data each can reach, and whether any sit outside your residency
+          perimeter. If that list takes a week to produce, that is the finding.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.infosecurity-magazine.com/news/mcp-creating-major-governance-gaps/" target="_blank" rel="noopener">Infosecurity Magazine's reporting</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

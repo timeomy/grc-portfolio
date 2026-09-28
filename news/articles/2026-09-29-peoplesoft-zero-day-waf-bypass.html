@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAF Rules Failed Against the PeopleSoft Flaw Behind the FBI Breach · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Mandiant says ShinyHunters bypassed string-based WAF rules by URL-encoding one character in the path, reaching an endpoint teams believed was mitigated.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-29-peoplesoft-zero-day-waf-bypass.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "WAF Rules Failed Against the PeopleSoft Flaw Behind the FBI Breach", "description": "Mandiant says ShinyHunters bypassed string-based WAF rules by URL-encoding one character in the path, reaching an endpoint teams believed was mitigated.", "datePublished": "2026-09-29", "dateModified": "2026-09-29", "url": "https://zabez.com/news/articles/2026-09-29-peoplesoft-zero-day-waf-bypass.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="WAF Rules Failed Against the PeopleSoft Flaw Behind the FBI Breach">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-breach.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 29, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>WAF Rules Failed Against the PeopleSoft Flaw Behind the FBI Breach</h1>
+        <p class="subtitle">Mandiant says ShinyHunters bypassed string-based WAF rules by URL-encoding one character in the path, reaching an endpoint teams believed was mitigated.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.helpnetsecurity.com/2026/09/28/fbi-job-portals-offline-shinyhunters-breach/" target="_blank" rel="noopener">Help Net Security</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-breach.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          The FBI's online portals for job applicants and special agent applicants remain offline after
+          what appears to be a successful compromise by the ShinyHunters extortion group. The Bureau
+          confirmed last week that it was investigating the group's claim to have taken personal
+          information belonging to FBI employees.
+        </p>
+        <p>
+          ShinyHunters told The Register it used an unspecified and unconfirmed Oracle PeopleSoft zero-day
+          to reach the portals, and claims it also breached FBI managed servers on AWS GovCloud, taking
+          personnel files of current, former and aspiring employees. According to the BBC, the group says
+          it reached platforms handling background checks, medical records and investigative information.
+          Reuters matched the career details of eight people to public sources, while noting it could not
+          verify all the job assignments were authentic or current.
+        </p>
+        <p>
+          The group says it is not after money. It wants the FBI to retract a public service announcement
+          from its IC3 unit advising victims not to pay ransom, and it threatened to release what it holds
+          if the Bureau does not comply.
+        </p>
+        <p>
+          The more instructive part is the technical account published by Google Cloud and Mandiant.
+          ShinyHunters is exploiting Oracle PeopleSoft vulnerability CVE-2026-35273, the same flaw it used
+          as a zero-day in May and June 2026 against mostly academic institutions. Oracle advised an
+          emergency patch, and where that was not possible, mitigations such as restricting network access
+          to PeopleSoft application and web servers to trusted internal networks. Mandiant warned then that
+          relying solely on web application firewall body inspection rules was insufficient, because those
+          controls can be bypassed.
+        </p>
+        <p>
+          That warning proved correct. The group modified the original exploit to get past WAF rules
+          blocking the vulnerable Environment Management Hub endpoint, URL-encoding a single character so
+          that a request for /PSEMHUB/ arrived as /%50SEMHUB/. That was enough to reach the endpoint on
+          systems whose operators believed their WAF rules had mitigated it. Mandiant says the
+          campaign also widened targeting to higher education, technology, IT services, healthcare,
+          agriculture, transportation and government. After gaining access the group deploys web shells, a
+          legitimate remote monitoring and management tool called MeshAgent, and fileless command
+          execution.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          <strong>A compensating control is not a substitute for a patch.</strong> WAF rules bought time,
+          which is what they are for. The failure was treating string matching as a permanent fix rather
+          than a stopgap with an expiry date.
+        </p>
+        <p>
+          <strong>Risk acceptance decisions need a review date.</strong> Somewhere, teams decided not to
+          patch and to rely on the edge instead. That was reasonable in the moment and should have been
+          tracked, dated and reopened when the threat actor adapted.
+        </p>
+        <p>
+          <strong>Internet exposed vendor applications are the estate you forget.</strong> Recruitment, HR
+          and back office platforms are often owned by a business function rather than security, and they
+          hold personal data. That combination is what got compromised here.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch whether the FBI confirms the categories of data involved, because that determines who must
+          be notified and under which regime. Also watch whether the group publishes anything if the
+          deadline passes. Claims of this size are sometimes inflated.
+        </p>
+        <p>
+          Practical work for this week: pull the list of internet facing PeopleSoft and similar enterprise
+          applications, confirm which are actually patched, and ask which rely on a rule that matches a
+          string rather than a fix.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.helpnetsecurity.com/2026/09/28/fbi-job-portals-offline-shinyhunters-breach/" target="_blank" rel="noopener">Help Net Security's reporting</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

@@ -1,7 +1,37 @@
 {
-  "generated": "2026-09-29T07:30:36",
-  "count": 6,
+  "generated": "2026-09-30T07:31:00",
+  "count": 11,
   "items": [
+    {
+      "title": "Reco Lands $55M to Extend AI Governance Into Agents",
+      "link": "https://www.databreachtoday.com/reco-lands-55m-to-extend-ai-governance-into-agents-a-32968",
+      "source": "DataBreachToday",
+      "date": "2026-09-30"
+    },
+    {
+      "title": "FRC revises two auditing and assurance standards to align with international ethics code",
+      "link": "https://www.complianceweek.com/accounting-auditing/frc-revises-two-auditing-and-assurance-standards-to-align-with-international-ethics-code/",
+      "source": "Compliance Week",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "GAO report spotlights industry\u2019s concerns about overlapping cybersecurity regulations",
+      "link": "https://www.cybersecuritydive.com/news/cybersecurity-regulation-industry-feedback-harmonization-gao/831619/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
+      "source": "SEC Press Releases",
+      "date": "2026-09-29"
+    },
+    {
+      "title": "FBI to ShinyHunters: 'We know how to find you'",
+      "link": "https://www.theregister.com/security/2026/09/29/fbi-to-shinyhunters-we-know-how-to-find-you/5299901",
+      "source": "The Register - Security",
+      "date": "2026-09-29"
+    },
     {
       "title": "IAM for AI agents: A Practical Enterprise Framework",
       "link": "https://thehackernews.com/2026/09/iam-for-ai-agent.html",
@@ -15,9 +45,9 @@
       "date": "2026-09-28"
     },
     {
-      "title": "FBI job portals remain offline after ShinyHunters claims breach via PeopleSoft zero-day",
-      "link": "https://www.helpnetsecurity.com/2026/09/28/fbi-job-portals-offline-shinyhunters-breach/",
-      "source": "Help Net Security",
+      "title": "Don\u2019t overestimate the value of \u2018human in the loop\u2019 for AI governance, say experts",
+      "link": "https://www.complianceweek.com/artificial-intelligence/dont-overestimate-the-value-of-human-in-the-loop-for-ai-governance-say-experts/",
+      "source": "Compliance Week",
       "date": "2026-09-28"
     },
     {

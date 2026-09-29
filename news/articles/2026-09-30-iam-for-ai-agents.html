@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agents Need Owners, Expiry Dates and Evidence · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="AI agents need their own identity, a named owner, scoped and expiring authority, and runtime telemetry that shows what they actually executed.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-09-30-iam-for-ai-agents.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "AI Agents Need Owners, Expiry Dates and Evidence", "description": "AI agents need their own identity, a named owner, scoped and expiring authority, and runtime telemetry that shows what they actually executed.", "datePublished": "2026-09-30", "dateModified": "2026-09-30", "url": "https://zabez.com/news/articles/2026-09-30-iam-for-ai-agents.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="AI Agents Need Owners, Expiry Dates and Evidence">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-ai.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">September 30, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>AI Agents Need Owners, Expiry Dates and Evidence</h1>
+        <p class="subtitle">AI agents need their own identity, a named owner, scoped and expiring authority, and runtime telemetry that shows what they actually executed.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://thehackernews.com/2026/09/iam-for-ai-agent.html" target="_blank" rel="noopener">The Hacker News</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-ai.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          A practical framework published by The Hacker News, drawing on guidance from identity security
+          vendor Orchid Security, argues that AI agent governance fails when it stops at the identity
+          provider. The model it sets out treats each agent as a non-human identity with a human owner, a
+          stated purpose, scoped authorization, an expiration date and continuous monitoring.
+        </p>
+        <p>
+          The problem it describes is a gap between configured access and executed action. Identity
+          platforms record lifecycle events and enforce authentication at the edge of an application,
+          which describes access as intended. What an agent actually did once inside, which tools it
+          invoked and which records it read, often never reaches those same logs. The guide calls the
+          unmanaged middle identity dark matter: agents, credentials, application local accounts and
+          authentication paths that central identity data does not report.
+        </p>
+        <p>
+          It lists the recurring lifecycle failures it sees. Agents with no named owner and therefore no
+          accountability for their continued existence. Static API keys and tokens that persist across
+          deployments with no rotation tied to retirement. Agents that inherit a user or service account's
+          permissions wholesale instead of receiving task scoped authority. Agents spawned by other
+          workloads that never register with the identity provider. OWASP's Top 10 for LLM applications
+          names the same pattern as excessive agency.
+        </p>
+        <p>
+          The controls it recommends are mostly borrowed from human identity programmes. Task scoped
+          grants that expire with the task, tool allowlisting, constrained retrieval sources, and an
+          approval threshold for high consequence actions. Credential design should favour workload
+          identity federation and short lived, automatically rotated credentials, with OAuth 2.0 Token
+          Exchange used where an agent acts on a user's behalf so that the agent's own identity stays
+          separate from the authority lent to it.
+        </p>
+        <p>
+          The audit argument is the sharpest part of the guide. NIST SP 800-53's audit and accountability
+          controls assume records sufficient to reconstruct a sequence of actions, not a record showing a
+          policy existed. Because valid accounts abuse and privilege escalation generate normal looking
+          authentication events, monitoring has to compare the agent's intended task against its actual
+          execution across applications and infrastructure, and to revoke delegated authority when the
+          two diverge.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          <strong>An agent without an owner is unowned risk.</strong> Every other control depends on being
+          able to name the person accountable for the agent's purpose. Without that, access reviews have
+          nobody to ask.
+        </p>
+        <p>
+          <strong>Inventory is the first audit question.</strong> If you cannot list the agents running in
+          your environment, their owners and their expiry dates, then no certification statement about
+          identity controls is verifiable.
+        </p>
+        <p>
+          <strong>Intent, entitlement and execution are three different records.</strong> Regulators and
+          auditors increasingly want the third. A screenshot of a role definition proves the least
+          interesting of the three.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+          Whether credential standards for verifiable agent identity and constrained delegation firm up
+          enough to be procured against, and whether IAM vendors keep shipping discovery that reads
+          application and infrastructure state rather than configuration alone. Watch too for regulatory
+          guidance that asks for agent level audit records by default.
+        </p>
+        <p>
+          A useful exercise this quarter: ask for a list of every agent running in your environment, who
+          owns each one, when its access expires and what evidence you hold of what each agent executed
+          last month. If that list takes more than a day to assemble, the gap is real.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://thehackernews.com/2026/09/iam-for-ai-agent.html" target="_blank" rel="noopener">The Hacker News</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

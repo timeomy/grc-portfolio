@@ -1,12 +1,18 @@
 {
-  "generated": "2026-10-02T07:30:43",
-  "count": 8,
+  "generated": "2026-10-03T07:30:36",
+  "count": 5,
   "items": [
     {
-      "title": "Data leak reveals Russian fintech providing sanctions-evasion-as-a-service to launder payments via global banks",
-      "link": "https://www.complianceweek.com/sanctions/data-leak-reveals-russian-fintech-providing-sanctions-evasion-as-a-service-to-launder-payments-via-global-banks/",
+      "title": "Man City Football Club facing penalties for breaking financial compliance rules",
+      "link": "https://www.complianceweek.com/finance/man-city-football-club-facing-penalties-for-breaking-financial-compliance-rules/",
       "source": "Compliance Week",
-      "date": "2026-10-01"
+      "date": "2026-10-02"
+    },
+    {
+      "title": "Defending against AI-fueled cyberattacks requires focus on identity, data governance, Microsoft says",
+      "link": "https://www.cybersecuritydive.com/news/ai-cyberattacks-automation-identity-data-microsoft-report/832020/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-10-02"
     },
     {
       "title": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
@@ -25,30 +31,6 @@
       "link": "https://www.theregister.com/security/2026/10/01/uk-privacy-watchdog-starts-over-with-new-board-and-manchester-hq/5300439",
       "source": "The Register - Security",
       "date": "2026-10-01"
-    },
-    {
-      "title": "EU\u2019s financial regulator prioritizes AI, tokenization as key risks for 2027",
-      "link": "https://www.complianceweek.com/artificial-intelligence/eus-financial-regulator-prioritizes-ai-tokenization-as-key-risks-for-2027/",
-      "source": "Compliance Week",
-      "date": "2026-09-30"
-    },
-    {
-      "title": "SEC Charges Meyer Global Management and Its CEO With Defrauding Retail Investors in Private Funds That Held Interests in SpaceX and Other Pre-IPO Securities",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-98-sec-charges-meyer-global-management-its-ceo-defrauding-retail-investors-private-funds-held-interests",
-      "source": "SEC Press Releases",
-      "date": "2026-09-30"
-    },
-    {
-      "title": "SEC Charges Two Individuals With Orchestrating Fraud Scheme That Targeted Veterans",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-97-sec-charges-two-individuals-orchestrating-fraud-scheme-targeted-veterans",
-      "source": "SEC Press Releases",
-      "date": "2026-09-30"
-    },
-    {
-      "title": "SEC Proposes Amendments to Expand Responsible Retailization of Private Markets",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-96-sec-proposes-amendments-expand-responsible-retailization-private-markets",
-      "source": "SEC Press Releases",
-      "date": "2026-09-30"
     }
   ]
 }

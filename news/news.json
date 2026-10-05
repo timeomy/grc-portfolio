@@ -1,7 +1,37 @@
 {
-  "generated": "2026-10-05T07:31:05",
-  "count": 1,
+  "generated": "2026-10-06T07:30:43",
+  "count": 6,
   "items": [
+    {
+      "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
+      "link": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
+      "source": "The Hacker News",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "Detained ShinyHunters hacker reportedly helping FBI track down fellow members",
+      "link": "https://www.helpnetsecurity.com/2026/10/05/shinyhunters-member-rey-detained-jordan-fbi/",
+      "source": "Help Net Security",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "Citrix issues patch for third exploited flaw in NetScaler",
+      "link": "https://www.cybersecuritydive.com/news/citrix-patch-third-exploited-flaw-netscaler/832128/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "SEC Coordinates with Global Financial Regulators to Raise Fraud Awareness During World Investor Week",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-101-sec-coordinates-global-financial-regulators-raise-fraud-awareness-during-world-investor-week",
+      "source": "SEC Press Releases",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "FBI confirms 'multiple' arrests related to ShinyHunters hack",
+      "link": "https://www.theregister.com/security/2026/10/05/fbi-confirms-multiple-arrests-related-to-shinyhunters-hack/5301178",
+      "source": "The Register - Security",
+      "date": "2026-10-05"
+    },
     {
       "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
       "link": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",

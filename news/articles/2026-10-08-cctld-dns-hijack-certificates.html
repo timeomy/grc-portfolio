@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNS Hijacks in Three Country Domains Let Attackers Mint Fake Certificates · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Google says attackers took over authoritative DNS records in .gh, .sl and .as and obtained unauthorized HTTPS certificates for its domains.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-08-cctld-dns-hijack-certificates.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "DNS Hijacks in Three Country Domains Let Attackers Mint Fake Certificates", "description": "Google says attackers took over authoritative DNS records in .gh, .sl and .as and obtained unauthorized HTTPS certificates for its domains.", "datePublished": "2026-10-08", "dateModified": "2026-10-08", "url": "https://zabez.com/news/articles/2026-10-08-cctld-dns-hijack-certificates.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="DNS Hijacks in Three Country Domains Let Attackers Mint Fake Certificates">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-cloud.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 8, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>DNS Hijacks in Three Country Domains Let Attackers Mint Fake Certificates</h1>
+        <p class="subtitle">Google says attackers took over authoritative DNS records in .gh, .sl and .as and obtained unauthorized HTTPS certificates for its domains.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.theregister.com/security/2026/10/07/attackers-hijacked-top-level-domains-minted-fake-security-certs-for-google-and-other-orgs/5301718" target="_blank" rel="noopener">The Register</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-cloud.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          Attackers hijacked top level domains and used that control to alter DNS records and obtain fraudulent HTTPS certificates for several Google domains as well as domains belonging to other organizations. Google said it became aware of the series of attacks last week, affecting the .gh (Ghana), .sl (Sierra Leone) and .as (American Samoa) country code namespaces.
+        </p>
+        <p>
+          Google said that during the hijacks, attackers modified authoritative DNS records and obtained unauthorized HTTPS certificates covering several Google domains and domains belonging to other organizations. It did not say which domains or organizations were affected. The company said the attacks did not compromise Google systems, that Chrome quickly blocked suspected counterfeit certificates across the affected country code top level domains, and that there is no reason to believe the certification authorities that issued the impacted certificates did anything wrong.
+        </p>
+        <p>
+          The consequence is impersonation without the usual browser warning. Because the attacker controls both traffic routing and the private key attached to the unauthorized certificate, they can intercept or modify data sent to the impersonated site, and use a trusted brand to run phishing campaigns.
+        </p>
+        <p>
+          Google was direct about the limits of its own intervention. It said browser side action should not be relied on to protect users, that due to the complexity of DNS hijacks it cannot guarantee its analysis identified every affected domain, and that Chrome's interventions do not reliably protect people using other browsers. Its recommendations are ongoing monitoring of Certificate Transparency logs across all domains, including parked and regional country code properties, a review of recent CT log entries for organizations in .gh, .sl or .as, and restrictive Certification Authority Authorization records naming which authorities may issue certificates.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          <strong>Domain and certificate assets are governance scope.</strong> Many organizations have domains registered years ago for a redirect or brand protection, and nobody currently owns them. Those are exactly the properties Google points at. An asset register that covers servers but not DNS zones has a blind spot at the trust layer, where users cannot tell the real site from a copy.
+        </p>
+        <p>
+          <strong>Certificate Transparency is a free early warning system.</strong> Monitoring CT logs gives near real time notice when a certificate is issued for a domain you control. It is one of the few detective controls that costs almost nothing and produces high value alerts.
+        </p>
+        <p>
+          <strong>Trust in a third party is not the same as assurance.</strong> Google did not blame the certification authorities. The lesson is structural: certificate issuance validation can be undermined by whoever controls the DNS answers at that moment. Registrars, DNS providers and certificate authorities each deserve a named owner.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch whether the affected registries and registrars publish details on how authoritative records were changed, because that determines whether this was a registry compromise, an account takeover at a registrar, or a weakness in delegation. Watch also for whether the industry revisits cached validation state, which Google warns can be used to mint certificates after a hijack ends.
+        </p>
+        <p>
+          The practical actions are small and repeatable. List every domain you own, including the ones nobody uses, confirm which DNS provider holds each zone, turn on Certificate Transparency monitoring, publish CAA records that restrict issuance, and protect registrar accounts with strong authentication.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.theregister.com/security/2026/10/07/attackers-hijacked-top-level-domains-minted-fake-security-certs-for-google-and-other-orgs/5301718" target="_blank" rel="noopener">The Register</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

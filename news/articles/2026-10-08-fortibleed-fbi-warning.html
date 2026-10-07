@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FBI Warns FortiBleed Is Still Active After 86,644 Fortinet Credentials Were Harvested · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="The FBI and Secret Service say attackers are still using stolen credentials against internet-facing Fortinet firewalls, and some victims are locked out.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-08-fortibleed-fbi-warning.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "FBI Warns FortiBleed Is Still Active After 86,644 Fortinet Credentials Were Harvested", "description": "The FBI and Secret Service say attackers are still using stolen credentials against internet-facing Fortinet firewalls, and some victims are locked out.", "datePublished": "2026-10-08", "dateModified": "2026-10-08", "url": "https://zabez.com/news/articles/2026-10-08-fortibleed-fbi-warning.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="FBI Warns FortiBleed Is Still Active After 86,644 Fortinet Credentials Were Harvested">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-breach.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 8, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>FBI Warns FortiBleed Is Still Active After 86,644 Fortinet Credentials Were Harvested</h1>
+        <p class="subtitle">The FBI and Secret Service say attackers are still using stolen credentials against internet-facing Fortinet firewalls, and some victims are locked out.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html" target="_blank" rel="noopener">The Hacker News</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-breach.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+          The FBI and the US Secret Service issued a joint warning on Tuesday that the FortiBleed credential harvesting campaign remains an active threat against internet-facing Fortinet FortiGate firewalls and SSL VPN gateways. In the advisory, the agencies said the campaign "exploits reused or leaked credentials and legacy SHA-256 password storage, enabling threat actors to harvest and crack authentication data at scale," and that initial findings show attackers are continuing to scan exposed Fortinet firewalls using credentials they obtained earlier.
+        </p>
+        <p>
+          FortiBleed was first documented in June 2026 by SOCRadar and Hudson Rock. The Russian-speaking operation is estimated to have collected more than 86,644 working device credentials across 194 countries as of June 19. The campaign runs in five stages: reconnaissance of exposed portals, credential stuffing and password spraying using data from leak dumps and infostealer logs, deployment of a Go-based tool called FortigateSniffer that passively intercepts authentication traffic across 24 protocols, offline cracking on GPU clusters using Hashmat and Hashtopolis, and finally lateral movement, Active Directory enumeration and exfiltration. New administrative accounts are created on the appliance to keep access.
+        </p>
+        <p>
+          The agencies also warned that some victims may be locked out of their own devices because the attacker deleted or changed the original account password. CISA's earlier guidance asked Fortinet customers to enable phishing-resistant authentication, terminate active SSL VPN and administrative sessions, reset VPN and administrative passwords, store administrator credentials using PBKDF2, and review logs for suspicious activity. Investigators suspect the operator is an initial access broker selling access onward, with reporting tying the activity to INC and Lynx ransomware operations.
+        </p>
+
+        <h2>Why this is a GRC story</h2>
+        <p>
+          <strong>Credential reuse is the control that failed.</strong> The technology was not the weak point. Reused and leaked passwords were. That is a policy and monitoring problem, and it shows up in most environments that have never audited whether device administrative passwords are unique.
+        </p>
+        <p>
+          <strong>Legacy password storage turns one exposure into many.</strong> The advisory specifically names SHA-256 storage. Where credentials are stored that way, stolen hashes can be cracked offline at scale. Moving administrator credentials to PBKDF2 is a documented action item, not a research project, and it reduces the value of a stolen hash.
+        </p>
+        <p>
+          <strong>Recovery plans need to assume you lose admin access.</strong> Deleting accounts on the appliance is a simple way to hold a victim hostage. A response plan that assumes administrative access will still exist is incomplete. Break-glass access, offline configuration backups and a documented rebuild path belong in the runbook before an incident, not during one.
+        </p>
+
+        <h2>What to watch</h2>
+        <p>
+          Watch whether CISA ties FortiBleed to a binding operational directive or a known exploited catalogue entry. Either move attaches an agency remediation deadline and gives private sector teams a date they can take to their own leadership. Watch also for the first ransomware deployment publicly attributed to access sold out of this campaign, because that is when board-level attention usually arrives.
+        </p>
+        <p>
+          The practical work is unglamorous. Inventory every appliance reachable from the internet, confirm administrative credentials are unique and stored with PBKDF2, require phishing-resistant multi-factor authentication, and keep an out-of-band way to regain control of a device if an account disappears.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html" target="_blank" rel="noopener">The Hacker News</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

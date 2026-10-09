@@ -1,42 +1,138 @@
 {
-  "generated": "2026-10-06T07:30:43",
-  "count": 6,
+  "generated": "2026-10-10T07:31:09",
+  "count": 22,
   "items": [
     {
-      "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
-      "link": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
-      "source": "The Hacker News",
-      "date": "2026-10-05"
+      "title": "AI Agent Governance Starts With Identity",
+      "link": "https://www.databreachtoday.com/ai-agent-governance-starts-identity-a-33063",
+      "source": "DataBreachToday",
+      "date": "2026-10-10"
     },
     {
-      "title": "Detained ShinyHunters hacker reportedly helping FBI track down fellow members",
-      "link": "https://www.helpnetsecurity.com/2026/10/05/shinyhunters-member-rey-detained-jordan-fbi/",
+      "title": "CMMC Is a Business Decision: Making the Case for Compliance",
+      "link": "https://www.databreachtoday.com/blogs/cmmc-business-decision-making-case-for-compliance-p-4208",
+      "source": "DataBreachToday",
+      "date": "2026-10-10"
+    },
+    {
+      "title": "The Data-First Approach to CMMC",
+      "link": "https://www.databreachtoday.com/blogs/data-first-approach-to-cmmc-p-4207",
+      "source": "DataBreachToday",
+      "date": "2026-10-10"
+    },
+    {
+      "title": "FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack",
+      "link": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+      "source": "The Hacker News",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "TP-Link Sued by Four More U.S. States Over Router Security and China Ties",
+      "link": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
+      "source": "The Hacker News",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "FBI Seizes 7 Domains, Disrupts Flax Typhoon Tools Used in Critical Infrastructure Intrusions",
+      "link": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
+      "source": "The Hacker News",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails",
+      "link": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
+      "source": "The Hacker News",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "AI Training Critical as Governance Challenges Grow",
+      "link": "https://www.infosecurity-magazine.com/news/ai-training-critical-as-governance/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Major AI Firms Pledge Data Protection Changes Following UK Privacy Watchdog Push",
+      "link": "https://www.infosecurity-magazine.com/news/ai-firms-pledge-data-protection/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "FBI disrupts Flax Typhoon hacking tools used in global cyberattacks",
+      "link": "https://www.helpnetsecurity.com/2026/10/09/fbi-flax-typhoon-microscan-fishhub-domains/",
       "source": "Help Net Security",
-      "date": "2026-10-05"
+      "date": "2026-10-09"
     },
     {
-      "title": "Citrix issues patch for third exploited flaw in NetScaler",
-      "link": "https://www.cybersecuritydive.com/news/citrix-patch-third-exploited-flaw-netscaler/832128/",
+      "title": "Companies want autonomous IT operations but hesitate to let AI act alone",
+      "link": "https://www.helpnetsecurity.com/2026/10/09/move-toward-autonomous-it-operations/",
+      "source": "Help Net Security",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Priceline\u2019s online ads reportedly subject to an up to $500M fine from the FTC",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/pricelines-online-ads-reportedly-subject-to-an-up-to-500m-fine-from-the-ftc/",
+      "source": "Compliance Week",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "EU banking regulator issues new TPRM guidelines for large banks, FS firms",
+      "link": "https://www.complianceweek.com/banking/eu-banking-regulator-issues-new-tprm-guidelines-for-large-banks-fs-firms/",
+      "source": "Compliance Week",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "FBI seizes domains linked to China-nexus botnet",
+      "link": "https://www.cybersecuritydive.com/news/fbi-seizes-domains-china-botnet-flax-typhoon/832611/",
       "source": "Cybersecurity Dive",
-      "date": "2026-10-05"
+      "date": "2026-10-09"
     },
     {
-      "title": "SEC Coordinates with Global Financial Regulators to Raise Fraud Awareness During World Investor Week",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-101-sec-coordinates-global-financial-regulators-raise-fraud-awareness-during-world-investor-week",
+      "title": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
       "source": "SEC Press Releases",
-      "date": "2026-10-05"
+      "date": "2026-10-09"
     },
     {
-      "title": "FBI confirms 'multiple' arrests related to ShinyHunters hack",
-      "link": "https://www.theregister.com/security/2026/10/05/fbi-confirms-multiple-arrests-related-to-shinyhunters-hack/5301178",
-      "source": "The Register - Security",
-      "date": "2026-10-05"
+      "title": "Europol and US Spending Watchdog Sound the Alarm Over Quantum Threats",
+      "link": "https://www.infosecurity-magazine.com/news/europol-us-gao-alarm-quantum/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-08"
     },
     {
-      "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
-      "link": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
-      "source": "The Hacker News",
-      "date": "2026-10-04"
+      "title": "FBI and Secret Service Warn of FortiBleed Lockout Threat",
+      "link": "https://www.infosecurity-magazine.com/news/fbi-secret-service-fortibleed/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Why the rise of countersanctions is increasing compliance risks on multiple fronts",
+      "link": "https://www.complianceweek.com/sanctions/why-the-rise-of-countersanctions-is-increasing-compliance-risks-on-multiple-fronts/",
+      "source": "Compliance Week",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Alcohol distributor settles with FTC over higher prices charged to small stores",
+      "link": "https://www.complianceweek.com/retail/alcohol-distributor-settles-with-ftc-over-higher-prices-charged-to-small-stores/",
+      "source": "Compliance Week",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "DOJ, FBI seize Flax Typhoon-linked hacking tools Microscan, FishHub",
+      "link": "https://cyberscoop.com/doj-fbi-seize-flax-typhoon-hacking-tools-microscan-fishhub/",
+      "source": "CyberScoop",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Ransomware recovery CEO indicted after allegedly paying hackers and pocketing millions",
+      "link": "https://cyberscoop.com/monstercloud-zohar-pinhasi-ransomware-recovery-scheme/",
+      "source": "CyberScoop",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "What the C-suite needs to know about AI governance",
+      "link": "https://www.cybersecuritydive.com/news/c-suite-ai-governance/832497/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-10-08"
     }
   ]
 }

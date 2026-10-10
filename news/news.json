@@ -1,23 +1,29 @@
 {
-  "generated": "2026-10-10T07:31:09",
-  "count": 22,
+  "generated": "2026-10-11T07:30:43",
+  "count": 14,
   "items": [
     {
       "title": "AI Agent Governance Starts With Identity",
       "link": "https://www.databreachtoday.com/ai-agent-governance-starts-identity-a-33063",
       "source": "DataBreachToday",
-      "date": "2026-10-10"
+      "date": "2026-10-11"
     },
     {
       "title": "CMMC Is a Business Decision: Making the Case for Compliance",
       "link": "https://www.databreachtoday.com/blogs/cmmc-business-decision-making-case-for-compliance-p-4208",
       "source": "DataBreachToday",
-      "date": "2026-10-10"
+      "date": "2026-10-11"
     },
     {
       "title": "The Data-First Approach to CMMC",
       "link": "https://www.databreachtoday.com/blogs/data-first-approach-to-cmmc-p-4207",
       "source": "DataBreachToday",
+      "date": "2026-10-11"
+    },
+    {
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "source": "Krebs on Security",
       "date": "2026-10-10"
     },
     {
@@ -35,12 +41,6 @@
     {
       "title": "FBI Seizes 7 Domains, Disrupts Flax Typhoon Tools Used in Critical Infrastructure Intrusions",
       "link": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
-      "source": "The Hacker News",
-      "date": "2026-10-09"
-    },
-    {
-      "title": "FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails",
-      "link": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
       "source": "The Hacker News",
       "date": "2026-10-09"
     },
@@ -63,20 +63,14 @@
       "date": "2026-10-09"
     },
     {
-      "title": "Companies want autonomous IT operations but hesitate to let AI act alone",
-      "link": "https://www.helpnetsecurity.com/2026/10/09/move-toward-autonomous-it-operations/",
-      "source": "Help Net Security",
+      "title": "American Express hit with $350M penalty for lax BSA/AML compliance program",
+      "link": "https://www.complianceweek.com/aml/american-express-hit-with-350m-penalty-for-lax-bsa-aml-compliance-program/",
+      "source": "Compliance Week",
       "date": "2026-10-09"
     },
     {
       "title": "Priceline\u2019s online ads reportedly subject to an up to $500M fine from the FTC",
       "link": "https://www.complianceweek.com/regulatory-enforcement/pricelines-online-ads-reportedly-subject-to-an-up-to-500m-fine-from-the-ftc/",
-      "source": "Compliance Week",
-      "date": "2026-10-09"
-    },
-    {
-      "title": "EU banking regulator issues new TPRM guidelines for large banks, FS firms",
-      "link": "https://www.complianceweek.com/banking/eu-banking-regulator-issues-new-tprm-guidelines-for-large-banks-fs-firms/",
       "source": "Compliance Week",
       "date": "2026-10-09"
     },
@@ -91,48 +85,6 @@
       "link": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
       "source": "SEC Press Releases",
       "date": "2026-10-09"
-    },
-    {
-      "title": "Europol and US Spending Watchdog Sound the Alarm Over Quantum Threats",
-      "link": "https://www.infosecurity-magazine.com/news/europol-us-gao-alarm-quantum/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-10-08"
-    },
-    {
-      "title": "FBI and Secret Service Warn of FortiBleed Lockout Threat",
-      "link": "https://www.infosecurity-magazine.com/news/fbi-secret-service-fortibleed/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-10-08"
-    },
-    {
-      "title": "Why the rise of countersanctions is increasing compliance risks on multiple fronts",
-      "link": "https://www.complianceweek.com/sanctions/why-the-rise-of-countersanctions-is-increasing-compliance-risks-on-multiple-fronts/",
-      "source": "Compliance Week",
-      "date": "2026-10-08"
-    },
-    {
-      "title": "Alcohol distributor settles with FTC over higher prices charged to small stores",
-      "link": "https://www.complianceweek.com/retail/alcohol-distributor-settles-with-ftc-over-higher-prices-charged-to-small-stores/",
-      "source": "Compliance Week",
-      "date": "2026-10-08"
-    },
-    {
-      "title": "DOJ, FBI seize Flax Typhoon-linked hacking tools Microscan, FishHub",
-      "link": "https://cyberscoop.com/doj-fbi-seize-flax-typhoon-hacking-tools-microscan-fishhub/",
-      "source": "CyberScoop",
-      "date": "2026-10-08"
-    },
-    {
-      "title": "Ransomware recovery CEO indicted after allegedly paying hackers and pocketing millions",
-      "link": "https://cyberscoop.com/monstercloud-zohar-pinhasi-ransomware-recovery-scheme/",
-      "source": "CyberScoop",
-      "date": "2026-10-08"
-    },
-    {
-      "title": "What the C-suite needs to know about AI governance",
-      "link": "https://www.cybersecuritydive.com/news/c-suite-ai-governance/832497/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-10-08"
     }
   ]
 }

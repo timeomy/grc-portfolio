@@ -1,17 +1,41 @@
 {
-  "generated": "2026-10-16T07:30:33",
-  "count": 11,
+  "generated": "2026-10-17T07:31:29",
+  "count": 8,
   "items": [
-    {
-      "title": "OpenAI Sued Over ChatGPT Safety Risks by 8 US States",
-      "link": "https://www.databreachtoday.com/openai-sued-over-chatgpt-safety-risks-by-8-us-states-a-33119",
-      "source": "DataBreachToday",
-      "date": "2026-10-16"
-    },
     {
       "title": "Why CMMC Contractors Should Plan for NIST Revision 3 Now",
       "link": "https://www.databreachtoday.com/blogs/cmmc-contractors-should-plan-for-nist-revision-3-now-p-4212",
       "source": "DataBreachToday",
+      "date": "2026-10-17"
+    },
+    {
+      "title": "Scammers clone candidates\u2019 voices to steal cash and voter data ahead of 2026 midterms, FBI warns",
+      "link": "https://www.helpnetsecurity.com/2026/10/16/usa-2026-midterm-election-scams/",
+      "source": "Help Net Security",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "UK backs SFO proposal to reward whistleblowers to curb economic crimes",
+      "link": "https://www.complianceweek.com/whistleblowers/uk-backs-sfo-proposal-to-reward-whistleblowers-to-curb-economic-crimes/",
+      "source": "Compliance Week",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "OCC report on \u2018debanking\u2019 at nine largest US banks claims reputation risk policies result in denial of services",
+      "link": "https://www.complianceweek.com/banking/occ-report-on-debanking-at-nine-largest-us-banks-claims-reputation-risk-policies-result-in-denial-of-services/",
+      "source": "Compliance Week",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "BoA pays $1.21B for AML lapses and alleged sanctions violations",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/boa-pays-1-21b-for-aml-lapses-and-alleged-sanctions-violations/",
+      "source": "Compliance Week",
+      "date": "2026-10-16"
+    },
+    {
+      "title": "UK financial regulator proposes economy-linked regulatory threshold to cut firms\u2019 compliance costs",
+      "link": "https://www.complianceweek.com/banking/uk-financial-regulator-proposes-economy-linked-regulatory-threshold-to-cut-firms-compliance-costs/",
+      "source": "Compliance Week",
       "date": "2026-10-16"
     },
     {
@@ -21,52 +45,10 @@
       "date": "2026-10-15"
     },
     {
-      "title": "Optro automates GRC workflows with auditable AI agents",
-      "link": "https://www.helpnetsecurity.com/2026/10/15/optro-grc-intelligence-platform/",
-      "source": "Help Net Security",
-      "date": "2026-10-15"
-    },
-    {
-      "title": "CFPB targets debanking practices after OCC report",
-      "link": "https://www.complianceweek.com/banking/cfpb-targets-debanking-practices-after-occ-report/",
-      "source": "Compliance Week",
-      "date": "2026-10-15"
-    },
-    {
       "title": "US Air Force pilots used malware-laden USB drives to plan Afghanistan missions",
       "link": "https://www.theregister.com/security/2026/10/15/us-air-force-pilots-used-malware-laden-usb-drives-to-plan-afghanistan-missions/5303156",
       "source": "The Register - Security",
       "date": "2026-10-15"
-    },
-    {
-      "title": "U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
-      "link": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
-      "source": "The Hacker News",
-      "date": "2026-10-14"
-    },
-    {
-      "title": "Feds crack down on North Korean IT-worker schemes with new raids, charges and arrests",
-      "link": "https://www.cybersecuritydive.com/news/north-korea-it-worker-raids-arrests-charges/832968/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-10-14"
-    },
-    {
-      "title": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
-      "source": "SEC Press Releases",
-      "date": "2026-10-14"
-    },
-    {
-      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
-      "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
-      "source": "Krebs on Security",
-      "date": "2026-10-14"
-    },
-    {
-      "title": "OpenAI engineer charged after boardroom bug found wrapped in toilet paper",
-      "link": "https://www.theregister.com/security/2026/10/14/openai-engineer-charged-after-boardroom-bug-found-wrapped-in-toilet-paper/5303000",
-      "source": "The Register - Security",
-      "date": "2026-10-14"
     }
   ]
 }

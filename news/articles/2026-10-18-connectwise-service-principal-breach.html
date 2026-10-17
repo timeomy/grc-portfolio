@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Backup App's Service Principal Became the Way Into Microsoft 365 Tenants · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="ConnectWise shut its Cloud Backup service after attackers used application identities to reach customer Microsoft 365 tenants, with 162 seen at one provider.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-18-connectwise-service-principal-breach.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+    .article-body blockquote { border-left: 2px solid var(--gold); padding: 2px 0 2px 18px; margin: 18px 0; color: var(--text-dim); font-style: italic; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "A Backup App's Service Principal Became the Way Into Microsoft 365 Tenants", "description": "ConnectWise shut its Cloud Backup service after attackers used application identities to reach customer Microsoft 365 tenants, with 162 seen at one provider.", "datePublished": "2026-10-18", "dateModified": "2026-10-18", "url": "https://zabez.com/news/articles/2026-10-18-connectwise-service-principal-breach.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="A Backup App's Service Principal Became the Way Into Microsoft 365 Tenants">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-supplychain.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 18, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>A Backup App's Service Principal Became the Way Into Microsoft 365 Tenants</h1>
+        <p class="subtitle">ConnectWise shut its Cloud Backup service after attackers used application identities to reach customer Microsoft 365 tenants, with 162 seen at one provider.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/" target="_blank" rel="noopener">BleepingComputer</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-supplychain.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        ConnectWise cut off customer access to its Cloud Backup service, previously known as SkyKick Cloud Backup, after discovering unauthorized access to application identities inside that environment. The service backs up Microsoft 365 and Google Workspace data for managed service providers and their clients, and it reaches that data through permissions granted in Microsoft Entra ID.
+        </p>
+        <p>
+        The mechanism matters more than the vendor name. A service principal represents the backup application inside each customer tenant and acts with whatever permissions the customer approved. According to investigators quoted by BleepingComputer, the attacker authenticated as the backup application using its secret, and inherited the access customers had already granted. No phishing campaign was needed. The trusted software simply signed in.
+        </p>
+        <p>
+        Huntress reported at least 162 compromised tenants in its own visibility, and Microsoft confirmed unauthorized authentication attempts from a single address on October 15. Sign-in activity appears to have been scripted, with automated tooling recorded across October 13 and 14. One administrator reported an alert from Microsoft Privileged Identity Management showing a SkyKick service principal assigning itself the Exchange Administrator role, from an application the tenant had not used in years.
+        </p>
+        <p>
+        ConnectWise said it has no indicators that partner backup data was taken and that the stored archive is unaffected, while it investigates and restores service.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Consent outlives the relationship.</strong> The role assignment that enabled this access was granted years earlier and never revisited. Application permissions are a register entry with a date, an owner and a purpose, and most third party registers do not list them at all. If your inventory records the vendor but not the application identity and its scopes, you cannot answer the first question an incident like this raises.
+        </p>
+        <p>
+        <strong>High privilege delegated to a backup tool is normal and dangerous.</strong> Backup products need broad read access, and often the ability to write or restore, which makes them a standing target. That is not a reason to remove them. It is a reason to monitor role assignments to service principals with the same attention given to human administrators, and to alert on privilege escalation by an application nobody has touched in a year.
+        </p>
+        <p>
+        <strong>Third party incidents arrive as a vendor statement, not a breach report.</strong> Customers learned about this from vendor advisories, a security platform's telemetry and each other. Contract clauses on notification timelines and evidence sharing are the only thing that shortens that gap, and they are usually the clauses nobody reads until they are needed.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch for the scope of notification and for whether regulators treat this as a personal data breach in the jurisdictions where affected tenants operate. For practitioners, the immediate work is unglamorous: search Entra ID for service principals with elevated roles, match them to a current business need, and remove the ones tied to tools you no longer use. Then check whether your monitoring would have flagged an application granting itself Exchange Administrator. In this case somebody did get that alert, which is the only reason the pattern became visible as quickly as it did.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/" target="_blank" rel="noopener">BleepingComputer</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

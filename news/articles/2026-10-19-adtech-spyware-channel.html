@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Ad Company Was the Delivery Van for Zero-Click Spyware · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Citizen Lab found ads bought by Discover-Tech fingerprinted devices and infected targets for spyware vendor Candiru, exposing the adtech supply chain.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-19-adtech-spyware-channel.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+    .article-body blockquote { border-left: 2px solid var(--gold); padding: 2px 0 2px 18px; margin: 18px 0; color: var(--text-dim); font-style: italic; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "An Ad Company Was the Delivery Van for Zero-Click Spyware", "description": "Citizen Lab found ads bought by Discover-Tech fingerprinted devices and infected targets for spyware vendor Candiru, exposing the adtech supply chain.", "datePublished": "2026-10-19", "dateModified": "2026-10-19", "url": "https://zabez.com/news/articles/2026-10-19-adtech-spyware-channel.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="An Ad Company Was the Delivery Van for Zero-Click Spyware">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-privacy.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 19, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>An Ad Company Was the Delivery Van for Zero-Click Spyware</h1>
+        <p class="subtitle">Citizen Lab found ads bought by Discover-Tech fingerprinted devices and infected targets for spyware vendor Candiru, exposing the adtech supply chain.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/" target="_blank" rel="noopener">SecurityWeek</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-privacy.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Citizen Lab published research describing an operation it calls AdFection. Ads purchased by an Israeli company called Discover-Tech were used to de-anonymize users, fingerprint their devices, and in some cases infect them. Between 2024 and 2025, at least 45 devices inside Al Jazeera were targeted this way and ended up carrying spyware from Candiru, an Israel based mercenary vendor.
+        </p>
+        <p>
+        The mechanism sits inside ordinary advertising. Companies bid in real time auctions for the chance to show an ad, and ad exchanges hold a great deal of device and user data to make that targeting work. Ad code also runs inside apps and browsers. Many Discover-Tech ads carried a script that connected back to its infrastructure, submitted the device advertising ID, and executed JavaScript chosen from a combination of IP address and identifiers. That is enough to recognise a device, and then to exploit it without a click.
+        </p>
+        <p>
+        Discover-Tech presented as a legitimate advertising business, and Citizen Lab assesses it as likely a front that bridged ad vendors and spyware vendors. Its Controlium platform handled the de-anonymization, device fingerprinting, and delivery. One Discover-Tech server exposed <strong>four billion ad bid records</strong>, and its ads appeared across nearly 200,000 unique websites and mobile applications worldwide. The researchers also documented a separate actor, Dark Cartographer, building databases that link advertising identifiers to phone numbers by exploiting vulnerabilities at mobile carriers.
+        </p>
+        <p>
+        Google and IAB Europe removed the company from their ad vendor registries in early October. Google also cut off its access to ad exchange platforms, and Beeswax and Eskimi took similar steps.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Marketing technology is a supplier population that rarely reaches a vendor risk assessment.</strong> A single ad script can run on every page and in every app a business ships, reaching customers and staff alike, and it changes without a change request. Third party risk programmes that count SaaS contracts but not ad tags are counting the wrong things.
+        </p>
+        <p>
+        <strong>The data question follows immediately.</strong> Advertising identifiers were treated as commercial plumbing rather than personal data. Once they can be tied to a phone number and a real person, they become the same identifier class a privacy programme is supposed to govern, with lawful basis, retention limits, and disclosure duties attached.
+        </p>
+        <p>
+        <strong>There is a detection gap as well.</strong> Nothing here looks like malware to an endpoint tool, because the delivery vehicle is an ad impression in a browser or app that users were meant to load.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Citizen Lab's recommendation is blunt: block targeted ads at the gateway until the industry proves it can block vectors of this kind. Watch whether regulators start treating ad exchange participation as a supplier relationship that carries due diligence duties, and whether procurement asks vendors for evidence that they were ever on a registry at all. The cheap control is an inventory of every third party script loading on your properties, with an owner and a review date attached.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/" target="_blank" rel="noopener">SecurityWeek</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

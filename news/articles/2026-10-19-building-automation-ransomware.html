@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>French Fridges Went Dark, and the Risk Register Was Looking Elsewhere · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Attackers hit thousands of internet-connected refrigeration units in French grocery stores, showing how compliance telemetry quietly becomes an attack surface.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-19-building-automation-ransomware.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+    .article-body blockquote { border-left: 2px solid var(--gold); padding: 2px 0 2px 18px; margin: 18px 0; color: var(--text-dim); font-style: italic; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "French Fridges Went Dark, and the Risk Register Was Looking Elsewhere", "description": "Attackers hit thousands of internet-connected refrigeration units in French grocery stores, showing how compliance telemetry quietly becomes an attack surface.", "datePublished": "2026-10-19", "dateModified": "2026-10-19", "url": "https://zabez.com/news/articles/2026-10-19-building-automation-ransomware.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="French Fridges Went Dark, and the Risk Register Was Looking Elsewhere">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-breach.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 19, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>French Fridges Went Dark, and the Risk Register Was Looking Elsewhere</h1>
+        <p class="subtitle">Attackers hit thousands of internet-connected refrigeration units in French grocery stores, showing how compliance telemetry quietly becomes an attack surface.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677" target="_blank" rel="noopener">The Register</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-breach.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Late on a Sunday night, an unknown criminal group broke into thousands of remote-controlled refrigeration systems across hundreds of French grocery stores. Temperatures climbed, food spoiled, and fires started. The Register reported the incident alongside a wider pattern: in August, a ransomware attack disrupted building management systems at a Canadian hospital, knocking out door access controls, central HVAC monitoring, and the issuing of staff access cards. Three years ago, attacks on Las Vegas casinos left slot machines dark, payment kiosks and ATMs unable to dispense cash, and guests locked out of their rooms.
+        </p>
+        <p>
+        Building automation systems control HVAC, lighting, energy use, and water. They also run badge readers, door locks, surveillance cameras, and fire alarm panels. A report from ServiceNow's Armis Labs found that <strong>73 percent of organizations own building systems that have been used in ransomware attacks</strong>, and the same share have known exploited vulnerabilities in at least one of those systems. Another 91 percent communicate over insecure protocols. Operational technology carries fewer controls than IT, and the need for continuous uptime makes patching and even scanning a risk in itself.
+        </p>
+        <p>
+        Consultants describe these systems as cover. Michael Freeman of ServiceNow said attackers find building management systems easier to compromise and easier to hide inside. In one case against a large financial institution, intruders kept losing their foothold in IT, so they built backdoors into the building management system to hold access to both networks at once.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Compliance connectivity created the exposure.</strong> Matt Hayden, now at GDIT and previously at DHS, described refrigeration monitoring as a regulatory requirement: operators connect the units so they can prove to health inspectors that temperatures held. The same link that produces the evidence is a path in. A control designed to demonstrate compliance added a device to the estate that nobody treats as a server, and that often runs unpatched firmware.
+        </p>
+        <p>
+        <strong>Scope is the second problem.</strong> Most risk registers list applications, data stores, and cloud tenants. Fewer list the fridge, the badge reader, or the fire panel. An asset that is out of scope is not assessed, not patched on a schedule, and not in the incident response runbook. Dragos estimates fewer than 10 percent of OT networks have adequate monitoring, and in 30 percent of the incidents it responded to in 2025 the investigation began because an operator noticed something felt wrong, not because an alert fired.
+        </p>
+        <p>
+        <strong>The extortion model changed too.</strong> Physical consequences create pressure that stolen records do not. A response plan built around data theft and notification duties does not cover a site that has to be entered through a broken window.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Dragos counted 1,020 ransomware incidents against industrial organizations in the first quarter of 2026 and 1,140 in the second, though those are leak site claims rather than confirmed control system hits. Watch whether insurers and auditors start asking for a building system inventory, and whether the French incident produces a regulator response on device connectivity. The practical step is small: add building and physical safety systems to the asset inventory, name an owner, and find out what they talk to.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677" target="_blank" rel="noopener">The Register</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

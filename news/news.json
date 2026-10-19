@@ -1,11 +1,29 @@
 {
-  "generated": "2026-10-19T07:33:29",
-  "count": 1,
+  "generated": "2026-10-20T07:31:41",
+  "count": 4,
   "items": [
+    {
+      "title": "DHS Bans DeepSeek From Federal Civilian Agencies",
+      "link": "https://www.databreachtoday.com/dhs-bans-deepseek-from-federal-civilian-agencies-a-33146",
+      "source": "DataBreachToday",
+      "date": "2026-10-20"
+    },
     {
       "title": "Why CMMC Contractors Should Plan for NIST Revision 3 Now",
       "link": "https://www.databreachtoday.com/blogs/cmmc-contractors-should-plan-for-nist-revision-3-now-p-4212",
       "source": "DataBreachToday",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
+      "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+      "source": "The Hacker News",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "Hybrid mesh firewalls: Distributed security enforcement for a self-driving network",
+      "link": "https://www.cybersecuritydive.com/spons/hybrid-mesh-firewalls-distributed-security-enforcement-for-a-self-driving/832929/",
+      "source": "Cybersecurity Dive",
       "date": "2026-10-19"
     }
   ]

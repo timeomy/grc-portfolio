@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITRE ATT&amp;CK v20 Gives Prompt Injection and MFA Bypass a Technique ID · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="ATT&amp;CK v20 adds techniques for prompt injection, AI agent data theft and MFA bypass, giving governance teams something concrete to map controls to.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-20-mitre-attack-v20-ai.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "MITRE ATT&CK v20 Gives Prompt Injection and MFA Bypass a Technique ID", "description": "ATT&CK v20 adds techniques for prompt injection, AI agent data theft and MFA bypass, giving governance teams something concrete to map controls to.", "datePublished": "2026-10-20", "dateModified": "2026-10-20", "url": "https://zabez.com/news/articles/2026-10-20-mitre-attack-v20-ai.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="MITRE ATT&CK v20 Gives Prompt Injection and MFA Bypass a Technique ID">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-standards.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 20, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>MITRE ATT&amp;CK v20 Gives Prompt Injection and MFA Bypass a Technique ID</h1>
+        <p class="subtitle">ATT&amp;CK v20 adds techniques for prompt injection, AI agent data theft and MFA bypass, giving governance teams something concrete to map controls to.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/" target="_blank" rel="noopener">SecurityWeek</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-standards.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        MITRE published version 20 of its ATT&amp;CK framework last week. The organisation describes the biggest change as "expanded coverage of recent adversary activity and tradecraft," and the additions show where the tradecraft has moved.
+        </p>
+        <p>
+        The Enterprise domain gains nine additions across techniques and sub-techniques. Prompt injection is now tracked as two separate techniques, one for malicious instructions typed directly into a model's interface and one for instructions hidden in material the model ingests. A further technique describes attackers using an organisation's own AI agents to steal data, with sub-techniques for poisoning web content to steer AI search and assistant recommendations and for disrupting LLM-assisted malware analysis. Separately there is a new technique for the theft of application-specific passwords, which attackers can use to sign in without triggering an MFA prompt, and another for bypassing CAPTCHA checks, with sub-techniques for solving them automatically and for avoiding them. The existing sub-technique on compromised software dependencies and development tools now also covers IDE and coding agent configuration files.
+        </p>
+        <p>
+        The ICS domain gets its own campaign entries. One tracks attacks on internet-exposed programmable logic controllers at more than 30 water and wastewater utilities in Minnesota, which left operators locked out. MITRE notes attribution remains unconfirmed. A second documents an AI-assisted breach of Mexican government institutions that spanned IT and OT and reached a municipal water utility. ICS also gains a Command and Scripting Interpreter technique with sub-techniques for six interpreters, replacing the deprecated Command-Line Interface and Scripting techniques.
+        </p>
+        <p>
+        On the actor side, MITRE added Nimbus Manticore, an IRGC-associated espionage group targeting aerospace, defence and telecoms. Salt Typhoon's entry now covers exploitation of network edge devices, and APT38's entry reflects a shift from financial theft toward software supply chain attacks. The Gentlemen ransomware-as-a-service operation is new. Defenders get 15 new detection strategies, six for Enterprise and nine for ICS, backed by 38 analytics, with the ICS analytics built to ignore routine engineering and maintenance work.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>A technique ID is what makes an AI risk statement testable.</strong> For two years, governance documents have said the organisation is exposed to prompt injection without any shared way to describe the exposure, the control or the evidence. Two techniques and a sub-technique now exist to point at. That is the difference between a risk register entry and something an assessor can score.
+        </p>
+        <p>
+        <strong>MFA is the uncomfortable one.</strong> Most control frameworks treat multi-factor authentication as a settled answer. A catalogued technique for stealing application-specific passwords and signing in without an MFA prompt asks whether the standard relies on the prompt itself or on the conditions around it. Reviews that stop at "MFA enforced" will pass while the technique works.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch how quickly vendor detection libraries claim coverage of the new Enterprise techniques, and whether those claims are tested against the analytics MITRE published or merely name-checked. Watch whether the ICS additions move regulators to ask water utilities harder questions about internet-exposed controllers, especially with attribution still open in Minnesota.
+        </p>
+        <p>
+        The usable next step is small. Take the new techniques, ask your team which ones you could detect today, and write the answer down with a date. A framework update is only useful if it changes something in a document you own.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/" target="_blank" rel="noopener">SecurityWeek</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

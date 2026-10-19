@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Stolen Login, Four Months of Quiet Access, and Millions of Student Records · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="A compromised credential on an ETS file transfer site exposed California student records for nearly four months before anyone noticed.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-20-ets-sftp-student-records.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "One Stolen Login, Four Months of Quiet Access, and Millions of Student Records", "description": "A compromised credential on an ETS file transfer site exposed California student records for nearly four months before anyone noticed.", "datePublished": "2026-10-20", "dateModified": "2026-10-20", "url": "https://zabez.com/news/articles/2026-10-20-ets-sftp-student-records.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="One Stolen Login, Four Months of Quiet Access, and Millions of Student Records">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-privacy.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 20, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>One Stolen Login, Four Months of Quiet Access, and Millions of Student Records</h1>
+        <p class="subtitle">A compromised credential on an ETS file transfer site exposed California student records for nearly four months before anyone noticed.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/" target="_blank" rel="noopener">SecurityWeek</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-privacy.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Educational Testing Service, the nonprofit that runs California's state and federally mandated testing under contract with the state, detected unauthorised activity on a secure file transfer site on September 25. The California Department of Education's breach notice states what the investigation then found: an unauthorised party used a compromised login credential at various times between May 22 and September 18, 2026, to access the SFTP site and copy files containing California student information.
+        </p>
+        <p>
+        The site existed for a routine purpose: ETS used it to exchange testing data with the department for the CAASPP and ELPAC assessment programmes. No victim count has been published. The notice says "all students enrolled in the three previous school years" were affected, and the department's FAQ adds students who left a California school as far back as 2006. More than 5.7 million students were enrolled in California public schools in 2025-26, so the exposed population is measured in millions.
+        </p>
+        <p>
+        What was in the files reads like a full student record: name, birth date, address, school, district and grade, state and local ID numbers, gender, race or ethnicity, primary language, country of origin and English learner status. Some entries also carried disability and Section 504 status, testing accommodations and test results, or showed whether a student qualified for Title I, McKinney-Vento or military-connected designations. The notice says the files held no Social Security numbers, passwords, financial or payment card details, and no parent or guardian information.
+        </p>
+        <p>
+        ETS disabled the account, took the SFTP site offline and is building a replacement with stronger safeguards. The public disclosures do not explain how the credential was compromised or name an attacker, and ETS says its web monitoring has found no evidence the data has been published. The department told county and district superintendents and charter administrators in a letter dated October 2, and student notifications began on October 16, continuing into early November with two years of identity protection offered.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>The control that failed was not exotic.</strong> A file transfer endpoint with one credential and no behavioural baseline is one of the quietest places in an estate. Nobody watches the SFTP box until it appears in a headline. One login held records for every student in the largest school system in the country plus former students back two decades, so a single credential became a statewide incident.
+        </p>
+        <p>
+        <strong>The notification sequence will be examined.</strong> Internal notice to district leadership on October 2, public student notifications from October 16, detection on September 25 with access that began in May. Each gap has a defensible reason and each one is the kind of interval regulators and plaintiffs now measure.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch whether a victim count is published and whether the retention question gets picked up, because keeping records on former students back to 2006 is a data minimisation decision that will be hard to explain. Watch what the ETS contract says about audit rights, logging and breach cooperation.
+        </p>
+        <p>
+        For anyone holding third party data flows, the audit question is direct. Which accounts can pull bulk extracts, who reviews that activity, and how long the logs last. If the answer depends on the vendor telling you, the control is a promise rather than a check.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/" target="_blank" rel="noopener">SecurityWeek</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

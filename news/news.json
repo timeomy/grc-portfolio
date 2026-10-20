@@ -1,29 +1,95 @@
 {
-  "generated": "2026-10-20T07:31:41",
-  "count": 4,
+  "generated": "2026-10-21T07:31:51",
+  "count": 15,
   "items": [
     {
-      "title": "DHS Bans DeepSeek From Federal Civilian Agencies",
-      "link": "https://www.databreachtoday.com/dhs-bans-deepseek-from-federal-civilian-agencies-a-33146",
+      "title": "NSA, NIST, CISA Issue Guidance on Rogue AI Agents",
+      "link": "https://www.databreachtoday.com/nsa-nist-cisa-issue-guidance-on-rogue-ai-agents-a-33156",
       "source": "DataBreachToday",
-      "date": "2026-10-20"
+      "date": "2026-10-21"
+    },
+    {
+      "title": "23andMe Will Pay Calif. $6M to Settle Hack Litigation",
+      "link": "https://www.databreachtoday.com/23andme-will-pay-calif-6m-to-settle-hack-litigation-a-33152",
+      "source": "DataBreachToday",
+      "date": "2026-10-21"
     },
     {
       "title": "Why CMMC Contractors Should Plan for NIST Revision 3 Now",
       "link": "https://www.databreachtoday.com/blogs/cmmc-contractors-should-plan-for-nist-revision-3-now-p-4212",
       "source": "DataBreachToday",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Indian certification authority eMudhra\u2019s private keys compromised \u2013 one of them was the number \u20184\u2019",
+      "link": "https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312",
+      "source": "The Register - Security",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+      "link": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+      "source": "The Hacker News",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+      "link": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+      "source": "The Hacker News",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "ThreatModeler NexusAI tracks architectural changes and proposes security updates",
+      "link": "https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/",
+      "source": "Help Net Security",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "AI in the Audit Room",
+      "link": "https://www.complianceweek.com/artificial-intelligence/ai-in-the-audit-room/",
+      "source": "Compliance Week",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "UK proposes new cross-regulatory, multi-agency approach to clamp down on money laundering",
+      "link": "https://www.complianceweek.com/aml/uk-proposes-new-cross-regulatory-multi-agency-approach-to-clamp-down-on-money-laundering/",
+      "source": "Compliance Week",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign",
+      "link": "https://cyberscoop.com/russian-hackers-apt28-target-nato-defense-firms/",
+      "source": "CyberScoop",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "DOJ escalates fight for election supremacy with California raids",
+      "link": "https://cyberscoop.com/justice-department-california-voter-arrests-noncitizen-claims/",
+      "source": "CyberScoop",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "AI security hiring focuses on red-teaming, SOC orchestration and governance",
+      "link": "https://www.cybersecuritydive.com/news/ai-security-jobs-hiring-sans-tracker/833465/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
+      "source": "SEC Press Releases",
+      "date": "2026-10-20"
+    },
+    {
+      "title": "ICANN testing tech to let law enforcement access non-public WHOIS info",
+      "link": "https://www.theregister.com/networks/2026/10/20/icann-testing-tech-to-let-law-enforcement-access-non-public-whois-info/5304036",
+      "source": "The Register - Security",
       "date": "2026-10-20"
     },
     {
       "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
       "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
       "source": "The Hacker News",
-      "date": "2026-10-19"
-    },
-    {
-      "title": "Hybrid mesh firewalls: Distributed security enforcement for a self-driving network",
-      "link": "https://www.cybersecuritydive.com/spons/hybrid-mesh-firewalls-distributed-security-enforcement-for-a-self-driving/832929/",
-      "source": "Cybersecurity Dive",
       "date": "2026-10-19"
     }
   ]

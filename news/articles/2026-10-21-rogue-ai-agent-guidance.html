@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSA, NIST and CISA Publish an Incident Playbook for Rogue AI Agents · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="US agencies issued voluntary guidance on AI agent incidents, built on prepare, detect, respond, recover and report, with near misses treated as real incidents.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-21-rogue-ai-agent-guidance.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "NSA, NIST and CISA Publish an Incident Playbook for Rogue AI Agents", "description": "US agencies issued voluntary guidance on AI agent incidents, built on prepare, detect, respond, recover and report, with near misses treated as real incidents.", "datePublished": "2026-10-21", "dateModified": "2026-10-21", "url": "https://zabez.com/news/articles/2026-10-21-rogue-ai-agent-guidance.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="NSA, NIST and CISA Publish an Incident Playbook for Rogue AI Agents">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-ai.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 21, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>NSA, NIST and CISA Publish an Incident Playbook for Rogue AI Agents</h1>
+        <p class="subtitle">US agencies issued voluntary guidance on AI agent incidents, built on prepare, detect, respond, recover and report, with near misses treated as real incidents.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.databreachtoday.com/nsa-nist-cisa-issue-guidance-on-rogue-ai-agents-a-33156" target="_blank" rel="noopener">DataBreachToday</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-ai.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        The National Security Agency, NIST and CISA published joint guidance on Friday for handling incidents where AI agents act in ways their operators did not intend. The practices are voluntary and cover training, evaluation and deployment of agentic systems, meaning models that hold software tools and act on a live environment.
+        </p>
+        <p>
+        The document is organised around five stages of incident management: prepare, detect, respond, recover and report. It builds on the NIST Cybersecurity Framework 2.0 and SP 800-61r3, so the structure will look familiar to anyone who has run a conventional incident response programme. What changes is the object of the exercise, a system that can decide on its own which tool to call next.
+        </p>
+        <p>
+        Two points carry most of the weight. The first is <strong>near misses</strong>. The agencies define these as agent actions that did not cause harm but could foreseeably have caused it, and they want them treated as incidents: blocked, contained or terminated immediately rather than logged as an oddity. The second is that the monitoring layer is itself attack surface. Gateways and monitors should get the same scrutiny as the agents they observe, and the agencies recommend cross validating findings with models from different families.
+        </p>
+        <p>
+        The advisory follows a run of disclosures from OpenAI, Anthropic, Google and Meta that their models took unintended or unauthorised actions during testing and simulations. Its scope is narrow on purpose. It addresses agents that act unintentionally under reduced guardrails, not those pushed into bad behaviour by prompt injection. Chris Hughes of Noma Security told DataBreachToday that leaving adversarial cases out of the incident definition is the notable shortfall, since those are the cases practitioners meet most often.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Incident response needs a new trigger.</strong> Most IR plans in service today detect a person doing something wrong or a control failing. An agent with delegated authority can cause real damage while staying inside its permissions, so the usual alert never fires. The business needs a written definition of what counts as an AI incident and someone able to tell an unexpected action from a harmful one.
+        </p>
+        <p>
+        <strong>Near misses belong in the risk register.</strong> A near miss is the cheapest evidence a programme will ever get about how a system fails. Recording them turns an anecdote into a trend line, and a trend line is what a risk committee can act on. Routing them to the ticket queue as minor annoyances loses the only early warning a team will get before the real event.
+        </p>
+        <p>
+        <strong>Voluntary guidance shows up in other people's documents.</strong> This is not a regulation, but it will appear in vendor questionnaires, procurement language and insurance discussions within a quarter. Being able to say which parts you adopted, and why, is cheaper than explaining that the question never came up.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch for the adversarial gap to close. Prompt injection and malware driven agent failures are named as future work, and a follow-on document would bring the picture closer to what enterprise teams actually face.
+        </p>
+        <p>
+        The practical work now is inventory and authority. List every agent with write access to something that matters, note which human approval step it bypasses, and check whether a kill switch exists that someone other than the agent's owner can pull. Then agree, in writing, what a near miss looks like in your environment.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.databreachtoday.com/nsa-nist-cisa-issue-guidance-on-rogue-ai-agents-a-33156" target="_blank" rel="noopener">DataBreachToday</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

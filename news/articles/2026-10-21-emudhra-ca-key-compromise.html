@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Indian Certificate Authority Used Private Keys Like '4' and the Web Is Cleaning Up · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Eight eMudhra intermediate certificate keys were compromised, several trivially guessable, forcing browsers and open source projects to distrust its certs.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-21-emudhra-ca-key-compromise.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "An Indian Certificate Authority Used Private Keys Like '4' and the Web Is Cleaning Up", "description": "Eight eMudhra intermediate certificate keys were compromised, several trivially guessable, forcing browsers and open source projects to distrust its certs.", "datePublished": "2026-10-21", "dateModified": "2026-10-21", "url": "https://zabez.com/news/articles/2026-10-21-emudhra-ca-key-compromise.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="An Indian Certificate Authority Used Private Keys Like '4' and the Web Is Cleaning Up">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-standards.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 21, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>An Indian Certificate Authority Used Private Keys Like '4' and the Web Is Cleaning Up</h1>
+        <p class="subtitle">Eight eMudhra intermediate certificate keys were compromised, several trivially guessable, forcing browsers and open source projects to distrust its certs.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312" target="_blank" rel="noopener">The Register</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-standards.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Mozilla received a report on Saturday, October 17, from a community member: private keys tied to eight intermediate certificates issued by eMudhra, an Indian certification authority, had been compromised. Those keys would let an attacker mint valid HTTPS certificates for domains they do not control. Cloudflare's summary was blunt. An attacker can forge a certificate for any domain and use it to impersonate a server, intercepting or modifying traffic.
+        </p>
+        <p>
+        The response moved quickly. eMudhra revoked the certificates, and Mozilla, Chrome and Apple shipped updates so their browsers stop trusting them once installed. A number of open source projects issued updates with the same effect. Dennis Jackson of Mozilla's cryptography engineering team published the timeline and the detail.
+        </p>
+        <p>
+        Then came the part that turned an incident into a reputation problem. Security researcher Scott Helme recovered the private keys from eMudhra's public certificates on a laptop, in under a second, and found that one of them was the number 4. Not a number beginning with 4. The number 4. Others were 56 and 115, and further researchers found 66, 155, 156, 230 and 237. A P-384 private key is supposed to be a random 384 bit value with roughly 2 to the power 384 possible values. Keys this small can be searched by brute force.
+        </p>
+        <p>
+        eMudhra, which states it has issued more than 60 million digital certificates, had not responded to The Register's questions about the incident or its security practices at the time of publication.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>This is a key management failure, not a cryptography failure.</strong> The algorithm worked exactly as specified. The problem was the generation of key material, which is a process, and processes have owners, procedures and tests. A control that says "keys are generated to standard" is a claim. A control that says "key generation is tested and the output is checked for entropy" is evidence. Only one of those survives an audit.
+        </p>
+        <p>
+        <strong>Third party trust is now a scoped, evidential question.</strong> Any organisation that terminates TLS with certificates from a smaller or regional authority has to ask a new question this week: which of our services depends on a certificate chain from an issuer that a browser no longer trusts. Browsers will reject bad certificates automatically. Internal applications, appliances, code signing pipelines and machine to machine clients often will not, and they are where the clean up will be slow.
+        </p>
+        <p>
+        <strong>Revocation is not the same as remediation.</strong> The certificates are revoked and the roots are distrusted, yet signed certificates using those keys remain in the wild. The gap between the two is where outages happen, and it is measured in how fast an inventory can be produced.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch the root programme response. Browser root stores have removal processes, and the question of whether eMudhra keeps its trusted status after keys this weak is the one that matters commercially for every customer holding its certificates.
+        </p>
+        <p>
+        The operational lesson is smaller and more useful. Certificate inventory and automated renewal are not housekeeping. If a CA can be distrusted on a Saturday night, the ability to answer "where do we use these" by Sunday morning is a resilience control, and it belongs in the same conversation as backups and failover.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312" target="_blank" rel="noopener">The Register</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

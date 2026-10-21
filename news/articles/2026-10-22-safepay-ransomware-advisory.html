@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafePay Hit More Than 600 Critical Infrastructure Providers Before the Warning · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="FBI and CISA say SafePay has hit more than 600 critical infrastructure providers since 2024 and is now among the most active ransomware groups.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-22-safepay-ransomware-advisory.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "SafePay Hit More Than 600 Critical Infrastructure Providers Before the Warning", "description": "FBI and CISA say SafePay has hit more than 600 critical infrastructure providers since 2024 and is now among the most active ransomware groups.", "datePublished": "2026-10-22", "dateModified": "2026-10-22", "url": "https://zabez.com/news/articles/2026-10-22-safepay-ransomware-advisory.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="SafePay Hit More Than 600 Critical Infrastructure Providers Before the Warning">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-breach.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 22, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>SafePay Hit More Than 600 Critical Infrastructure Providers Before the Warning</h1>
+        <p class="subtitle">FBI and CISA say SafePay has hit more than 600 critical infrastructure providers since 2024 and is now among the most active ransomware groups.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.cybersecuritydive.com/news/fbi-cisa-warn-safepay-ransomware-threat-critical-infrastructure/833589/" target="_blank" rel="noopener">Cybersecurity Dive</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-breach.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        The FBI and CISA, working with European authorities, published a joint advisory on SafePay, describing the group as one of the most active ransomware operations in the world. The count in the advisory is the part worth pausing on: more than 600 critical infrastructure providers attacked since 2024, weighted toward North and South America, Europe and Australia.
+        </p>
+        <p>
+        SafePay gets in through compromised credentials, through known vulnerabilities on internet facing devices, and through VPN access. The advisory names two exploited edge device flaws, CVE-2020-3259 and CVE-2023-20269. Once inside, the operators use living off the land techniques, including Windows Remote Management and PsExec, to execute commands on remote systems. They disable security software before moving laterally, pivot with Remote Desktop Protocol, and hunt for credentials that grant administrative access. FileZilla, 7-Zip and WinRAR are used to package data. WinSCP and RClone are used to exfiltrate it to accounts the attackers control.
+        </p>
+        <p>
+        Halcyon's Cynthia Kaiser told Cybersecurity Dive that volume appears to have peaked at the end of 2025, but the group has still targeted roughly 15 to 30 organisations every month through 2026. The advisory points to the July 2025 Ingram Micro incident, where order processing was disrupted for days and personal data belonging to more than 42,000 people was taken.
+        </p>
+        <p>
+        The recommended mitigations are short: remediate known exploited vulnerabilities, apply identity and access management policy with multifactor authentication particularly for VPN accounts, keep offline encrypted immutable backups, and segment networks.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>There is nothing new in the guidance, and that is the finding.</strong> Every recommendation in the advisory maps onto a control the average enterprise already reports as implemented. Vulnerability management, multi factor authentication, immutable backups, network segmentation. An advisory like this is not new information. It is a test of whether the evidence behind those claims exists on paper and in practice.
+        </p>
+        <p>
+        <strong>Initial access was an identity event.</strong> Credentials and VPN accounts were the doorway, which puts identity governance at the centre of the response rather than at the edge. Dormant VPN accounts, shared administrative credentials and service accounts with no owner are not hypothetical risks in this pattern. They are the pattern. If an access review has not touched VPN and remote access accounts this quarter, that review is incomplete.
+        </p>
+        <p>
+        <strong>Immutable backups are a board conversation, not an IT one.</strong> An offline, encrypted, immutable copy is the difference between a bad week and a business ending event. The governance question attached to it is simple and uncomfortable: when was the last documented restore test, and who signed it off. And with 600 victims across critical infrastructure, the exposure is structural. Being average in a sector this exposed is not a position anyone should defend in a board paper.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch whether a sector regulator or a major insurer formally references the advisory in guidance or underwriting questions. That is the point at which an intelligence product becomes a compliance expectation, usually within a quarter.
+        </p>
+        <p>
+        The practical move is small. Take the four recommendations from the advisory, ask for one piece of evidence for each, and put the gaps in front of whoever owns risk acceptance. That is half a day of work and it produces a defensible answer to the question every board asks.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.cybersecuritydive.com/news/fbi-cisa-warn-safepay-ransomware-threat-critical-infrastructure/833589/" target="_blank" rel="noopener">Cybersecurity Dive</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

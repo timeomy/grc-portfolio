@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypted in Transit and at Rest Leaves the Hard Question Unanswered · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="New research shows privacy preserving AI barely dents accuracy but can add 1,200% in compute when hospitals split patient data awkwardly.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-22-privacy-preserving-ai-data-in-use.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Encrypted in Transit and at Rest Leaves the Hard Question Unanswered", "description": "New research shows privacy preserving AI barely dents accuracy but can add 1,200% in compute when hospitals split patient data awkwardly.", "datePublished": "2026-10-22", "dateModified": "2026-10-22", "url": "https://zabez.com/news/articles/2026-10-22-privacy-preserving-ai-data-in-use.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="Encrypted in Transit and at Rest Leaves the Hard Question Unanswered">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-privacy.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 22, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Encrypted in Transit and at Rest Leaves the Hard Question Unanswered</h1>
+        <p class="subtitle">New research shows privacy preserving AI barely dents accuracy but can add 1,200% in compute when hospitals split patient data awkwardly.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/" target="_blank" rel="noopener">Help Net Security</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-privacy.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Help Net Security covered a PhD dissertation by Beyazıt Bestami Yüksel at Istanbul Technical University that takes a familiar vendor claim apart. Ask most companies how they protect sensitive health data and the answer is encryption in transit and at rest. Both are true, and neither answers what happens while the data is used, because a cloud service that needs to compute an average heart rate has to decrypt first. In that window, plaintext sits in memory on someone else's server.
+        </p>
+        <p>
+        The research splits the data lifecycle into three trust boundaries, each with its own protection. At the source, the sensor and edge device, latency dominates, so the scheme is lightweight. Across communication and storage, standard tools such as TLS and AES apply. At the third boundary, where institutions compute and train together, homomorphic encryption and federated learning are used so that values can be aggregated while encrypted. Each site trains locally and sends only model updates, and an aggregator that follows the protocol but is curious about the data cannot read any single hospital's contribution.
+        </p>
+        <p>
+        Then comes the bill. Yüksel tested the approach on a public dataset of roughly 21,800 ECG recordings, partitioned to simulate several hospitals. Where each site held different patients but the same kinds of measurements, encryption added about 30% computational overhead. Where sites held different pieces of information about the same patients, overhead rose to roughly 450%. In the most tangled arrangement, it reached 1,200%. Diagnostic accuracy stayed broadly flat, between about 97% and 99.9%. The experiments were simulated hospitals, not a live deployment, and real institutions should expect costs to push upward.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>This is a threat model that most questionnaires never reach.</strong> Encrypted in transit and at rest answers a network question. The gap is data in use, where the risk sits in any pipeline that sends telemetry through a gateway to a cloud service feeding a model. One line in the vendor review, asking who can see the data while it is processed, does more than another page of encryption assurances.
+        </p>
+        <p>
+        <strong>The cost driver is organisational, not technical.</strong> Overhead moved from 30% to 1,200% depending on how data was divided between sites, a division set by data sharing agreements and what each party accepts in writing. Those are governance decisions made before an engineer configures anything. Privacy by design is often described as a methodology. In practice it is a negotiation that sets the compute budget.
+        </p>
+        <p>
+        <strong>Privacy controls need a budget line.</strong> The reassuring finding is that accuracy barely moved. The uncomfortable one is that the same control can multiply compute costs by an order of magnitude depending on an agreement nobody in engineering signed. A privacy commitment with no budget and no owner will be dropped the first time a project runs over.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch for data in use to become its own category in procurement templates, alongside data in transit and data at rest. Once buyers ask for it, vendors will have to describe the protection rather than the transport.
+        </p>
+        <p>
+        Map one pipeline in your own environment, mark what protects the data at each hop, and note where decryption is unavoidable. That map is short, uncomfortable, and the most useful privacy document most organisations do not have.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/" target="_blank" rel="noopener">Help Net Security</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

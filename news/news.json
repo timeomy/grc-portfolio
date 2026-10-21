@@ -1,23 +1,47 @@
 {
-  "generated": "2026-10-21T07:31:51",
-  "count": 15,
+  "generated": "2026-10-22T07:30:39",
+  "count": 14,
   "items": [
-    {
-      "title": "NSA, NIST, CISA Issue Guidance on Rogue AI Agents",
-      "link": "https://www.databreachtoday.com/nsa-nist-cisa-issue-guidance-on-rogue-ai-agents-a-33156",
-      "source": "DataBreachToday",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "23andMe Will Pay Calif. $6M to Settle Hack Litigation",
-      "link": "https://www.databreachtoday.com/23andme-will-pay-calif-6m-to-settle-hack-litigation-a-33152",
-      "source": "DataBreachToday",
-      "date": "2026-10-21"
-    },
     {
       "title": "Why CMMC Contractors Should Plan for NIST Revision 3 Now",
       "link": "https://www.databreachtoday.com/blogs/cmmc-contractors-should-plan-for-nist-revision-3-now-p-4212",
       "source": "DataBreachToday",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+      "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+      "source": "The Hacker News",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
+      "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
+      "source": "The Hacker News",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
+      "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+      "source": "The Hacker News",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "Privacy-preserving AI can protect your heart data, the bill is the problem",
+      "link": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
+      "source": "Help Net Security",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "From AI Outputs to Compliance Decisions: A Practical Guide for Compliance Professionals",
+      "link": "https://www.complianceweek.com/scheduled-webcast/from-ai-outputs-to-compliance-decisions-a-practical-guide-for-compliance-professionals/",
+      "source": "Compliance Week",
+      "date": "2026-10-21"
+    },
+    {
+      "title": "FBI, CISA warn that SafePay ransomware poses threat to critical infrastructure",
+      "link": "https://www.cybersecuritydive.com/news/fbi-cisa-warn-safepay-ransomware-threat-critical-infrastructure/833589/",
+      "source": "Cybersecurity Dive",
       "date": "2026-10-21"
     },
     {
@@ -33,26 +57,8 @@
       "date": "2026-10-20"
     },
     {
-      "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
-      "link": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
-      "source": "The Hacker News",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "ThreatModeler NexusAI tracks architectural changes and proposes security updates",
-      "link": "https://www.helpnetsecurity.com/2026/10/20/threatmodeler-nexusai/",
-      "source": "Help Net Security",
-      "date": "2026-10-20"
-    },
-    {
       "title": "AI in the Audit Room",
       "link": "https://www.complianceweek.com/artificial-intelligence/ai-in-the-audit-room/",
-      "source": "Compliance Week",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "UK proposes new cross-regulatory, multi-agency approach to clamp down on money laundering",
-      "link": "https://www.complianceweek.com/aml/uk-proposes-new-cross-regulatory-multi-agency-approach-to-clamp-down-on-money-laundering/",
       "source": "Compliance Week",
       "date": "2026-10-20"
     },
@@ -79,18 +85,6 @@
       "link": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
       "source": "SEC Press Releases",
       "date": "2026-10-20"
-    },
-    {
-      "title": "ICANN testing tech to let law enforcement access non-public WHOIS info",
-      "link": "https://www.theregister.com/networks/2026/10/20/icann-testing-tech-to-let-law-enforcement-access-non-public-whois-info/5304036",
-      "source": "The Register - Security",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
-      "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
-      "source": "The Hacker News",
-      "date": "2026-10-19"
     }
   ]
 }

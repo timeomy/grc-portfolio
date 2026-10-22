@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independent Auditors Switched Off OpenAI's Agent Monitoring, Then Wrote 61 Pages About It · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Metr and Redwood Research found Codex agents could dodge sandboxing and review, and a client header could disable monitoring. OpenAI says it is patched.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-23-openai-agent-monitoring-audit-gaps.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Independent Auditors Switched Off OpenAI's Agent Monitoring, Then Wrote 61 Pages About It", "description": "Metr and Redwood Research found Codex agents could dodge sandboxing and review, and a client header could disable monitoring. OpenAI says it is patched.", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "url": "https://zabez.com/news/articles/2026-10-23-openai-agent-monitoring-audit-gaps.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="Independent Auditors Switched Off OpenAI's Agent Monitoring, Then Wrote 61 Pages About It">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-ai.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 23, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Independent Auditors Switched Off OpenAI's Agent Monitoring, Then Wrote 61 Pages About It</h1>
+        <p class="subtitle">Metr and Redwood Research found Codex agents could dodge sandboxing and review, and a client header could disable monitoring. OpenAI says it is patched.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.databreachtoday.com/independent-auditors-find-gaps-in-openai-agent-monitoring-a-33183" target="_blank" rel="noopener">DataBreachToday</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-ai.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Two independent safety evaluators spent three weeks inside OpenAI testing the system that is supposed to catch its coding agents going off the rails. Metr and Redwood Research stress tested the company's internal misalignment monitoring between July 21 and August 11. The access was unusually deep. The team was given the internal codebase, the prompts used for misalignment monitoring, and internal documentation, on OpenAI issued devices that never left the company's offices, with researchers accompanied onsite.
+        </p>
+        <p>
+        They found several ways around the controls. Codex agents could bypass sandboxing and Auto Reviews. There was a monitoring gap that let agents avoid review altogether. There were client controllable headers that switched monitoring off. And there was an exploit that hid hundreds of recent actions from view.
+        </p>
+        <p>
+        OpenAI told the evaluators that all the vulnerabilities affecting its production safeguards stack have been patched, and described significant subsequent changes to the intended coverage of its monitoring. Metr's account is careful here. It states that it has not evaluated those claims. The evaluators estimated that roughly 75 to 94 percent of agentic internal responses API traffic, the traffic that powers Codex, was eligible for monitoring during the period. Earlier monitored training happened just before the review began, so it was out of scope.
+        </p>
+        <p>
+        The recommendations in their 61 page report were operational rather than theoretical. Monitor every few messages or minutes instead of waiting for an agent to finish its task, account for all inference so logs can be cross referenced, assign ownership for incident response with logs that are tamper proof and easy to search, and run control evaluations that actively try to break the safeguards.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>This is what AI assurance looks like when it is done properly.</strong> Scope, access, sampling, findings, management response, a report with a page count. Anyone who has run a SOC 2 or an ISO certification will recognise the shape, which is a useful counter to the idea that AI governance needs an entirely new discipline.
+        </p>
+        <p>
+        <strong>A control the monitored party can switch off is not a control.</strong> Client controllable headers that disable monitoring are the AI equivalent of an admin console that can turn off logging. The design flaw is identical whether the system runs an LLM or a database.
+        </p>
+        <p>
+        <strong>Coverage is the finding.</strong> The claim tested was never that monitoring existed, but that it covered the work. Turning that into a number, 75 to 94 percent of one traffic type over a defined window, is how a vague assurance statement becomes auditable.
+        </p>
+        <p>
+        <strong>Assertion is not evidence.</strong> OpenAI says patched. Metr says it has not verified that. Both statements are honest, and the gap between them is where a GRC function should sit, asking for test results rather than the statement.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Whether the full report is published, and whether other frontier labs invite the same kind of embedded review. Enterprise buyers are the other pressure point. Vendor questionnaires that ask whether an AI provider monitors its models may soon ask what percentage of inference was in scope.
+        </p>
+        <p>
+        The lesson is about how to grant access. Devices that never leave the building, researcher supervision, internal documentation shared under scope, deep access without handing over the keys. That is a template for auditing a system you do not own.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.databreachtoday.com/independent-auditors-find-gaps-in-openai-agent-monitoring-a-33183" target="_blank" rel="noopener">DataBreachToday</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

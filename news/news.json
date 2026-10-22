@@ -1,11 +1,77 @@
 {
-  "generated": "2026-10-22T07:30:39",
-  "count": 14,
+  "generated": "2026-10-23T07:32:49",
+  "count": 15,
   "items": [
     {
-      "title": "Why CMMC Contractors Should Plan for NIST Revision 3 Now",
-      "link": "https://www.databreachtoday.com/blogs/cmmc-contractors-should-plan-for-nist-revision-3-now-p-4212",
+      "title": "Independent Auditors Find Gaps in OpenAI Agent Monitoring",
+      "link": "https://www.databreachtoday.com/independent-auditors-find-gaps-in-openai-agent-monitoring-a-33183",
       "source": "DataBreachToday",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
+      "source": "CISA Advisories",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
+      "link": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
+      "source": "The Hacker News",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
+      "link": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
+      "source": "The Hacker News",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "EU Regulators to Investigate Booking.com Over Scam Risks",
+      "link": "https://www.infosecurity-magazine.com/news/eu-bookingcom-scam-risks/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "XTIUM expands XTAI with centralized AI governance and cost management",
+      "link": "https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/",
+      "source": "Help Net Security",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "The State of AI Governance in Third-Party Risk",
+      "link": "https://www.complianceweek.com/scheduled-webcast/the-state-of-ai-governance-in-third-party-risk/",
+      "source": "Compliance Week",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "How Does Your Third-Party Risk Management Program Compare?",
+      "link": "https://www.complianceweek.com/diligent-compliance-ethics/how-does-your-third-party-risk-management-program-compare/",
+      "source": "Compliance Week",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "China\u2019s chemical compliance rules reach deeper into manufacturers\u2019 supply chains",
+      "link": "https://www.complianceweek.com/best-practices/chinas-chemical-compliance-rules-reach-deeper-into-manufacturers-supply-chains/",
+      "source": "Compliance Week",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "UK competition watchdog fines three companies $8 million for misleading sales claims and obscure pricing",
+      "link": "https://www.complianceweek.com/retail/uk-competition-watchdog-fines-three-companies-8-million-for-misleading-sales-claims-and-obscure-pricing/",
+      "source": "Compliance Week",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "IT department and auditors at major pharmacy chain got into a rip-roaring fight about using 'password' on Cisco firewall",
+      "link": "https://www.theregister.com/security/2026/10/22/it-department-and-auditors-at-major-pharmacy-chain-got-into-a-rip-roaring-fight-about-using-password-on-cisco-firewall/5304592",
+      "source": "The Register - Security",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Certification authority eMudhra defends its laughably weak private keys",
+      "link": "https://www.theregister.com/security/2026/10/22/certification-authority-emudhra-defends-its-laughably-weak-private-keys/5304647",
+      "source": "The Register - Security",
       "date": "2026-10-22"
     },
     {
@@ -21,70 +87,10 @@
       "date": "2026-10-21"
     },
     {
-      "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
-      "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
-      "source": "The Hacker News",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "Privacy-preserving AI can protect your heart data, the bill is the problem",
-      "link": "https://www.helpnetsecurity.com/2026/10/21/ecg-heart-data-privacy-preserving-ai/",
-      "source": "Help Net Security",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "From AI Outputs to Compliance Decisions: A Practical Guide for Compliance Professionals",
-      "link": "https://www.complianceweek.com/scheduled-webcast/from-ai-outputs-to-compliance-decisions-a-practical-guide-for-compliance-professionals/",
-      "source": "Compliance Week",
-      "date": "2026-10-21"
-    },
-    {
       "title": "FBI, CISA warn that SafePay ransomware poses threat to critical infrastructure",
       "link": "https://www.cybersecuritydive.com/news/fbi-cisa-warn-safepay-ransomware-threat-critical-infrastructure/833589/",
       "source": "Cybersecurity Dive",
       "date": "2026-10-21"
-    },
-    {
-      "title": "Indian certification authority eMudhra\u2019s private keys compromised \u2013 one of them was the number \u20184\u2019",
-      "link": "https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312",
-      "source": "The Register - Security",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
-      "link": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
-      "source": "The Hacker News",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "AI in the Audit Room",
-      "link": "https://www.complianceweek.com/artificial-intelligence/ai-in-the-audit-room/",
-      "source": "Compliance Week",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign",
-      "link": "https://cyberscoop.com/russian-hackers-apt28-target-nato-defense-firms/",
-      "source": "CyberScoop",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "DOJ escalates fight for election supremacy with California raids",
-      "link": "https://cyberscoop.com/justice-department-california-voter-arrests-noncitizen-claims/",
-      "source": "CyberScoop",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "AI security hiring focuses on red-teaming, SOC orchestration and governance",
-      "link": "https://www.cybersecuritydive.com/news/ai-security-jobs-hiring-sans-tracker/833465/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
-      "source": "SEC Press Releases",
-      "date": "2026-10-20"
     }
   ]
 }

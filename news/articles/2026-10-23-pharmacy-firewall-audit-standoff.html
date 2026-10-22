@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Firewall Password Was 'password'. The Argument Was About Bonuses · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="A tester found an internet facing pharmacy firewall with the admin password 'password'. The hour long argument that followed was about who loses a bonus.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-23-pharmacy-firewall-audit-standoff.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "The Firewall Password Was 'password'. The Argument Was About Bonuses", "description": "A tester found an internet facing pharmacy firewall with the admin password 'password'. The hour long argument that followed was about who loses a bonus.", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "url": "https://zabez.com/news/articles/2026-10-23-pharmacy-firewall-audit-standoff.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="The Firewall Password Was 'password'. The Argument Was About Bonuses">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-standards.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 23, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>The Firewall Password Was 'password'. The Argument Was About Bonuses</h1>
+        <p class="subtitle">A tester found an internet facing pharmacy firewall with the admin password 'password'. The hour long argument that followed was about who loses a bonus.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.theregister.com/security/2026/10/22/it-department-and-auditors-at-major-pharmacy-chain-got-into-a-rip-roaring-fight-about-using-password-on-cisco-firewall/5304592" target="_blank" rel="noopener">The Register</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-standards.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Dahvid Schloss, chief operating officer of Suzu Labs, has assessed networks for more than 15 years. A large American pharmacy retailer once asked him to audit its corporate switches, routers and firewalls, not to break in, just to look. On the edge firewall, the device facing the internet, the enable password was set to the word password. Cisco uses enable for the administrator credential. The literal string, p a s s w o r d.
+        </p>
+        <p>
+        That matters more than it sounds. Enable grants administrative rights over the firewall, which means control of network traffic. Anyone who reached the device over SSH, or through an exploit, with ordinary user privileges could have escalated and shut off all traffic between the internal network and the outside world.
+        </p>
+        <p>
+        Schloss did not guess. He decrypted the file holding the passwords by breaking Cisco's own protection, which he described as easy. The credential had been stored as Cisco IOS type 7, a reversible encoding with a publicly known key rather than a real hash. Even then that was understood to be bad practice. He recorded it as a high finding, the category meant to be fixed immediately.
+        </p>
+        <p>
+        Then the finding went to the auditing department, which had commissioned the work. He was put on a call with the audit team, the entire IT team, his own manager and others. Audit was alarmed. IT did not think it was a serious problem. The two sides argued for more than an hour while Schloss and his colleagues sat quietly on camera. He never finished presenting his findings, and the client kept asking him to explain them for three more years.
+        </p>
+        <p>
+        He later learned why. The auditing department controlled the IT team's bonuses, and any high finding would eliminate them. The argument was about an entire division's pay.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>The finding was trivial. The escalation was not.</strong> Disagreement over severity is normal, but a call where severity is settled by whoever argues longest is not. Every programme needs a named risk owner and a defined tie break, otherwise rating becomes a negotiation and the register stops meaning anything.
+        </p>
+        <p>
+        <strong>This was a configuration failure with a known fix.</strong> Type 7 encoding is reversible with a public key, so anyone holding a config file holds the credential. What prevents it is a hardening baseline plus an automated check at build, rechecked in an audit. No amount of awareness training was needed. A standard was.
+        </p>
+        <p>
+        <strong>Incentives shape findings.</strong> Paying people for a clean audit is a reasonable instinct and a bad control. When a high finding means a lost bonus, the cheap path is to relabel it, and people under pressure pick the cheap path.
+        </p>
+        <p>
+        <strong>Three years of re explaining is the real failure.</strong> A finding that has to be presented again was never accepted into a remediation record with an owner, a date and evidence of closure.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        This is a case study rather than a live incident, so the useful questions are internal. When a severity rating was last challenged, did it change without new evidence? Can you list open high findings with owners and due dates in under an hour? Does your reward structure make arguing about a label cheaper than fixing a device that faces the internet?
+        </p>
+        <p>
+        Almost every auditor has sat quietly on that call.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.theregister.com/security/2026/10/22/it-department-and-auditors-at-major-pharmacy-chain-got-into-a-rip-roaring-fight-about-using-password-on-cisco-firewall/5304592" target="_blank" rel="noopener">The Register</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Drone Program Is a Records Program, and Most Agencies Learn That in Court &middot; GRC Daily Case Study &middot; Zabez</title>
+  <meta name="description" content="A drone programme's real compliance risk is chain of custody, retention and public records handling, not the aircraft, a security CTO tells Help Net Security.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-24-drone-program-records-compliance.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "A Drone Program Is a Records Program, and Most Agencies Learn That in Court", "description": "A drone programme's real compliance risk is chain of custody, retention and public records handling, not the aircraft, a security CTO tells Help Net Security.", "datePublished": "2026-10-24", "dateModified": "2026-10-24", "url": "https://zabez.com/news/articles/2026-10-24-drone-program-records-compliance.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="A Drone Program Is a Records Program, and Most Agencies Learn That in Court">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-government.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">&larr; All GRC case studies</a></p>
+        <span class="article-date">October 24, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>A Drone Program Is a Records Program, and Most Agencies Learn That in Court</h1>
+        <p class="subtitle">A drone programme's real compliance risk is chain of custody, retention and public records handling, not the aircraft, a security CTO tells Help Net Security.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/" target="_blank" rel="noopener">Help Net Security</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-government.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+        Help Net Security interviewed Nick Donarski, chief technology officer at RotorLab, about what councils, records clerks, insurers and auditors expect from a public safety drone programme. Almost none of it is about the aircraft.
+        </p>
+        <p>
+        The records clerk needs three things after a flight: the dispatch call number, who was flying, and the video. Risk adjusters want the airframe maintenance log, total motor runtime, charge counts on the specific battery pack, and proof the pilot's certification had not lapsed. Most programmes record stick time in an app and nothing else, with no battery tag, no call number and no checksum when the card is pulled.
+        </p>
+        <p>
+        He is direct about why that fails. When defence counsel asks months later for maintenance and telemetry tied to an arrest, nobody can reconstruct it. The comparison is to body cameras, where police spent a decade building chain of custody and digital vaults, then bought a drone and dropped an MP4 in an unindexed folder.
+        </p>
+        <p>
+        On publishing, he argues for a coarse itemised log rather than raw feeds: flight date, a wide two hour launch window, call classification, tail identifier and patrol district, with coordinates and track vectors kept off the public site. Routine civil flights belong on a dashboard quickly, while overwatch on a barricaded subject stays in evidence until trial and statutory holds expire.
+        </p>
+        <p>
+        The cyber risk sits in the ground station. Most run standard tablets that want to sync with cloud services, and pilots connect them to open hotspots or unsegmented city Wi-Fi, turning a controller into a bridge into municipal networks. Flight logs in flat spreadsheets have no audit trail, so he recommends hashing raw log files with SHA-256 on ingestion and moving them to write once storage.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>If anyone can edit the log, the log is worthless.</strong> This is evidence integrity in an operational costume. A spreadsheet the whole team can edit cannot prove a maintenance entry was not backdated, and the fix, a hash at ingestion plus immutable storage, is the control a compliance function asks for on any record that may be litigated. The technology is trivial. The discipline is not.
+        </p>
+        <p>
+        <strong>Retention is a legal decision, not a storage one.</strong> Retention is the second lesson. Without a signed auto delete policy for non evidentiary transit footage, incidental video of backyards and pools captured on the way to a call is public property under state law. The publishing split is data minimisation applied to physical operations: aggregate numbers look evasive, raw data is unsafe, and the defensible middle is a log detailed enough to be credible.
+        </p>
+        <p>
+        His advice for small agencies generalises. Write the standard operating procedures, authorisation triggers, privacy boundaries and retention schedule first, and get legal and elected officials to sign what the aircraft may and may not do. Then use cheap controls properly: numbered battery shells in paint pen and a paper checklist catch the same failures an expensive platform would.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch whether auto delete policies for transit footage become standard, because that document decides how much incidental recording sits inside public records law. Watch how small fleets evidence certification currency, where one lapse voids a clean file. And watch what follows publication: once logs are itemised, the next request is the telemetry behind them.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/" target="_blank" rel="noopener">Help Net Security</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">&larr; Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>&copy; 2026 ZABEZ.com &middot; GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

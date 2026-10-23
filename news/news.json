@@ -1,17 +1,29 @@
 {
-  "generated": "2026-10-23T07:32:49",
-  "count": 15,
+  "generated": "2026-10-24T07:31:11",
+  "count": 11,
   "items": [
-    {
-      "title": "Independent Auditors Find Gaps in OpenAI Agent Monitoring",
-      "link": "https://www.databreachtoday.com/independent-auditors-find-gaps-in-openai-agent-monitoring-a-33183",
-      "source": "DataBreachToday",
-      "date": "2026-10-23"
-    },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-10-24"
+    },
+    {
+      "title": "UK proposes 14-year jail terms for subsea cable saboteurs",
+      "link": "https://www.helpnetsecurity.com/2026/10/23/uk-undersea-cable-sabotage-sentences/",
+      "source": "Help Net Security",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Drone program compliance: What a CTO says most agencies get wrong",
+      "link": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
+      "source": "Help Net Security",
+      "date": "2026-10-23"
+    },
+    {
+      "title": "Compliance takeaways from the SEC\u2019s new examination handbook",
+      "link": "https://www.complianceweek.com/regulatory-policy/compliance-takeaways-from-the-secs-new-examination-handbook/",
+      "source": "Compliance Week",
       "date": "2026-10-23"
     },
     {
@@ -33,12 +45,6 @@
       "date": "2026-10-22"
     },
     {
-      "title": "XTIUM expands XTAI with centralized AI governance and cost management",
-      "link": "https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/",
-      "source": "Help Net Security",
-      "date": "2026-10-22"
-    },
-    {
       "title": "The State of AI Governance in Third-Party Risk",
       "link": "https://www.complianceweek.com/scheduled-webcast/the-state-of-ai-governance-in-third-party-risk/",
       "source": "Compliance Week",
@@ -47,18 +53,6 @@
     {
       "title": "How Does Your Third-Party Risk Management Program Compare?",
       "link": "https://www.complianceweek.com/diligent-compliance-ethics/how-does-your-third-party-risk-management-program-compare/",
-      "source": "Compliance Week",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "China\u2019s chemical compliance rules reach deeper into manufacturers\u2019 supply chains",
-      "link": "https://www.complianceweek.com/best-practices/chinas-chemical-compliance-rules-reach-deeper-into-manufacturers-supply-chains/",
-      "source": "Compliance Week",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "UK competition watchdog fines three companies $8 million for misleading sales claims and obscure pricing",
-      "link": "https://www.complianceweek.com/retail/uk-competition-watchdog-fines-three-companies-8-million-for-misleading-sales-claims-and-obscure-pricing/",
       "source": "Compliance Week",
       "date": "2026-10-22"
     },
@@ -73,24 +67,6 @@
       "link": "https://www.theregister.com/security/2026/10/22/certification-authority-emudhra-defends-its-laughably-weak-private-keys/5304647",
       "source": "The Register - Security",
       "date": "2026-10-22"
-    },
-    {
-      "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-      "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
-      "source": "The Hacker News",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
-      "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
-      "source": "The Hacker News",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "FBI, CISA warn that SafePay ransomware poses threat to critical infrastructure",
-      "link": "https://www.cybersecuritydive.com/news/fbi-cisa-warn-safepay-ransomware-threat-critical-infrastructure/833589/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-10-21"
     }
   ]
 }

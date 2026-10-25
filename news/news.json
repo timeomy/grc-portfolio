@@ -1,120 +1,12 @@
 {
-  "generated": "2026-10-25T07:33:58",
-  "count": 19,
+  "generated": "2026-10-26T07:31:51",
+  "count": 1,
   "items": [
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
-      "date": "2026-10-25"
-    },
-    {
-      "title": "Hong Kong regulator sets accountability, resilience, trust rules for bank AI",
-      "link": "https://www.complianceweek.com/artificial-intelligence/hong-kong-regulator-sets-accountability-resilience-trust-rules-for-bank-ai/",
-      "source": "Compliance Week",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "DOJ, HHS launch self-disclosure pilot for health FCA violations",
-      "link": "https://www.complianceweek.com/healthcare/doj-hhs-launch-self-disclosure-pilot-for-health-fca-violations/",
-      "source": "Compliance Week",
-      "date": "2026-10-24"
-    },
-    {
-      "title": "UK proposes 14-year jail terms for subsea cable saboteurs",
-      "link": "https://www.helpnetsecurity.com/2026/10/23/uk-undersea-cable-sabotage-sentences/",
-      "source": "Help Net Security",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "Drone program compliance: What a CTO says most agencies get wrong",
-      "link": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
-      "source": "Help Net Security",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "Compliance takeaways from the SEC\u2019s new examination handbook",
-      "link": "https://www.complianceweek.com/regulatory-policy/compliance-takeaways-from-the-secs-new-examination-handbook/",
-      "source": "Compliance Week",
-      "date": "2026-10-23"
-    },
-    {
-      "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
-      "link": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
-      "source": "The Hacker News",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
-      "link": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
-      "source": "The Hacker News",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "EU Regulators to Investigate Booking.com Over Scam Risks",
-      "link": "https://www.infosecurity-magazine.com/news/eu-bookingcom-scam-risks/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "The State of AI Governance in Third-Party Risk",
-      "link": "https://www.complianceweek.com/scheduled-webcast/the-state-of-ai-governance-in-third-party-risk/",
-      "source": "Compliance Week",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "IT department and auditors at major pharmacy chain got into a rip-roaring fight about using 'password' on Cisco firewall",
-      "link": "https://www.theregister.com/security/2026/10/22/it-department-and-auditors-at-major-pharmacy-chain-got-into-a-rip-roaring-fight-about-using-password-on-cisco-firewall/5304592",
-      "source": "The Register - Security",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "Certification authority eMudhra defends its laughably weak private keys",
-      "link": "https://www.theregister.com/security/2026/10/22/certification-authority-emudhra-defends-its-laughably-weak-private-keys/5304647",
-      "source": "The Register - Security",
-      "date": "2026-10-22"
-    },
-    {
-      "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-      "link": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
-      "source": "The Hacker News",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
-      "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
-      "source": "The Hacker News",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "FBI, CISA warn that SafePay ransomware poses threat to critical infrastructure",
-      "link": "https://www.cybersecuritydive.com/news/fbi-cisa-warn-safepay-ransomware-threat-critical-infrastructure/833589/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "Indian certification authority eMudhra\u2019s private keys compromised \u2013 one of them was the number \u20184\u2019",
-      "link": "https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312",
-      "source": "The Register - Security",
-      "date": "2026-10-21"
-    },
-    {
-      "title": "Russian GRU hackers hit NATO shipbuilder, aircraft engine maker, law enforcement agency in espionage campaign",
-      "link": "https://cyberscoop.com/russian-hackers-apt28-target-nato-defense-firms/",
-      "source": "CyberScoop",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "AI security hiring focuses on red-teaming, SOC orchestration and governance",
-      "link": "https://www.cybersecuritydive.com/news/ai-security-jobs-hiring-sans-tracker/833465/",
-      "source": "Cybersecurity Dive",
-      "date": "2026-10-20"
-    },
-    {
-      "title": "SEC, FSA Hold Autumn Financial Regulatory Dialogue",
-      "link": "https://www.sec.gov/newsroom/press-releases/2026-107-sec-fsa-hold-autumn-financial-regulatory-dialogue",
-      "source": "SEC Press Releases",
-      "date": "2026-10-20"
+      "date": "2026-10-26"
     }
   ]
 }

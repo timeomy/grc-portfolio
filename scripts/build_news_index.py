@@ -197,7 +197,9 @@ def parse_article(path: Path):
     raw = path.read_text(encoding="utf-8", errors="ignore")
     date = re.search(r'class="article-date">([^<]+)<', raw)
     title = re.search(r"<h1>([^<]+)</h1>", raw)
-    src = re.search(r'class="article-source"[^>]*href="([^"]+)"', raw)
+    # The source link sits inside the span: <span class="article-source">Source: <a href="...">
+    src_block = re.search(r'class="article-source"[^>]*>(.*?)</span>', raw, re.S)
+    src = re.search(r'href="([^"]+)"', src_block.group(1)) if src_block else None
     desc = re.search(r'<meta name="description" content="([^"<>]*)"', raw)
     return {
         "path": path,

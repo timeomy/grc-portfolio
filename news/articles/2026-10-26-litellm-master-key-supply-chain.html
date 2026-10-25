@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Unrevoked Key and an Unscoped Token Put a Backdoor on PyPI &middot; GRC Daily Case Study &middot; Zabez</title>
+  <meta name="description" content="A master key committed to a public repository in May was never revoked, and that gap let an attacker repoint LiteLLM's release pipeline in October.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-26-litellm-master-key-supply-chain.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "An Unrevoked Key and an Unscoped Token Put a Backdoor on PyPI", "description": "A master key committed to a public repository in May was never revoked, and that gap let an attacker repoint LiteLLM's release pipeline in October.", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "url": "https://zabez.com/news/articles/2026-10-26-litellm-master-key-supply-chain.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="An Unrevoked Key and an Unscoped Token Put a Backdoor on PyPI">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-supplychain.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">&larr; All GRC case studies</a></p>
+        <span class="article-date">October 26, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>An Unrevoked Key and an Unscoped Token Put a Backdoor on PyPI</h1>
+        <p class="subtitle">A master key committed to a public repository in May was never revoked, and that gap let an attacker repoint LiteLLM's release pipeline in October.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html" target="_blank" rel="noopener">The Hacker News</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-supplychain.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+        LiteLLM disclosed on Friday that a master key to a deployment of its Agent Platform was committed to a public GitHub repository on 27 May 2026, inside a configuration file in the LiteLLM-Labs/lite-harness project. The error was spotted, the commit was force-pushed over, and the exposed keys were flagged for revocation. Every key was revoked except the master key.
+        </p>
+        <p>
+        An attacker working from 69.48.229[.]143 used it on 10 October to reach the Agent Platform and extract a GitHub CLI OAuth token that was not scoped down and belonged to the GitHub organisation owner, which carried owner-level access to every repository.
+        </p>
+        <p>
+        Socket's reconstruction fills in the middle. Two commits added a workflow at .github/workflows/cache.yml, each pushed to a throwaway branch that was created, used and deleted within minutes. The workflow harvested GitHub tokens, API keys for Linear, Together AI and the LiteLLM deployment, a GitHub App signing key, and a GitGuardian secret-scanning key. A second run added Anthropic and OpenAI keys, Bedrock credentials, a Playwright session state, and PostgreSQL and Redis connection details.
+        </p>
+        <p>
+        On 21 October the release pipeline was repointed at the lookalike repository Berri-AI/litellm. Version 1.107.0 reached PyPI at 11:39 UTC, images followed, Upwind reported the compromise at 12:06, PyPI quarantined the version at 13:23, and Docker Hub tags were repointed to clean images by 14:20. The control that should have caught it had been relaxed that week. Publishing normally needs an authorised engineer plus approval from a hardware-locked account in the office, but to speed up releases any two engineers could trigger and approve.
+        </p>
+        <p>
+        Microsoft found the package runs at Python startup even when LiteLLM is never imported, and the startup files sit outside the application directory.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Revocation is a workflow, not a decision.</strong> The key was flagged in May and still worked in October. Between the finding and the fix there was no owner, no deadline and no check that closed the loop. That gap is the incident.
+        </p>
+        <p>
+        <strong>Blast radius is a scoping decision.</strong> A service that files pull requests needs write access to one repository. It held an organisation owner's token instead, which turned one leaked secret into every repository.
+        </p>
+        <p>
+        <strong>Separation of duties went for release velocity.</strong> A hardware-locked approver is awkward to live with. It is also the control that would have stopped this. Relaxing a release gate for a busy week deserves the same review and expiry date as disabling a firewall rule.
+        </p>
+        <p>
+        <strong>Your secret scanner is a tier zero credential.</strong> The GitGuardian key was harvested with everything else, which gave the attacker sight of the alerts that would have surfaced the activity.
+        </p>
+        <p>
+        <strong>Uninstalling is not remediation.</strong> With a startup hook outside the application directory, the response is a host-level sweep and a full rotation of every credential that lived on those machines.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Whether LiteLLM publishes the complete list of affected environments, and whether the release-approval change has been restored and documented. That answer says more about the project's control environment than the incident report does.
+        </p>
+        <p>
+        On your side, pull the list of CI tokens with organisation-level scope and the date each was last rotated, starting with the ones that only ever needed write access to a single repository.
+        </p>
+
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html" target="_blank" rel="noopener">The Hacker News</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">&larr; Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>&copy; 2026 ZABEZ.com &middot; GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

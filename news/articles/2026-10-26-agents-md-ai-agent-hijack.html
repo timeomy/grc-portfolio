@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Instruction File Was the Exploit and There Is Nothing to Patch &middot; GRC Daily Case Study &middot; Zabez</title>
+  <meta name="description" content="A malicious AGENTS.md in a Downloads folder pushed an AI coding agent toward a rogue npm package, and no vendor patch can close that gap.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-26-agents-md-ai-agent-hijack.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "The Instruction File Was the Exploit and There Is Nothing to Patch", "description": "A malicious AGENTS.md in a Downloads folder pushed an AI coding agent toward a rogue npm package, and no vendor patch can close that gap.", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "url": "https://zabez.com/news/articles/2026-10-26-agents-md-ai-agent-hijack.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="The Instruction File Was the Exploit and There Is Nothing to Patch">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-breach.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">&larr; All GRC case studies</a></p>
+        <span class="article-date">October 26, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>The Instruction File Was the Exploit and There Is Nothing to Patch</h1>
+        <p class="subtitle">A malicious AGENTS.md in a Downloads folder pushed an AI coding agent toward a rogue npm package, and no vendor patch can close that gap.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/" target="_blank" rel="noopener">BleepingComputer</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-breach.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+        Forever Security, a firm that monitors risks introduced by AI agents, found a malicious AGENTS.md file in a customer's Downloads folder that was also the coding agent's working directory. The agent was attempting to install a rogue npm package called function-color, and the investigation traced the install back to the instruction file.
+        </p>
+        <p>
+        AGENTS.md and CLAUDE.md are plain text files that tell an agent which tools to use, how to run tests and which conventions to follow. They are not executables, but they direct the agent to run commands, install packages and change settings with whatever permissions it holds. The researchers were blunt: there is nothing here for OpenAI or Anthropic to patch, because an agent that follows the AGENTS.md in its folder is doing exactly what it was built to do.
+        </p>
+        <p>
+        The delivery path is ordinary. Browsers save downloads to the Downloads folder by default, Chrome, Edge and Firefox do it without asking for a location each time, and a web page can drop a file there silently. The researchers built a proof of concept that did exactly that. The attack then waits for someone to start an agent in that directory, which their telemetry says is common: hundreds of customers run Claude Code, Codex or Cursor CLI from Downloads, and Claude Code alone had launched more than 1,300 sessions there.
+        </p>
+        <p>
+        Against Codex, using a harmless payload that opened the calculator, the chain worked about 90 percent of the time. In a separate test a malicious CLAUDE.md redirected Claude Code's API traffic to a server the researchers controlled, exposed the agent's OAuth token, and let the server impersonate the model and return tool calls that executed code in roughly 50 percent of tests.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Configuration is an attack surface with no CVE.</strong> No advisory number, no patch, no scanner signature. If this is not in the risk register it has no owner, no treatment and no review date, which is how a known technique stays unfixed for years.
+        </p>
+        <p>
+        <strong>The trust boundary is the working directory.</strong> The agent treats files beside it as instructions, and Downloads is the one folder web content writes to on its own. A written standard that agents start at the project root, never in the home or downloads folder, costs nothing and closes the path described here.
+        </p>
+        <p>
+        <strong>Approval is not a control if the human always approves.</strong> A 90 percent success rate suggests the prompt appears during a task the user wants finished. Approval fatigue is a design weakness and these numbers are the evidence.
+        </p>
+        <p>
+        <strong>Agent inventory belongs in the endpoint inventory.</strong> Which agents are installed, who runs them, from which directories, with which credentials. Few organisations can answer that, and the answer decides how much of this applies.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Whether vendors warn when an agent starts in a download folder, and whether browsers start prompting on instruction file names. Both are cheap, and neither replaces a policy decision.
+        </p>
+        <p>
+        The practical work is small: block Downloads as a working directory on managed machines, add AGENTS.md and CLAUDE.md to file monitoring, confirm approval prompts and sandboxing are on rather than muted, and check whether any build job runs an agent from a download or staging directory.
+        </p>
+
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/" target="_blank" rel="noopener">BleepingComputer</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">&larr; Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>&copy; 2026 ZABEZ.com &middot; GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

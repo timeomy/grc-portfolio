@@ -1,11 +1,41 @@
 {
-  "generated": "2026-10-26T07:31:51",
-  "count": 1,
+  "generated": "2026-10-27T07:30:56",
+  "count": 6,
   "items": [
+    {
+      "title": "HHS Retreats on Plan to Scrap EHR Security, Privacy Regs",
+      "link": "https://www.databreachtoday.com/hhs-retreats-on-plan-to-scrap-ehr-security-privacy-regs-a-33215",
+      "source": "DataBreachToday",
+      "date": "2026-10-27"
+    },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+      "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+      "source": "The Hacker News",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "Microsoft Issues Emergency Patch Update for Critical .NET Buffer Overflow Flaw",
+      "link": "https://www.infosecurity-magazine.com/news/microsoft-patch-update-net-flaw/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "European regulators warn about prediction markets, showing divergence from the US",
+      "link": "https://www.complianceweek.com/technology/european-regulators-warn-about-prediction-markets-showing-divergence-from-the-us/",
+      "source": "Compliance Week",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "Senators, rights groups say Trump administration breaking law by withholding surveillance court opinion",
+      "link": "https://cyberscoop.com/wyden-schiff-fisa-section-702-declassification/",
+      "source": "CyberScoop",
       "date": "2026-10-26"
     }
   ]

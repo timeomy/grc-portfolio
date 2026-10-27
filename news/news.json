@@ -1,17 +1,53 @@
 {
-  "generated": "2026-10-27T07:30:56",
-  "count": 6,
+  "generated": "2026-10-28T07:33:37",
+  "count": 12,
   "items": [
     {
-      "title": "HHS Retreats on Plan to Scrap EHR Security, Privacy Regs",
-      "link": "https://www.databreachtoday.com/hhs-retreats-on-plan-to-scrap-ehr-security-privacy-regs-a-33215",
+      "title": "NIST Outlines Phased, Hybrid Post-Quantum Migration",
+      "link": "https://www.databreachtoday.com/nist-outlines-phased-hybrid-post-quantum-migration-a-33225",
       "source": "DataBreachToday",
-      "date": "2026-10-27"
+      "date": "2026-10-28"
     },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "First ISC2 AI Security Certification Expected for Early 2027",
+      "link": "https://www.infosecurity-magazine.com/news/first-isc2-ai-security/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Cyberattack disrupts University of New Mexico hospitals, extortion group claims attack",
+      "link": "https://www.helpnetsecurity.com/2026/10/27/university-of-new-mexico-hospitals-cyberattack/",
+      "source": "Help Net Security",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "ThreatAware brings governance to AI-built security applications",
+      "link": "https://www.helpnetsecurity.com/2026/10/27/threataware-dimension-governed-workspace/",
+      "source": "Help Net Security",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "AI leaders fear rapid tech deployment is encouraging staff to bypass governance processes",
+      "link": "https://www.complianceweek.com/artificial-intelligence/ai-leaders-fear-rapid-tech-deployment-is-encouraging-staff-to-bypass-governance-processes/",
+      "source": "Compliance Week",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Day 2 of canceled classes at University of New Mexico after Health Sciences Center cyberattack",
+      "link": "https://www.theregister.com/cyber-crime/2026/10/27/day-2-of-canceled-classes-at-university-of-new-mexico-after-health-sciences-center-cyberattack/5305690",
+      "source": "The Register - Security",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Japanese virtual desktop cloud hacked so hard it asks to be banned",
+      "link": "https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610",
+      "source": "The Register - Security",
       "date": "2026-10-27"
     },
     {

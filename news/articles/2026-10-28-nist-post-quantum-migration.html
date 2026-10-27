@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIST Sets a Phased, Hybrid Path Off Quantum-Vulnerable Crypto · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="NIST's new migration report expects hybrid classical and quantum-safe algorithms first, with quantum-vulnerable signatures phased out after 2030.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-10-28-nist-post-quantum-migration.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "NIST Sets a Phased, Hybrid Path Off Quantum-Vulnerable Crypto", "description": "NIST's new migration report expects hybrid classical and quantum-safe algorithms first, with quantum-vulnerable signatures phased out after 2030.", "datePublished": "2026-10-28", "dateModified": "2026-10-28", "url": "https://zabez.com/news/articles/2026-10-28-nist-post-quantum-migration.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="NIST Sets a Phased, Hybrid Path Off Quantum-Vulnerable Crypto">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-standards.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">October 28, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>NIST Sets a Phased, Hybrid Path Off Quantum-Vulnerable Crypto</h1>
+        <p class="subtitle">NIST's new migration report expects hybrid classical and quantum-safe algorithms first, with quantum-vulnerable signatures phased out after 2030.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.databreachtoday.com/nist-outlines-phased-hybrid-post-quantum-migration-a-33225" target="_blank" rel="noopener">DataBreachToday</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-standards.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        NIST published a migration report on Tuesday covering how and when organizations should abandon public key cryptography that a future quantum computer could break. The document is written for federal agencies, but it reads as the closest available playbook for everyone else, and its central message is that the first phase will be deliberately untidy.
+        </p>
+        <p>
+        Rather than a single cutover, NIST expects a hybrid period. Early deployments will either pair a classical algorithm with a quantum resistant one, or combine two post quantum algorithms built on different mathematics. The stated purpose is interoperability: quantum vulnerable and quantum resistant algorithms will be fielded and used alongside each other in many applications and systems during the transition. Hybrid designs also limit the blast radius of a flaw in any single algorithm, since the system stays protected while one component holds.
+        </p>
+        <p>
+        The clock is already running. The Office of Management and Budget directed agencies in June to migrate as much quantum risk as feasible by the end of 2030. NIST will deprecate all quantum vulnerable digital signature algorithms after 2030 and disallow their use under its standards after 2035. Its authors note that moving from standardization to full integration historically takes 10 to 20 years, which leaves very little slack against those dates.
+        </p>
+        <p>
+        NIST narrows the immediate urgency to four use cases: code signing in software development, asymmetric key sign in, data moving over public networks through TLS or VPNs, and email and document signing and encryption. User to machine authentication can wait, because a login session today is not decrypted later. Data in transit cannot wait, because of harvest now, decrypt later collection.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>A crypto inventory is now an audit artefact.</strong> You cannot schedule a migration you cannot scope. Every certificate, signing key and legacy tunnel that terminates business data needs an owner and a date, and the honest starting point is that most inventories are thinner than the questionnaire suggests.
+        </p>
+        <p>
+        <strong>Hybrid adds risk while it removes risk.</strong> NIST is explicit that hybrid solutions raise implementation and architectural complexity, which increases security risk and cost during the transition, and that they are usually temporary measures leading to a second migration. So the roadmap has two phases, not one, and the budget and exception records should show that.
+        </p>
+        <p>
+        <strong>Deprecated is a decision, not a reprieve.</strong> NIST leaves risky algorithms usable in a deprecated state where data owners weigh their own exposure. That is a risk acceptance, which means a named approver, a rationale and a review date in the register rather than silence in an asset sheet.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Whether regulators outside the United States adopt the 2030 and 2035 markers, since procurement clauses tend to follow NIST faster than legislation does. Also worth tracking is the second key encapsulation mechanism NIST selected as an alternative in 2025, which is still working through formal approval and will affect which hybrid pairings are considered standard. Vendors will start advertising quantum readiness well before they can document it, so the test is a signed inventory and a migration schedule, not a slide.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.databreachtoday.com/nist-outlines-phased-hybrid-post-quantum-migration-a-33225" target="_blank" rel="noopener">DataBreachToday</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

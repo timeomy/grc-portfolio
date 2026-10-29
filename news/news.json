@@ -1,78 +1,78 @@
 {
-  "generated": "2026-10-28T07:33:37",
+  "generated": "2026-10-30T07:30:47",
   "count": 12,
   "items": [
-    {
-      "title": "NIST Outlines Phased, Hybrid Post-Quantum Migration",
-      "link": "https://www.databreachtoday.com/nist-outlines-phased-hybrid-post-quantum-migration-a-33225",
-      "source": "DataBreachToday",
-      "date": "2026-10-28"
-    },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+      "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+      "source": "The Hacker News",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "ICO Reprimands Staffordshire Police After Domestic Abuse Breach",
+      "link": "https://www.infosecurity-magazine.com/news/ico-reprimand-staffordshire-police/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "NIST Publishes Guidance to Meet Federal Post-Quantum Deadlines",
+      "link": "https://www.infosecurity-magazine.com/news/nist-guidance-post-quantum/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "ECI-CW TPRM 2026: DOJ\u2019s Duva urges C-suites to fully fund compliance",
+      "link": "https://www.complianceweek.com/regulators/eci-cw-tprm-2026-dojs-duva-urges-c-suites-to-fully-fund-compliance/",
+      "source": "Compliance Week",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Trump administration has dropped or reversed 205 corporate enforcement cases, Public Citizen finds",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/trump-administration-has-dropped-or-reversed-205-corporate-enforcement-cases-public-citizen-finds/",
+      "source": "Compliance Week",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "The State of Third-Party Risk & Integrity",
+      "link": "https://www.complianceweek.com/resource/the-state-of-third-party-risk-and-integrity/",
+      "source": "Compliance Week",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Two Entities Charged in $130 Million Fraud Scheme That Used False SEC Filings to Boost Investor Confidence",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-110-two-entities-charged-130-million-fraud-scheme-used-false-sec-filings-boost-investor-confidence",
+      "source": "SEC Press Releases",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
+      "link": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153",
+      "source": "The Register - Security",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
+      "link": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
+      "source": "The Hacker News",
       "date": "2026-10-28"
     },
     {
-      "title": "First ISC2 AI Security Certification Expected for Early 2027",
-      "link": "https://www.infosecurity-magazine.com/news/first-isc2-ai-security/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-10-27"
-    },
-    {
-      "title": "Cyberattack disrupts University of New Mexico hospitals, extortion group claims attack",
-      "link": "https://www.helpnetsecurity.com/2026/10/27/university-of-new-mexico-hospitals-cyberattack/",
-      "source": "Help Net Security",
-      "date": "2026-10-27"
-    },
-    {
-      "title": "ThreatAware brings governance to AI-built security applications",
-      "link": "https://www.helpnetsecurity.com/2026/10/27/threataware-dimension-governed-workspace/",
-      "source": "Help Net Security",
-      "date": "2026-10-27"
-    },
-    {
-      "title": "AI leaders fear rapid tech deployment is encouraging staff to bypass governance processes",
-      "link": "https://www.complianceweek.com/artificial-intelligence/ai-leaders-fear-rapid-tech-deployment-is-encouraging-staff-to-bypass-governance-processes/",
+      "title": "Deloitte Cyprus named in leaked documents for advising on sanctioned oligarch\u2019s fake accounts",
+      "link": "https://www.complianceweek.com/accounting-auditing/deloitte-cyprus-named-in-leaked-documents-for-advising-on-sanctioned-oligarchs-fake-accounts/",
       "source": "Compliance Week",
-      "date": "2026-10-27"
+      "date": "2026-10-28"
     },
     {
-      "title": "Day 2 of canceled classes at University of New Mexico after Health Sciences Center cyberattack",
-      "link": "https://www.theregister.com/cyber-crime/2026/10/27/day-2-of-canceled-classes-at-university-of-new-mexico-after-health-sciences-center-cyberattack/5305690",
-      "source": "The Register - Security",
-      "date": "2026-10-27"
-    },
-    {
-      "title": "Japanese virtual desktop cloud hacked so hard it asks to be banned",
-      "link": "https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610",
-      "source": "The Register - Security",
-      "date": "2026-10-27"
-    },
-    {
-      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-      "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-      "source": "The Hacker News",
-      "date": "2026-10-26"
-    },
-    {
-      "title": "Microsoft Issues Emergency Patch Update for Critical .NET Buffer Overflow Flaw",
-      "link": "https://www.infosecurity-magazine.com/news/microsoft-patch-update-net-flaw/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-10-26"
-    },
-    {
-      "title": "European regulators warn about prediction markets, showing divergence from the US",
-      "link": "https://www.complianceweek.com/technology/european-regulators-warn-about-prediction-markets-showing-divergence-from-the-us/",
-      "source": "Compliance Week",
-      "date": "2026-10-26"
-    },
-    {
-      "title": "Senators, rights groups say Trump administration breaking law by withholding surveillance court opinion",
-      "link": "https://cyberscoop.com/wyden-schiff-fisa-section-702-declassification/",
+      "title": "Lawsuit against Ex-Overstock CEO tied to 2020 election film falls apart over question of \u2018actual malice\u2019",
+      "link": "https://cyberscoop.com/patrick-byrne-dominion-defamation-lawsuit-actual-malice/",
       "source": "CyberScoop",
-      "date": "2026-10-26"
+      "date": "2026-10-28"
     }
   ]
 }

@@ -1,11 +1,29 @@
 {
-  "generated": "2026-10-30T07:30:47",
-  "count": 12,
+  "generated": "2026-10-31T07:31:31",
+  "count": 11,
   "items": [
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-10-31"
+    },
+    {
+      "title": "Conflicts of interest controls failing to keep up with private markets complexity, says UK financial regulator",
+      "link": "https://www.complianceweek.com/regulatory-policy/conflicts-of-interest-controls-failing-to-keep-up-with-private-markets-complexity-says-uk-financial-regulator/",
+      "source": "Compliance Week",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "SEC Issues Exemptive Relief from Treasury Clearing Requirements for Certain Inter-Affiliate and Non-U.S. Repo Transactions",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-111-sec-issues-exemptive-relief-treasury-clearing-requirements-certain-inter-affiliate-non-us-repo",
+      "source": "SEC Press Releases",
+      "date": "2026-10-30"
+    },
+    {
+      "title": "GM cracks the petty cash box for multistate driver tracking settlement",
+      "link": "https://www.theregister.com/security/2026/10/30/gm-cracks-the-petty-cash-box-for-multistate-driver-tracking-settlement/5306721",
+      "source": "The Register - Security",
       "date": "2026-10-30"
     },
     {
@@ -39,12 +57,6 @@
       "date": "2026-10-29"
     },
     {
-      "title": "The State of Third-Party Risk & Integrity",
-      "link": "https://www.complianceweek.com/resource/the-state-of-third-party-risk-and-integrity/",
-      "source": "Compliance Week",
-      "date": "2026-10-29"
-    },
-    {
       "title": "Two Entities Charged in $130 Million Fraud Scheme That Used False SEC Filings to Boost Investor Confidence",
       "link": "https://www.sec.gov/newsroom/press-releases/2026-110-two-entities-charged-130-million-fraud-scheme-used-false-sec-filings-boost-investor-confidence",
       "source": "SEC Press Releases",
@@ -55,24 +67,6 @@
       "link": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153",
       "source": "The Register - Security",
       "date": "2026-10-29"
-    },
-    {
-      "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
-      "link": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
-      "source": "The Hacker News",
-      "date": "2026-10-28"
-    },
-    {
-      "title": "Deloitte Cyprus named in leaked documents for advising on sanctioned oligarch\u2019s fake accounts",
-      "link": "https://www.complianceweek.com/accounting-auditing/deloitte-cyprus-named-in-leaked-documents-for-advising-on-sanctioned-oligarchs-fake-accounts/",
-      "source": "Compliance Week",
-      "date": "2026-10-28"
-    },
-    {
-      "title": "Lawsuit against Ex-Overstock CEO tied to 2020 election film falls apart over question of \u2018actual malice\u2019",
-      "link": "https://cyberscoop.com/patrick-byrne-dominion-defamation-lawsuit-actual-malice/",
-      "source": "CyberScoop",
-      "date": "2026-10-28"
     }
   ]
 }

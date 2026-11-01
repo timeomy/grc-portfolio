@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northflank Tells Customers to Assume Every Secret Was Stolen · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="After a breach at hosting platform Northflank, customers were told to assume all environment variables were decrypted and rotate every key.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-11-02-northflank-api-key-breach.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Northflank Tells Customers to Assume Every Secret Was Stolen", "description": "After a breach at hosting platform Northflank, customers were told to assume all environment variables were decrypted and rotate every key.", "datePublished": "2026-11-02", "dateModified": "2026-11-02", "url": "https://zabez.com/news/articles/2026-11-02-northflank-api-key-breach.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="Northflank Tells Customers to Assume Every Secret Was Stolen">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-cloud.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">November 02, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Northflank Tells Customers to Assume Every Secret Was Stolen</h1>
+        <p class="subtitle">After a breach at hosting platform Northflank, customers were told to assume all environment variables were decrypted and rotate every key.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/" target="_blank" rel="noopener">BleepingComputer</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-cloud.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Northflank, a cloud platform for deploying applications, containers, databases and AI workloads, disclosed a security incident on 30 October and told customers to rotate everything stored on it. The instruction was blunt: assume all environment variables have been decrypted, disable and rotate all keys.
+        </p>
+        <p>
+        The trigger came from outside. Wiz raised a threat alert at 11:43 UTC on 30 October, Northflank engineers reviewed it a minute later, and the company applied a network policy patch, followed by further patches at 12:50 UTC and 13:05 UTC. Northflank also asked Wiz's incident response team for help.
+        </p>
+        <p>
+        Environment variables are where applications keep database passwords, cloud credentials, authentication tokens and API keys. Once decrypted, those secrets work anywhere they are accepted. Northflank later confirmed that multiple customers had reported unauthorised use of AI API keys supplied to the platform, and advised reviewing AI provider usage and billing logs for unexpected activity.
+        </p>
+        <p>
+        The company has not said how the attackers got in, how many customers were affected, or whether anything beyond the reported AI keys was taken. It did enable credential rotation for PostgreSQL, MongoDB, MySQL and Redis, and switched on audit logs for all customers including free accounts. Customers were also told to rotate secrets held in workloads, secret groups and global secrets, and to turn off public access to add ons where it had been enabled.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Secrets in a platform are a shared control.</strong> A hosting provider that stores customer API keys has taken on part of the customer's key management, and that is a concentration of risk which belongs in the third party register with a named owner, not only in a dependency list.
+        </p>
+        <p>
+        <strong>Rotation is only as good as the inventory.</strong> The customers who came out of this well are the ones who could name every secret they had stored and rotate it within hours. Anyone relying on memory or a wiki page spent the first day compiling a list. A secrets inventory with owners and rotation dates is cheap to maintain and impossible to improvise.
+        </p>
+        <p>
+        <strong>Audit logs switching on mid incident is a finding.</strong> Logging was enabled for all customers during the response. That was the right call, but it means the evidence customers need for their own investigation exists only from that moment forward. Logging should be a default on paid and free tiers alike, with retention stated in the contract.
+        </p>
+        <p>
+        <strong>API key abuse is a financial control issue.</strong> Unauthorised AI API usage turns a confidentiality incident into a billing incident. Rate limits, spend caps and anomaly alerts with the provider are detective controls that catch stolen keys before the invoice does.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch the incident write up for the initial access path, and whether Northflank publishes a scope figure rather than a description. Watch the free tier question as well, since free accounts rarely get the same monitoring and were switched on for audit logs only after the fact. For teams using any hosting platform, the practical test this week is simple: can you list every secret you have stored with a third party, and name who rotates it.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/" target="_blank" rel="noopener">BleepingComputer</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armadin Finds 88% of Severe Flaws Outside Any Vendor Advisory · GRC Daily Case Study · Zabez</title>
+  <meta name="description" content="Armadin's live attack data shows most critical and high severity findings come from custom code and exposed consoles no advisory covers.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-11-03-armadin-vendor-advisory-gap.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Armadin Finds 88% of Severe Flaws Outside Any Vendor Advisory", "description": "Armadin's live attack data shows most critical and high severity findings come from custom code and exposed consoles no advisory covers.", "datePublished": "2026-11-03", "dateModified": "2026-11-03", "url": "https://zabez.com/news/articles/2026-11-03-armadin-vendor-advisory-gap.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="Armadin Finds 88% of Severe Flaws Outside Any Vendor Advisory">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-breach.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">← All GRC case studies</a></p>
+        <span class="article-date">November 03, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Armadin Finds 88% of Severe Flaws Outside Any Vendor Advisory</h1>
+        <p class="subtitle">Armadin's live attack data shows most critical and high severity findings come from custom code and exposed consoles no advisory covers.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.infosecurity-magazine.com/news/armadin-severe-exposures-missed/" target="_blank" rel="noopener">Infosecurity Magazine</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-breach.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+        <h2>What happened</h2>
+        <p>
+        Armadin published a report on 2 November drawing on AI driven attacks run against its clients' live systems. The firm, an offensive security startup founded by Mandiant founder Kevin Mandia, said 88% of the critical and high severity weaknesses it found this year would not have been identified through vendor advisories or other outside sources. Clients span nearly a dozen industries. Armadin did not disclose how many organisations or findings the data covers.
+        </p>
+        <p>
+        The breakdown matters more than the headline. Defects in software clients had written themselves accounted for 67% of the critical findings and 78% of the high findings that advisories could not cover. Vendor products deployed in ways no advisory describes, such as administrative consoles exposed to the internet, accounted for 24% and 22%. The remaining 9% of critical findings and under 1% of high findings were zero-days Armadin found itself, including one in an identity governance platform whose vendor took almost four months to publish an advisory.
+        </p>
+        <p>
+        Nearly 70% of critical and high findings sat on the unauthenticated attack surface. Of the documented attack chains, 82% began without credentials, and 56% of those continued without a password or key ever being presented. In more than 70% of client environments, Armadin reached a critical outcome in three steps or fewer without valid credentials.
+        </p>
+        <p>
+        Just under half of the chains that started without authentication leaned on an exposed credential, and 71% of those belonged to applications or service accounts rather than people. Nearly 90% were reachable without any extraction, sitting in repositories, configuration files, backups, logs or cloud settings.
+        </p>
+        <p>
+        Fixing the severe findings meant shipping application code in 51% of cases, changing a setting, permission or policy in 43%, and rotating an exposed credential in 32%, with many requiring more than one step. By Armadin's count, 93% of the severe findings needed no third party to act.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Advisory driven vulnerability management is a partial control.</strong> If most severe exposure lives in your own code and in how you deployed someone else's product, then a programme measured by patch compliance against published vulnerability feeds is measuring the part of the estate that is easiest to see. The register should carry configuration and architecture findings with the same weight as patches.
+        </p>
+        <p>
+        <strong>Service accounts are the quiet identity problem.</strong> Credentials that belong to applications tend to be created once, granted broadly and never rotated. They also sit where nobody scans: build pipelines, configuration files, backups, logs. Ownership is usually unclear, which is why they survive access reviews.
+        </p>
+        <p>
+        <strong>Unauthenticated surface is an architecture decision.</strong> An admin console on the internet is a choice made for convenience, and it turns a vendor product into an internet facing system running the vendor's default controls.
+        </p>
+        <p>
+        <strong>Vendor delay is the risk you cannot schedule away.</strong> A four month gap between finding and advisory is outside your control, so the mitigation has to be compensating controls and monitoring around the affected platform while you wait.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Watch whether Armadin publishes sector level data, because a sharper picture of which industries rely most on exposed administrative consoles would move this from anecdote to benchmark. Watch the identity governance advisory when it lands.
+        </p>
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.infosecurity-magazine.com/news/armadin-severe-exposures-missed/" target="_blank" rel="noopener">Infosecurity Magazine</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">← Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>© 2026 ZABEZ.com · GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/lucide.min.js"></script>
+  <script src="../assets/anim.js"></script>
+</body>
+</html>

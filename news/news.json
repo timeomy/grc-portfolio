@@ -1,11 +1,47 @@
 {
-  "generated": "2026-11-02T07:30:41",
-  "count": 3,
+  "generated": "2026-11-03T07:31:19",
+  "count": 9,
   "items": [
+    {
+      "title": "FBI Blames North Korea for Binance Heist",
+      "link": "https://www.databreachtoday.com/fbi-blames-north-korea-for-binance-heist-a-33274",
+      "source": "DataBreachToday",
+      "date": "2026-11-03"
+    },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "FBI Attributes Binance Heist to North Korea\u2019s TraderTraitor",
+      "link": "https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/",
+      "source": "Infosecurity Magazine",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "Google disrupts XCPE botnet, bans the company behind it",
+      "link": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+      "source": "Help Net Security",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "FBI pins $6.3 billion Binance crypto heist on North Korea while scammers circle anxious users",
+      "link": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/",
+      "source": "Help Net Security",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "Token thieves costing companies $100K+ per day in illicit LLM charges",
+      "link": "https://www.theregister.com/security/2026/11/02/token-thieves-costing-companies-100k-per-day-in-illicit-llm-charges/5306967",
+      "source": "The Register - Security",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "FBI pins $6.3B Binance crypto heist on North Korean hackers",
+      "link": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889",
+      "source": "The Register - Security",
       "date": "2026-11-02"
     },
     {

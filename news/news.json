@@ -1,35 +1,59 @@
 {
-  "generated": "2026-11-03T07:31:19",
-  "count": 9,
+  "generated": "2026-11-04T07:31:16",
+  "count": 11,
   "items": [
     {
-      "title": "FBI Blames North Korea for Binance Heist",
-      "link": "https://www.databreachtoday.com/fbi-blames-north-korea-for-binance-heist-a-33274",
+      "title": "Athenahealth's Claude AI Connection Raises HIPAA Questions",
+      "link": "https://www.databreachtoday.com/athenahealths-claude-ai-connection-raises-hipaa-questions-a-33284",
       "source": "DataBreachToday",
-      "date": "2026-11-03"
+      "date": "2026-11-04"
     },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-11-04"
+    },
+    {
+      "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+      "link": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+      "source": "The Hacker News",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Extreme Networks accepts DOJ \u201cnear-miss\u201d non-prosecution agreement for alleged sanctions violations",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/extreme-networks-accepts-doj-near-miss-non-prosecution-agreement-for-alleged-sanctions-violations/",
+      "source": "Compliance Week",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Compliance spend on AI rising, but fears about accuracy, reliability remain",
+      "link": "https://www.complianceweek.com/artificial-intelligence/compliance-spend-on-ai-rising-but-fears-about-accuracy-reliability-remain/",
+      "source": "Compliance Week",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Defense and aerospace firm settles with government over allegedly failing to meet cybersecurity contract requirements",
+      "link": "https://cyberscoop.com/ilc-dover-cybersecurity-settlement-false-claims-act/",
+      "source": "CyberScoop",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Oklahoma man charged with mailing threats, substances to election officials nationwide",
+      "link": "https://cyberscoop.com/oklahoma-man-charged-white-powder-letters-election-officials/",
+      "source": "CyberScoop",
+      "date": "2026-11-03"
+    },
+    {
+      "title": "Europol dismantles investment scheme that impacted potential victims in 50 countries",
+      "link": "https://cyberscoop.com/europol-investment-scam-takedown/",
+      "source": "CyberScoop",
       "date": "2026-11-03"
     },
     {
       "title": "FBI Attributes Binance Heist to North Korea\u2019s TraderTraitor",
       "link": "https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/",
       "source": "Infosecurity Magazine",
-      "date": "2026-11-02"
-    },
-    {
-      "title": "Google disrupts XCPE botnet, bans the company behind it",
-      "link": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
-      "source": "Help Net Security",
-      "date": "2026-11-02"
-    },
-    {
-      "title": "FBI pins $6.3 billion Binance crypto heist on North Korea while scammers circle anxious users",
-      "link": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/",
-      "source": "Help Net Security",
       "date": "2026-11-02"
     },
     {
@@ -43,18 +67,6 @@
       "link": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889",
       "source": "The Register - Security",
       "date": "2026-11-02"
-    },
-    {
-      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
-      "link": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-      "source": "The Hacker News",
-      "date": "2026-11-01"
-    },
-    {
-      "title": "Federal court tosses Trump lawsuit challenging Alaska Senate certification",
-      "link": "https://cyberscoop.com/judge-dismisses-alaska-senate-lawsuit-peltola-sullivan/",
-      "source": "CyberScoop",
-      "date": "2026-11-01"
     }
   ]
 }

@@ -1,72 +1,72 @@
 {
-  "generated": "2026-11-04T07:31:16",
+  "generated": "2026-11-08T07:31:40",
   "count": 11,
   "items": [
     {
-      "title": "Athenahealth's Claude AI Connection Raises HIPAA Questions",
-      "link": "https://www.databreachtoday.com/athenahealths-claude-ai-connection-raises-hipaa-questions-a-33284",
-      "source": "DataBreachToday",
-      "date": "2026-11-04"
-    },
-    {
-      "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
-      "source": "CISA Advisories",
-      "date": "2026-11-04"
-    },
-    {
-      "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
-      "link": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
-      "source": "The Hacker News",
-      "date": "2026-11-03"
-    },
-    {
-      "title": "Extreme Networks accepts DOJ \u201cnear-miss\u201d non-prosecution agreement for alleged sanctions violations",
-      "link": "https://www.complianceweek.com/regulatory-enforcement/extreme-networks-accepts-doj-near-miss-non-prosecution-agreement-for-alleged-sanctions-violations/",
-      "source": "Compliance Week",
-      "date": "2026-11-03"
-    },
-    {
-      "title": "Compliance spend on AI rising, but fears about accuracy, reliability remain",
-      "link": "https://www.complianceweek.com/artificial-intelligence/compliance-spend-on-ai-rising-but-fears-about-accuracy-reliability-remain/",
-      "source": "Compliance Week",
-      "date": "2026-11-03"
-    },
-    {
-      "title": "Defense and aerospace firm settles with government over allegedly failing to meet cybersecurity contract requirements",
-      "link": "https://cyberscoop.com/ilc-dover-cybersecurity-settlement-false-claims-act/",
-      "source": "CyberScoop",
-      "date": "2026-11-03"
-    },
-    {
-      "title": "Oklahoma man charged with mailing threats, substances to election officials nationwide",
-      "link": "https://cyberscoop.com/oklahoma-man-charged-white-powder-letters-election-officials/",
-      "source": "CyberScoop",
-      "date": "2026-11-03"
-    },
-    {
-      "title": "Europol dismantles investment scheme that impacted potential victims in 50 countries",
-      "link": "https://cyberscoop.com/europol-investment-scam-takedown/",
-      "source": "CyberScoop",
-      "date": "2026-11-03"
-    },
-    {
-      "title": "FBI Attributes Binance Heist to North Korea\u2019s TraderTraitor",
-      "link": "https://www.infosecurity-magazine.com/news/fbi-attributes-binance-north/",
+      "title": "CISA, FBI Urge Action to Protect Industrial Refrigeration Networks",
+      "link": "https://www.infosecurity-magazine.com/news/cisa-protect-refrigeration-networks/",
       "source": "Infosecurity Magazine",
-      "date": "2026-11-02"
+      "date": "2026-11-06"
     },
     {
-      "title": "Token thieves costing companies $100K+ per day in illicit LLM charges",
-      "link": "https://www.theregister.com/security/2026/11/02/token-thieves-costing-companies-100k-per-day-in-illicit-llm-charges/5306967",
-      "source": "The Register - Security",
-      "date": "2026-11-02"
+      "title": "Security certification is a snapshot, and buyers read too much into it",
+      "link": "https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/",
+      "source": "Help Net Security",
+      "date": "2026-11-06"
     },
     {
-      "title": "FBI pins $6.3B Binance crypto heist on North Korean hackers",
-      "link": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889",
+      "title": "ECI-CW TPRM 2026: The two sides of the coin in AI risk management",
+      "link": "https://www.complianceweek.com/artificial-intelligence/eci-cw-tprm-2026-the-two-sides-of-the-coin-in-ai-risk-management/",
+      "source": "Compliance Week",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "Experts warn of \u2018compliance conflict\u2019 between GDPR and companies\u2019 AI use",
+      "link": "https://www.complianceweek.com/data-privacy/experts-warn-of-compliance-conflict-between-gdpr-and-companies-ai-use/",
+      "source": "Compliance Week",
+      "date": "2026-11-06"
+    },
+    {
+      "title": "UK ministers seek powers to investigate when AI agents are let off the leash",
+      "link": "https://www.theregister.com/ai-and-ml/2026/11/06/uk-ministers-seek-powers-to-investigate-when-ai-agents-are-let-off-the-leash/5307889",
       "source": "The Register - Security",
-      "date": "2026-11-02"
+      "date": "2026-11-06"
+    },
+    {
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "link": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "source": "The Hacker News",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+      "link": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+      "source": "The Hacker News",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "Toast misled subscribers about strength of customer service, FTC alleges",
+      "link": "https://www.complianceweek.com/regulatory-enforcement/toast-misled-subscribers-about-strength-of-customer-service-ftc-alleges/",
+      "source": "Compliance Week",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "October crypto-tracker hack: Access cracked, law enforcement tokens packed",
+      "link": "https://www.theregister.com/cyber-crime/2026/11/05/october-crypto-tracker-hack-access-cracked-law-enforcement-tokens-packed/5307852",
+      "source": "The Register - Security",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+      "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+      "source": "The Hacker News",
+      "date": "2026-11-04"
+    },
+    {
+      "title": "The State of AI Governance in Third-Party Risk",
+      "link": "https://www.complianceweek.com/third-party-risk/the-state-of-ai-governance-in-third-party-risk/",
+      "source": "Compliance Week",
+      "date": "2026-11-04"
     }
   ]
 }

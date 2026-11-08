@@ -1,17 +1,11 @@
 {
-  "generated": "2026-11-08T07:31:40",
-  "count": 11,
+  "generated": "2026-11-09T07:31:26",
+  "count": 3,
   "items": [
     {
       "title": "CISA, FBI Urge Action to Protect Industrial Refrigeration Networks",
       "link": "https://www.infosecurity-magazine.com/news/cisa-protect-refrigeration-networks/",
       "source": "Infosecurity Magazine",
-      "date": "2026-11-06"
-    },
-    {
-      "title": "Security certification is a snapshot, and buyers read too much into it",
-      "link": "https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/",
-      "source": "Help Net Security",
       "date": "2026-11-06"
     },
     {
@@ -21,52 +15,10 @@
       "date": "2026-11-06"
     },
     {
-      "title": "Experts warn of \u2018compliance conflict\u2019 between GDPR and companies\u2019 AI use",
-      "link": "https://www.complianceweek.com/data-privacy/experts-warn-of-compliance-conflict-between-gdpr-and-companies-ai-use/",
-      "source": "Compliance Week",
-      "date": "2026-11-06"
-    },
-    {
       "title": "UK ministers seek powers to investigate when AI agents are let off the leash",
       "link": "https://www.theregister.com/ai-and-ml/2026/11/06/uk-ministers-seek-powers-to-investigate-when-ai-agents-are-let-off-the-leash/5307889",
       "source": "The Register - Security",
       "date": "2026-11-06"
-    },
-    {
-      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
-      "link": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-      "source": "The Hacker News",
-      "date": "2026-11-05"
-    },
-    {
-      "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-      "link": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-      "source": "The Hacker News",
-      "date": "2026-11-05"
-    },
-    {
-      "title": "Toast misled subscribers about strength of customer service, FTC alleges",
-      "link": "https://www.complianceweek.com/regulatory-enforcement/toast-misled-subscribers-about-strength-of-customer-service-ftc-alleges/",
-      "source": "Compliance Week",
-      "date": "2026-11-05"
-    },
-    {
-      "title": "October crypto-tracker hack: Access cracked, law enforcement tokens packed",
-      "link": "https://www.theregister.com/cyber-crime/2026/11/05/october-crypto-tracker-hack-access-cracked-law-enforcement-tokens-packed/5307852",
-      "source": "The Register - Security",
-      "date": "2026-11-05"
-    },
-    {
-      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
-      "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
-      "source": "The Hacker News",
-      "date": "2026-11-04"
-    },
-    {
-      "title": "The State of AI Governance in Third-Party Risk",
-      "link": "https://www.complianceweek.com/third-party-risk/the-state-of-ai-governance-in-third-party-risk/",
-      "source": "Compliance Week",
-      "date": "2026-11-04"
     }
   ]
 }

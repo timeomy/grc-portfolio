@@ -1,24 +1,42 @@
 {
-  "generated": "2026-11-09T07:31:26",
-  "count": 3,
+  "generated": "2026-11-10T07:31:18",
+  "count": 6,
   "items": [
     {
-      "title": "CISA, FBI Urge Action to Protect Industrial Refrigeration Networks",
-      "link": "https://www.infosecurity-magazine.com/news/cisa-protect-refrigeration-networks/",
-      "source": "Infosecurity Magazine",
-      "date": "2026-11-06"
+      "title": "States, IT Services Firms Reach $10M Settlement in Data Hack",
+      "link": "https://www.databreachtoday.com/states-services-firms-reach-10m-settlement-in-data-hack-a-33340",
+      "source": "DataBreachToday",
+      "date": "2026-11-10"
     },
     {
-      "title": "ECI-CW TPRM 2026: The two sides of the coin in AI risk management",
-      "link": "https://www.complianceweek.com/artificial-intelligence/eci-cw-tprm-2026-the-two-sides-of-the-coin-in-ai-risk-management/",
+      "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
+      "source": "CISA Advisories",
+      "date": "2026-11-10"
+    },
+    {
+      "title": "PyPI makes release attestations easier to find with new security tab",
+      "link": "https://www.helpnetsecurity.com/2026/11/09/pypi-security-tab-release-attestations/",
+      "source": "Help Net Security",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "AI governance work is harder than firms expect, compliance leaders warn",
+      "link": "https://www.complianceweek.com/artificial-intelligence/ai-governance-work-is-harder-than-firms-expect-compliance-leaders-warn/",
       "source": "Compliance Week",
-      "date": "2026-11-06"
+      "date": "2026-11-09"
     },
     {
-      "title": "UK ministers seek powers to investigate when AI agents are let off the leash",
-      "link": "https://www.theregister.com/ai-and-ml/2026/11/06/uk-ministers-seek-powers-to-investigate-when-ai-agents-are-let-off-the-leash/5307889",
+      "title": "QC 1000 amendments approved a month before new accounting quality regulation comes into force",
+      "link": "https://www.complianceweek.com/accounting-auditing/qc-1000-amendments-approved-a-month-before-new-accounting-quality-regulation-comes-into-force/",
+      "source": "Compliance Week",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "Outlook.com bounces legit emails as Microsoft's authentication crackdown goes sideways",
+      "link": "https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428",
       "source": "The Register - Security",
-      "date": "2026-11-06"
+      "date": "2026-11-09"
     }
   ]
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orphaned Cross Account Roles Let Attackers Walk Into Customer AWS Environments &middot; GRC Daily Case Study &middot; Zabez</title>
+  <meta name="description" content="Wiz traced a supply chain campaign to stolen Qubole IAM credentials and trust policies that customers left active after dropping the platform.">
+  <link rel="canonical" href="https://zabez.com/news/articles/2026-11-10-qubole-aws-cross-account-trust-abuse.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .article-date { font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+    .article-source { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+    .article-body { max-width: 72ch; }
+    .article-body h2 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; margin: 34px 0 12px; }
+    .article-body p { margin-bottom: 17px; color: var(--text-dim); font-size: 17px; line-height: 1.75; }
+    .article-body p strong { color: var(--text); font-weight: 600; }
+    .article-body blockquote { border-left: 2px solid var(--gold); padding: 2px 0 2px 18px; margin: 18px 0; color: var(--text-dim); font-style: italic; }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Orphaned Cross Account Roles Let Attackers Walk Into Customer AWS Environments", "description": "Wiz traced a supply chain campaign to stolen Qubole IAM credentials and trust policies that customers left active after dropping the platform.", "datePublished": "2026-11-10", "dateModified": "2026-11-10", "url": "https://zabez.com/news/articles/2026-11-10-qubole-aws-cross-account-trust-abuse.html", "author": {"@type": "Person", "name": "Kok Jabez", "url": "https://zabez.com/"}, "publisher": {"@type": "Organization", "name": "ZABEZ.com", "url": "https://zabez.com/"}, "image": "https://zabez.com/assets/og-cover.png"}
+  </script>
+  <meta property="og:title" content="Orphaned Cross Account Roles Let Attackers Walk Into Customer AWS Environments">
+  <meta property="og:image" content="https://zabez.com/assets/img/news-cloud.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">ZABEZ<span class="dot">.</span>com</a>
+      <nav class="nav">
+        <a href="../../index.html#cases"><i data-lucide="search" class="ico"></i>Case Studies</a>
+        <a href="../index.html">GRC News</a>
+        <a href="../../index.html#free"><i data-lucide="file-text" class="ico"></i>Free Resources</a>
+        <a href="../../index.html#about"><i data-lucide="user" class="ico"></i>About</a>
+        <a href="../../index.html#contact"><i data-lucide="mail" class="ico"></i>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="crumb"><a href="../index.html">&larr; All GRC case studies</a></p>
+        <span class="article-date">November 10, 2026</span>
+        <span class="article-date" style="color: var(--text-faint);">By Kok Jabez</span>
+        <h1>Orphaned Cross Account Roles Let Attackers Walk Into Customer AWS Environments</h1>
+        <p class="subtitle">Wiz traced a supply chain campaign to stolen Qubole IAM credentials and trust policies that customers left active after dropping the platform.</p>
+        <div class="score-strip">
+          <span class="article-source">Source: <a href="https://www.theregister.com/security/2026/11/09/attackers-backdoor-trusted-aws-integrations-to-steal-secrets/5308553" target="_blank" rel="noopener">The Register</a></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="article-hero-img"><img src="../../assets/img/news-cloud.jpg" alt="" loading="lazy"></div></div>
+
+    <section class="case-body">
+      <div class="wrap" style="max-width: var(--wrap);">
+      <div class="case-main article-body">
+
+        <h2>What happened</h2>
+        <p>
+        The attackers used compromised identity and access management credentials tied to Qubole's AWS account to reach customer AWS environments, stealing secrets and pulling data out of S3 buckets. Qubole is a cloud data processing platform that uses cross account IAM roles to run compute and read storage in customer environments, which avoids handing over long lived access keys.
+        </p>
+        <p>
+        The design is the vulnerability. The campaign abused the third party, cross account trust relationship directly. Wiz, which investigated alongside Google's Mandiant after AI data security company Sentra flagged suspicious activity, declined to say how many organisations were affected but called it a broad, opportunistic supply chain campaign that hit multiple customer environments.
+        </p>
+        <p>
+        Many organisations left trust policies active even after deprecating the platform, so the attacker could assume integration roles, enumerate cloud resources, harvest secrets and siphon data.
+        </p>
+        <p>
+        The activity traces to October 14, when credentials associated with Qubole's AWS account called sts:AssumeRole to obtain temporary credentials for customer managed integration roles. The calls came from Qubole's AWS account 805246085872 using IAM user AIDA3W7DIFLYOLTK63SFS, an identity seen in no other activity. It continued on October 15, and on October 18 a second IAM user from the same account appeared.
+        </p>
+        <p>
+        Once inside, the intruders probed a long list of AWS services and took credentials, keys and secrets from Lambda, Secrets Manager and SSM Parameter Store. They used TruffleHog to test AWS credentials, discovered Microsoft Entra ID secrets, and requested OAuth tokens with Okta client credentials found in the same environments. They also took data from S3, in some cases downloading entire buckets. Wiz calls them opportunistic rather than a state group hunting specific data, and has not attributed the campaign or said how the stolen data is used.
+        </p>
+        <p>
+        Wiz also spotted a separate campaign between October 8 and 11 that used customer owned AWS access keys for Qubole integrations. A small number led to compromise, but Wiz cannot definitively connect the two.
+        </p>
+        <h2>Why this is a GRC story</h2>
+        <p>
+        <strong>Offboarding has a cloud clause.</strong> Every one of these victims had a reason to keep the role. The platform was gone from the process, so the permission looked harmless. A trust policy is a standing invitation with no expiry, and decommissioning a vendor without revoking its roles is not decommissioning.
+        </p>
+        <p>
+        <strong>Access reviews stop at the org chart.</strong> Most reviews ask whether a person still needs a role. Fewer ask whether a role still has an external principal attached, or when that principal last assumed it. The second question is the one that would have caught this.
+        </p>
+        <p>
+        <strong>Secret sprawl turns one role into many.</strong> From a single assumed role the attackers reached Entra ID secrets and Okta client credentials. The blast radius of an integration role is the union of everything it can read, and most organisations have never drawn that map.
+        </p>
+        <h2>What to watch</h2>
+        <p>
+        Wiz's guidance is specific and worth acting on. Rotate credentials, and note that rotating a key does not end temporary sessions already issued. Review CloudTrail from October 1 onward for AssumeRole events where the account ID matches Qubole's, particularly from non AWS addresses. For every role session found, review everything that followed, especially Secrets Manager, SSM Parameter Store, Lambda and S3, then rotate every secret, parameter and environment variable the role could read and revoke the active sessions.
+        </p>
+
+
+        <p class="ref-note" style="margin-top:26px;"><strong>Attribution:</strong> Analysis based on <a href="https://www.theregister.com/security/2026/11/09/attackers-backdoor-trusted-aws-integrations-to-steal-secrets/5308553" target="_blank" rel="noopener">The Register</a> and related public reporting. This article is original commentary, not a repost of the source material.</p>
+
+        <div class="next-case">
+          <span>
+            <span class="nc-lbl">More daily case studies</span><br>
+            <a class="nc-name" href="../index.html">&larr; Back to GRC News</a>
+          </span>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>&copy; 2026 ZABEZ.com &middot; GRC Portfolio</span>
+        <span class="legal">Original analysis based on publicly available reporting, with the source cited above.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/lucide.min.js"></script>
+  <script src="../../assets/anim.js"></script>
+</body>
+</html>

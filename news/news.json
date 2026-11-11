@@ -1,42 +1,90 @@
 {
-  "generated": "2026-11-10T07:31:18",
-  "count": 6,
+  "generated": "2026-11-12T07:30:39",
+  "count": 14,
   "items": [
     {
-      "title": "States, IT Services Firms Reach $10M Settlement in Data Hack",
-      "link": "https://www.databreachtoday.com/states-services-firms-reach-10m-settlement-in-data-hack-a-33340",
+      "title": "Vanta Buys Pillar to Tie AI Governance to Real-Time Controls",
+      "link": "https://www.databreachtoday.com/vanta-buys-pillar-to-tie-ai-governance-to-real-time-controls-a-33367",
       "source": "DataBreachToday",
-      "date": "2026-11-10"
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Health Groups Warn HHS on Potential HIPAA Privacy Changes",
+      "link": "https://www.databreachtoday.com/health-groups-warn-hhs-on-potential-hipaa-privacy-changes-a-33365",
+      "source": "DataBreachToday",
+      "date": "2026-11-12"
     },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Station Access Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-15",
       "source": "CISA Advisories",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+      "link": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+      "source": "The Hacker News",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+      "link": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+      "source": "The Hacker News",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "The Participation Gap: Keeping Employees at the Center of AI-Powered Compliance",
+      "link": "https://www.complianceweek.com/scheduled-webcast/the-participation-gap-keeping-employees-at-the-center-of-ai-powered-compliance/",
+      "source": "Compliance Week",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "N-able issues hotfix after researcher dumps PoCs in disclosure spat",
+      "link": "https://www.cybersecuritydive.com/news/n-able-hotfix-researcher-pocs-zero-days/874388/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "CISA sets operational priorities for partnerships, risk assessments and systemic action",
+      "link": "https://www.cybersecuritydive.com/news/cisa-priorities-memo-risks-partnerships/874381/",
+      "source": "Cybersecurity Dive",
+      "date": "2026-11-11"
+    },
+    {
+      "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
+      "link": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+      "source": "The Hacker News",
       "date": "2026-11-10"
     },
     {
-      "title": "PyPI makes release attestations easier to find with new security tab",
-      "link": "https://www.helpnetsecurity.com/2026/11/09/pypi-security-tab-release-attestations/",
-      "source": "Help Net Security",
-      "date": "2026-11-09"
+      "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+      "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+      "source": "The Hacker News",
+      "date": "2026-11-10"
     },
     {
-      "title": "AI governance work is harder than firms expect, compliance leaders warn",
-      "link": "https://www.complianceweek.com/artificial-intelligence/ai-governance-work-is-harder-than-firms-expect-compliance-leaders-warn/",
+      "title": "Brett Shumate resigns from DOJ Civil Division",
+      "link": "https://www.complianceweek.com/regulators/brett-shumate-resigns-from-doj-civil-division/",
       "source": "Compliance Week",
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
-      "title": "QC 1000 amendments approved a month before new accounting quality regulation comes into force",
-      "link": "https://www.complianceweek.com/accounting-auditing/qc-1000-amendments-approved-a-month-before-new-accounting-quality-regulation-comes-into-force/",
+      "title": "FTC\u2019s Mufarrige nominated to be commissioner",
+      "link": "https://www.complianceweek.com/regulators/ftcs-mufarrige-nominated-to-be-commissioner/",
       "source": "Compliance Week",
-      "date": "2026-11-09"
+      "date": "2026-11-10"
     },
     {
-      "title": "Outlook.com bounces legit emails as Microsoft's authentication crackdown goes sideways",
-      "link": "https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428",
-      "source": "The Register - Security",
-      "date": "2026-11-09"
+      "title": "From AI Outputs to Compliance Decisions: A Practical Guide for Compliance Professionals",
+      "link": "https://www.complianceweek.com/artificial-intelligence/from-ai-outputs-to-compliance-decisions-a-practical-guide-for-compliance-professionals/",
+      "source": "Compliance Week",
+      "date": "2026-11-10"
+    },
+    {
+      "title": "SEC Announces Enforcement Annual Results for Fiscal Year 2026",
+      "link": "https://www.sec.gov/newsroom/press-releases/2026-113-sec-announces-enforcement-annual-results-fiscal-year-2026",
+      "source": "SEC Press Releases",
+      "date": "2026-11-10"
     }
   ]
 }
